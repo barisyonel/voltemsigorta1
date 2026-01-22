@@ -14,7 +14,7 @@ export default function Services() {
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">SONCHOY POPULAR SERVICE</p>
+                        <p className="section-title__tagline">VOLDEM SIGORTA TOKAT POPULAR SERVICE</p>
                     </div>
                     <h2 className="section-title__title">Amazing Insurance Services</h2>
                 </div>
@@ -26,9 +26,9 @@ export default function Services() {
                                 <div className="services-five__icon">
                                     <span className="icon-healthcare"></span>
                                 </div>
-                                <h3 className="services-five__title"><Link href="health-insurance">Medical Insurance</Link>
+                                <h3 className="services-five__title"><Link href="saglik-sigortasi">Medical Insurance</Link>
                                 </h3>
-                                <Link href="health-insurance" className="services-five__arrow"><span
+                                <Link href="saglik-sigortasi" className="services-five__arrow"><span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -39,9 +39,9 @@ export default function Services() {
                                 <div className="services-five__icon">
                                     <span className="icon-protection-1"></span>
                                 </div>
-                                <h3 className="services-five__title"><Link href="health-insurance">Health Insurance</Link>
+                                <h3 className="services-five__title"><Link href="saglik-sigortasi">Health Insurance</Link>
                                 </h3>
-                                <Link href="health-insurance" className="services-five__arrow"><span
+                                <Link href="saglik-sigortasi" className="services-five__arrow"><span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -52,9 +52,9 @@ export default function Services() {
                                 <div className="services-five__icon">
                                     <span className="icon-family-insurance"></span>
                                 </div>
-                                <h3 className="services-five__title"><Link href="family-insurance">Family Insurance</Link>
+                                <h3 className="services-five__title"><Link href="aile-sigortasi">Family Insurance</Link>
                                 </h3>
-                                <Link href="family-insurance" className="services-five__arrow"><span
+                                <Link href="aile-sigortasi" className="services-five__arrow"><span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -65,10 +65,10 @@ export default function Services() {
                                 <div className="services-five__icon">
                                     <span className="icon-wallet"></span>
                                 </div>
-                                <h3 className="services-five__title"><Link href="business-insurance">Business
+                                <h3 className="services-five__title"><Link href="isyeri-sigortasi">Business
                                         Insurance</Link>
                                 </h3>
-                                <Link href="business-insurance" className="services-five__arrow"><span
+                                <Link href="isyeri-sigortasi" className="services-five__arrow"><span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>

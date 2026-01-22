@@ -13,7 +13,7 @@ export default function Footer1() {
                             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__column footer-widget__about">
                                     <div className="footer-widget__logo">
-                                        <Link href="index"><img src="assets/images/resources/footer-logo-1.png"
+                                        <Link href="/"><img src="/logo.jpeg"
                                                 alt=""/></Link>
                                     </div>
                                     <p className="footer-widget__about-text">Tokat Merkez, Türkiye
@@ -36,16 +36,16 @@ export default function Footer1() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="index">Ana Sayfa</Link>
+                                            <Link href="/">Ana Sayfa</Link>
                                         </li>
                                         <li>
-                                            <Link href="about">Hakkımızda</Link>
+                                            <Link href="hakkimizda">Hakkımızda</Link>
                                         </li>
                                         <li>
-                                            <Link href="insurance">Hizmetler</Link>
+                                            <Link href="sigorta">Hizmetler</Link>
                                         </li>
                                         <li>
-                                            <Link href="contact">İletişim</Link>
+                                            <Link href="iletisim">İletişim</Link>
                                         </li>
                                         <li>
                                             <Link href="blog">Blog</Link>
@@ -60,34 +60,39 @@ export default function Footer1() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="about">Yardım</Link>
+                                            <Link href="hakkimizda">Yardım</Link>
                                         </li>
                                         <li>
-                                            <Link href="contact">Destek</Link>
+                                            <Link href="iletisim">Destek</Link>
                                         </li>
                                         <li>
-                                            <Link href="testimonial">Müşteriler</Link>
+                                            <Link href="musteri-yorumlari">Müşteriler</Link>
                                         </li>
                                         <li>
-                                            <Link href="portfolio">Projeler</Link>
+                                            <Link href="projeler">Projeler</Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                                <div className="footer-widget__column footer-widget__newsletter">
+                                <div className="footer-widget__column footer-widget__quick-link">
                                     <div className="footer-widget__title-box">
-                                        <h3 className="footer-widget__title">Bülten</h3>
+                                        <h3 className="footer-widget__title">Yasal</h3>
                                     </div>
-                                    <p className="footer-widget__newsletter-text">Bültenimize abone olun,
-                                        <br/> en son haber ve güncellemeleri alın</p>
-                                    <form className="footer-widget__newsletter-form">
-                                        <div className="footer-widget__newsletter-input-box">
-                                            <input type="email" placeholder="eposta@ornek.com" name="email"/>
-                                            <button type="submit" className="footer-widget__newsletter-btn"><i
-                                                    className="icon-send"></i></button>
-                                        </div>
-                                    </form>
+                                    <ul className="footer-widget__navigation-list list-unstyled">
+                                        <li>
+                                            <Link href="kvkk">KVKK Aydınlatma Metni</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="gizlilik-politikasi">Gizlilik Politikası</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="cerez-politikasi">Çerez Politikası</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="kullanim-sartlari">Kullanım Şartları</Link>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +102,10 @@ export default function Footer1() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">Copyright © 2024 Voldem Sigorta Tokat. Tüm hakları saklıdır.</p>
+                        <p className="site-footer__bottom-text">Copyright © 2024 Voldem Sigorta. Tüm hakları saklıdır.</p>
+                        <p className="site-footer__bottom-text">
+                            Media: <a href="https://bariscanyonel.com" target="_blank" rel="noreferrer">Barış Can Yönel</a>
+                        </p>
                     </div>
                 </div>
             </div>

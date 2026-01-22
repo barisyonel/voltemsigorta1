@@ -10,7 +10,7 @@ export default function Cta() {
                     <h3 className="cta-four__title">Have an Idea in Your Mind</h3>
                     <p className="cta-four__sub-title">Don’t Hesitate to Say Hello</p>
                     <div className="cta-four__btn-box">
-                        <Link href="contact" className="cta-four__btn thm-btn">LET’S TALK WITH US</Link>
+                        <Link href="iletisim" className="cta-four__btn thm-btn">LET’S TALK WITH US</Link>
                     </div>
                 </div>
             </div>

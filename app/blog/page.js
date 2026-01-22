@@ -23,7 +23,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Seyahat Sigortasında
+                                <h3 className="blog-one__title"><Link href="blog-detay">Seyahat Sigortasında
                                         Doğru Teminatı Seçmek</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -51,7 +51,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Sigorta Ufukları:
+                                <h3 className="blog-one__title"><Link href="blog-detay">Sigorta Ufukları:
                                         Sunulan Teminatlar</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -79,7 +79,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Geleceği Güvenceye Almak:
+                                <h3 className="blog-one__title"><Link href="blog-detay">Geleceği Güvenceye Almak:
                                         Voldem Sigorta Yaklaşımı</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -107,7 +107,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Poliçe Seçiminde Dikkat
+                                <h3 className="blog-one__title"><Link href="blog-detay">Poliçe Seçiminde Dikkat
                                         Edilmesi Gerekenler</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -135,7 +135,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Aile Sigortasında
+                                <h3 className="blog-one__title"><Link href="blog-detay">Aile Sigortasında
                                         Kapsam Seçenekleri</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -163,7 +163,7 @@ export default function Home() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Konut Sigortasında
+                                <h3 className="blog-one__title"><Link href="blog-detay">Konut Sigortasında
                                         Teminatlar ve Fiyatlar</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -197,7 +197,14 @@ export default function Home() {
                         <p>Risk almadan deneyin - iptal ücreti yok</p>
                     </div>
                     <div className="cta-one__btn-box">
-                        <Link href="contact" className="cta-one__btn thm-btn">HEMEN ÜCRETSİZ TEKLİF AL</Link>
+                        <Link
+                            href="https://wa.me/905433950213?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum."
+                            className="cta-one__btn thm-btn"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            HEMEN ÜCRETSİZ TEKLİF AL
+                        </Link>
                     </div>
                 </div>
             </div>

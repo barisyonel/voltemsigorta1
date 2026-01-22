@@ -112,8 +112,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Brendan Duke </div><img src="/assets/images/resource/author-thumb-1.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Business</div>
-                                                <h4><Link href="/blog-details">How to Manage Business’s <br />Online Reputation</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">How to Manage Business’s <br />Online Reputation</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -126,8 +126,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-2.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Projects</div>
-                                                <h4><Link href="/blog-details">Is Your Business Ready For <br />Integration?</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">Is Your Business Ready For <br />Integration?</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -140,8 +140,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-3.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Marketing</div>
-                                                <h4><Link href="/blog-details">That Should You Include In <br />Your Marketing Plan</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">That Should You Include In <br />Your Marketing Plan</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -154,8 +154,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Brendan Duke </div><img src="/assets/images/resource/author-thumb-1.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Business</div>
-                                                <h4><Link href="/blog-details">How to Manage Business’s <br />Online Reputation</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">How to Manage Business’s <br />Online Reputation</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -168,8 +168,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-2.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Projects</div>
-                                                <h4><Link href="/blog-details">Is Your Business Ready For <br />Integration?</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">Is Your Business Ready For <br />Integration?</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -182,8 +182,8 @@ export default function News() {
                                                     <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-3.jpg" alt="" /></div>
                                                 </div>
                                                 <div className="category">Marketing</div>
-                                                <h4><Link href="/blog-details">That Should You Include In <br />Your Marketing Plan</Link></h4>
-                                                <div className="read-more-btn"><Link href="/blog-details">Continue reading <i>&gt;&gt;</i></Link></div>
+                                                <h4><Link href="/blog-detay">That Should You Include In <br />Your Marketing Plan</Link></h4>
+                                                <div className="read-more-btn"><Link href="/blog-detay">Continue reading <i>&gt;&gt;</i></Link></div>
                                             </div>
                                         </div>
                                     </SwiperSlide>

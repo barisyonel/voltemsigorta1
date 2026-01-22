@@ -23,25 +23,10 @@ export default function About() {
                             <div className="about-one__img-box  wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div className="about-one__img">
-                                    <img src="assets/images/resources/about-one-img-1.jpg" alt=""/>
+                                    <img src="/anasayfa2.jpg" alt=""/>
                                 </div>
                                 <div className="about-one__img-2">
-                                    <img src="assets/images/resources/about-one-img-2.jpg" alt=""/>
-                                </div>
-                                <div className="about-one__client-box">
-                                    <div className="about-one__client-box-bg"
-                                        style={{ backgroundImage: 'url(assets/images/shapes/about-one-client-box-bg-shape.png)' }} >
-                                    </div>
-                                    <div className="about-one__client-img">
-                                        <img src="assets/images/resources/about-one-client-img.jpg" alt=""/>
-                                    </div>
-                                    <div className="about-one__client-content">
-                                        <div className="about-one__count count-box">
-                                            <h3 className="count-text">4.2</h3>
-                                            <span>K</span>
-                                        </div>
-                                        <p>Satisfied Clients</p>
-                                    </div>
+                                    <img src="assets/images/kasko.png" alt=""/>
                                 </div>
                                 <div className="about-one__video-link">
                                     <a onClick={() => setOpen(true)} className="video-popup">
@@ -100,9 +85,6 @@ export default function About() {
                                 </li>
                             </ul>
                             <div className="about-one__btn-and-contact">
-                                <div className="about-one__btn-box">
-                                    <Link href="about" className="about-one__btn thm-btn">Daha Fazlası</Link>
-                                </div>
                                 <div className="about-one__contact">
                                     <div className="icon">
                                         <span className="icon-telephone"></span>

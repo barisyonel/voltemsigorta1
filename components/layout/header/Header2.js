@@ -58,7 +58,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu }) {
                                 </form>
                             </div>
                             <div className="main-menu-two__btn-box">
-                                <Link href="contact" className="main-menu-two__btn thm-btn">GET A QUOTE</Link>
+                                <Link href="iletisim" className="main-menu-two__btn thm-btn">GET A QUOTE</Link>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu }) {
                                     </form>
                                 </div>
                                 <div className="main-menu-two__btn-box">
-                                    <Link href="contact" className="main-menu-two__btn thm-btn">GET A QUOTE</Link>
+                                    <Link href="iletisim" className="main-menu-two__btn thm-btn">GET A QUOTE</Link>
                                 </div>
                             </div>
                         </div>

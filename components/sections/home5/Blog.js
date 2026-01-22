@@ -25,7 +25,7 @@ export default function Blog() {
                                     <span>Insurance</span>
                                     <span>Agency</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">How Get People to
+                                <h3 className="blog-one__title"><Link href="blog-detay">How Get People to
                                         Like Travel Insurance.</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -53,7 +53,7 @@ export default function Blog() {
                                     <span>Insurance</span>
                                     <span>Agency</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Insurance Horizons
+                                <h3 className="blog-one__title"><Link href="blog-detay">Insurance Horizons
                                         Exploring the Offerings</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -81,7 +81,7 @@ export default function Blog() {
                                     <span>Insurance</span>
                                     <span>Agency</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Safeguarding Futures
+                                <h3 className="blog-one__title"><Link href="blog-detay">Safeguarding Futures
                                         The Passion Insurance</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">

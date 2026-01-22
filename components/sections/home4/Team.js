@@ -12,7 +12,7 @@ export default function Team() {
                         <p className="section-title__tagline">OUR TEAM MEMBER</p>
                     </div>
                     <h2 className="section-title__title">Our Talented Team
-                        <br/> Member Behind Sonchoy</h2>
+                        <br/> Member Behind Voldem Sigorta Tokat</h2>
                 </div>
                 <div className="row">
                     {/* Team Two Single Start */}
@@ -24,17 +24,17 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="team-two__content">
-                                <h3 className="team-two__title"><Link href="team-details">William Hender</Link></h3>
+                                <h3 className="team-two__title"><Link href="ekip-detay">William Hender</Link></h3>
                                 <p className="team-two__sub-title">CEO of Company</p>
                                 <div className="team-two__share-and-social">
                                     <div className="team-two__share">
-                                        <Link href="team-details"><span className="icon-share"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                     </div>
                                     <div className="team-two__social">
-                                        <Link href="team-details"><span className="icon-google-plus-logo"></span></Link>
-                                        <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                        <Link href="team-details"><span className="icon-instagram-1"></span></Link>
-                                        <Link href="team-details"><span className="icon-facebook"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -50,17 +50,17 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="team-two__content">
-                                <h3 className="team-two__title"><Link href="team-details">Janes Cooper</Link></h3>
+                                <h3 className="team-two__title"><Link href="ekip-detay">Janes Cooper</Link></h3>
                                 <p className="team-two__sub-title">Designer</p>
                                 <div className="team-two__share-and-social">
                                     <div className="team-two__share">
-                                        <Link href="team-details"><span className="icon-share"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                     </div>
                                     <div className="team-two__social">
-                                        <Link href="team-details"><span className="icon-google-plus-logo"></span></Link>
-                                        <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                        <Link href="team-details"><span className="icon-instagram-1"></span></Link>
-                                        <Link href="team-details"><span className="icon-facebook"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -76,17 +76,17 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="team-two__content">
-                                <h3 className="team-two__title"><Link href="team-details">Jonas Blueyar</Link></h3>
+                                <h3 className="team-two__title"><Link href="ekip-detay">Jonas Blueyar</Link></h3>
                                 <p className="team-two__sub-title">Insurance Manager</p>
                                 <div className="team-two__share-and-social">
                                     <div className="team-two__share">
-                                        <Link href="team-details"><span className="icon-share"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                     </div>
                                     <div className="team-two__social">
-                                        <Link href="team-details"><span className="icon-google-plus-logo"></span></Link>
-                                        <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                        <Link href="team-details"><span className="icon-instagram-1"></span></Link>
-                                        <Link href="team-details"><span className="icon-facebook"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                        <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
                                     </div>
                                 </div>
                             </div>

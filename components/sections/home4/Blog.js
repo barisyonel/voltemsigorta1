@@ -29,10 +29,10 @@ export default function Blog() {
                                         <span>August 3, 2023</span>
                                     </div>
                                 </div>
-                                <h3 className="blog-four__title"><Link href="blog-details">Insurance Horizons
+                                <h3 className="blog-four__title"><Link href="blog-detay">Insurance Horizons
                                         Exploring the Offerings</Link></h3>
                                 <div className="blog-four__btn-box">
-                                    <Link href="blog-details" className="blog-four__btn thm-btn">READ MORE</Link>
+                                    <Link href="blog-detay" className="blog-four__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +55,10 @@ export default function Blog() {
                                         <span>August 3, 2023</span>
                                     </div>
                                 </div>
-                                <h3 className="blog-four__title"><Link href="blog-details">Through a unique
+                                <h3 className="blog-four__title"><Link href="blog-detay">Through a unique
                                         construction design</Link></h3>
                                 <div className="blog-four__btn-box">
-                                    <Link href="blog-details" className="blog-four__btn thm-btn">READ MORE</Link>
+                                    <Link href="blog-detay" className="blog-four__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -81,10 +81,10 @@ export default function Blog() {
                                         <span>August 3, 2023</span>
                                     </div>
                                 </div>
-                                <h3 className="blog-four__title"><Link href="blog-details">Amazing Products
+                                <h3 className="blog-four__title"><Link href="blog-detay">Amazing Products
                                         that Protect and reward</Link></h3>
                                 <div className="blog-four__btn-box">
-                                    <Link href="blog-details" className="blog-four__btn thm-btn">READ MORE</Link>
+                                    <Link href="blog-detay" className="blog-four__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>

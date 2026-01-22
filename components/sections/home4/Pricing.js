@@ -18,7 +18,7 @@ export default function Pricing() {
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">SONCHOY PRICING PLANS</p>
+                        <p className="section-title__tagline">VOLDEM SIGORTA TOKAT PRICING PLANS</p>
                     </div>
                     <h2 className="section-title__title">Choose the Best Plans
                         <br/> for Yourself</h2>
@@ -72,7 +72,7 @@ export default function Pricing() {
                                     <p>Up to 10 user + 2.99 per user</p>
                                 </div>
                                 <div className="pricing-one__btn-box">
-                                    <Link href="pricing" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
+                                    <Link href="fiyatlandirma" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ export default function Pricing() {
                                     <p>Up to 10 user + 2.99 per user</p>
                                 </div>
                                 <div className="pricing-one__btn-box">
-                                    <Link href="pricing" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
+                                    <Link href="fiyatlandirma" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ export default function Pricing() {
                                     <p>Up to 10 user + 2.99 per user</p>
                                 </div>
                                 <div className="pricing-one__btn-box">
-                                    <Link href="pricing" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
+                                    <Link href="fiyatlandirma" className="pricing-one__btn thm-btn">SELECT POLICY</Link>
                                 </div>
                             </div>
                         </div>

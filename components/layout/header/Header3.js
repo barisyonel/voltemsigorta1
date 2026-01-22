@@ -24,7 +24,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
                                     <Link href="#" className="main-menu-three__search search-toggler icon-search"  onClick={handlePopup}></Link>
                                 </div>
                                 <div className="main-menu-three__btn-box">
-                                    <Link href="contact" className="main-menu-three__btn thm-btn">GET A QUOTE</Link>
+                                    <Link href="iletisim" className="main-menu-three__btn thm-btn">GET A QUOTE</Link>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
                                         <Link href="#" className="main-menu-three__search search-toggler icon-search"  onClick={handlePopup}></Link>
                                     </div>
                                     <div className="main-menu-three__btn-box">
-                                        <Link href="contact" className="main-menu-three__btn thm-btn">GET A QUOTE</Link>
+                                        <Link href="iletisim" className="main-menu-three__btn thm-btn">GET A QUOTE</Link>
                                     </div>
                                 </div>
                             </div>

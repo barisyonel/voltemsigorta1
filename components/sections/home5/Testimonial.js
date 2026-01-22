@@ -76,7 +76,7 @@ export default function Testimonial() {
                         <p className="section-title__tagline">OUR CLIENT AWESOME RIVEWS</p>
                     </div>
                     <h2 className="section-title__title">What Our Clients Say
-                        <br/> About Sonchoy</h2>
+                        <br/> About Voldem Sigorta Tokat</h2>
                 </div>
                 <div className="testimonial-three__bottom">
                 <Swiper {...swiperOptions} className="testimonial-three__carousel owl-carousel owl-theme thm-owl__carousel">
@@ -102,7 +102,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">Janes
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">Janes
                                             Cooper</Link></h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>
@@ -132,7 +132,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">David
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">David
                                             Cooper</Link></h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>
@@ -162,7 +162,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">Adam Smith</Link>
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">Adam Smith</Link>
                                     </h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>
@@ -192,7 +192,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">Tamanna
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">Tamanna
                                             Vat</Link></h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>
@@ -222,7 +222,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">Alisha
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">Alisha
                                             Martin</Link></h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>
@@ -252,7 +252,7 @@ export default function Testimonial() {
                                     from
                                     operational X is on the</p>
                                 <div className="testimonial-three__client-info">
-                                    <h3 className="testimonial-three__client-name"><Link href="testimonial">Leslie
+                                    <h3 className="testimonial-three__client-name"><Link href="musteri-yorumlari">Leslie
                                             Iban</Link></h3>
                                     <p className="testimonial-three__client-sub-title">Designer</p>
                                 </div>

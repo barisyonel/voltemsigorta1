@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">WHY CHOOSE SONCHOY</p>
+                        <p className="section-title__tagline">WHY CHOOSE VOLDEM SIGORTA TOKAT</p>
                     </div>
                     <h2 className="section-title__title">What Makes Us
                         <br/> Different From Others</h2>
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
                                 <span className="icon-save-money-1"></span>
                             </div>
                             <div className="why-choose-three__content">
-                                <h3><Link href="about">Full Safety Money</Link></h3>
+                                <h3><Link href="hakkimizda">Full Safety Money</Link></h3>
                                 <p>Through a unique coN construction and design dis
                                     nes expertise Concor and delivers</p>
                             </div>
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
                                 <span className=" icon-cashback"></span>
                             </div>
                             <div className="why-choose-three__content">
-                                <h3><Link href="about">Money Back Gurantee</Link></h3>
+                                <h3><Link href="hakkimizda">Money Back Gurantee</Link></h3>
                                 <p>Through a unique coN construction and design dis
                                     nes expertise Concor and delivers</p>
                             </div>
@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
                                 <span className="icon-bar-chart"></span>
                             </div>
                             <div className="why-choose-three__content">
-                                <h3><Link href="about">Fast Processing System</Link></h3>
+                                <h3><Link href="hakkimizda">Fast Processing System</Link></h3>
                                 <p>Through a unique coN construction and design dis
                                     nes expertise Concor and delivers</p>
                             </div>
@@ -73,7 +73,7 @@ export default function WhyChooseUs() {
                                 <span className="icon-save-money-1"></span>
                             </div>
                             <div className="why-choose-three__content">
-                                <h3><Link href="about">Deposite Money</Link></h3>
+                                <h3><Link href="hakkimizda">Deposite Money</Link></h3>
                                 <p>Through a unique coN construction and design dis
                                     nes expertise Concor and delivers</p>
                             </div>

@@ -14,7 +14,7 @@ export default function Cta() {
                         <p>Try it risk free - We don’t charge cancellation fees</p>
                     </div>
                     <div className="cta-one__btn-box">
-                        <Link href="contact" className="cta-one__btn thm-btn">GET YOUR FREE QUOTE NOW</Link>
+                        <Link href="iletisim" className="cta-one__btn thm-btn">GET YOUR FREE QUOTE NOW</Link>
                     </div>
                 </div>
             </div>

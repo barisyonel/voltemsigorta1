@@ -66,7 +66,14 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                 </form>
                             </div>
                             <div className="main-menu__btn-box">
-                                <Link href="contact" className="main-menu__btn thm-btn">TEKLİF AL</Link>
+                                <Link
+                                    href="https://wa.me/905433950213?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum."
+                                    className="main-menu__btn thm-btn"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    TEKLİF AL
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -98,7 +105,14 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                     </form>
                                 </div>
                                 <div className="main-menu__btn-box">
-                                    <Link href="contact" className="main-menu__btn thm-btn">TEKLİF AL</Link>
+                                    <Link
+                                        href="https://wa.me/905433950213?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum."
+                                        className="main-menu__btn thm-btn"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        TEKLİF AL
+                                    </Link>
                                 </div>
                             </div>
                         </div>

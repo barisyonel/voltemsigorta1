@@ -14,8 +14,8 @@ export default function Feature() {
                             </div>
                             <div className="feature-three__content">
                                 <p className="feature-three__sub-title">Insurance Agency</p>
-                                <h3 className="feature-three__title"><Link href="about">First & Reliable</Link></h3>
-                                <Link href="about" className="feature-three__read-more">READ MORE<span
+                                <h3 className="feature-three__title"><Link href="hakkimizda">First & Reliable</Link></h3>
+                                <Link href="hakkimizda" className="feature-three__read-more">READ MORE<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -29,8 +29,8 @@ export default function Feature() {
                             </div>
                             <div className="feature-three__content">
                                 <p className="feature-three__sub-title">Insurance Agency</p>
-                                <h3 className="feature-three__title"><Link href="about">Invest Your Money</Link></h3>
-                                <Link href="about" className="feature-three__read-more">READ MORE<span
+                                <h3 className="feature-three__title"><Link href="hakkimizda">Invest Your Money</Link></h3>
+                                <Link href="hakkimizda" className="feature-three__read-more">READ MORE<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -44,8 +44,8 @@ export default function Feature() {
                             </div>
                             <div className="feature-three__content">
                                 <p className="feature-three__sub-title">Insurance Agency</p>
-                                <h3 className="feature-three__title"><Link href="about">Get Your Quote</Link></h3>
-                                <Link href="about" className="feature-three__read-more">READ MORE<span
+                                <h3 className="feature-three__title"><Link href="hakkimizda">Get Your Quote</Link></h3>
+                                <Link href="hakkimizda" className="feature-three__read-more">READ MORE<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>

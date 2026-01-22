@@ -14,7 +14,7 @@ export default function Cta() {
                             <br/> and Services. Please Contact us !</h3>
                     </div>
                     <div className="cta-two__btn-box">
-                        <Link href="contact" className="cta-two__btn thm-btn">CONTACT US</Link>
+                        <Link href="iletisim" className="cta-two__btn thm-btn">CONTACT US</Link>
                     </div>
                 </div>
             </div>

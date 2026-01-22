@@ -3,8 +3,29 @@ import { useState } from "react"
 
 export default function Quote() {
     const [activeIndex, setActiveIndex] = useState(1)
+    const whatsappNumber = "905433950213"
     const handleOnClick = (index) => {
         setActiveIndex(index)
+    }
+    const handleSubmit = (event, insuranceType) => {
+        event.preventDefault()
+        const formData = new FormData(event.currentTarget)
+        const name = (formData.get("name") || "").toString().trim()
+        const email = (formData.get("email") || "").toString().trim()
+        const phone = (formData.get("phone") || "").toString().trim()
+        const type = (formData.get("insuranceType") || "").toString().trim() || insuranceType
+
+        const messageLines = [
+            "Merhaba, teklif almak istiyorum.",
+            `Sigorta türü: ${type}`,
+            name ? `Ad Soyad: ${name}` : "",
+            phone ? `Telefon: ${phone}` : "",
+            email ? `E-posta: ${email}` : "",
+        ].filter(Boolean)
+
+        const message = encodeURIComponent(messageLines.join("\n"))
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank")
+        event.currentTarget.reset()
     }
     return (
         <>
@@ -32,10 +53,10 @@ export default function Quote() {
                 <img src="assets/images/shapes/get-quote-shape-11.png" alt=""/>
             </div>
             <div className="get-quote__img-1">
-                <img src="assets/images/resources/get-quote-img-1.jpg" alt=""/>
+                <img src="assets/images/yangın.png" alt=""/>
             </div>
             <div className="get-quote__img-2">
-                <img src="assets/images/resources/get-quote-img-2.png" alt=""/>
+                <img src="assets/images/hayat.png" alt=""/>
             </div>
             <div className="container">
                 <div className="get-quote__inner">
@@ -122,7 +143,7 @@ export default function Quote() {
                                         <div className="get-quote__content">
                                             <p className="get-quote__tagline">ÜCRETSİZ TEKLİF ALIN</p>
                                             <h2 className="get-quote__title">Hayat Sigortası</h2>
-                                            <form className="get-quote__form">
+                                            <form className="get-quote__form" onSubmit={(event) => handleSubmit(event, "Hayat Sigortası")}>
                                                 <div className="get-quote__content-box">
                                                     <div className="get-quote__input-box">
                                                         <input type="text" placeholder="Adınız Soyadınız" name="name"/>
@@ -131,46 +152,15 @@ export default function Quote() {
                                                         <input type="email" placeholder="E-posta Adresi" name="email"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Telefon Numarası" name="email"/>
+                                                        <input type="text" placeholder="Telefon Numarası" name="phone"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Sigorta Türü" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="get-quote__progress">
-                                                    <div className="get-quote__progress-single">
-                                                        <h4 className="get-quote__progress-title">Teminat Limiti</h4>
-                                                        <div className="bar">
-                                                            <div className="bar-inner count-bar" data-percent="70%" style={{ width: '70%' }}>
-                                                                <div className="count-text"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="get-quote__balance-box">
-                                                            <p className="get-quote__balance">$65254</p>
-                                                        </div>
+                                                        <input type="text" placeholder="Sigorta Türü" name="insuranceType"/>
                                                     </div>
                                                 </div>
                                                 <div className="get-quote__content-bottom">
-                                                    <button type="submit" className="thm-btn get-quote__btn">TEKLİF
-                                                        AL</button>
-                                                    <div className="get-quote__content-bottom-text-box">
-                                                        <div className="get-quote__count-box">
-                                                            <div className="get-quote__count count-box">
-                                                                <h3 className="count-text" data-stop="212"
-                                                                    data-speed="1500">212
-                                                                </h3>
-                                                                <span>+</span>
-                                                            </div>
-                                                            <p>Yorumlar</p>
-                                                        </div>
-                                                        <div className="get-quote__ratting">
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                        </div>
-                                                    </div>
+                                                    <button type="submit" className="thm-btn get-quote__btn">WHATSAPP'TAN
+                                                        TEKLİF AL</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -180,7 +170,7 @@ export default function Quote() {
                                         <div className="get-quote__content">
                                             <p className="get-quote__tagline">ÜCRETSİZ TEKLİF ALIN</p>
                                             <h2 className="get-quote__title">Araç Sigortası</h2>
-                                            <form className="get-quote__form">
+                                            <form className="get-quote__form" onSubmit={(event) => handleSubmit(event, "Araç Sigortası")}>
                                                 <div className="get-quote__content-box">
                                                     <div className="get-quote__input-box">
                                                         <input type="text" placeholder="Adınız Soyadınız" name="name"/>
@@ -189,46 +179,15 @@ export default function Quote() {
                                                         <input type="email" placeholder="E-posta Adresi" name="email"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Telefon Numarası" name="email"/>
+                                                        <input type="text" placeholder="Telefon Numarası" name="phone"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Sigorta Türü" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="get-quote__progress">
-                                                    <div className="get-quote__progress-single">
-                                                        <h4 className="get-quote__progress-title">Teminat Limiti</h4>
-                                                        <div className="bar">
-                                                            <div className="bar-inner count-bar" data-percent="70%">
-                                                                <div className="count-text"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="get-quote__balance-box">
-                                                            <p className="get-quote__balance">$65254</p>
-                                                        </div>
+                                                        <input type="text" placeholder="Sigorta Türü" name="insuranceType"/>
                                                     </div>
                                                 </div>
                                                 <div className="get-quote__content-bottom">
-                                                    <button type="submit" className="thm-btn get-quote__btn">TEKLİF
-                                                        AL</button>
-                                                    <div className="get-quote__content-bottom-text-box">
-                                                        <div className="get-quote__count-box">
-                                                            <div className="get-quote__count count-box">
-                                                                <h3 className="count-text" data-stop="212"
-                                                                    data-speed="1500">00
-                                                                </h3>
-                                                                <span>+</span>
-                                                            </div>
-                                                            <p>Yorumlar</p>
-                                                        </div>
-                                                        <div className="get-quote__ratting">
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                        </div>
-                                                    </div>
+                                                    <button type="submit" className="thm-btn get-quote__btn">WHATSAPP'TAN
+                                                        TEKLİF AL</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -238,7 +197,7 @@ export default function Quote() {
                                         <div className="get-quote__content">
                                             <p className="get-quote__tagline">ÜCRETSİZ TEKLİF ALIN</p>
                                             <h2 className="get-quote__title">Konut Sigortası</h2>
-                                            <form className="get-quote__form">
+                                            <form className="get-quote__form" onSubmit={(event) => handleSubmit(event, "Konut Sigortası")}>
                                                 <div className="get-quote__content-box">
                                                     <div className="get-quote__input-box">
                                                         <input type="text" placeholder="Adınız Soyadınız" name="name"/>
@@ -247,46 +206,15 @@ export default function Quote() {
                                                         <input type="email" placeholder="E-posta Adresi" name="email"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Telefon Numarası" name="email"/>
+                                                        <input type="text" placeholder="Telefon Numarası" name="phone"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Sigorta Türü" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="get-quote__progress">
-                                                    <div className="get-quote__progress-single">
-                                                        <h4 className="get-quote__progress-title">Teminat Limiti</h4>
-                                                        <div className="bar">
-                                                            <div className="bar-inner count-bar" data-percent="70%">
-                                                                <div className="count-text"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="get-quote__balance-box">
-                                                            <p className="get-quote__balance">$65254</p>
-                                                        </div>
+                                                        <input type="text" placeholder="Sigorta Türü" name="insuranceType"/>
                                                     </div>
                                                 </div>
                                                 <div className="get-quote__content-bottom">
-                                                    <button type="submit" className="thm-btn get-quote__btn">TEKLİF
-                                                        AL</button>
-                                                    <div className="get-quote__content-bottom-text-box">
-                                                        <div className="get-quote__count-box">
-                                                            <div className="get-quote__count count-box">
-                                                                <h3 className="count-text" data-stop="212"
-                                                                    data-speed="1500">00
-                                                                </h3>
-                                                                <span>+</span>
-                                                            </div>
-                                                            <p>Yorumlar</p>
-                                                        </div>
-                                                        <div className="get-quote__ratting">
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                        </div>
-                                                    </div>
+                                                    <button type="submit" className="thm-btn get-quote__btn">WHATSAPP'TAN
+                                                        TEKLİF AL</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -296,7 +224,7 @@ export default function Quote() {
                                         <div className="get-quote__content">
                                             <p className="get-quote__tagline">ÜCRETSİZ TEKLİF ALIN</p>
                                             <h2 className="get-quote__title">İşletme Sigortası</h2>
-                                            <form className="get-quote__form">
+                                            <form className="get-quote__form" onSubmit={(event) => handleSubmit(event, "İşletme Sigortası")}>
                                                 <div className="get-quote__content-box">
                                                     <div className="get-quote__input-box">
                                                         <input type="text" placeholder="Adınız Soyadınız" name="name"/>
@@ -305,46 +233,15 @@ export default function Quote() {
                                                         <input type="email" placeholder="E-posta Adresi" name="email"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Telefon Numarası" name="email"/>
+                                                        <input type="text" placeholder="Telefon Numarası" name="phone"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Sigorta Türü" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="get-quote__progress">
-                                                    <div className="get-quote__progress-single">
-                                                        <h4 className="get-quote__progress-title">Teminat Limiti</h4>
-                                                        <div className="bar">
-                                                            <div className="bar-inner count-bar" data-percent="70%">
-                                                                <div className="count-text"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="get-quote__balance-box">
-                                                            <p className="get-quote__balance">$65254</p>
-                                                        </div>
+                                                        <input type="text" placeholder="Sigorta Türü" name="insuranceType"/>
                                                     </div>
                                                 </div>
                                                 <div className="get-quote__content-bottom">
-                                                    <button type="submit" className="thm-btn get-quote__btn">TEKLİF
-                                                        AL</button>
-                                                    <div className="get-quote__content-bottom-text-box">
-                                                        <div className="get-quote__count-box">
-                                                            <div className="get-quote__count count-box">
-                                                                <h3 className="count-text" data-stop="212"
-                                                                    data-speed="1500">00
-                                                                </h3>
-                                                                <span>+</span>
-                                                            </div>
-                                                            <p>Yorumlar</p>
-                                                        </div>
-                                                        <div className="get-quote__ratting">
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                        </div>
-                                                    </div>
+                                                    <button type="submit" className="thm-btn get-quote__btn">WHATSAPP'TAN
+                                                        TEKLİF AL</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -354,7 +251,7 @@ export default function Quote() {
                                         <div className="get-quote__content">
                                             <p className="get-quote__tagline">ÜCRETSİZ TEKLİF ALIN</p>
                                             <h2 className="get-quote__title">Sağlık Sigortası</h2>
-                                            <form className="get-quote__form">
+                                            <form className="get-quote__form" onSubmit={(event) => handleSubmit(event, "Sağlık Sigortası")}>
                                                 <div className="get-quote__content-box">
                                                     <div className="get-quote__input-box">
                                                         <input type="text" placeholder="Adınız Soyadınız" name="name"/>
@@ -363,46 +260,15 @@ export default function Quote() {
                                                         <input type="email" placeholder="E-posta Adresi" name="email"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Telefon Numarası" name="email"/>
+                                                        <input type="text" placeholder="Telefon Numarası" name="phone"/>
                                                     </div>
                                                     <div className="get-quote__input-box">
-                                                        <input type="email" placeholder="Sigorta Türü" name="email"/>
-                                                    </div>
-                                                </div>
-                                                <div className="get-quote__progress">
-                                                    <div className="get-quote__progress-single">
-                                                        <h4 className="get-quote__progress-title">Teminat Limiti</h4>
-                                                        <div className="bar">
-                                                            <div className="bar-inner count-bar" data-percent="70%">
-                                                                <div className="count-text"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="get-quote__balance-box">
-                                                            <p className="get-quote__balance">$65254</p>
-                                                        </div>
+                                                        <input type="text" placeholder="Sigorta Türü" name="insuranceType"/>
                                                     </div>
                                                 </div>
                                                 <div className="get-quote__content-bottom">
-                                                    <button type="submit" className="thm-btn get-quote__btn">TEKLİF
-                                                        AL</button>
-                                                    <div className="get-quote__content-bottom-text-box">
-                                                        <div className="get-quote__count-box">
-                                                            <div className="get-quote__count count-box">
-                                                                <h3 className="count-text" data-stop="212"
-                                                                    data-speed="1500">00
-                                                                </h3>
-                                                                <span>+</span>
-                                                            </div>
-                                                            <p>Yorumlar</p>
-                                                        </div>
-                                                        <div className="get-quote__ratting">
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                            <span className="icon-star-1"></span>
-                                                        </div>
-                                                    </div>
+                                                    <button type="submit" className="thm-btn get-quote__btn">WHATSAPP'TAN
+                                                        TEKLİF AL</button>
                                                 </div>
                                             </form>
                                         </div>

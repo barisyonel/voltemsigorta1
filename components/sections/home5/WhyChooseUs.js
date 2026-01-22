@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
                         <div className="why-choose-four__right">
                             <div className="section-title text-left">
                                 <div className="section-title__tagline-box">
-                                    <p className="section-title__tagline">WHY CHOOSE SONCHOY</p>
+                                    <p className="section-title__tagline">WHY CHOOSE VOLDEM SIGORTA TOKAT</p>
                                 </div>
                                 <h2 className="section-title__title">What Makes Us
                                     <br/> Different From Others</h2>
@@ -40,27 +40,27 @@ export default function WhyChooseUs() {
                                     <div className="why-choose-four__icon">
                                         <span className="icon-save-money"></span>
                                     </div>
-                                    <h3 className="why-choose-four__title"><Link href="about">Save Your
+                                    <h3 className="why-choose-four__title"><Link href="hakkimizda">Save Your
                                             <br/> Money</Link></h3>
-                                    <Link href="about" className="why-choose-four__arrow"><span
+                                    <Link href="hakkimizda" className="why-choose-four__arrow"><span
                                             className="icon-next"></span></Link>
                                 </li>
                                 <li>
                                     <div className="why-choose-four__icon">
                                         <span className="icon-creation"></span>
                                     </div>
-                                    <h3 className="why-choose-four__title"><Link href="about">Easy & Fast
+                                    <h3 className="why-choose-four__title"><Link href="hakkimizda">Easy & Fast
                                             <br/> Process</Link></h3>
-                                    <Link href="about" className="why-choose-four__arrow"><span
+                                    <Link href="hakkimizda" className="why-choose-four__arrow"><span
                                             className="icon-next"></span></Link>
                                 </li>
                                 <li>
                                     <div className="why-choose-four__icon">
                                         <span className="icon-file-1"></span>
                                     </div>
-                                    <h3 className="why-choose-four__title"><Link href="about">Control Over
+                                    <h3 className="why-choose-four__title"><Link href="hakkimizda">Control Over
                                             <br/> Policy</Link></h3>
-                                    <Link href="about" className="why-choose-four__arrow"><span
+                                    <Link href="hakkimizda" className="why-choose-four__arrow"><span
                                             className="icon-next"></span></Link>
                                 </li>
                             </ul>

@@ -29,7 +29,7 @@ export default function Whychoose() {
                                 <div className="why-choose-two__right">
                                     <div className="section-title text-left">
                                         <div className="section-title__tagline-box">
-                                            <p className="section-title__tagline">WHY CHOOSE SONCHOY</p>
+                                            <p className="section-title__tagline">WHY CHOOSE VOLDEM SIGORTA TOKAT</p>
                                         </div>
                                         <h2 className="section-title__title">What Makes Us
                                             <br/> Different From Others</h2>

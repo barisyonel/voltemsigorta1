@@ -47,7 +47,7 @@ export default function Banner() {
                                 <img src="assets/images/shapes/main-slider-shape-3.png" alt=""/>
                             </div>
                             <div className="main-slider__img">
-                                <img src="1045x820.png" alt=""/>
+                                <img src="/anasayfa.png" alt=""/>
                             </div>
 
                             <div className="container">
@@ -66,7 +66,7 @@ export default function Banner() {
                                     </div>
                                     <div className="main-slider__btn-and-ratting-box">
                                         <div className="main-slider__btn-box">
-                                            <Link href="about" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
+                                            <Link href="hakkimizda" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
                                         </div>
                                         <div className="main-slider__ratting">
                                             <i className="icon-star-1"></i>
@@ -93,7 +93,7 @@ export default function Banner() {
                                 <img src="assets/images/shapes/main-slider-shape-3.png" alt=""/>
                             </div>
                             <div className="main-slider__img">
-                                <img src="1045x820.png" alt=""/>
+                                <img src="/anasayfa.png" alt=""/>
                             </div>
 
                             <div className="container">
@@ -112,7 +112,7 @@ export default function Banner() {
                                     </div>
                                     <div className="main-slider__btn-and-ratting-box">
                                         <div className="main-slider__btn-box">
-                                            <Link href="about" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
+                                            <Link href="hakkimizda" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
                                         </div>
                                         <div className="main-slider__ratting">
                                             <i className="icon-star-1"></i>
@@ -139,7 +139,7 @@ export default function Banner() {
                                 <img src="assets/images/shapes/main-slider-shape-3.png" alt=""/>
                             </div>
                             <div className="main-slider__img">
-                                <img src="1045x820.png" alt=""/>
+                                <img src="/anasayfa.png" alt=""/>
                             </div>
 
                             <div className="container">
@@ -158,7 +158,7 @@ export default function Banner() {
                                     </div>
                                     <div className="main-slider__btn-and-ratting-box">
                                         <div className="main-slider__btn-box">
-                                            <Link href="about" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
+                                            <Link href="hakkimizda" className="main-slider__btn thm-btn">Hemen Başlayın</Link>
                                         </div>
                                         <div className="main-slider__ratting">
                                             <i className="icon-star-1"></i>

@@ -92,7 +92,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-1.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">Ononto Khan</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">Ononto Khan</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>
@@ -116,7 +116,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-2.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">Smith S.R</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">Smith S.R</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>
@@ -140,7 +140,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-3.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">Alisha
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">Alisha
                                             Martin</Link></h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>
@@ -164,7 +164,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-4.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">David Koper</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">David Koper</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>
@@ -188,7 +188,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-5.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">Jecika Brown</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">Jecika Brown</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>
@@ -212,7 +212,7 @@ export default function Testimonial() {
                                     <div className="testimonial-one__client-img">
                                         <img src="assets/images/testimonial/testimonial-1-6.jpg" alt=""/>
                                     </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="testimonial">Harbert
+                                    <h3 className="testimonial-one__client-name"><Link href="musteri-yorumlari">Harbert
                                             Spenser</Link></h3>
                                     <p className="testimonial-one__client-sub-title">Developer</p>
                                 </div>

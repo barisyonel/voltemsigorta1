@@ -10,7 +10,7 @@ export default function Team() {
                                 <p className="section-title__tagline">OUR TEAM MEMBER</p>
                             </div>
                             <h2 className="section-title__title">Our Talented Team
-                                <br/> Member Behind Sonchoy</h2>
+                                <br/> Member Behind Voldem Sigorta Tokat</h2>
                         </div>
                         <div className="row">
                             {/* Team One Single Start */}
@@ -23,17 +23,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-one__content">
                                         <div className="team-one__name-box">
-                                            <h3 className="team-one__name"><Link href="team-details">Saiful Islam</Link></h3>
+                                            <h3 className="team-one__name"><Link href="ekip-detay">Saiful Islam</Link></h3>
                                             <p className="team-one__sub-title">Developer</p>
                                         </div>
                                         <div className="team-one__share-and-social">
                                             <div className="team-one__share">
-                                                <Link href="team-details"><span className="icon-share"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-one__social">
-                                                <Link href="team-details"><span className="icon-linkedin"></span></Link>
-                                                <Link href="team-details"><span className="icon-instagram"></span></Link>
-                                                <Link href="team-details"><span className="icon-facebook-app-symbol"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-linkedin"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-instagram"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-facebook-app-symbol"></span></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -50,17 +50,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-one__content">
                                         <div className="team-one__name-box">
-                                            <h3 className="team-one__name"><Link href="team-details">Janes Cooper</Link></h3>
+                                            <h3 className="team-one__name"><Link href="ekip-detay">Janes Cooper</Link></h3>
                                             <p className="team-one__sub-title">Designer</p>
                                         </div>
                                         <div className="team-one__share-and-social">
                                             <div className="team-one__share">
-                                                <Link href="team-details"><span className="icon-share"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-one__social">
-                                                <Link href="team-details"><span className="icon-linkedin"></span></Link>
-                                                <Link href="team-details"><span className="icon-instagram"></span></Link>
-                                                <Link href="team-details"><span className="icon-facebook-app-symbol"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-linkedin"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-instagram"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-facebook-app-symbol"></span></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -77,17 +77,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-one__content">
                                         <div className="team-one__name-box">
-                                            <h3 className="team-one__name"><Link href="team-details">James Bond</Link></h3>
+                                            <h3 className="team-one__name"><Link href="ekip-detay">James Bond</Link></h3>
                                             <p className="team-one__sub-title">Creator</p>
                                         </div>
                                         <div className="team-one__share-and-social">
                                             <div className="team-one__share">
-                                                <Link href="team-details"><span className="icon-share"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-one__social">
-                                                <Link href="team-details"><span className="icon-linkedin"></span></Link>
-                                                <Link href="team-details"><span className="icon-instagram"></span></Link>
-                                                <Link href="team-details"><span className="icon-facebook-app-symbol"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-linkedin"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-instagram"></span></Link>
+                                                <Link href="ekip-detay"><span className="icon-facebook-app-symbol"></span></Link>
                                             </div>
                                         </div>
                                     </div>

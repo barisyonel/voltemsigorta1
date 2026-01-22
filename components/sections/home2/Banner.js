@@ -66,7 +66,7 @@ export default function Banner() {
                                     </div>
                                 </div>
                                 <div className="main-slider-two__btn-and-call">
-                                    <Link href="about" className="main-slider-two__btn thm-btn">Discover More</Link>
+                                    <Link href="hakkimizda" className="main-slider-two__btn thm-btn">Discover More</Link>
                                     <div className="main-slider-two__call">
                                         <div className="icon">
                                             <span className="icon-phone-1"></span>
@@ -117,7 +117,7 @@ export default function Banner() {
                                     </div>
                                 </div>
                                 <div className="main-slider-two__btn-and-call">
-                                    <Link href="about" className="main-slider-two__btn thm-btn">Discover More</Link>
+                                    <Link href="hakkimizda" className="main-slider-two__btn thm-btn">Discover More</Link>
                                     <div className="main-slider-two__call">
                                         <div className="icon">
                                             <span className="icon-phone-1"></span>
@@ -169,7 +169,7 @@ export default function Banner() {
                                     </div>
                                 </div>
                                 <div className="main-slider-two__btn-and-call">
-                                    <Link href="about" className="main-slider-two__btn thm-btn">Discover More</Link>
+                                    <Link href="hakkimizda" className="main-slider-two__btn thm-btn">Discover More</Link>
                                     <div className="main-slider-two__call">
                                         <div className="icon">
                                             <span className="icon-phone-1"></span>

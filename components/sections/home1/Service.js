@@ -56,6 +56,69 @@ const swiperOptions = {
 }
 
 export default function Service() {
+    const services = [
+        {
+            title: "Trafik Sigortası",
+            href: "arac-sigortasi",
+            image: "assets/images/kasko.png",
+            icon: "icon-car-1",
+        },
+        {
+            title: "Kasko",
+            href: "arac-sigortasi",
+            image: "assets/images/kasko.png",
+            icon: "icon-car-1",
+        },
+        {
+            title: "Tamamlayıcı Sağlık Sigortası",
+            href: "saglik-sigortasi",
+            image: "assets/images/hayat.png",
+            icon: "icon-healthcare",
+        },
+        {
+            title: "Özel Sağlık Sigortası",
+            href: "saglik-sigortasi",
+            image: "assets/images/hayat.png",
+            icon: "icon-healthcare",
+        },
+        {
+            title: "Seyahat Sağlık Sigortası",
+            href: "saglik-sigortasi",
+            image: "assets/images/hayat.png",
+            icon: "icon-healthcare",
+        },
+        {
+            title: "DASK",
+            href: "konut-sigortasi",
+            image: "assets/images/konut.png",
+            icon: "icon-home-security",
+        },
+        {
+            title: "Konut Sigortası",
+            href: "konut-sigortasi",
+            image: "assets/images/konut.png",
+            icon: "icon-home-security",
+        },
+        {
+            title: "İşyeri Sigortası",
+            href: "isyeri-sigortasi",
+            image: "assets/images/yangın.png",
+            icon: "icon-risk-management",
+        },
+        {
+            title: "Ferdi Kaza Sigortası",
+            href: "hayat-sigortasi",
+            image: "assets/images/hayat.png",
+            icon: "icon-family-insurance",
+        },
+        {
+            title: "Nakliyat Sigortası",
+            href: "isyeri-sigortasi",
+            image: "assets/images/yangın.png",
+            icon: "icon-risk-management",
+        },
+    ]
+
     return (
         <>
 
@@ -77,136 +140,28 @@ export default function Service() {
                 </div>
                 <div className="services-one__bottom">
                     <Swiper {...swiperOptions} className="services-one__carousel">
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
+                        {services.map((service) => (
+                            <SwiperSlide className="item" key={service.title}>
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="family-insurance">Aile Sigortası</Link>
+                                        <h3 className="services-one__title">
+                                            <Link href={service.href}>{service.title}</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src="assets/images/hayat.png" alt=""/>
+                                            <img src={service.image} alt={service.title}/>
                                         </div>
                                         <div className="services-one__icon">
-                                            <span className="icon-family-insurance"></span>
+                                            <span className={service.icon}></span>
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="family-insurance">DETAYLAR<span className="icon-next"></span></Link>
+                                        <Link href={service.href}>DETAYLAR<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            {/* Services One Single End */}
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
-                                <div className="services-one__single">
-                                    <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="health-insurance">Sağlık
-                                                Sigortası</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="services-one__img-box">
-                                        <div className="services-one__img">
-                                            <img src="assets/images/tarsim.png" alt=""/>
-                                        </div>
-                                        <div className="services-one__icon">
-                                            <span className="icon-healthcare"></span>
-                                        </div>
-                                    </div>
-                                    <div className="services-one__read-more">
-                                        <Link href="health-insurance">DETAYLAR<span className="icon-next"></span></Link>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* Services One Single End */}
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
-                                <div className="services-one__single">
-                                    <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="business-insurance">İşletme
-                                                Sigortası</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="services-one__img-box">
-                                        <div className="services-one__img">
-                                            <img src="assets/images/yangın.png" alt=""/>
-                                        </div>
-                                        <div className="services-one__icon">
-                                            <span className="icon-risk-management"></span>
-                                        </div>
-                                    </div>
-                                    <div className="services-one__read-more">
-                                        <Link href="business-insurance">DETAYLAR<span className="icon-next"></span></Link>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* Services One Single End */}
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
-                                <div className="services-one__single">
-                                    <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="family-insurance">Aile Sigortası</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="services-one__img-box">
-                                        <div className="services-one__img">
-                                            <img src="assets/images/hayat.png" alt=""/>
-                                        </div>
-                                        <div className="services-one__icon">
-                                            <span className="icon-family-insurance"></span>
-                                        </div>
-                                    </div>
-                                    <div className="services-one__read-more">
-                                        <Link href="family-insurance">DETAYLAR<span className="icon-next"></span></Link>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* Services One Single End */}
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
-                                <div className="services-one__single">
-                                    <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="health-insurance">Sağlık
-                                                Sigortası</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="services-one__img-box">
-                                        <div className="services-one__img">
-                                            <img src="assets/images/tarsim.png" alt=""/>
-                                        </div>
-                                        <div className="services-one__icon">
-                                            <span className="icon-healthcare"></span>
-                                        </div>
-                                    </div>
-                                    <div className="services-one__read-more">
-                                        <Link href="health-insurance">DETAYLAR<span className="icon-next"></span></Link>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* Services One Single End */}
-                            {/* Services One Single Start */}
-                            <SwiperSlide className="item">
-                                <div className="services-one__single">
-                                    <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="business-insurance">İşletme
-                                                Sigortası</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="services-one__img-box">
-                                        <div className="services-one__img">
-                                            <img src="assets/images/yangın.png" alt=""/>
-                                        </div>
-                                        <div className="services-one__icon">
-                                            <span className="icon-risk-management"></span>
-                                        </div>
-                                    </div>
-                                    <div className="services-one__read-more">
-                                        <Link href="business-insurance">DETAYLAR<span className="icon-next"></span></Link>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            {/* Services One Single End */}
+                        ))}
                     </Swiper>
                 </div>
             </div>

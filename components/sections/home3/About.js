@@ -29,7 +29,7 @@ export default function About() {
                         <div className="about-three__right">
                             <div className="section-title text-left">
                                 <div className="section-title__tagline-box">
-                                    <p className="section-title__tagline">KNOW ABOUT SONCHOY</p>
+                                    <p className="section-title__tagline">KNOW ABOUT VOLDEM SIGORTA TOKAT</p>
                                 </div>
                                 <h2 className="section-title__title">Get Insurence Solution
                                     <br/> With Our Experts</h2>
@@ -58,7 +58,7 @@ export default function About() {
                             </div>
                             <div className="about-three__btn-and-client">
                                 <div className="about-three__btn-box">
-                                    <Link href="about" className="about-three__btn thm-btn">Discover More</Link>
+                                    <Link href="hakkimizda" className="about-three__btn thm-btn">Discover More</Link>
                                 </div>
                                 <div className="about-three__client-img">
                                     <img src="assets/images/resources/about-three-client-img.jpg" alt=""/>

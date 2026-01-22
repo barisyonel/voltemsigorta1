@@ -19,30 +19,55 @@ export default function Menu() {
                     <Link href="/">Ana Sayfa</Link>
                 </li>
                 <li>
-                    <Link href="about">Hakkımızda</Link>
+                    <Link href="hakkimizda">Hakkımızda</Link>
                 </li>
                 <li className="dropdown">
-                    <Link href="#">Sigorta</Link>
+                    <Link href="#">Ürünlerimiz</Link>
                     <ul>
-                        <li><Link href="insurance">Sigorta</Link></li>
-                        <li><Link href="life-insurance">Hayat Sigortası</Link></li>
-                        <li><Link href="health-insurance">Sağlık Sigortası</Link></li>
-                        <li><Link href="car-insurance">Araç Sigortası</Link></li>
-                        <li><Link href="home-insurance">Konut Sigortası</Link></li>
-                        <li><Link href="family-insurance">Aile Sigortası</Link></li>
-                        <li><Link href="business-insurance">İşletme Sigortası</Link></li>
+                        <li><Link href="arac-sigortasi">Trafik Sigortası</Link></li>
+                        <li><Link href="arac-sigortasi">Kasko</Link></li>
+                        <li><Link href="saglik-sigortasi">Tamamlayıcı Sağlık Sigortası</Link></li>
+                        <li><Link href="saglik-sigortasi">Özel Sağlık Sigortası</Link></li>
+                        <li><Link href="saglik-sigortasi">Seyahat Sağlık Sigortası</Link></li>
+                        <li><Link href="konut-sigortasi">DASK</Link></li>
+                        <li><Link href="konut-sigortasi">Konut Sigortası</Link></li>
+                        <li><Link href="isyeri-sigortasi">İşyeri Sigortası</Link></li>
+                        <li><Link href="hayat-sigortasi">Ferdi Kaza Sigortası</Link></li>
+                        <li><Link href="isyeri-sigortasi">Nakliyat Sigortası</Link></li>
                     </ul>
                 </li>
                 <li className="dropdown">
-                    <Link href="#">Blog</Link>
+                    <Link href="#">Aracınız</Link>
                     <ul>
-                        <li><Link href="blog">Blog</Link></li>
-                        <li><Link href="blog-sidebar">Blog Kenar Çubuklu</Link></li>
-                        <li><Link href="blog-details">Blog Detayı</Link></li>
+                        <li><Link href="arac-sigortasi">Trafik Sigortası</Link></li>
+                        <li><Link href="arac-sigortasi">Kasko</Link></li>
+                    </ul>
+                </li>
+                <li className="dropdown">
+                    <Link href="#">Sağlığınız</Link>
+                    <ul>
+                        <li><Link href="saglik-sigortasi">Tamamlayıcı Sağlık Sigortası</Link></li>
+                        <li><Link href="saglik-sigortasi">Özel Sağlık Sigortası</Link></li>
+                        <li><Link href="saglik-sigortasi">Seyahat Sağlık Sigortası</Link></li>
+                    </ul>
+                </li>
+                <li className="dropdown">
+                    <Link href="#">Konutunuz</Link>
+                    <ul>
+                        <li><Link href="konut-sigortasi">DASK</Link></li>
+                        <li><Link href="konut-sigortasi">Konut Sigortası</Link></li>
+                        <li><Link href="isyeri-sigortasi">İşyeri Sigortası</Link></li>
+                    </ul>
+                </li>
+                <li className="dropdown">
+                    <Link href="#">Diğer</Link>
+                    <ul>
+                        <li><Link href="hayat-sigortasi">Ferdi Kaza Sigortası</Link></li>
+                        <li><Link href="isyeri-sigortasi">Nakliyat Sigortası</Link></li>
                     </ul>
                 </li>
                 <li>
-                    <Link href="contact">İletişim</Link>
+                    <Link href="iletisim">İletişim</Link>
                 </li>
             </ul>
         </>

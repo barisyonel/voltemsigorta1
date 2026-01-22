@@ -28,12 +28,12 @@ export default function Blog() {
                                         </div>
                                     </div>
                                     <div className="blog-two__content">
-                                        <h3 className="blog-two__title"><Link href="blog-details">Insurance Horizons
+                                        <h3 className="blog-two__title"><Link href="blog-detay">Insurance Horizons
                                                 Exploring the Offerings</Link></h3>
                                         <p className="blog-two__text">Start a fast, free auto insurance qu with Alico. We help you
                                             find any insurance coverages that are right</p>
                                         <div className="blog-two__btn-box">
-                                            <Link href="blog-details" className="blog-two__btn thm-btn">READ MORE</Link>
+                                            <Link href="blog-detay" className="blog-two__btn thm-btn">READ MORE</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -54,12 +54,12 @@ export default function Blog() {
                                         </div>
                                     </div>
                                     <div className="blog-two__content">
-                                        <h3 className="blog-two__title"><Link href="blog-details">insurance coverages that are
+                                        <h3 className="blog-two__title"><Link href="blog-detay">insurance coverages that are
                                                 right</Link></h3>
                                         <p className="blog-two__text">Start a fast, free auto insurance qu with Alico. We help you
                                             find any insurance coverages that are right</p>
                                         <div className="blog-two__btn-box">
-                                            <Link href="blog-details" className="blog-two__btn thm-btn">READ MORE</Link>
+                                            <Link href="blog-detay" className="blog-two__btn thm-btn">READ MORE</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -80,12 +80,12 @@ export default function Blog() {
                                         </div>
                                     </div>
                                     <div className="blog-two__content">
-                                        <h3 className="blog-two__title"><Link href="blog-details">We help you find any
+                                        <h3 className="blog-two__title"><Link href="blog-detay">We help you find any
                                                 Insurance</Link></h3>
                                         <p className="blog-two__text">Start a fast, free auto insurance qu with Alico. We help you
                                             find any insurance coverages that are right</p>
                                         <div className="blog-two__btn-box">
-                                            <Link href="blog-details" className="blog-two__btn thm-btn">READ MORE</Link>
+                                            <Link href="blog-detay" className="blog-two__btn thm-btn">READ MORE</Link>
                                         </div>
                                     </div>
                                 </div>

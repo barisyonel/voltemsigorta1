@@ -44,7 +44,7 @@ export default function About() {
                                 <div className="about-two__right">
                                     <div className="section-title text-left">
                                         <div className="section-title__tagline-box">
-                                            <p className="section-title__tagline">KNOW ABOUT SONCHOY</p>
+                                            <p className="section-title__tagline">KNOW ABOUT VOLDEM SIGORTA TOKAT</p>
                                         </div>
                                         <h2 className="section-title__title">Choose Your Insurance
                                             <br/> Service Company</h2>
@@ -72,7 +72,7 @@ export default function About() {
                                         esse cillum dolore eu nulla pariatur. </h3>
                                     <div className="about-two__btn-and-contact">
                                         <div className="about-two__btn-box">
-                                            <Link href="about" className="about-two__btn thm-btn">Discover More</Link>
+                                            <Link href="hakkimizda" className="about-two__btn thm-btn">Discover More</Link>
                                         </div>
                                         <div className="about-two__contact">
                                             <div className="icon">

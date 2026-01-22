@@ -26,7 +26,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
-                                    <h3 className="portfolio-three__title"><Link href="portfolio-details">Digital
+                                    <h3 className="portfolio-three__title"><Link href="proje-detay">Digital
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
@@ -46,7 +46,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
-                                    <h3 className="portfolio-three__title"><Link href="portfolio-details">Annual
+                                    <h3 className="portfolio-three__title"><Link href="proje-detay">Annual
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
@@ -66,7 +66,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
-                                    <h3 className="portfolio-three__title"><Link href="portfolio-details">Digital
+                                    <h3 className="portfolio-three__title"><Link href="proje-detay">Digital
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
@@ -86,7 +86,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
-                                    <h3 className="portfolio-three__title"><Link href="portfolio-details">Digital
+                                    <h3 className="portfolio-three__title"><Link href="proje-detay">Digital
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">

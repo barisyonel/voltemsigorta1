@@ -75,7 +75,7 @@ export default function Team() {
                             <p className="section-title__tagline">OUR TEAM MEMBER</p>
                         </div>
                         <h2 className="section-title__title">Our Talented Team
-                            <br/> Member Behind Sonchoy</h2>
+                            <br/> Member Behind Voldem Sigorta Tokat</h2>
                     </div>
                     <div className="team-three__btn-box">
                         <Link href="#" className="team-three__btn thm-btn">JOIN OUR TEAM</Link>
@@ -92,17 +92,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Annete Black</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Annete Black</Link></h3>
                                     <p>Engineer</p>
                                 </div>
                             </div>
@@ -117,17 +117,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Anannya Wifey</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Anannya Wifey</Link></h3>
                                     <p>Developer</p>
                                 </div>
                             </div>
@@ -142,17 +142,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Shamim Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Shamim Khan</Link></h3>
                                     <p>Co Founder</p>
                                 </div>
                             </div>
@@ -167,17 +167,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Ananta Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Ananta Khan</Link></h3>
                                     <p>Designer</p>
                                 </div>
                             </div>
@@ -192,17 +192,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Annete Black</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Annete Black</Link></h3>
                                     <p>Engineer</p>
                                 </div>
                             </div>
@@ -217,17 +217,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Anannya Wifey</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Anannya Wifey</Link></h3>
                                     <p>Developer</p>
                                 </div>
                             </div>
@@ -242,17 +242,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Shamim Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Shamim Khan</Link></h3>
                                     <p>Co Founder</p>
                                 </div>
                             </div>
@@ -267,17 +267,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Ananta Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Ananta Khan</Link></h3>
                                     <p>Designer</p>
                                 </div>
                             </div>
@@ -292,17 +292,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Annete Black</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Annete Black</Link></h3>
                                     <p>Engineer</p>
                                 </div>
                             </div>
@@ -317,17 +317,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Anannya Wifey</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Anannya Wifey</Link></h3>
                                     <p>Developer</p>
                                 </div>
                             </div>
@@ -342,17 +342,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Shamim Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Shamim Khan</Link></h3>
                                     <p>Co Founder</p>
                                 </div>
                             </div>
@@ -367,17 +367,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Ananta Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Ananta Khan</Link></h3>
                                     <p>Designer</p>
                                 </div>
                             </div>
@@ -392,17 +392,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Annete Black</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Annete Black</Link></h3>
                                     <p>Engineer</p>
                                 </div>
                             </div>
@@ -417,17 +417,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Anannya Wifey</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Anannya Wifey</Link></h3>
                                     <p>Developer</p>
                                 </div>
                             </div>
@@ -442,17 +442,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Shamim Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Shamim Khan</Link></h3>
                                     <p>Co Founder</p>
                                 </div>
                             </div>
@@ -467,17 +467,17 @@ export default function Team() {
                                     </div>
                                     <div className="team-three__social-and-share">
                                         <div className="team-three__share">
-                                            <Link href="team-details"><span className="icon-share"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-share"></span></Link>
                                         </div>
                                         <div className="team-three__social">
-                                            <Link href="team-details"><span className="icon-facebook"></span></Link>
-                                            <Link href="team-details"><span className="icon-vimeo"></span></Link>
-                                            <Link href="team-details"><span className="icon-twitter-1"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
+                                            <Link href="ekip-detay"><span className="icon-twitter-1"></span></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="team-three__content">
-                                    <h3 className="team-three__title"><Link href="team-details">Ananta Khan</Link></h3>
+                                    <h3 className="team-three__title"><Link href="ekip-detay">Ananta Khan</Link></h3>
                                     <p>Designer</p>
                                 </div>
                             </div>

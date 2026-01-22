@@ -15,7 +15,7 @@ export default function Footer4() {
                             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__column footer-widget__about">
                                     <div className="footer-widget__logo">
-                                        <Link href="index"><img src="assets/images/resources/footer-logo-4.png"
+                                        <Link href="/"><img src="assets/images/resources/footer-logo-4.png"
                                                 alt=""/></Link>
                                     </div>
                                     <p className="footer-widget__about-text">Address 301 Princes Street, Ei className
@@ -38,16 +38,16 @@ export default function Footer4() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="index">Home</Link>
+                                            <Link href="/">Home</Link>
                                         </li>
                                         <li>
-                                            <Link href="about">About Us</Link>
+                                            <Link href="hakkimizda">About Us</Link>
                                         </li>
                                         <li>
-                                            <Link href="insurance">Services</Link>
+                                            <Link href="sigorta">Services</Link>
                                         </li>
                                         <li>
-                                            <Link href="contact">Contact Us</Link>
+                                            <Link href="iletisim">Contact Us</Link>
                                         </li>
                                         <li>
                                             <Link href="blog">Our Blog</Link>
@@ -62,16 +62,16 @@ export default function Footer4() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="about">Help</Link>
+                                            <Link href="hakkimizda">Help</Link>
                                         </li>
                                         <li>
-                                            <Link href="contact">Support</Link>
+                                            <Link href="iletisim">Support</Link>
                                         </li>
                                         <li>
-                                            <Link href="testimonial">Clients</Link>
+                                            <Link href="musteri-yorumlari">Clients</Link>
                                         </li>
                                         <li>
-                                            <Link href="portfolio">Portfolio</Link>
+                                            <Link href="projeler">Portfolio</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -128,7 +128,7 @@ export default function Footer4() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">Copyright © 2024 Sonchoy by <Link href="#">thememx.</Link> All
+                        <p className="site-footer__bottom-text">Copyright © 2024 Voldem Sigorta Tokat by <Link href="#">thememx.</Link> All
                             Rights Reserved</p>
                     </div>
                 </div>

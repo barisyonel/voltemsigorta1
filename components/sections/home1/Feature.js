@@ -18,10 +18,13 @@ export default function Feature() {
                             <div className="feature-one__icon">
                                 <span className="icon-protection"></span>
                             </div>
+                            <div className="feature-one__media">
+                                <img src="assets/images/kasko.png" alt="Trafik ve Kasko"/>
+                            </div>
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Sigorta Acentesi</p>
-                                <h3 className="feature-one__title"><Link href="about">Önce Güven</Link></h3>
-                                <Link href="about" className="feature-one__read-more">DETAYLAR<span
+                                <h3 className="feature-one__title"><Link href="hakkimizda">Önce Güven</Link></h3>
+                                <Link href="hakkimizda" className="feature-one__read-more">DETAYLAR<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -36,10 +39,13 @@ export default function Feature() {
                             <div className="feature-one__icon">
                                 <span className="icon-investment"></span>
                             </div>
+                            <div className="feature-one__media">
+                                <img src="assets/images/konut.png" alt="Konut ve DASK"/>
+                            </div>
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Sigorta Acentesi</p>
-                                <h3 className="feature-one__title"><Link href="about">Birikiminizi Koruyun</Link></h3>
-                                <Link href="about" className="feature-one__read-more">DETAYLAR<span
+                                <h3 className="feature-one__title"><Link href="hakkimizda">Birikiminizi Koruyun</Link></h3>
+                                <Link href="hakkimizda" className="feature-one__read-more">DETAYLAR<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>
@@ -54,10 +60,13 @@ export default function Feature() {
                             <div className="feature-one__icon">
                                 <span className="icon-risk-management"></span>
                             </div>
+                            <div className="feature-one__media">
+                                <img src="assets/images/hayat.png" alt="Sağlık ve Hayat"/>
+                            </div>
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Sigorta Acentesi</p>
-                                <h3 className="feature-one__title"><Link href="about">Sigortanızı Hemen Başlatın</Link></h3>
-                                <Link href="about" className="feature-one__read-more">DETAYLAR<span
+                                <h3 className="feature-one__title"><Link href="hakkimizda">Sigortanızı Hemen Başlatın</Link></h3>
+                                <Link href="hakkimizda" className="feature-one__read-more">DETAYLAR<span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>

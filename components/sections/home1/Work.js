@@ -35,7 +35,10 @@ export default function Work() {
                                             <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
                                         </div>
                                     </div>
-                                    <h3 className="work-step-one__title"><Link href="about">Sigortanı Seç</Link></h3>
+                                    <div className="work-step-one__thumb">
+                                        <img src="assets/images/kasko.png" alt="Araç Sigortası"/>
+                                    </div>
+                                    <h3 className="work-step-one__title"><Link href="hakkimizda">Sigortanı Seç</Link></h3>
                                 </div>
                             </div>
                             {/* Work Stpe One Single End */}
@@ -57,7 +60,10 @@ export default function Work() {
                                             <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
                                         </div>
                                     </div>
-                                    <h3 className="work-step-one__title"><Link href="about">Görüşme Planla</Link></h3>
+                                    <div className="work-step-one__thumb">
+                                        <img src="assets/images/konut.png" alt="Konut Sigortası"/>
+                                    </div>
+                                    <h3 className="work-step-one__title"><Link href="hakkimizda">Görüşme Planla</Link></h3>
                                 </div>
                             </div>
                             {/* Work Stpe One Single End */}
@@ -79,7 +85,10 @@ export default function Work() {
                                             <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
                                         </div>
                                     </div>
-                                    <h3 className="work-step-one__title"><Link href="about">Çözümünü Al</Link></h3>
+                                    <div className="work-step-one__thumb">
+                                        <img src="assets/images/tarsim.png" alt="TARSİM Sigortası"/>
+                                    </div>
+                                    <h3 className="work-step-one__title"><Link href="hakkimizda">Çözümünü Al</Link></h3>
                                 </div>
                             </div>
                             {/* Work Stpe One Single End */}
@@ -101,7 +110,10 @@ export default function Work() {
                                             <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
                                         </div>
                                     </div>
-                                    <h3 className="work-step-one__title"><Link href="about">Poliçeni Başlat</Link></h3>
+                                    <div className="work-step-one__thumb">
+                                        <img src="assets/images/hayat.png" alt="Sağlık Sigortası"/>
+                                    </div>
+                                    <h3 className="work-step-one__title"><Link href="hakkimizda">Poliçeni Başlat</Link></h3>
                                 </div>
                             </div>
                             {/* Work Stpe One Single End */}

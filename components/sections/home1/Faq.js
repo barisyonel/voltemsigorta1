@@ -32,9 +32,9 @@ export default function Faq() {
                                         <img src="assets/images/shapes/faq-one-shape-1.png" alt=""/>
                                     </div>
                                     <div className="faq-one__img-box">
-                                        <div className="faq-one__img">
-                                            <img src="assets/images/resources/faq-one-img-1.png" alt=""/>
-                                        </div>
+                                    <div className="faq-one__img">
+                                        <img src="assets/images/konut.png" alt=""/>
+                                    </div>
                                         <div className="faq-one__quick-box">
                                             <div className="faq-one__quick-icon">
                                                 <span className="icon-check"></span>

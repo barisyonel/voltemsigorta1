@@ -81,7 +81,7 @@ export default function Banner() {
                                                 Smart Way <br/>
                                                 Insurance Agency</h2>
                                             <div className="main-slider-five__btn-and-text-box">
-                                                <Link href="contact" className="main-slider-five__btn thm-btn">LET’S GET
+                                                <Link href="iletisim" className="main-slider-five__btn thm-btn">LET’S GET
                                                     STARTED</Link>
                                                 <p className="main-slider-five__text-box"> <span>$1000k</span> Up Coverage
                                                 </p>
@@ -107,7 +107,7 @@ export default function Banner() {
                                                 Smart Way <br/>
                                                 Insurance Agency</h2>
                                             <div className="main-slider-five__btn-and-text-box">
-                                                <Link href="contact" className="main-slider-five__btn thm-btn">LET’S GET
+                                                <Link href="iletisim" className="main-slider-five__btn thm-btn">LET’S GET
                                                     STARTED</Link>
                                                 <p className="main-slider-five__text-box"> <span>$1000k</span> Up Coverage
                                                 </p>
@@ -133,7 +133,7 @@ export default function Banner() {
                                                 Smart Way <br/>
                                                 Insurance Agency</h2>
                                             <div className="main-slider-five__btn-and-text-box">
-                                                <Link href="contact" className="main-slider-five__btn thm-btn">LET’S GET
+                                                <Link href="iletisim" className="main-slider-five__btn thm-btn">LET’S GET
                                                     STARTED</Link>
                                                 <p className="main-slider-five__text-box"> <span>$1000k</span> Up Coverage
                                                 </p>

@@ -59,8 +59,8 @@ export default function Banner() {
                                 Secure your Future.
                             </h2>
                             <div className="main-slider-four__btn-box">
-                                <Link href="about" className="main-slider-four__btn thm-btn">get started</Link>
-                                <Link href="contact" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
+                                <Link href="hakkimizda" className="main-slider-four__btn thm-btn">get started</Link>
+                                <Link href="iletisim" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
                             </div>
                         </div>
                     </div>
@@ -86,8 +86,8 @@ export default function Banner() {
                                 Secure your Future.
                             </h2>
                             <div className="main-slider-four__btn-box">
-                                <Link href="about" className="main-slider-four__btn thm-btn">get started</Link>
-                                <Link href="contact" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
+                                <Link href="hakkimizda" className="main-slider-four__btn thm-btn">get started</Link>
+                                <Link href="iletisim" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
                             </div>
                         </div>
                     </div>
@@ -113,8 +113,8 @@ export default function Banner() {
                                 Secure your Future.
                             </h2>
                             <div className="main-slider-four__btn-box">
-                                <Link href="about" className="main-slider-four__btn thm-btn">get started</Link>
-                                <Link href="contact" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
+                                <Link href="hakkimizda" className="main-slider-four__btn thm-btn">get started</Link>
+                                <Link href="iletisim" className="main-slider-four__btn-2 thm-btn">CONTACT US</Link>
                             </div>
                         </div>
                     </div>

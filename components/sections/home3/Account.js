@@ -57,7 +57,7 @@ export default function Account() {
                                 </li>
                             </ul>
                             <div className="open-account__btn-box">
-                                <Link href="contact" className="open-account__btn thm-btn">open an account</Link>
+                                <Link href="iletisim" className="open-account__btn thm-btn">open an account</Link>
                             </div>
                         </div>
                     </div>

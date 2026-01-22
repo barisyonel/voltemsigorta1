@@ -59,7 +59,7 @@ export default function Banner() {
                                         <p className="main-slider-three__text">Phasellus placerat, ante sit amet sodales fermentum <br/>
                                             urus lectus aliquam eros, elementum blandit</p>
                                         <div className="main-slider-three__btn-and-text-box">
-                                            <Link href="about" className="main-slider-three__btn thm-btn">get started</Link>
+                                            <Link href="hakkimizda" className="main-slider-three__btn thm-btn">get started</Link>
                                             <p className="main-slider-three__text-box"> <span>$1000k</span> Up Coverage</p>
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@ export default function Banner() {
                                         <p className="main-slider-three__text">Phasellus placerat, ante sit amet sodales fermentum <br/>
                                             urus lectus aliquam eros, elementum blandit</p>
                                         <div className="main-slider-three__btn-and-text-box">
-                                            <Link href="about" className="main-slider-three__btn thm-btn">get started</Link>
+                                            <Link href="hakkimizda" className="main-slider-three__btn thm-btn">get started</Link>
                                             <p className="main-slider-three__text-box"> <span>$1000k</span> Up Coverage</p>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@ export default function Banner() {
                                         <p className="main-slider-three__text">Phasellus placerat, ante sit amet sodales fermentum <br/>
                                             urus lectus aliquam eros, elementum blandit</p>
                                         <div className="main-slider-three__btn-and-text-box">
-                                            <Link href="about" className="main-slider-three__btn thm-btn">get started</Link>
+                                            <Link href="hakkimizda" className="main-slider-three__btn thm-btn">get started</Link>
                                             <p className="main-slider-three__text-box"> <span>$1000k</span> Up Coverage</p>
                                         </div>
                                     </div>

@@ -26,17 +26,17 @@ export default function Services() {
                                     <div className="services-four__icon">
                                         <span className="icon-healthcare"></span>
                                     </div>
-                                    <h3 className="services-four__title"><Link href="health-insurance">Health
+                                    <h3 className="services-four__title"><Link href="saglik-sigortasi">Health
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="services-four__arrow">
-                                    <Link href="health-insurance"><span className="icon-next"></span></Link>
+                                    <Link href="saglik-sigortasi"><span className="icon-next"></span></Link>
                                 </div>
                                 <div className="services-four__hover-content">
                                     <div className="services-four__hover-icon">
                                         <span className="icon-healthcare"></span>
                                     </div>
-                                    <h3 className="services-four__hover-title"><Link href="health-insurance">Health
+                                    <h3 className="services-four__hover-title"><Link href="saglik-sigortasi">Health
                                             Insurance</Link></h3>
                                     <p className="services-four__hover-text">Arki features minimal and stylish
                                         theme is well crafted for</p>
@@ -56,17 +56,17 @@ export default function Services() {
                                     <div className="services-four__icon">
                                         <span className="icon-family-insurance"></span>
                                     </div>
-                                    <h3 className="services-four__title"><Link href="family-insurance">Family
+                                    <h3 className="services-four__title"><Link href="aile-sigortasi">Family
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="services-four__arrow">
-                                    <Link href="family-insurance"><span className="icon-next"></span></Link>
+                                    <Link href="aile-sigortasi"><span className="icon-next"></span></Link>
                                 </div>
                                 <div className="services-four__hover-content">
                                     <div className="services-four__hover-icon">
                                         <span className="icon-family-insurance"></span>
                                     </div>
-                                    <h3 className="services-four__hover-title"><Link href="family-insurance">Family
+                                    <h3 className="services-four__hover-title"><Link href="aile-sigortasi">Family
                                             Insurance</Link></h3>
                                     <p className="services-four__hover-text">Arki features minimal and stylish
                                         theme is well crafted for</p>
@@ -86,17 +86,17 @@ export default function Services() {
                                     <div className="services-four__icon">
                                         <span className="icon-wallet"></span>
                                     </div>
-                                    <h3 className="services-four__title"><Link href="business-insurance">Business
+                                    <h3 className="services-four__title"><Link href="isyeri-sigortasi">Business
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="services-four__arrow">
-                                    <Link href="business-insurance"><span className="icon-next"></span></Link>
+                                    <Link href="isyeri-sigortasi"><span className="icon-next"></span></Link>
                                 </div>
                                 <div className="services-four__hover-content">
                                     <div className="services-four__hover-icon">
                                         <span className="icon-wallet"></span>
                                     </div>
-                                    <h3 className="services-four__hover-title"><Link href="business-insurance">Business
+                                    <h3 className="services-four__hover-title"><Link href="isyeri-sigortasi">Business
                                             Insurance</Link></h3>
                                     <p className="services-four__hover-text">Arki features minimal and stylish
                                         theme is well crafted for</p>

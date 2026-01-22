@@ -12,10 +12,10 @@ export default function WhyChooseUs() {
                         <div className="why-choose-one__left">
                             <div className="why-choose-one__img-box">
                                 <div className="why-choose-one__img">
-                                    <img src="assets/images/resources/why-choose-one-img-1.jpg" alt=""/>
+                                    <img src="/anasayfa2.jpg" alt=""/>
                                 </div>
                                 <div className="why-choose-one__img-2">
-                                    <img src="assets/images/resources/why-choose-one-img-2.jpg" alt=""/>
+                                    <img src="assets/images/konut.png" alt=""/>
                                     <div className="why-choose-one__experience-box">
                                         <div className="why-choose-one__count count-box">
                                             <h3 className="count-text">24</h3>
@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
                                     </div>
                                 </div>
                                 <div className="why-choose-one__img-3">
-                                    <img src="assets/images/resources/why-choose-one-img-3.jpg" alt=""/>
+                                    <img src="assets/images/kasko.png" alt=""/>
                                 </div>
                             </div>
                         </div>

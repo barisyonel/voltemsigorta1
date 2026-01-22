@@ -18,7 +18,7 @@ export default function Blog() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-1.jpg" alt=""/>
+                                    <img src="/anasayfa3.jpg" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-one__content">
@@ -26,7 +26,7 @@ export default function Blog() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Seyahat Sigortasında
+                                <h3 className="blog-one__title"><Link href="blog-detay">Seyahat Sigortasında
                                         Doğru Teminatı Seçmek</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -46,7 +46,7 @@ export default function Blog() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-2.jpg" alt=""/>
+                                    <img src="/anasayfa4..jpg" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-one__content">
@@ -54,7 +54,7 @@ export default function Blog() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Sigorta Ufukları:
+                                <h3 className="blog-one__title"><Link href="blog-detay">Sigorta Ufukları:
                                         Sunulan Teminatlar</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">
@@ -74,7 +74,7 @@ export default function Blog() {
                         <div className="blog-one__single">
                             <div className="blog-one__img-box">
                                 <div className="blog-one__img">
-                                    <img src="assets/images/blog/blog-1-3.jpg" alt=""/>
+                                    <img src="/anasayfa1.png" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-one__content">
@@ -82,7 +82,7 @@ export default function Blog() {
                                     <span>Sigorta</span>
                                     <span>Acentesi</span>
                                 </div>
-                                <h3 className="blog-one__title"><Link href="blog-details">Geleceği Güvenceye Almak:
+                                <h3 className="blog-one__title"><Link href="blog-detay">Geleceği Güvenceye Almak:
                                         Voldem Sigorta Yaklaşımı</Link></h3>
                                 <div className="blog-one__client-info">
                                     <div className="blog-one__client-img">

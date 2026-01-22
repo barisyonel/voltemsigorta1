@@ -11,7 +11,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
                     <div className="main-header-four__top-inner">
                         <div className="main-header-four__top-left">
                             <div className="main-header-four__logo">
-                                <Link href="index"><img src="assets/images/resources/logo-4.png" alt=""/></Link>
+                                <Link href="/"><img src="assets/images/resources/logo-4.png" alt=""/></Link>
                             </div>
                             <div className="main-header-four__search-box">
                                 <form action="#" className="main-header-four__search-form">
@@ -24,7 +24,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
                             <li>
                                 <div className="text">
                                     <span>email</span>
-                                    <p><Link href="mailto:sonchoy@gmail.com">sonchoy@gmail.com</Link></p>
+                                    <p><Link href="mailto:info@tokatsigorta.com">info@tokatsigorta.com</Link></p>
                                 </div>
                             </li>
                             <li>
@@ -52,7 +52,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
                                     <Link href="#"><span className="icon-cart"></span></Link>
                                 </div>
                                 <div className="main-menu-four__btn-box">
-                                    <Link href="contact" className="main-menu-four__btn thm-btn">GET A QUOTE</Link>
+                                    <Link href="iletisim" className="main-menu-four__btn thm-btn">GET A QUOTE</Link>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
                                         <Link href="#"><span className="icon-cart"></span></Link>
                                     </div>
                                     <div className="main-menu-four__btn-box">
-                                        <Link href="contact" className="main-menu-four__btn thm-btn">GET A QUOTE</Link>
+                                        <Link href="iletisim" className="main-menu-four__btn thm-btn">GET A QUOTE</Link>
                                     </div>
                                 </div>
                             </div>

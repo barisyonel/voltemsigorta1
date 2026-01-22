@@ -78,7 +78,7 @@ export default function About() {
                             </ul>
                             <div className="about-five__btn-and-author">
                                 <div className="about-five__btn-box">
-                                    <Link href="about" className="about-five__btn thm-btn">Discover More</Link>
+                                    <Link href="hakkimizda" className="about-five__btn thm-btn">Discover More</Link>
                                 </div>
                                 <div className="about-five__author-img">
                                     <img src="assets/images/resources/about-five-author-img.jpg" alt=""/>

@@ -79,7 +79,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Health
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Health
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -104,7 +104,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Insurance
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Insurance
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -129,7 +129,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Travels
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Travels
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -154,7 +154,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Life
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Life
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -179,7 +179,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Insurance
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Insurance
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -204,7 +204,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Travels
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Travels
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">
@@ -229,7 +229,7 @@ export default function Portfolio() {
                                             </div>
                                             <div className="portfolio-one__title-box">
                                                 <p className="portfolio-one__sub-title">San Fransisco</p>
-                                                <h3 className="portfolio-one__title"><Link href="portfolio-details">Life
+                                                <h3 className="portfolio-one__title"><Link href="proje-detay">Life
                                                         Analytics</Link></h3>
                                             </div>
                                             <div className="portfolio-one__arrow">

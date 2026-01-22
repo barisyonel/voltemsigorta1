@@ -101,7 +101,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -141,7 +141,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,7 +161,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,7 +181,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ export default function Portfolio() {
                                             <div className="portfolio-two__box-content-inner">
                                                 <div className="portfolio-two__box-content-inner-wrapper">
                                                     <p>San Fransisco </p>
-                                                    <h4><Link href="portfolio-details">Insurance Analytics</Link></h4>
+                                                    <h4><Link href="proje-detay">Insurance Analytics</Link></h4>
                                                 </div>
                                             </div>
                                         </div>

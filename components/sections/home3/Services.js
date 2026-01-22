@@ -15,7 +15,7 @@ export default function Services() {
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">SONCHOY POPULAR SERVICE</p>
+                        <p className="section-title__tagline">VOLDEM SIGORTA TOKAT POPULAR SERVICE</p>
                     </div>
                     <h2 className="section-title__title">The fields on Which We have
                         <br/> Given Our Servies</h2>
@@ -36,12 +36,12 @@ export default function Services() {
                                 </div>
                             </div>
                             <div className="services-three__content">
-                                <h3 className="services-three__title"><Link href="life-insurance">Life Insurance</Link>
+                                <h3 className="services-three__title"><Link href="hayat-sigortasi">Life Insurance</Link>
                                 </h3>
                                 <p className="services-three__text">Nullam eu nibh vitae est tempo
                                     molestie id sed ex. Quisque</p>
                                 <div className="services-three__btn-box">
-                                    <Link href="life-insurance" className="services-three__btn thm-btn">READ MORE</Link>
+                                    <Link href="hayat-sigortasi" className="services-three__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -62,12 +62,12 @@ export default function Services() {
                                 </div>
                             </div>
                             <div className="services-three__content">
-                                <h3 className="services-three__title"><Link href="home-insurance">Home Insurance</Link>
+                                <h3 className="services-three__title"><Link href="konut-sigortasi">Home Insurance</Link>
                                 </h3>
                                 <p className="services-three__text">Nullam eu nibh vitae est tempo
                                     molestie id sed ex. Quisque</p>
                                 <div className="services-three__btn-box">
-                                    <Link href="home-insurance" className="services-three__btn thm-btn">READ MORE</Link>
+                                    <Link href="konut-sigortasi" className="services-three__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -88,12 +88,12 @@ export default function Services() {
                                 </div>
                             </div>
                             <div className="services-three__content">
-                                <h3 className="services-three__title"><Link href="health-insurance">Medical Insurance</Link>
+                                <h3 className="services-three__title"><Link href="saglik-sigortasi">Medical Insurance</Link>
                                 </h3>
                                 <p className="services-three__text">Nullam eu nibh vitae est tempo
                                     molestie id sed ex. Quisque</p>
                                 <div className="services-three__btn-box">
-                                    <Link href="health-insurance" className="services-three__btn thm-btn">READ MORE</Link>
+                                    <Link href="saglik-sigortasi" className="services-three__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
@@ -114,12 +114,12 @@ export default function Services() {
                                 </div>
                             </div>
                             <div className="services-three__content">
-                                <h3 className="services-three__title"><Link href="car-insurance">Car Insurance</Link>
+                                <h3 className="services-three__title"><Link href="arac-sigortasi">Car Insurance</Link>
                                 </h3>
                                 <p className="services-three__text">Nullam eu nibh vitae est tempo
                                     molestie id sed ex. Quisque</p>
                                 <div className="services-three__btn-box">
-                                    <Link href="car-insurance" className="services-three__btn thm-btn">READ MORE</Link>
+                                    <Link href="arac-sigortasi" className="services-three__btn thm-btn">READ MORE</Link>
                                 </div>
                             </div>
                         </div>
