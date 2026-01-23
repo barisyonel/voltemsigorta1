@@ -1,0 +1,16 @@
+{
+  "name": "Voldem Sigorta Tokat",
+  "short_name": "Voldem Sigorta",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2f61",
+  "icons": [
+    {
+      "src": "/logo.jpeg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
