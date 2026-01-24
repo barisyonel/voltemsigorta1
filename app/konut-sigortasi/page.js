@@ -22,7 +22,12 @@ export default function Home() {
     }
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Konut Sigortası">
+        <Layout
+            headerStyle={1}
+            footerStyle={1}
+            breadcrumbTitle="Konut Sigortası"
+            breadcrumbImage="/assets/images/konutt.png"
+        >
         {/* Insurance Details Start */}
         <section className="insurance-details">
             <div className="container">
@@ -138,7 +143,7 @@ export default function Home() {
                                         <Link href="konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="aile-sigortasi">DASK Sigortası<span
+                                        <Link href="dask-sigortasi">DASK Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>

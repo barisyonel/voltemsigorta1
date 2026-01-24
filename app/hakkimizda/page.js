@@ -32,16 +32,16 @@ export default function About() {
                 <section className="about-three about-six">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xl-5">
+                            <div className="col-xl-6">
                                 <div className="about-three__left">
                                     <div className="about-three__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                                        <div className="about-three__img">
-                                            <img src="/1045x820.png" alt="Voldem Sigorta Tokat"/>
-                                        </div>
+                                    <div className="about-three__img">
+                                        <img src="/sigorta.jpg" alt="Voldem Sigorta Tokat"/>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-7">
+                            <div className="col-xl-6">
                                 <div className="about-three__right">
                                     <div className="section-title text-left">
                                         <div className="section-title__tagline-box">

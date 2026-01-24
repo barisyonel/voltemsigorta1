@@ -56,17 +56,17 @@ export default function Services() {
                                     <div className="services-four__icon">
                                         <span className="icon-family-insurance"></span>
                                     </div>
-                                    <h3 className="services-four__title"><Link href="aile-sigortasi">Family
+                                    <h3 className="services-four__title"><Link href="dask-sigortasi">Family
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="services-four__arrow">
-                                    <Link href="aile-sigortasi"><span className="icon-next"></span></Link>
+                                    <Link href="dask-sigortasi"><span className="icon-next"></span></Link>
                                 </div>
                                 <div className="services-four__hover-content">
                                     <div className="services-four__hover-icon">
                                         <span className="icon-family-insurance"></span>
                                     </div>
-                                    <h3 className="services-four__hover-title"><Link href="aile-sigortasi">Family
+                                    <h3 className="services-four__hover-title"><Link href="dask-sigortasi">Family
                                             Insurance</Link></h3>
                                     <p className="services-four__hover-text">Arki features minimal and stylish
                                         theme is well crafted for</p>

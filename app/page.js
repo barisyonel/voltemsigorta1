@@ -5,6 +5,7 @@ import Feature from "@/components/sections/home1/Feature"
 import WhyChooseUs from "@/components/sections/home1/WhyChooseUs"
 import Service from "@/components/sections/home1/Service"
 import Blog from "@/components/sections/home1/Blog"
+import Brand from "@/components/sections/home1/Brand"
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
                 <Feature />
                 <About />
                 <Service />
+                <Brand />
                 <WhyChooseUs />
                 <Blog />
                 

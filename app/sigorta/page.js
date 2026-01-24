@@ -60,7 +60,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src="/assets/images/yangın.png" alt="İşletme Sigortası"/>
+                                            <img src="/assets/images/yangin.png" alt="İşletme Sigortası"/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-risk-management"></span>
@@ -118,7 +118,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="aile-sigortasi">DASK Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="dask-sigortasi">DASK Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -130,7 +130,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="aile-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="dask-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>

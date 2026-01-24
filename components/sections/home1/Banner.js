@@ -18,19 +18,9 @@ const swiperOptions = {
 export default function Banner() {
     const slides = [
         {
-            image: "/assets/images/trafik.png",
+            image: "/assets/images/voldem.png",
             title: "Trafik Sigortasında",
             subtitle: "Güvenli Sürüş",
-        },
-        {
-            image: "/assets/images/konut.png",
-            title: "Konut Sigortasında",
-            subtitle: "Eviniz Güvende",
-        },
-        {
-            image: "/assets/images/hayat.png",
-            title: "Hayat Sigortasında",
-            subtitle: "Aileniz Güvende",
         },
     ]
     return (
@@ -39,10 +29,10 @@ export default function Banner() {
                 <Swiper {...swiperOptions} className="banner-carousel">
                     {slides.map((slide) => (
                         <SwiperSlide className="slide-item" key={slide.image}>
-                            <div className="item main-slider__slide-1">
-                                <div className="main-slider__img">
-                                    <img src={slide.image} alt="Voldem Sigorta Tokat"/>
-                                </div>
+                            <div
+                                className="item main-slider__slide-1"
+                                style={{ backgroundImage: `url(${slide.image})` }}
+                            >
 
                                 <div className="container">
                                     <div className="main-slider__content">
@@ -61,14 +51,6 @@ export default function Banner() {
                                         <div className="main-slider__btn-and-ratting-box">
                                             <div className="main-slider__btn-box">
                                                 <Link href="sigorta" className="main-slider__btn thm-btn">Teklif Al</Link>
-                                            </div>
-                                            <div className="main-slider__ratting">
-                                                <i className="icon-star-1"></i>
-                                                <i className="icon-star-1"></i>
-                                                <i className="icon-star-1"></i>
-                                                <i className="icon-star-1"></i>
-                                                <i className="icon-star-1"></i>
-                                                <span>5/5 Memnuniyet</span>
                                             </div>
                                         </div>
                                     </div>

@@ -3,14 +3,12 @@ export default function Footer1() {
     return (
         <>
             <footer className="site-footer footer-modern">
-            <div className="site-footer__shape-1 float-bob-x">
-                <img src="assets/images/shapes/site-footer-shape-1.png" alt=""/>
-            </div>
+            <div className="site-footer__shape-1 float-bob-x"></div>
             <div className="site-footer__top">
                 <div className="container">
                     <div className="site-footer__top-inner">
                         <div className="row">
-                            <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__column footer-widget__about footer-brand-card">
                                     <div className="footer-widget__logo">
                                         <Link href="index"><img src="/logo.jpeg"
@@ -38,7 +36,7 @@ export default function Footer1() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div className="footer-widget__column footer-widget__navigation">
                                     <div className="footer-widget__title-box">
                                         <h3 className="footer-widget__title">Menü</h3>
@@ -63,30 +61,6 @@ export default function Footer1() {
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                                <div className="footer-widget__column footer-widget__quick-link">
-                                    <div className="footer-widget__title-box">
-                                        <h3 className="footer-widget__title">Hızlı Linkler</h3>
-                                    </div>
-                                    <ul className="footer-widget__navigation-list list-unstyled">
-                                        <li>
-                                            <Link href="sigorta">Sigortalar</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="hakkimizda">Kurumsal</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="yorumlar">Müşteri Yorumları</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="sikca-sorulan-sorular">SSS</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="iletisim">İletişim</Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div className="footer-widget__column footer-widget__navigation">
                                     <div className="footer-widget__title-box">
                                         <h3 className="footer-widget__title">Sigortalar</h3>
@@ -108,10 +82,28 @@ export default function Footer1() {
                                             <Link href="konut-sigortasi">Konut Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="aile-sigortasi">Aile Sigortası</Link>
+                                                        <Link href="dask-sigortasi">DASK Sigortası</Link>
                                         </li>
                                         <li>
                                             <Link href="isyeri-sigortasi">İşletme Sigortası</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div className="footer-widget__column footer-widget__navigation">
+                                    <div className="footer-widget__title-box">
+                                        <h3 className="footer-widget__title">Yasal</h3>
+                                    </div>
+                                    <ul className="footer-widget__navigation-list list-unstyled">
+                                        <li>
+                                            <Link href="kvkk">KVKK Aydınlatma</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="gizlilik">Gizlilik Politikası</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="cerez-politikasi">Çerez Politikası</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -123,7 +115,10 @@ export default function Footer1() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">Copyright © 2024 Voldem Sigorta Tokat. All Rights Reserved</p>
+                        <p className="site-footer__bottom-text">© 2024 Voldem Sigorta Tokat. Kurumsal Sigorta Danışmanlığı.</p>
+                        <p className="site-footer__bottom-text">
+                            Media: <a href="https://bariscanyonel.com" target="_blank" rel="noopener noreferrer">Barış Can Yönel</a>
+                        </p>
                     </div>
                 </div>
             </div>

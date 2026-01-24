@@ -1,102 +1,82 @@
 'use client'
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
+import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 
 const swiperOptions = {
-    modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 5,
-    spaceBetween: 30,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    modules: [Autoplay],
+    slidesPerView: 6,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     loop: true,
-
-    // Navigation
-    navigation: {
-        nextEl: '.srn',
-        prevEl: '.srp',
-    },
-
-    // Pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
     breakpoints: {
         320: {
-            slidesPerView: 1,
-            spaceBetween: 30,
+            slidesPerView: 2,
+            spaceBetween: 16,
         },
         575: {
-            slidesPerView: 2,
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBetween: 18,
         },
         767: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 20,
         },
         991: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 5,
+            spaceBetween: 22,
         },
         1199: {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 6,
+            spaceBetween: 24,
         },
         1350: {
-            slidesPerView: 5,
-            spaceBetween: 30,
+            slidesPerView: 6,
+            spaceBetween: 24,
         },
     }
-
-
-
 }
 
 
 
 
 export default function Brand() {
+    const partners = [
+        { src: "/assets/images/brand/brand-1-1.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-1-2.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-1-3.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-1-4.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-1-5.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-1-6.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-2-1.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-2-2.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-2-3.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-2-4.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/brand/brand-2-5.png", alt: "Çözüm Ortağı" },
+    ]
     return (
         <>
         {/* Brand One Start */}
         <section className="brand-one">
             <div className="container">
-                <Swiper {...swiperOptions} className="thm-swiper__slider swiper-container">
-                    <div className="swiper-wrapper">
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/kasko.png" alt="Kasko Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/trafik.png" alt="Trafik Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/konut.png" alt="Konut Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/tarsim.png" alt="TARSİM Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/kasko.png" alt="Kasko Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/trafik.png" alt="Trafik Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/konut.png" alt="Konut Sigortası"/>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <img src="/assets/images/tarsim.png" alt="TARSİM Sigortası"/>
-                        </SwiperSlide>
+                <div className="section-title text-center">
+                    <div className="section-title__tagline-box">
+                        <p className="section-title__tagline">ÇÖZÜM ORTAKLARIMIZ</p>
                     </div>
+                    <h2 className="section-title__title">Güçlü iş ortaklarımızla
+                        <br/> birlikte güvence sağlıyoruz</h2>
+                </div>
+                <Swiper {...swiperOptions} className="partner-slider">
+                    {partners.map((partner, index) => (
+                        <SwiperSlide className="partner-slide" key={`${partner.src}-${index}`}>
+                            <div className="partner-card">
+                                <img src={partner.src} alt={partner.alt}/>
+                            </div>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </section>

@@ -52,9 +52,9 @@ export default function Services() {
                                 <div className="services-five__icon">
                                     <span className="icon-family-insurance"></span>
                                 </div>
-                                <h3 className="services-five__title"><Link href="aile-sigortasi">Family Insurance</Link>
+                                <h3 className="services-five__title"><Link href="dask-sigortasi">Family Insurance</Link>
                                 </h3>
-                                <Link href="aile-sigortasi" className="services-five__arrow"><span
+                                <Link href="dask-sigortasi" className="services-five__arrow"><span
                                         className="icon-next"></span></Link>
                             </div>
                         </div>

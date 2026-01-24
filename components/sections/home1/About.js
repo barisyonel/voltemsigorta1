@@ -31,6 +31,9 @@ export default function About() {
                             <p className="about-one__text-1">Sigorta, belirli bir risk karşısında kişilerin veya
                                 kuruluşların maddi zararlarını korumak için yapılan sözleşmeye dayalı
                                 bir finansal üründür.</p>
+                            <p className="about-one__text-1">Voldem Sigorta olarak hızlı, kolay ve güvenli hizmet
+                                sunmayı hedefliyoruz. Tokat ve çevre illerde en doğru sigorta çözümlerini
+                                karşılaştırarak sizin için uygun seçeneği belirliyoruz.</p>
                             <div className="about-one__text-box">
                                 <div className="about-one__text-box-icon">
                                     <span className="icon-file-1"></span>

@@ -16,6 +16,7 @@ export default function Feature() {
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Voldem Sigorta</p>
                                 <h3 className="feature-one__title"><Link href="hakkimizda">Doğru Tespit</Link></h3>
+                                <p className="feature-one__text">İhtiyacınızı analiz eder, doğru teminatı belirleriz.</p>
                                 <Link href="hakkimizda" className="feature-one__read-more">Detaylar<span
                                         className="icon-next"></span></Link>
                             </div>
@@ -29,6 +30,7 @@ export default function Feature() {
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Voldem Sigorta</p>
                                 <h3 className="feature-one__title"><Link href="hakkimizda">Uygun Fiyat</Link></h3>
+                                <p className="feature-one__text">Tokat'ta en uygun sigorta seçeneklerini sunarız.</p>
                                 <Link href="hakkimizda" className="feature-one__read-more">Detaylar<span
                                         className="icon-next"></span></Link>
                             </div>
@@ -42,6 +44,7 @@ export default function Feature() {
                             <div className="feature-one__content">
                                 <p className="feature-one__sub-title">Voldem Sigorta</p>
                                 <h3 className="feature-one__title"><Link href="hakkimizda">Destek Hattı</Link></h3>
+                                <p className="feature-one__text">Poliçe ve hasar süreçlerinde yanınızdayız.</p>
                                 <Link href="hakkimizda" className="feature-one__read-more">Detaylar<span
                                         className="icon-next"></span></Link>
                             </div>

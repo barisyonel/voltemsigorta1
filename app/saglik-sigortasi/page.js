@@ -142,7 +142,7 @@ export default function Home() {
                                         <Link href="konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="aile-sigortasi">DASK Sigortası<span
+                                        <Link href="dask-sigortasi">DASK Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>

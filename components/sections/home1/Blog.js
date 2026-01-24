@@ -1,106 +1,61 @@
 
-import Link from "next/link"
 export default function Blog() {
     return (
         <>
-            {/* Blog One Start */}
-        <section className="blog-one">
+        {/* SEO Article Start */}
+        <section className="blog-one seo-article">
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">GÜNCEL YAZILAR</p>
+                        <p className="section-title__tagline">TOKAT SİGORTA REHBERİ</p>
                     </div>
-                    <h2 className="section-title__title">Sigorta Rehberi ve İpuçları</h2>
+                    <h2 className="section-title__title">Tokat Sigorta Rehberi: Doğru Poliçeyi
+                        <br/> Seçmek İçin 10 Kritik Nokta</h2>
                 </div>
-                <div className="row">
-                    {/* BLog One Single Start */}
-                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
-                        <div className="blog-one__single">
-                            <div className="blog-one__img-box">
-                                <div className="blog-one__img">
-                                    <img src="/assets/images/trafik.png" alt="Trafik Sigortası"/>
-                                </div>
-                            </div>
-                            <div className="blog-one__content">
-                                <div className="blog-one__tag">
-                                    <span>Sigorta</span>
-                                    <span>Acenta</span>
-                                </div>
-                                <h3 className="blog-one__title"><Link href="blog-detay">Trafik Sigortasında
-                                        Dikkat Edilmesi Gerekenler</Link></h3>
-                                <div className="blog-one__client-info">
-                                    <div className="blog-one__client-img">
-                                        <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
-                                    </div>
-                                    <div className="blog-one__client-content">
-                                        <h3>Voldem Sigorta</h3>
-                                        <p>3 Ağustos 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* BLog One Single End */}
-                    {/* BLog One Single Start */}
-                    <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                        <div className="blog-one__single">
-                            <div className="blog-one__img-box">
-                                <div className="blog-one__img">
-                                    <img src="/assets/images/kasko.png" alt="Kasko Sigortası"/>
-                                </div>
-                            </div>
-                            <div className="blog-one__content">
-                                <div className="blog-one__tag">
-                                    <span>Sigorta</span>
-                                    <span>Acenta</span>
-                                </div>
-                                <h3 className="blog-one__title"><Link href="blog-detay">Kasko Seçerken
-                                        Nelere Dikkat Etmeli?</Link></h3>
-                                <div className="blog-one__client-info">
-                                    <div className="blog-one__client-img">
-                                        <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
-                                    </div>
-                                    <div className="blog-one__client-content">
-                                        <h3>Voldem Sigorta</h3>
-                                        <p>3 Ağustos 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* BLog One Single End */}
-                    {/* BLog One Single Start */}
-                    <div className="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="600ms">
-                        <div className="blog-one__single">
-                            <div className="blog-one__img-box">
-                                <div className="blog-one__img">
-                                    <img src="/assets/images/konut.png" alt="Konut Sigortası"/>
-                                </div>
-                            </div>
-                            <div className="blog-one__content">
-                                <div className="blog-one__tag">
-                                    <span>Sigorta</span>
-                                    <span>Acenta</span>
-                                </div>
-                                <h3 className="blog-one__title"><Link href="blog-detay">Konut Sigortası ile
-                                        Evinizi Güvence Altın</Link></h3>
-                                <div className="blog-one__client-info">
-                                    <div className="blog-one__client-img">
-                                        <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
-                                    </div>
-                                    <div className="blog-one__client-content">
-                                        <h3>Voldem Sigorta</h3>
-                                        <p>3 Ağustos 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* BLog One Single End */}
+                <div className="seo-article__content">
+                    <p>Tokat sigorta ihtiyaçları, şehir yaşamının temposu ve bölgesel riskler nedeniyle farklılık
+                        gösterebilir. Trafik yoğunluğu, iklim şartları, deprem gerçeği ve işletme yapıları göz önüne
+                        alındığında doğru poliçeyi seçmek sadece fiyat karşılaştırması değildir. Voldem Sigorta Tokat
+                        olarak, tokat en uygun sigorta arayışında olan müşterilerimizin hem bütçesine hem de gerçek
+                        ihtiyacına hitap eden çözümler sunarız. Amacımız, poliçeyi imzaladıktan sonra da güven içinde
+                        kalmanızı sağlamaktır.</p>
+                    <p>Öncelikle tokat trafik sigortası ve tokat kasko arasında net bir ayrım yapmak gerekir. Trafik
+                        sigortası zorunlu olup karşı tarafın zararlarını teminat altına alır; kasko ise kendi aracınızı
+                        korur. Tokat’ta şehir içi kullanım, park alanları ve kış koşulları gibi etkenler, kasko
+                        teminatlarını daha değerli hale getirebilir. Biz, sürüş alışkanlığınıza göre dar veya geniş
+                        kapsamlı seçenekleri değerlendirir, teklifleri aynı dilde ve şeffaf şekilde karşılaştırırız.</p>
+                    <p>Sağlık tarafında ise tokat sağlık sigortası, tokat tamamlayıcı sağlık sigortası ve tokat özel
+                        sağlık sigortası ayrımı kritiktir. Tamamlayıcı ürünler SGK ile entegre çalışırken özel sağlık
+                        sigortası daha geniş bir hastane ağı ve limit sunabilir. Aile yapınız, mevcut sağlık geçmişiniz
+                        ve yıllık bütçeniz göz önüne alınmadan yapılan seçimler uzun vadede memnuniyetsizlik yaratır.
+                        Bu nedenle her teklif, ihtiyaç analiziyle şekillendirilmelidir.</p>
+                    <p>Konut sahipleri için tokat konut sigortası ve tokat dask aynı şey değildir. DASK zorunlu deprem
+                        sigortasıdır ve yalnızca deprem riskini kapsar; konut sigortası ise yangın, hırsızlık, su
+                        baskını ve ek riskleri de güvence altına alır. Tokat’ta konut tipine ve bulunduğu bölgeye göre
+                        riskler değiştiği için, poliçe içeriği mutlaka adres bazında değerlendirilmelidir. Bu sayede
+                        düşük primli ama eksik teminatlı poliçelerin önüne geçilir.</p>
+                    <p>İşletmelerde tokat işyeri sigortası, faaliyet türüne göre şekillenir. Stok yoğunluğu olan
+                        işletmelerde yangın teminatı kritik hale gelirken, ofis ağırlıklı işletmelerde elektronik cihaz
+                        teminatları öne çıkabilir. Ayrıca nakliyat yapan işletmeler için tokat nakliyat sigortası da
+                        operasyonel sürekliliği korur. Voldem Sigorta Tokat, işyerinizin ölçeğine göre poliçeyi
+                        modüler biçimde kurgular ve gereksiz maliyetleri azaltır.</p>
+                    <p>Fiyat karşılaştırması yaparken sadece prim tutarına bakmak doğru değildir. Muafiyet oranları,
+                        teminat limitleri, ikame araç süresi ve asistans hizmetleri gibi detaylar, toplam faydayı
+                        belirler. Tokat sigorta teklifleri arasında “en uygun” olan, her zaman en düşük primli olan
+                        değildir. Biz, sözleşme öncesinde riskleri sade bir dille anlatır ve hangi teminatın neyi
+                        kapsadığını netleştiririz.</p>
+                    <p>Sigorta seçiminin bir diğer önemli yönü de hasar anında erişimdir. Tokat’ta hızlı destek, doğru
+                        yönlendirme ve süreç takibi büyük fark yaratır. Voldem Sigorta Tokat olarak hasar bildiriminden
+                        onarım sürecine kadar her aşamada yanınızda oluruz. Böylece sigorta, sadece bir poliçe değil,
+                        gerçek bir güvenceye dönüşür.</p>
+                    <p>Sonuç olarak; tokat sigorta ihtiyaçlarınız için doğru poliçeyi seçmek, yaşam tarzınıza ve
+                        beklentilerinize uygun teminatları belirlemekle mümkündür. Trafik, kasko, sağlık, konut ve
+                        işyeri alanlarında doğru analiz ve doğru danışmanlıkla uzun vadeli tasarruf sağlanabilir.
+                        Size özel teklif almak ve kapsamlı bir ihtiyaç analizi için bizimle iletişime geçebilirsiniz.</p>
                 </div>
             </div>
         </section>
-        {/* Blog One End */}
+        {/* SEO Article End */}
         </>
     )
 }

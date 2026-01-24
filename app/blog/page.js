@@ -30,7 +30,7 @@ const posts = [
     },
     {
         title: "İşyeri Sigortası: İşinizi ve Gelirinizi Koruyun",
-        image: "/assets/images/yangın.png",
+        image: "/assets/images/yangin.png",
         tags: ["İşyeri Sigortası", "Tokat Sigorta"],
     },
 ]
@@ -57,7 +57,7 @@ export default function Home() {
                                                 ))}
                                             </div>
                                             <h3 className="blog-one__title">
-                                                <Link href="blog-detay">{post.title}</Link>
+                                                <Link href="/blog">{post.title}</Link>
                                             </h3>
                                             <div className="blog-one__client-info">
                                                 <div className="blog-one__client-img">

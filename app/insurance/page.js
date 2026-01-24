@@ -60,7 +60,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                     <div className="services-one__img">
-                                            <img src="assets/images/yangın.png" alt=""/>
+                                            <img src="assets/images/yangin.png" alt=""/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-risk-management"></span>

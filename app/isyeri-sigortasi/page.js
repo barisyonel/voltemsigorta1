@@ -34,7 +34,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">İş yerinizi yangın, hırsızlık, doğal afet ve
                                 sorumluluk risklerine karşı koruyun. Tokat’ta işletmenize özel poliçeler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src="/assets/images/yangın.png" alt="İş Yeri Sigortası"/>
+                                <img src="/assets/images/yangin.png" alt="İş Yeri Sigortası"/>
                             </div>
                             <h3 className="insurance-details__title-2">İş Yeri Sigortası</h3>
                             <p className="insurance-details__text-2">İş yeri sigortası; bina, demirbaş ve stokları
@@ -138,7 +138,7 @@ export default function Home() {
                                         <Link href="konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="aile-sigortasi">DASK Sigortası<span
+                                        <Link href="dask-sigortasi">DASK Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li className="active">

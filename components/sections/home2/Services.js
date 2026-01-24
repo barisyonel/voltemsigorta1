@@ -116,10 +116,10 @@ export default function Services() {
                                                 <div className="services-two__icon">
                                                     <span className="icon-travel-insurance"></span>
                                                 </div>
-                                                <h3 className="services-two__title"><Link href="aile-sigortasi">Travels
+                                                <h3 className="services-two__title"><Link href="dask-sigortasi">Travels
                                                         Cover</Link></h3>
                                                 <div className="services-two__arrow">
-                                                    <Link href="aile-sigortasi"><span className="icon-next"></span></Link>
+                                                    <Link href="dask-sigortasi"><span className="icon-next"></span></Link>
                                                 </div>
                                             </div>
                                             <div className="services-two__hover-single">
@@ -129,12 +129,12 @@ export default function Services() {
                                                 <div className="services-two__hover-icon">
                                                     <span className="icon-travel-insurance"></span>
                                                 </div>
-                                                <h3 className="services-two__hover-title"><Link href="aile-sigortasi">Travels
+                                                <h3 className="services-two__hover-title"><Link href="dask-sigortasi">Travels
                                                         Cover</Link></h3>
                                                 <p className="services-two__hover-text">Nullam eu nibh vitae est
                                                     tempor molestie id</p>
                                                 <div className="services-two__hover-arrow">
-                                                    <Link href="aile-sigortasi"><span className="icon-next"></span></Link>
+                                                    <Link href="dask-sigortasi"><span className="icon-next"></span></Link>
                                                 </div>
                                             </div>
                                         </div>
