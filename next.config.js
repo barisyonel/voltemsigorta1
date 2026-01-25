@@ -27,10 +27,6 @@ const nextConfig = {
       { source: "/shop", destination: "/magaza", permanent: true },
       { source: "/blog-details", destination: "/blog", permanent: true },
       { source: "/blog-sidebar", destination: "/blog", permanent: true },
-      { source: "/index-2", destination: "/anasayfa-2", permanent: true },
-      { source: "/index-3", destination: "/anasayfa-3", permanent: true },
-      { source: "/index-4", destination: "/anasayfa-4", permanent: true },
-      { source: "/index-5", destination: "/anasayfa-5", permanent: true },
     ]
   },
 }

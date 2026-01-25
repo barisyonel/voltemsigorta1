@@ -2,6 +2,33 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+    title: "Tokat Sigorta Blogu",
+    description:
+        "Tokat sigorta blogu: trafik, kasko, sağlık, konut ve işyeri sigortası hakkında rehberler, ipuçları ve güncel bilgiler. Voldem Sigorta Tokat.",
+    keywords: [
+        "Tokat sigorta",
+        "Tokat sigorta acentesi",
+        "Tokat trafik sigortası",
+        "Tokat kasko",
+        "Tokat tamamlayıcı sağlık sigortası",
+        "Tokat özel sağlık sigortası",
+        "Tokat konut sigortası",
+        "Tokat DASK",
+        "Tokat işyeri sigortası",
+        "Tokat sigorta fiyatları",
+        "Voldem Sigorta Tokat",
+        "Tokat HDI Sigorta",
+        "Tokat AXA Sigorta",
+        "Tokat Allianz Sigorta",
+        "Tokat Zurich Sigorta",
+        "Tokat Türkiye Sigorta",
+        "Tokat Ak Sigorta",
+        "Tokat Unico Sigorta",
+        "Tokat Ray Sigorta",
+    ],
+}
+
 const posts = [
     {
         title: "Tokat Trafik Sigortası: Zorunlu Teminatlar ve Avantajlar",
@@ -72,6 +99,66 @@ export default function Home() {
                                     </div>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+                <section className="blog-page__seo">
+                    <div className="container">
+                        <div className="section-title text-center">
+                            <div className="section-title__tagline-box">
+                                <p className="section-title__tagline">TOKAT SİGORTA BLOGU</p>
+                            </div>
+                            <h2 className="section-title__title">Tokat’ta Doğru Sigorta Seçimi için
+                                <br/> Kapsamlı Rehber</h2>
+                        </div>
+                        <div className="blog-page__seo-content">
+                            <p>Tokat sigorta blogu, araç, sağlık, konut ve işyeri sigortalarında en doğru poliçeyi
+                                seçebilmeniz için hazırlanmıştır. Voldem Sigorta Tokat olarak; ihtiyaç analizi, risk
+                                değerlendirmesi ve bütçenize uygun teklif sunma süreçlerinde şeffaf bir yaklaşım
+                                benimsiyoruz. Bu sayfada, Tokat sigorta fiyatları ve teminat kapsamlarını etkileyen
+                                başlıca faktörleri sade bir dille bulabilirsiniz.</p>
+
+                            <h3>En Çok Sorulan Konular</h3>
+                            <ul>
+                                <li>Trafik sigortası ile kasko arasındaki farklar ve doğru teminat seçimi</li>
+                                <li>Tamamlayıcı sağlık sigortası ve özel sağlık sigortası kapsamları</li>
+                                <li>Konut sigortası ve DASK arasındaki zorunlu/isteğe bağlı ayrımı</li>
+                                <li>İşyeri sigortasında stok, makine ve yangın teminatlarının önemi</li>
+                            </ul>
+
+                            <p>Tokat’ta en uygun sigorta, yalnızca düşük prim değil; doğru teminat, hızlı destek ve
+                                güvenilir hasar yönetimiyle mümkündür. Bu nedenle blog yazılarımızı, teklif alma öncesi
+                                kontrol listesi gibi düşünebilirsiniz. İhtiyaçlarınıza göre ilgili sayfalara
+                                yönlendirmelerimizi kullanarak hızlıca bilgi alabilirsiniz.</p>
+
+                            <h3>Tokat’ta Çalıştığımız Sigorta Markaları</h3>
+                            <p>Tokat sigorta danışmanlığında; HDI Sigorta, AXA Sigorta, Allianz Sigorta, Zurich Sigorta,
+                                Türkiye Sigorta, Ak Sigorta, Unico Sigorta ve Ray Sigorta gibi güçlü markalarla
+                                çalışıyoruz. Böylece Tokat trafik sigortası, Tokat kasko, Tokat sağlık sigortası,
+                                Tokat konut sigortası ve Tokat işyeri sigortası için geniş teminat seçenekleri ve
+                                rekabetçi fiyatlar sunabiliyoruz.</p>
+
+                            <p>Tokat sigorta acentesi arayışında olan müşterilerimiz için hızlı teklif, karşılaştırmalı
+                                fiyat analizi ve doğru teminat eşleştirmesi sağlıyoruz. Tokat’ta en uygun sigorta
+                                teklifi için bize ulaşarak ihtiyacınıza göre özel seçenekleri görebilirsiniz.</p>
+
+                            <div className="blog-page__seo-links">
+                                <Link href="/arac-sigortasi">Araç Sigortası</Link>
+                                <Link href="/kasko-sigortasi">Kasko Sigortası</Link>
+                                <Link href="/saglik-sigortasi">Sağlık Sigortası</Link>
+                                <Link href="/konut-sigortasi">Konut Sigortası</Link>
+                                <Link href="/dask-sigortasi">DASK Sigortası</Link>
+                                <Link href="/isyeri-sigortasi">İşyeri Sigortası</Link>
+                                <Link href="/iletisim">İletişim</Link>
+                            </div>
+
+                            <h3>Sık Sorulan Sorular</h3>
+                            <p><strong>Tokat’ta sigorta primi neye göre belirlenir?</strong> Araç kullanım türü,
+                                bina yaşı, sağlık geçmişi, teminat limitleri ve muafiyetler fiyatı etkiler.</p>
+                            <p><strong>En uygun poliçeyi nasıl seçebilirim?</strong> Teklifleri teminat ve hizmet
+                                kriterleriyle karşılaştırmak, uzun vadede daha avantajlı sonuç verir.</p>
+                            <p><strong>Hasar anında destek alabilir miyim?</strong> Voldem Sigorta Tokat, hasar
+                                bildirimi ve süreç yönetiminde hızlı destek sunar.</p>
                         </div>
                     </div>
                 </section>

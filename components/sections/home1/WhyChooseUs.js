@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
                         <div className="why-choose-one__left">
                             <div className="why-choose-one__img-box">
                                 <div className="why-choose-one__img">
-                                    <img src="/1045x820.png" alt="Voldem Sigorta Tokat"/>
+                                    <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
                                 </div>
                             </div>
                         </div>

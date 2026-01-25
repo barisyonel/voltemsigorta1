@@ -7,8 +7,9 @@ const swiperOptions = {
     modules: [Autoplay],
     slidesPerView: 6,
     spaceBetween: 24,
+    speed: 5000,
     autoplay: {
-        delay: 2000,
+        delay: 0,
         disableOnInteraction: false,
     },
     loop: true,
@@ -45,17 +46,14 @@ const swiperOptions = {
 
 export default function Brand() {
     const partners = [
-        { src: "/assets/images/brand/brand-1-1.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-1-2.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-1-3.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-1-4.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-1-5.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-1-6.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-2-1.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-2-2.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-2-3.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-2-4.png", alt: "Çözüm Ortağı" },
-        { src: "/assets/images/brand/brand-2-5.png", alt: "Çözüm Ortağı" },
+        { src: "/assets/images/zurich-sigorta.png", alt: "Zurich Sigorta" },
+        { src: "/assets/images/unico_sigorta_logo.jpg", alt: "Unico Sigorta" },
+        { src: "/assets/images/ray.png", alt: "Ray Sigorta" },
+        { src: "/assets/images/ak-sigorta.png", alt: "Ak Sigorta" },
+        { src: "/assets/images/Axa.png", alt: "AXA Sigorta" },
+        { src: "/assets/images/hdi_logo.png", alt: "HDI Sigorta" },
+        { src: "/assets/images/t.jpg", alt: "Türkiye Sigorta" },
+        { src: "/assets/images/108.png", alt: "Sigorta Logosu" },
     ]
     return (
         <>

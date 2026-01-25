@@ -21,7 +21,8 @@ export default function Home() {
                                     <li>
                                         <h5>Adres</h5>
                                         <p>Tokat Merkez, Türkiye
-                                            <br/> Gaziosmanpaşa Bulvarı No:10</p>
+                                            <br/> Gop Bulvarı No:192
+                                            <br/> Tüfekçiler İş Hanı Kat:3 D:25</p>
                                     </li>
                                     <li>
                                         <h5>Telefon</h5>
