@@ -5,7 +5,12 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Ekibimiz">
+            <Layout
+                headerStyle={1}
+                footerStyle={1}
+                breadcrumbTitle="Ekibimiz"
+                breadcrumbImage="/anasayfa2.jpg"
+            >
                 {/* Team Two Start  */}
                 <section className="team-page">
                     <div className="container">

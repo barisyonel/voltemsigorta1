@@ -23,7 +23,12 @@ export default function Faq() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sıkça Sorulan Sorular">
+            <Layout
+                headerStyle={1}
+                footerStyle={1}
+                breadcrumbTitle="Sıkça Sorulan Sorular"
+                breadcrumbImage="/anasayfa1.png"
+            >
                 <div>
                     {/* FAQ Page Start */}
                     <section className="faq-page">

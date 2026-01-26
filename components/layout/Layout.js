@@ -74,6 +74,15 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {footerStyle == 4 ? < Footer4 /> : null}
                 {footerStyle == 5 ? < Footer5 /> : null}
             </div>
+            <a
+                className="whatsapp-float"
+                href="https://wa.me/905433950213"
+                aria-label="WhatsApp ile sohbet"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i className="fab fa-whatsapp"></i>
+            </a>
             <BackToTop scroll={scroll} />
         </>
     )

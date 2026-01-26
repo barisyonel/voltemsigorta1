@@ -19,6 +19,7 @@ export const metadata = {
         "tokat kasko",
         "tokat kasko fiyatları",
         "tokat araç sigortası",
+        "tokat araç kasko",
         "tokat en uygun araç sigortası",
         "tokat araç kasko fiyat",
         "tokat araç kasko",

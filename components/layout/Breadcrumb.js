@@ -18,14 +18,6 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
                 </div>
                 <div className="container">
                     <div className="page-header__inner">
-                        <h2>{breadcrumbTitle}</h2>
-                        <div className="thm-breadcrumb__box">
-                            <ul className="thm-breadcrumb list-unstyled">
-                                <li><Link href="/">Ana Sayfa</Link></li>
-                                <li><span> - </span></li>
-                                <li>{breadcrumbTitle}</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </section>

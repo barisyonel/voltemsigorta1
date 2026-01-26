@@ -28,7 +28,12 @@ const partners = [
 export default function About() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Hakkımızda">
+            <Layout
+                headerStyle={1}
+                footerStyle={1}
+                breadcrumbTitle="Hakkımızda"
+                breadcrumbImage="/hakkımızda.png"
+            >
                 <section className="about-three about-six">
                     <div className="container">
                         <div className="row">

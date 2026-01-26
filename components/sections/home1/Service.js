@@ -137,7 +137,9 @@ export default function Service() {
                     <h2 className="section-title__title">Sigorta,
                         <br/> hayatınızın yatırımıdır!</h2>
                     <p className="section-title__text">Voldem Sigorta olarak hızlı, kolay ve güvenli bir hizmet sunuyoruz.
-                        Tokat ve çevre illerde ihtiyaçlarınıza uygun sigorta seçeneklerini karşılaştırıyoruz.</p>
+                        Tokat ve çevre illerde ihtiyaçlarınıza uygun sigorta seçeneklerini karşılaştırıyoruz.
+                        Tokat DASK, Tokat araç kasko ve Tokat sağlık sigortası gibi kritik alanlarda net karşılaştırmalar
+                        sunarak doğru poliçeyi seçmenize yardımcı oluyoruz.</p>
                 </div>
                 <div className="services-one__bottom">
                     <Swiper {...swiperOptions} className="services-one__carousel">

@@ -5,7 +5,12 @@ export default function Home() {
 
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="İletişim">
+        <Layout
+            headerStyle={1}
+            footerStyle={1}
+            breadcrumbTitle="İletişim"
+            breadcrumbImage="/iletisim.png"
+        >
         {/* Contact Page Start */}
         <section className="contact-page">
             <div className="container">

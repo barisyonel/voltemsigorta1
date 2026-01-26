@@ -25,6 +25,8 @@ export default function WhyChooseUs() {
                                 </div>
                                 <h2 className="section-title__title">Bizi Farklı
                                     <br/> Kılan Nedir?</h2>
+                                <p className="section-title__text">Tokat DASK, Tokat araç kasko ve Tokat sağlık sigortası
+                                    süreçlerinde hızlı teklif, doğru teminat ve şeffaf bilgilendirme sunuyoruz.</p>
                             </div>
                             <ul className="why-choose-one__points list-unstyled">
                                 <li>

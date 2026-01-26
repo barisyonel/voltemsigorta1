@@ -53,7 +53,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                         className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"}
                                         onClick={() => handleToggle(2)}
                                     >
-                                        <span className="fa fa-angle-right" />
+                                        <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
                                 <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}>
@@ -66,7 +66,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                         className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"}
                                         onClick={() => handleToggle(3)}
                                     >
-                                        <span className="fa fa-angle-right" />
+                                        <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
                                 <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}>
@@ -80,7 +80,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                         className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"}
                                         onClick={() => handleToggle(4)}
                                     >
-                                        <span className="fa fa-angle-right" />
+                                        <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
                                 <li className={isActive.key == 5 ? "dropdown current" : "dropdown"}>
@@ -98,7 +98,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                         className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"}
                                         onClick={() => handleToggle(5)}
                                     >
-                                        <span className="fa fa-angle-right" />
+                                        <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
                                 <li><Link href="iletisim">İletişim</Link></li>
@@ -117,9 +117,6 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     </ul>
                     <div className="mobile-nav__top">
                         <div className="mobile-nav__social">
-                            <a href="#" className="fab fa-twitter"></a>
-                            <a href="#" className="fab fa-facebook-square"></a>
-                            <a href="#" className="fab fa-pinterest-p"></a>
                             <a href="#" className="fab fa-instagram"></a>
                         </div>
                     </div>

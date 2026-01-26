@@ -38,9 +38,6 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                     <div className="main-header__top-social-box">
                         <p className="main-header__top-social-title">Bizi takip edin:</p>
                         <div className="main-header__top-social">
-                            <Link href="#"><i className="fab fa-twitter"></i></Link>
-                            <Link href="#"><i className="fab fa-facebook"></i></Link>
-                            <Link href="#"><i className="fab fa-pinterest-p"></i></Link>
                             <Link href="#"><i className="fab fa-instagram"></i></Link>
                         </div>
                     </div>

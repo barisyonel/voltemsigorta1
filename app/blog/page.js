@@ -32,32 +32,32 @@ export const metadata = {
 const posts = [
     {
         title: "Tokat Trafik Sigortası: Zorunlu Teminatlar ve Avantajlar",
-        image: "/assets/images/trafik.png",
+        image: "/anasayfa2.jpg",
         tags: ["Tokat Sigorta", "Trafik Sigortası"],
     },
     {
         title: "Tokat Kasko Rehberi: Kapsam ve Poliçe Seçimi",
-        image: "/assets/images/kasko.png",
+        image: "/anasayfa1.png",
         tags: ["Tokat Kasko", "Araç Sigortası"],
     },
     {
         title: "Tamamlayıcı Sağlık Sigortası ile Güvende Kalın",
-        image: "/assets/images/ozel.png",
+        image: "/iletisim.png",
         tags: ["Sağlık Sigortası", "Tokat Sigorta"],
     },
     {
         title: "DASK (Zorunlu Deprem Sigortası) Hakkında Bilmeniz Gerekenler",
-        image: "/assets/images/konutt.png",
+        image: "/hakkımızda.png",
         tags: ["DASK", "Konut Sigortası"],
     },
     {
         title: "Konut Sigortası ile Evinizi Güvence Altına Alın",
-        image: "/assets/images/konut.png",
+        image: "/gorsel.jpg",
         tags: ["Konut Sigortası", "Tokat En Uygun Sigorta"],
     },
     {
         title: "İşyeri Sigortası: İşinizi ve Gelirinizi Koruyun",
-        image: "/assets/images/yangin.png",
+        image: "/sigorta.jpg",
         tags: ["İşyeri Sigortası", "Tokat Sigorta"],
     },
 ]
@@ -65,18 +65,18 @@ const posts = [
 export default function Home() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog">
+            <Layout
+                headerStyle={1}
+                footerStyle={1}
+                breadcrumbTitle="Blog"
+                breadcrumbImage="/gorsel.jpg"
+            >
                 <section className="blog-page">
                     <div className="container">
                         <div className="row">
                             {posts.map((post) => (
                                 <div className="col-xl-4 col-lg-4" key={post.title}>
                                     <div className="blog-one__single">
-                                        <div className="blog-one__img-box">
-                                            <div className="blog-one__img">
-                                                <img src={post.image} alt={post.title}/>
-                                            </div>
-                                        </div>
                                         <div className="blog-one__content">
                                             <div className="blog-one__tag">
                                                 {post.tags.map((tag) => (

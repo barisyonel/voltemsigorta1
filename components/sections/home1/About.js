@@ -25,15 +25,16 @@ export default function About() {
                                 <div className="section-title__tagline-box">
                                     <p className="section-title__tagline">Sigortanın Adresi</p>
                                 </div>
-                                <h2 className="section-title__title">Sigortanızla
-                                    Hayatınızı Koruyun!</h2>
+                                <h1 className="section-title__title">Sigortanızla
+                                    Hayatınızı Koruyun!</h1>
                             </div>
                             <p className="about-one__text-1">Sigorta, belirli bir risk karşısında kişilerin veya
                                 kuruluşların maddi zararlarını korumak için yapılan sözleşmeye dayalı
                                 bir finansal üründür.</p>
                             <p className="about-one__text-1">Voldem Sigorta olarak hızlı, kolay ve güvenli hizmet
-                                sunmayı hedefliyoruz. Tokat ve çevre illerde en doğru sigorta çözümlerini
-                                karşılaştırarak sizin için uygun seçeneği belirliyoruz.</p>
+                                sunmayı hedefliyoruz. <strong>Tokat DASK</strong>, <strong>Tokat araç kasko</strong> ve
+                                <strong> Tokat sağlık sigortası</strong> gibi ihtiyaçlarda, Tokat ve çevre illerde en
+                                doğru sigorta çözümlerini karşılaştırarak sizin için uygun seçeneği belirliyoruz.</p>
                             <div className="about-one__text-box">
                                 <div className="about-one__text-box-icon">
                                     <span className="icon-file-1"></span>

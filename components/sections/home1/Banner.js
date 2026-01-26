@@ -18,9 +18,7 @@ const swiperOptions = {
 export default function Banner() {
     const slides = [
         {
-            image: "/1045x820.png",
-            title: "Trafik Sigortasında",
-            subtitle: "Güvenli Sürüş",
+            image: "/voldem.png",
         },
     ]
     return (
@@ -31,10 +29,14 @@ export default function Banner() {
                         <SwiperSlide className="slide-item" key={slide.image}>
                             <div
                                 className="item main-slider__slide-1"
-                                style={{ backgroundImage: `url(${slide.image})` }}
+                                style={{ backgroundImage: "none" }}
                             >
-
-                                <div className="container"></div>
+                                <div className="main-slider__layout">
+                                    <div
+                                        className="main-slider__media"
+                                        style={{ backgroundImage: `url(${slide.image})` }}
+                                    />
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}

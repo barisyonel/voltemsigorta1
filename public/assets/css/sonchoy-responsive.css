@@ -472,6 +472,10 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-slider,
+    .main-slider .item {
+        height: 65vh;
+    }
     .feature-one__hover-shape-1 {
         left: 77px;
     }
@@ -926,6 +930,11 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+    .main-slider,
+    .main-slider .item,
+    .main-slider__layout {
+        height: auto;
+    }
     .section-title__title br {
         display: none;
     }
@@ -1943,6 +1952,49 @@
         line-height: 40px;
     }
 
+    .page-header {
+        padding: 160px 0 120px;
+        min-height: 320px;
+    }
+
+    .page-header__bg {
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .about-three.about-six {
+        margin-top: 20px;
+    }
+
+    .about-three__left {
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .about-three__right .section-title__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about-three__text {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .about-three__btn-and-client {
+        align-items: center;
+    }
+
+    .feature-one__single {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-one__content {
+        margin-left: 0;
+    }
+
 
 
 }
@@ -2100,6 +2152,17 @@
         display: none;
     }
 
+    .main-slider__media {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .main-slider__copy {
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 32px 24px;
+    }
+
 
 
 
@@ -2152,6 +2215,31 @@
 
     .main-slider__shape-3 {
         display: none;
+    }
+
+    .main-slider__layout {
+        flex-direction: column;
+    }
+
+    .main-slider__media {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        background-position: center;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .main-slider__copy {
+        flex: 0 0 35%;
+        max-width: 100%;
+        height: 35vh;
+        padding: 24px;
+    }
+
+    .main-slider__title {
+        font-size: 28px;
     }
 
 
@@ -2233,6 +2321,34 @@
         display: none;
     }
 
+    .main-slider__layout {
+        flex-direction: column;
+    }
+
+    .main-slider__media {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 827 / 362;
+        background-position: center 55%;
+    }
+
+    .main-slider__copy {
+        flex: 0 0 40%;
+        max-width: 100%;
+        height: 40vh;
+        padding: 20px;
+    }
+
+    .main-slider__title {
+        font-size: 24px;
+    }
+
+    .main-slider__desc,
+    .main-slider__list {
+        font-size: 14px;
+    }
+
     .main-slider__content .section-title__title {
         font-size: 34px;
         line-height: 42px;
@@ -2258,7 +2374,7 @@
     }
 
     .main-slider .item {
-        padding-bottom: 158px;
+        padding-bottom: 0;
     }
 
 
@@ -2473,6 +2589,8 @@
 
     .main-menu__wrapper-inner {
         padding: 0 20px;
+        height: 90px;
+        min-height: 90px;
     }
 
     .main-menu__logo {
@@ -2570,6 +2688,8 @@
 
     .main-menu__wrapper-inner {
         padding: 0 20px;
+        height: 90px;
+        min-height: 90px;
     }
 
     .main-menu__logo {
@@ -2675,7 +2795,30 @@
         margin-right: 0;
     }
     .main-menu__logo img {
-        height: 56px;
+        height: 52px;
+    }
+    .main-menu__wrapper-inner {
+        height: 90px;
+        min-height: 90px;
+        padding: 0 20px;
+    }
+    .main-menu__left {
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-menu .mobile-nav__toggler {
+        font-size: 28px;
+        width: 48px;
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: var(--sonchoy-base);
+        color: var(--sonchoy-white);
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        box-shadow: 0 10px 24px rgba(98, 34, 204, 0.3);
     }
 
 
@@ -2768,8 +2911,17 @@
     }
 
     .main-menu__wrapper-inner {
-        padding: 0 16px;
-        margin: 8px 16px 0;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        min-height: 0;
+    }
+    .transparent-header .main-menu__wrapper-inner {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+        max-width: none;
     }
 
     .main-menu__right {
@@ -2779,13 +2931,64 @@
     .main-menu__logo {
         margin-right: 0;
     }
+    .main-menu__logo {
+        display: none;
+    }
     .main-menu__logo img {
-        height: 50px;
+        height: 48px;
     }
 
     .main-menu__left {
         flex: 1;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main-menu .mobile-nav__toggler {
+        font-size: 30px;
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: transparent;
+        color: var(--sonchoy-white);
+        border: 0;
+        box-shadow: none;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        text-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+    }
+
+    .main-slider,
+    .main-slider .item,
+    .main-slider__layout,
+    .main-slider__media {
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .main-slider__media {
+        aspect-ratio: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("/voldemmobil.png") !important;
+    }
+
+    .whatsapp-float {
+        display: inline-flex;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .scroll-to-top {
+        right: 18px;
+        bottom: 88px;
+    }
+    .about-one {
+        padding-top: 40px;
     }
 
 

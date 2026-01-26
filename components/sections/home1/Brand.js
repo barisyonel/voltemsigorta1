@@ -11,8 +11,10 @@ const swiperOptions = {
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
+        pauseOnMouseEnter: false,
     },
     loop: true,
+    allowTouchMove: false,
     breakpoints: {
         320: {
             slidesPerView: 2,
