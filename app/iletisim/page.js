@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Home() {
 
     return (
@@ -9,7 +10,7 @@ export default function Home() {
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="İletişim"
-            breadcrumbImage="/iletisim.png"
+            breadcrumbImage={cloudinaryUrl("/gorsel.jpg")}
         >
         {/* Contact Page Start */}
         <section className="contact-page">
@@ -49,7 +50,7 @@ export default function Home() {
                     <div className="col-xl-6 col-lg-6">
                         <div className="contact-page__right">
                             <div className="contact-page__img">
-                                <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
+                                <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat"/>
                             </div>
                         </div>
                     </div>
