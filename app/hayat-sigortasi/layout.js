@@ -1,5 +1,3 @@
-import { cloudinaryUrl } from "@/lib/cloudinary"
-
 export const metadata = {
     title: "Hayat Sigortası | Voldem Sigorta Tokat",
     description: "Tokat hayat sigortası çözümleri. Sevdiklerinizi ve geleceğinizi güvence altına alın. Esnek prim ve teminat seçenekleri ile Voldem Sigorta Tokat.",

@@ -16,7 +16,7 @@ export const metadata = {
         description: "Tokat konut sigortası. Evinizi ve eşyalarınızı geniş kapsamla güvence altına alın.",
         images: [
             {
-                url: cloudinaryUrl("/assets/images/konutt.png", { width: 1200, quality: 80 }),
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769607849/Gemini_Generated_Image_3mywan3mywan3myw_yxwhfg.png",
                 width: 1200,
                 height: 630,
                 alt: "Konut Sigortası Tokat",
