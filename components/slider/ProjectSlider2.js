@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -58,7 +59,7 @@ export default function ProjectSlider2() {
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="slide-item">
                     <div className="project-block">
-                        <div className="image"><img src="/assets/images/resource/project-1.jpg" alt="" className="w-100" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/resource/project-1.jpg")} alt="" className="w-100" /></div>
                         <div className="lower-content">
                             <div className="count">01.</div>
                             <div className="category">Marketing</div>
@@ -76,7 +77,7 @@ export default function ProjectSlider2() {
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
                     <div className="project-block">
-                        <div className="image"><img src="/assets/images/resource/project-2.jpg" alt="" className="w-100" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/resource/project-2.jpg")} alt="" className="w-100" /></div>
                         <div className="lower-content">
                             <div className="count">02.</div>
                             <div className="category">Financial</div>
@@ -94,7 +95,7 @@ export default function ProjectSlider2() {
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
                     <div className="project-block">
-                        <div className="image"><img src="/assets/images/resource/project-3.jpg" alt="" className="w-100" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/resource/project-3.jpg")} alt="" className="w-100" /></div>
                         <div className="lower-content">
                             <div className="count">03.</div>
                             <div className="category">Technical</div>

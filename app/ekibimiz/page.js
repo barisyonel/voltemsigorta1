@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Home() {
 
     return (
@@ -9,7 +10,7 @@ export default function Home() {
                 headerStyle={1}
                 footerStyle={1}
                 breadcrumbTitle="Ekibimiz"
-                breadcrumbImage="/anasayfa2.jpg"
+                breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540888/anasayfa2_ewzq8g.jpg"
             >
                 {/* Team Two Start  */}
                 <section className="team-page">
@@ -20,7 +21,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src="assets/images/team/team-2-1.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-1.jpg")} alt=""/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -46,7 +47,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src="assets/images/team/team-2-2.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-2.jpg")} alt=""/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -72,7 +73,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src="assets/images/team/team-2-3.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-3.jpg")} alt=""/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -103,7 +104,7 @@ export default function Home() {
                     <div className="container">
                         <div className="cta-one__inner">
                             <div className="cta-one__bg"
-                                style={{ backgroundImage: 'url(assets/images/shapes/cta-three-bg-shape-2.png)' }} >
+                                style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/shapes/cta-three-bg-shape-2.png")})` }} >
                             </div>
                             <div className="cta-one__title-box">
                                 <h3>Hemen <span>Teklif</span> Alın</h3>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 
 export default function Cta() {
@@ -9,7 +10,7 @@ export default function Cta() {
                     <div className="row">
                         <div className="col-lg-5 image-column">
                             <div className="image">
-                                <img src="/assets/images/resource/image-2.png" alt="" />
+                                <img src={cloudinaryUrl("/assets/images/resource/image-2.png")} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-7 content-column">
@@ -21,7 +22,7 @@ export default function Cta() {
                                     <span className="right" />
                                 </div>
                             </div>
-                            <div className="image"><img src="/assets/images/resource/mockup-1.png" alt="" /></div>
+                            <div className="image"><img src={cloudinaryUrl("/assets/images/resource/mockup-1.png")} alt="" /></div>
                             <div className="bottom-content text-center">
                                 <div className="link-btn">
                                     <Link href="#" className="theme-btn btn-style-two"><span className="btn-title"><i className="flaticon-playstore" />Google Play</span></Link>

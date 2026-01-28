@@ -1,5 +1,7 @@
+'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export default function Error404() {
     return (
@@ -13,7 +15,7 @@ export default function Error404() {
                             <div className="col-xl-12">
                                 <div className="error-page__inner">
                                     <div className="error-page__img img-bounce">
-                                        <img src="assets/images/resources/error-page-img-1.png" alt=""/>
+                                        <img src={cloudinaryUrl("assets/images/resources/error-page-img-1.png")} alt=""/>
                                     </div>
                                     <h3 className="error-page__tagline">Sorry! Page Not Found!</h3>
                                     <p className="error-page__text">Oops! The page you are looking for does not exist. Please return

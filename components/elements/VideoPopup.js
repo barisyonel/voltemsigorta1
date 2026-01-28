@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 
 export default function VideoPopup({ style, text }) {
@@ -39,7 +40,7 @@ export default function VideoPopup({ style, text }) {
             {style === 4 &&
                 <div className="video-btn">
                     <a onClick={() => setOpen(true)} className="lightbox-image">
-                        <img src="/assets/images-4/icons/video-btn-1.png" alt="" /></a>
+                        <img src={cloudinaryUrl("/assets/images-4/icons/video-btn-1.png")} alt="" /></a>
                 </div>
             }
             {style === 5 &&

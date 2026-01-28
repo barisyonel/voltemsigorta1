@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Home() {
 
     return (
@@ -12,7 +13,7 @@ export default function Home() {
                 <div className="portfolio-details__inner">
                     <div className="portfolio-details__img-box">
                         <div className="portfolio-details__img">
-                            <img src="assets/images/project/portfolio-details-img-1.jpg" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/project/portfolio-details-img-1.jpg")} alt=""/>
                         </div>
                         <div className="portfolio-details__catagory">
                             <ul className="portfolio-details__catagory-list list-unstyled">
@@ -102,7 +103,7 @@ export default function Home() {
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__img-box">
                                 <div className="portfolio-three__img">
-                                    <img src="assets/images/project/portfolio-page-1-1.jpg" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/project/portfolio-page-1-1.jpg")} alt=""/>
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
@@ -110,7 +111,7 @@ export default function Home() {
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
-                                    <Link href="assets/images/project/portfolio-page-1-1.jpg" className="img-popup"><span
+                                    <Link href={cloudinaryUrl("assets/images/project/portfolio-page-1-1.jpg")} className="img-popup"><span
                                             className="icon-next"></span></Link>
                                 </div>
                             </div>
@@ -122,7 +123,7 @@ export default function Home() {
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__img-box">
                                 <div className="portfolio-three__img">
-                                    <img src="assets/images/project/portfolio-page-1-2.jpg" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/project/portfolio-page-1-2.jpg")} alt=""/>
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
@@ -130,7 +131,7 @@ export default function Home() {
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
-                                    <Link href="assets/images/project/portfolio-page-1-2.jpg" className="img-popup"><span
+                                    <Link href={cloudinaryUrl("assets/images/project/portfolio-page-1-2.jpg")} className="img-popup"><span
                                             className="icon-next"></span></Link>
                                 </div>
                             </div>
@@ -142,7 +143,7 @@ export default function Home() {
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__img-box">
                                 <div className="portfolio-three__img">
-                                    <img src="assets/images/project/portfolio-page-1-3.jpg" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/project/portfolio-page-1-3.jpg")} alt=""/>
                                 </div>
                                 <div className="portfolio-three__content">
                                     <p className="portfolio-three__sub-title">Insurance</p>
@@ -150,7 +151,7 @@ export default function Home() {
                                             Insurance</Link></h3>
                                 </div>
                                 <div className="portfolio-three__arrow">
-                                    <Link href="assets/images/project/portfolio-page-1-3.jpg" className="img-popup"><span
+                                    <Link href={cloudinaryUrl("assets/images/project/portfolio-page-1-3.jpg")} className="img-popup"><span
                                             className="icon-next"></span></Link>
                                 </div>
                             </div>

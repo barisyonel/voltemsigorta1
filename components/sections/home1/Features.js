@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Features() {
     return (
         <>
@@ -16,7 +17,7 @@ export default function Features() {
                             <div className="inner-box">
                                 <div className="image">
                                     <div className="icon"><span className="flaticon-career" /></div>
-                                    <img className="lazy-image owl-lazy" src="/assets/images/resource/image-1.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/resource/image-1.jpg")} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Explore</h5>
@@ -27,7 +28,7 @@ export default function Features() {
                                         <h5>Explore</h5>
                                         <h4>Our Company History</h4>
                                     </div>
-                                    <div className="text" style={{ backgroundImage: 'url(assets/images/resource/image-1.jpg)' }}>
+                                    <div className="text" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/resource/image-1.jpg")})` }}>
                                         <p>In a free hour when our power choices when proveprevents best all easy to distinguish.</p>
                                         <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     </div>
@@ -38,7 +39,7 @@ export default function Features() {
                             <div className="inner-box">
                                 <div className="image">
                                     <div className="icon"><span className="flaticon-question" /></div>
-                                    <img className="lazy-image owl-lazy" src="/assets/images/resource/image-2.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/resource/image-2.jpg")} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Knowledge</h5>
@@ -49,7 +50,7 @@ export default function Features() {
                                         <h5>Knowledge</h5>
                                         <h4>Smart self services</h4>
                                     </div>
-                                    <div className="text" style={{ backgroundImage: 'url(assets/images/resource/image-1.jpg)' }}>
+                                    <div className="text" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/resource/image-1.jpg")})` }}>
                                         <p>In a free hour when our power choices when proveprevents best all easy to distinguish.</p>
                                         <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     </div>
@@ -60,7 +61,7 @@ export default function Features() {
                             <div className="inner-box">
                                 <div className="image">
                                     <div className="icon"><span className="flaticon-customer-service" /></div>
-                                    <img className="lazy-image owl-lazy" src="/assets/images/resource/image-3.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/resource/image-3.jpg")} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Connect</h5>
@@ -71,7 +72,7 @@ export default function Features() {
                                         <h5>Connect</h5>
                                         <h4>Integrated Support</h4>
                                     </div>
-                                    <div className="text" style={{ backgroundImage: 'url(assets/images/resource/image-1.jpg)' }}>
+                                    <div className="text" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/resource/image-1.jpg")})` }}>
                                         <p>In a free hour when our power choices when proveprevents best all easy to distinguish.</p>
                                         <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     </div>

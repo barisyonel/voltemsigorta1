@@ -1,7 +1,9 @@
 'use client'
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -56,65 +58,71 @@ const swiperOptions = {
 }
 
 export default function Service() {
+    const [isMounted, setIsMounted] = useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
+
     const services = [
         {
             title: "Trafik Sigortası",
             href: "arac-sigortasi",
-            image: "/assets/images/aracsigorta.png",
+            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540920/aracsigorta_kosjl4.png",
             icon: "icon-car-1",
         },
         {
             title: "Kasko",
             href: "kasko-sigortasi",
-            image: "/assets/images/kasko.png",
+            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554506/sigorta_bl8jr0.jpg",
             icon: "icon-family-insurance",
         },
         {
-            title: "Tamamlayıcı Sağlık",
-            href: "saglik-sigortasi",
-            image: "/assets/images/tamamlayici.png",
-            icon: "icon-healthcare",
+            title: "TARSIM",
+            href: "sigorta",
+            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/tarsim_qrmyqu.png",
+            icon: "icon-protection",
         },
         {
             title: "Özel Sağlık",
             href: "saglik-sigortasi",
-            image: "/assets/images/ozel.png",
+            image: cloudinaryUrl("/assets/images/ozel.png"),
             icon: "icon-healthcare",
         },
         {
             title: "Seyahat Sağlık",
             href: "saglik-sigortasi",
-            image: "/assets/images/services/insurence-1-4.jpg",
+            image: cloudinaryUrl("/assets/images/services/insurence-1-4.jpg"),
             icon: "icon-healthcare",
         },
         {
             title: "DASK",
             href: "dask-sigortasi",
-            image: "/assets/images/dask-1.png",
+            image: cloudinaryUrl("/assets/images/dask-1.png"),
             icon: "icon-home-security",
         },
         {
             title: "Konut Sigortası",
             href: "konut-sigortasi",
-            image: "/assets/images/konut.png",
+            image: cloudinaryUrl("/assets/images/konut.png"),
             icon: "icon-home-security",
         },
         {
             title: "İşyeri Sigortası",
             href: "isyeri-sigortasi",
-            image: "/assets/images/yangin.png",
+            image: cloudinaryUrl("/assets/images/yangin.png"),
             icon: "icon-risk-management",
         },
         {
             title: "Ferdi Kaza",
             href: "hayat-sigortasi",
-            image: "/assets/images/hayat.png",
+            image: cloudinaryUrl("/assets/images/hayat.png"),
             icon: "icon-investment",
         },
         {
             title: "TARSİM",
             href: "sigorta",
-            image: "/assets/images/tarsim.png",
+            image: cloudinaryUrl("/assets/images/tarsim.png"),
             icon: "icon-protection",
         },
     ]
@@ -124,10 +132,10 @@ export default function Service() {
      {/* Services One Start  */}
         <section className="services-one">
             <div className="services-one__shape-1 float-bob-x">
-                <img src="assets/images/shapes/services-one-shape-1.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-1.png")} alt="" suppressHydrationWarning/>
             </div>
             <div className="services-one__shape-2 rotate-me">
-                <img src="assets/images/shapes/services-one-shape-2.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-2.png")} alt="" suppressHydrationWarning/>
             </div>
             <div className="container">
                 <div className="section-title text-left">
@@ -142,7 +150,35 @@ export default function Service() {
                         sunarak doğru poliçeyi seçmenize yardımcı oluyoruz.</p>
                 </div>
                 <div className="services-one__bottom">
-                    <Swiper {...swiperOptions} className="services-one__carousel">
+                    {!isMounted ? (
+                        <div className="services-one__carousel">
+                            {services.map((service) => (
+                                <div className="item" key={`${service.title}-${service.image}`}>
+                                    <div className="services-one__single">
+                                        <div className="services-one__title-box">
+                                            <h3 className="services-one__title"><Link href={service.href}>{service.title}</Link>
+                                            </h3>
+                                        </div>
+                                        <div className="services-one__img-box">
+                                            <div className="services-one__img">
+                                                <img 
+                                                    src={service.image} 
+                                                    alt={service.title}
+                                                />
+                                            </div>
+                                            <div className="services-one__icon">
+                                                <span className={service.icon}></span>
+                                            </div>
+                                        </div>
+                                        <div className="services-one__read-more">
+                                            <Link href={service.href}>Detaylar<span className="icon-next"></span></Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <Swiper {...swiperOptions} className="services-one__carousel">
                             {services.map((service) => (
                                 <SwiperSlide className="item" key={`${service.title}-${service.image}`}>
                                     <div className="services-one__single">
@@ -152,7 +188,10 @@ export default function Service() {
                                         </div>
                                         <div className="services-one__img-box">
                                             <div className="services-one__img">
-                                                <img src={service.image} alt={service.title}/>
+                                                <img 
+                                                    src={service.image} 
+                                                    alt={service.title}
+                                                />
                                             </div>
                                             <div className="services-one__icon">
                                                 <span className={service.icon}></span>
@@ -164,7 +203,8 @@ export default function Service() {
                                     </div>
                                 </SwiperSlide>
                             ))}
-                    </Swiper>
+                        </Swiper>
+                    )}
                 </div>
             </div>
         </section>

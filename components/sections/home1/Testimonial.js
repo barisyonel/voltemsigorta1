@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 
 const swiperOptions = {
@@ -64,7 +65,7 @@ export default function Testimonial() {
      {/* Testimonial One Start  */}
         <section className="testimonial-one">
             <div className="testimonial-one__shape-1 img-bounce">
-                <img src="assets/images/shapes/testimonial-one-shape-1.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/testimonial-one-shape-1.png")} alt=""/>
             </div>
             <div className="container">
                 <div className="section-title text-center">
@@ -82,7 +83,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Hızlı teklif, net bilgi ve çözüm odaklı yaklaşım
@@ -90,7 +91,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/kasko.png" alt="Kasko Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Kasko Sigortası"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ayşe K.</Link>
                                     </h3>
@@ -105,7 +106,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Doğru poliçeyi hızlıca bulmamı sağladılar, süreç
@@ -113,7 +114,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/trafik.png" alt="Trafik Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Trafik Sigortası"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Mehmet T.</Link>
                                     </h3>
@@ -128,7 +129,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Konut sigortası için en uygun teminatları
@@ -136,7 +137,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/konut.png" alt="Konut Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Elif D.</Link></h3>
                                     <p className="testimonial-one__client-sub-title">Müşteri</p>
@@ -150,7 +151,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Hasar sürecinde hızlı destek aldım, her şey
@@ -158,7 +159,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/hayat.png" alt="Hayat Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ahmet Y.</Link>
                                     </h3>
@@ -173,7 +174,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Açıklayıcı ve güven veren bir yaklaşım; tekrar
@@ -181,7 +182,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/tarsim.png" alt="TARSİM Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/tarsim.png")} alt="TARSİM Sigortası"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Zeynep A.</Link>
                                     </h3>
@@ -196,7 +197,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src="assets/images/icon/quote-icon-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt=""/>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Teklifler hızlı geldi, poliçem aynı gün
@@ -204,7 +205,7 @@ export default function Testimonial() {
                                 </div>
                                 <div className="testimonial-one__client-info">
                                     <div className="testimonial-one__client-img">
-                                        <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
+                                        <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat"/>
                                     </div>
                                     <h3 className="testimonial-one__client-name"><Link href="yorumlar">Murat S.</Link></h3>
                                     <p className="testimonial-one__client-sub-title">Müşteri</p>

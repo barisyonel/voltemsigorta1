@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -61,34 +62,34 @@ export default function BrandSlider9() {
             <Swiper {...swiperOptions} className="thm-swiper__slider swiper-container">
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt=""/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt=""/>
                         </SwiperSlide>
                     </div>
                 </Swiper>

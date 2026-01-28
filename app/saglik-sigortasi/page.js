@@ -1,29 +1,56 @@
-'use client'
-import { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
+import { cloudinaryUrl } from "@/lib/cloudinary"
+import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
+export const metadata = {
+    title: "Sağlık Sigortası",
+    description: "Tokat sağlık sigortası çözümleri. TARSIM ve özel sağlık sigortası ile muayene, tetkik ve tedavi masraflarınızı kontrol altına alın. Voldem Sigorta Tokat.",
+    keywords: [
+        "tokat sağlık sigortası",
+        "sağlık sigortası tokat",
+        "tokat TARSIM",
+        "tokat özel sağlık sigortası",
+        "tokat tamamlayıcı sağlık sigortası",
+        "Voldem Sigorta Tokat",
+    ],
+    openGraph: {
+        title: "Sağlık Sigortası | Voldem Sigorta Tokat",
+        description: "Tokat sağlık sigortası çözümleri. TARSIM ve özel sağlık sigortası ile kesintisiz koruma.",
+        images: [
+            {
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608114/Gemini_Generated_Image_jplo75jplo75jplo_oymqfx.png",
+                width: 1200,
+                height: 630,
+                alt: "Sağlık Sigortası Tokat",
+            },
+        ],
+    },
+}
+
+const faqItems = [
+    {
+        question: "Özel ve tamamlayıcı sağlık arasındaki fark nedir?",
+        answer: "Özel sağlık sigortası geniş kapsam sunarken, TARSIM SGK anlaşmalı kurumlarda fark ücretlerini karşılar. İhtiyacınıza göre öneride bulunuruz."
+    },
+    {
+        question: "Poliçe kapsamı nasıl belirlenir?",
+        answer: "Yaş, sağlık geçmişi ve tercih edilen kapsamlar dikkate alınır. Size en uygun teminatları seçeriz."
+    },
+    {
+        question: "Hangi hastanelerle anlaşmalı?",
+        answer: "Anlaşmalı kurum listesi poliçeye göre değişir. Size en uygun ağı birlikte belirleyebiliriz."
+    },
+    {
+        question: "Teklif nasıl alabilirim?",
+        answer: "İletişim kanallarımız üzerinden hızlıca teklif alabilirsiniz. WhatsApp hattımız 7/24 aktiftir."
     }
+]
 
+export default function Home() {
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sağlık Sigortası">
+        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sağlık Sigortası" breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608114/Gemini_Generated_Image_jplo75jplo75jplo_oymqfx.png">
         {/* Insurance Details Start */}
         <section className="insurance-details">
             <div className="container">
@@ -32,14 +59,14 @@ export default function Home() {
                         <div className="insurance-details__left">
                             <h3 className="insurance-details__title-1">Sağlık Sigortasında
                                 <br/> Kesintisiz Koruma</h3>
-                            <p className="insurance-details__text-1">Voldem Sigorta Tokat, tamamlayıcı ve özel sağlık
+                            <p className="insurance-details__text-1">Voldem Sigorta Tokat, TARSIM ve özel sağlık
                                 çözümleriyle ihtiyaçlarınıza uygun kapsamlar sunar. Hızlı provizyon ve güçlü destekle
                                 yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src="/assets/images/ozel.png" alt="Sağlık Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Sağlık Sigortası"/>
                             </div>
                             <h3 className="insurance-details__title-2">Sağlık Sigortası</h3>
-                            <p className="insurance-details__text-2">Özel ve tamamlayıcı sağlık sigortası ile muayene,
+                            <p className="insurance-details__text-2">Özel sağlık sigortası ve TARSIM ile muayene,
                                 tetkik ve tedavi masraflarınızı kontrol altına alın. Tokat ve çevre illerde uygun prim
                                 seçenekleri sunuyoruz.</p>
                             <div className="insurance-details__points-and-text-box">
@@ -72,55 +99,7 @@ export default function Home() {
                                         Şeffaf fiyatlandırma ve hızlı destek sunarız.</p>
                                 </div>
                             </div>
-                            <div className="insurance-details__faq">
-                                <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                    <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
-                                        <div className="accrodion-title">
-                                            <h4>Özel ve tamamlayıcı sağlık arasındaki fark nedir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Özel sağlık sigortası geniş kapsam sunarken, tamamlayıcı sağlık SGK
-                                                    anlaşmalı kurumlarda fark ücretlerini karşılar. İhtiyacınıza göre
-                                                    öneride bulunuruz.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
-                                        <div className="accrodion-title">
-                                            <h4>Poliçe kapsamı nasıl belirlenir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Yaş, sağlık geçmişi ve tercih edilen kapsamlar dikkate alınır. Size
-                                                    en uygun teminatları seçeriz.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
-                                        <div className="accrodion-title">
-                                            <h4>Hangi hastanelerle anlaşmalı?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Anlaşmalı kurum listesi poliçeye göre değişir. Size en uygun ağı
-                                                    birlikte belirleyebiliriz.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
-                                        <div className="accrodion-title">
-                                            <h4>Teklif nasıl alabilirim?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>İletişim kanallarımız üzerinden hızlıca teklif alabilirsiniz.
-                                                    WhatsApp hattımız 7/24 aktiftir.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <InsuranceFAQ items={faqItems} />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -153,7 +132,7 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: 'url(assets/images/backgrounds/insurance-details-need-help-bg.jpg)' }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
                                 </div>
                                 <h3 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

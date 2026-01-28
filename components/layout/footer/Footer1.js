@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Footer1() {
     return (
         <>
@@ -11,7 +12,7 @@ export default function Footer1() {
                             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__column footer-widget__about footer-brand-card">
                                     <div className="footer-widget__logo">
-                                        <Link href="index"><img src="/logo.jpeg"
+                                        <Link href="/"><img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554223/logo_cg5jek.png"
                                                 alt="Voldem Sigorta Tokat logo" style={{ width: "140px", height: "auto" }} /></Link>
                                     </div>
                                     <p className="footer-widget__brand-title">Voldem Sigorta Tokat</p>
@@ -30,10 +31,7 @@ export default function Footer1() {
                                         </Link>
                                     </div>
                                     <div className="footer-widget__social">
-                                        <Link href="#"><span className="icon-facebook"></span></Link>
-                                        <Link href="#"><span className="icon-instagram-1"></span></Link>
-                                        <Link href="#"><span className="icon-tik-tok"></span></Link>
-                                        <Link href="#"><span className="icon-youtube"></span></Link>
+                                        <Link href="#" aria-label="Instagram"><span className="icon-instagram-1"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +42,7 @@ export default function Footer1() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="index">Ana Sayfa</Link>
+                                            <Link href="/">Ana Sayfa</Link>
                                         </li>
                                         <li>
                                             <Link href="hakkimizda">Hakkımızda</Link>

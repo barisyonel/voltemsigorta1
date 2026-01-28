@@ -3,6 +3,32 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  
+  // Image optimization
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
+    ],
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
+  
+  // Compression
+  compress: true,
+  
+  // Remove powered-by header for security
+  poweredByHeader: false,
+  
+  // Experimental features
+  experimental: {
+    optimizeCss: true,
+  },
+  
   async redirects() {
     return [
       { source: "/about", destination: "/hakkimizda", permanent: true },
@@ -21,10 +47,8 @@ const nextConfig = {
       { source: "/testimonial", destination: "/yorumlar", permanent: true },
       { source: "/portfolio", destination: "/portfoy", permanent: true },
       { source: "/portfolio-details", destination: "/portfoy-detay", permanent: true },
-      { source: "/pricing", destination: "/fiyatlar", permanent: true },
       { source: "/products", destination: "/urunler", permanent: true },
       { source: "/product-details", destination: "/urun-detay", permanent: true },
-      { source: "/shop", destination: "/magaza", permanent: true },
       { source: "/blog-details", destination: "/blog", permanent: true },
       { source: "/blog-sidebar", destination: "/blog", permanent: true },
     ]

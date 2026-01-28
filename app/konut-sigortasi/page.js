@@ -1,32 +1,60 @@
-'use client'
-import { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
+import { cloudinaryUrl } from "@/lib/cloudinary"
+import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
+export const metadata = {
+    title: "Konut Sigortası",
+    description: "Tokat konut sigortası çözümleri. Evinizi ve eşyalarınızı yangın, hırsızlık ve doğal afetlere karşı güvence altına alın. Hızlı teklif ve uygun prim seçenekleri.",
+    keywords: [
+        "tokat konut sigortası",
+        "konut sigortası tokat",
+        "tokat ev sigortası",
+        "konut sigortası fiyatları tokat",
+        "tokat yangın sigortası",
+        "Voldem Sigorta Tokat",
+    ],
+    openGraph: {
+        title: "Konut Sigortası | Voldem Sigorta Tokat",
+        description: "Tokat konut sigortası çözümleri. Evinizi ve eşyalarınızı tam koruma ile güvence altına alın.",
+        images: [
+            {
+                url: cloudinaryUrl("/assets/images/konutt.png"),
+                width: 1200,
+                height: 630,
+                alt: "Konut Sigortası Tokat",
+            },
+        ],
+    },
+}
+
+const faqItems = [
+    {
+        question: "Konut sigortası neleri kapsar?",
+        answer: "Yangın, hırsızlık, su baskını ve doğal afetler gibi riskler kapsam dahilindedir. Ek teminatlarla poliçeyi genişletebilirsiniz."
+    },
+    {
+        question: "Primler nasıl belirlenir?",
+        answer: "Konutun özellikleri ve teminat kapsamına göre belirlenir. Size uygun seçenekleri birlikte planlarız."
+    },
+    {
+        question: "Deprem teminatı dahil mi?",
+        answer: "Deprem teminatı DASK ile zorunlu kapsamda sunulur. Konut sigortasında ek teminatlarla desteklenebilir."
+    },
+    {
+        question: "Teklif nasıl alabilirim?",
+        answer: "İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz. WhatsApp hattımız aktiftir."
     }
+]
+
+export default function Home() {
     return (
         <>
         <Layout
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="Konut Sigortası"
-            breadcrumbImage="/assets/images/konutt.png"
+            breadcrumbImage={cloudinaryUrl("/assets/images/konutt.png")}
         >
         {/* Insurance Details Start */}
         <section className="insurance-details">
@@ -39,7 +67,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">Evinizi ve eşyalarınızı yangın, hırsızlık ve doğal
                                 afetlere karşı güvence altına alın. Tokat’ta hızlı teklif ve güvenilir destek sağlarız.</p>
                             <div className="insurance-details__img-1">
-                                <img src="/assets/images/konut.png" alt="Konut Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası"/>
                             </div>
                             <h3 className="insurance-details__title-2">Konut Sigortası</h3>
                             <p className="insurance-details__text-2">Konut sigortası, evinizi ve eşyalarınızı geniş
@@ -74,54 +102,7 @@ export default function Home() {
                                         Tokat’ta hızlı iletişim ve güvenilir hizmet sağlarız.</p>
                                 </div>
                             </div>
-                            <div className="insurance-details__faq">
-                                <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                    <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
-                                        <div className="accrodion-title">
-                                            <h4>Konut sigortası neleri kapsar?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Yangın, hırsızlık, su baskını ve doğal afetler gibi riskler kapsam
-                                                    dahilindedir. Ek teminatlarla poliçeyi genişletebilirsiniz.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
-                                        <div className="accrodion-title">
-                                            <h4>Primler nasıl belirlenir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Konutun özellikleri ve teminat kapsamına göre belirlenir. Size uygun
-                                                    seçenekleri birlikte planlarız.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
-                                        <div className="accrodion-title">
-                                            <h4>Deprem teminatı dahil mi?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Deprem teminatı DASK ile zorunlu kapsamda sunulur. Konut sigortasında
-                                                    ek teminatlarla desteklenebilir.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
-                                        <div className="accrodion-title">
-                                            <h4>Teklif nasıl alabilirim?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz.
-                                                    WhatsApp hattımız aktiftir.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <InsuranceFAQ items={faqItems} />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -154,7 +135,7 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: 'url(assets/images/backgrounds/insurance-details-need-help-bg.jpg)' }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
                                 </div>
                                 <h3 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

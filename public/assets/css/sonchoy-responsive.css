@@ -474,7 +474,8 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-slider,
     .main-slider .item {
-        height: 65vh;
+        height: 100vh;
+        min-height: 100vh;
     }
     .feature-one__hover-shape-1 {
         left: 77px;
@@ -861,6 +862,15 @@
         margin-top: 30px;
     }
 
+    .insurance-details__left {
+        padding-right: 0;
+    }
+
+    .insurance-details {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
     .portfolio-details__catagory {
         flex-direction: column;
     }
@@ -933,7 +943,8 @@
     .main-slider,
     .main-slider .item,
     .main-slider__layout {
-        height: auto;
+        height: 100vh;
+        min-height: 100vh;
     }
     .section-title__title br {
         display: none;
@@ -1728,6 +1739,25 @@
         padding: 68px 15px 75px;
     }
 
+    .whatsapp-quote-box {
+        padding: 40px 30px;
+    }
+
+    .whatsapp-quote-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .whatsapp-quote-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .whatsapp-quote-btn {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
     .faq-page__text-box {
         padding: 80px 20px 66px;
     }
@@ -1750,56 +1780,138 @@
     }
 
     .insurance-details__title-1 {
-        font-size: 29px;
-        line-height: 39px;
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: 20px;
+    }
+
+    .insurance-details__title-1 br {
+        display: none;
+    }
+
+    .insurance-details__text-1 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 15px;
+    }
+
+    .insurance-details__img-1 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .insurance-details__img-1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .insurance-details__title-2 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 20px;
+    }
+
+    .insurance-details__text-2 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 15px;
     }
 
     .insurance-details__points-and-text-box {
         flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .insurance-details__points-box {
+        width: 100%;
+    }
+
+    .insurance-details__points-title {
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .insurance-details__text-box {
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .insurance-details__text-box h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .insurance-details__text-box p {
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .insurance-details__text-box p br {
         display: none;
     }
 
+    .insurance-details__faq {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
     .insurance-details__faq .faq-one-accrodion .accrodion-title {
-        padding: 15px 50px 17px;
+        padding: 15px 50px 17px 50px;
         padding-right: 20px;
     }
 
     .insurance-details__faq .faq-one-accrodion .accrodion-title h4::before {
-        left: -32px;
+        left: 15px;
     }
 
     .insurance-details__faq .faq-one-accrodion .accrodion-title h4 {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 15px;
+        line-height: 24px;
+        padding-left: 25px;
     }
 
     .insurance-details__faq .faq-one-accrodion .accrodion-content {
         margin-right: 10px;
-    }
-
-    .insurance-details__faq {
-        margin-right: 0;
+        padding: 0 20px 20px 50px;
     }
 
     .insurance-details__catagories {
-        padding: 33px 20px 40px;
+        padding: 25px 20px 30px;
         margin-top: 30px;
     }
 
+    .insurance-details__catagories-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .insurance-details__need-help {
+        margin-top: 25px;
+    }
+
     .insurance-details__need-help-title {
-        font-size: 29px;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .insurance-details__need-help-title br {
+        display: none;
     }
 
     .insurance-details__contact {
-        padding: 29px 20px 37px;
+        padding: 25px 20px 30px;
+        margin-top: 25px;
+    }
+
+    .insurance-details__contact-content span {
+        font-size: 14px;
+    }
+
+    .insurance-details__contact-content p {
+        font-size: 16px;
     }
 
     .portfolio-details__catagory {
@@ -1947,19 +2059,57 @@
         display: none;
     }
 
+    .page-header__inner {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
     .page-header__inner h2 {
         font-size: 30px;
         line-height: 40px;
+        color: var(--sonchoy-white);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
     .page-header {
-        padding: 160px 0 120px;
-        min-height: 320px;
+        padding: 0;
+        margin-top: 0;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+    }
+
+    .page-header__layout {
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
     }
 
     .page-header__bg {
-        background-position: center;
-        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        background-position: center center;
+        background-size: cover;
+        background-color: transparent;
+    }
+    
+    .page-header__bg img,
+    .page-header__image {
+        width: 100%;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        object-fit: cover;
+        object-position: center center;
     }
 
     .about-three.about-six {
@@ -2224,8 +2374,8 @@
     .main-slider__media {
         flex: 1 1 100%;
         max-width: 100%;
-        height: auto;
-        aspect-ratio: 4 / 3;
+        height: 100vh;
+        min-height: 100vh;
         background-position: center;
         margin: 0;
         border-radius: 0;
@@ -2328,8 +2478,8 @@
     .main-slider__media {
         flex: 1 1 100%;
         max-width: 100%;
-        height: auto;
-        aspect-ratio: 827 / 362;
+        height: 100vh;
+        min-height: 100vh;
         background-position: center 55%;
     }
 
@@ -2589,8 +2739,8 @@
 
     .main-menu__wrapper-inner {
         padding: 0 20px;
-        height: 90px;
-        min-height: 90px;
+        height: 70px;
+        min-height: 70px;
     }
 
     .main-menu__logo {
@@ -2688,8 +2838,8 @@
 
     .main-menu__wrapper-inner {
         padding: 0 20px;
-        height: 90px;
-        min-height: 90px;
+        height: 70px;
+        min-height: 70px;
     }
 
     .main-menu__logo {
@@ -2795,11 +2945,11 @@
         margin-right: 0;
     }
     .main-menu__logo img {
-        height: 52px;
+        height: 45px;
     }
     .main-menu__wrapper-inner {
-        height: 90px;
-        min-height: 90px;
+        height: 70px;
+        min-height: 70px;
         padding: 0 20px;
     }
     .main-menu__left {
@@ -2819,6 +2969,32 @@
         color: var(--sonchoy-white);
         border: 1px solid rgba(15, 23, 42, 0.12);
         box-shadow: 0 10px 24px rgba(98, 34, 204, 0.3);
+    }
+
+    /* Tablet için page-header optimizasyonu */
+    .page-header {
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+
+    .page-header__layout {
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+
+    .page-header__bg {
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+    
+    .page-header__bg img,
+    .page-header__image {
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
     }
 
 
@@ -2974,13 +3150,19 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("/voldemmobil.png") !important;
+        background-image: url("https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/voldemmobil_lfizpi.png") !important;
     }
 
     .whatsapp-float {
-        display: inline-flex;
+        display: flex;
         right: 18px;
         bottom: 18px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .whatsapp-float i {
+        font-size: 26px;
     }
 
     .scroll-to-top {

@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
   const [isActive, setIsActive] = useState({
@@ -32,8 +33,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <span className="mobile-nav__close mobile-nav__toggler" onClick={handleMobileMenu} ><i className="fa fa-times"></i></span>
 
                     <div className="logo-box">
-                        <a href="index" aria-label="logo image"><img src="/logo.jpeg" width="150"
-                                alt="Voldem Sigorta Tokat logo" /></a>
+                        <Link href="/" aria-label="logo image"><img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554223/logo_cg5jek.png" width="150"
+                                alt="Voldem Sigorta Tokat logo" /></Link>
                     </div>
 
                     <div className="mobile-nav__container">
@@ -43,11 +44,11 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                 <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}>
                                     <Link href="/#">Kurumsal</Link>
                                     <ul style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                                        <li><Link href="hakkimizda">Hakkımızda</Link></li>
-                                        <li><Link href="ekibimiz">Ekibimiz</Link></li>
-                                        <li><Link href="sikca-sorulan-sorular">SSS</Link></li>
-                                        <li><Link href="iletisim">İletişim</Link></li>
-                                        <li><Link href="blog">Blog</Link></li>
+                                        <li><Link href="/hakkimizda">Hakkımızda</Link></li>
+                                        <li><Link href="/ekibimiz">Ekibimiz</Link></li>
+                                        <li><Link href="/sikca-sorulan-sorular">SSS</Link></li>
+                                        <li><Link href="/iletisim">İletişim</Link></li>
+                                        <li><Link href="/blog">Blog</Link></li>
                                     </ul>
                                     <div
                                         className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"}
@@ -59,8 +60,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                 <li className={isActive.key == 3 ? "dropdown current" : "dropdown"}>
                                     <Link href="/#">Araç</Link>
                                     <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                        <li><Link href="arac-sigortasi">Trafik Sigortası</Link></li>
-                                        <li><Link href="kasko-sigortasi">Kasko Sigortası</Link></li>
+                                        <li><Link href="/arac-sigortasi">Trafik Sigortası</Link></li>
+                                        <li><Link href="/kasko-sigortasi">Kasko Sigortası</Link></li>
                                     </ul>
                                     <div
                                         className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"}
@@ -72,9 +73,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                 <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}>
                                     <Link href="/#">Konut</Link>
                                     <ul style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
-                                        <li><Link href="dask-sigortasi">DASK Sigortası</Link></li>
-                                        <li><Link href="konut-sigortasi">Konut Sigortası</Link></li>
-                                        <li><Link href="isyeri-sigortasi">İşyeri Sigortası</Link></li>
+                                        <li><Link href="/dask-sigortasi">DASK Sigortası</Link></li>
+                                        <li><Link href="/konut-sigortasi">Konut Sigortası</Link></li>
+                                        <li><Link href="/isyeri-sigortasi">İşyeri Sigortası</Link></li>
                                     </ul>
                                     <div
                                         className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"}
@@ -86,13 +87,13 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                 <li className={isActive.key == 5 ? "dropdown current" : "dropdown"}>
                                     <Link href="/#">Sigorta</Link>
                                     <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                                        <li><Link href="sigorta">Sigortalar</Link></li>
-                                        <li><Link href="hayat-sigortasi">Hayat Sigortası</Link></li>
-                                        <li><Link href="saglik-sigortasi">Sağlık Sigortası</Link></li>
-                                        <li><Link href="arac-sigortasi">Araç Sigortası</Link></li>
-                                        <li><Link href="konut-sigortasi">Konut Sigortası</Link></li>
-                                        <li><Link href="dask-sigortasi">DASK Sigortası</Link></li>
-                                        <li><Link href="isyeri-sigortasi">İşletme Sigortası</Link></li>
+                                        <li><Link href="/sigorta">Sigortalar</Link></li>
+                                        <li><Link href="/hayat-sigortasi">Hayat Sigortası</Link></li>
+                                        <li><Link href="/saglik-sigortasi">Sağlık Sigortası</Link></li>
+                                        <li><Link href="/arac-sigortasi">Araç Sigortası</Link></li>
+                                        <li><Link href="/konut-sigortasi">Konut Sigortası</Link></li>
+                                        <li><Link href="/dask-sigortasi">DASK Sigortası</Link></li>
+                                        <li><Link href="/isyeri-sigortasi">İşletme Sigortası</Link></li>
                                     </ul>
                                     <div
                                         className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"}
@@ -101,7 +102,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                                         <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
-                                <li><Link href="iletisim">İletişim</Link></li>
+                                <li><Link href="/iletisim">İletişim</Link></li>
                             </ul>
                         </div>
                     </div>

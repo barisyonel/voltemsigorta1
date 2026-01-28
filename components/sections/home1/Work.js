@@ -1,6 +1,7 @@
 
 
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Work() {
     return (
         <>
@@ -21,16 +22,16 @@ export default function Work() {
                                     <div className="work-step-one__icon">
                                         <span className="icon-risk-management"></span>
                                         <div className="work-step-one__shape-1">
-                                            <img src="assets/images/shapes/work-step-one-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__hover-shape-1">
-                                            <img src="assets/images/shapes/work-step-one-hover-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-hover-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-2">
-                                            <img src="assets/images/shapes/work-step-one-shape-2.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-2.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-3">
-                                            <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-3.png")} alt=""/>
                                         </div>
                                     </div>
                                     <h3 className="work-step-one__title"><Link href="hakkimizda">İhtiyacınızı Belirleyin</Link></h3>
@@ -43,16 +44,16 @@ export default function Work() {
                                     <div className="work-step-one__icon">
                                         <span className="icon-talk"></span>
                                         <div className="work-step-one__shape-1">
-                                            <img src="assets/images/shapes/work-step-one-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__hover-shape-1">
-                                            <img src="assets/images/shapes/work-step-one-hover-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-hover-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-2">
-                                            <img src="assets/images/shapes/work-step-one-shape-2.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-2.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-3">
-                                            <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-3.png")} alt=""/>
                                         </div>
                                     </div>
                                     <h3 className="work-step-one__title"><Link href="hakkimizda">Teklif Alın</Link></h3>
@@ -65,16 +66,16 @@ export default function Work() {
                                     <div className="work-step-one__icon">
                                         <span className="icon-problem-solving"></span>
                                         <div className="work-step-one__shape-1">
-                                            <img src="assets/images/shapes/work-step-one-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__hover-shape-1">
-                                            <img src="assets/images/shapes/work-step-one-hover-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-hover-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-2">
-                                            <img src="assets/images/shapes/work-step-one-shape-2.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-2.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-3">
-                                            <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-3.png")} alt=""/>
                                         </div>
                                     </div>
                                     <h3 className="work-step-one__title"><Link href="hakkimizda">Poliçenizi Seçin</Link></h3>
@@ -87,16 +88,16 @@ export default function Work() {
                                     <div className="work-step-one__icon">
                                         <span className="icon-healthcare"></span>
                                         <div className="work-step-one__shape-1">
-                                            <img src="assets/images/shapes/work-step-one-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__hover-shape-1">
-                                            <img src="assets/images/shapes/work-step-one-hover-shape-1.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-hover-shape-1.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-2">
-                                            <img src="assets/images/shapes/work-step-one-shape-2.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-2.png")} alt=""/>
                                         </div>
                                         <div className="work-step-one__shape-3">
-                                            <img src="assets/images/shapes/work-step-one-shape-3.png" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shapes/work-step-one-shape-3.png")} alt=""/>
                                         </div>
                                     </div>
                                     <h3 className="work-step-one__title"><Link href="hakkimizda">Güvende Kalın</Link></h3>

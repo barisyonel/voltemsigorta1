@@ -1,9 +1,10 @@
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Cases() {
     return (
         <>
             <section className="cases-section pb-0">
-                <div className="sec-bg" style={{ backgroundImage: 'url(assets/images/background/bg-1.jpg)' }} />
+                <div className="sec-bg" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/background/bg-1.jpg")})` }} />
                 <div className="auto-container">
                     <div className="sec-title text-center">
                         <h2>Our Projects make Uniqueness <br />from Others</h2>
@@ -16,10 +17,10 @@ export default function Cases() {
                         <div className="col-lg-4 case-block-one">
                             <div className="inner-box">
                                 <div className="image">
-                                    <img className="lazy-image owl-lazy" src="/assets/images/gallery/gallery-1.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/gallery/gallery-1.jpg")} alt="" />
                                 </div>
                                 <div className="overlay">
-                                    <div className="title"><span className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></span>Precision</div>
+                                    <div className="title"><span className="icon"><img src={cloudinaryUrl("/assets/images/icons/icon-8.png")} alt="" /></span>Precision</div>
                                     <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     <div className="content">
                                         <h5>Financial</h5>
@@ -31,10 +32,10 @@ export default function Cases() {
                         <div className="col-lg-4 case-block-one">
                             <div className="inner-box">
                                 <div className="image">
-                                    <img className="lazy-image owl-lazy" src="/assets/images/gallery/gallery-2.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/gallery/gallery-2.jpg")} alt="" />
                                 </div>
                                 <div className="overlay">
-                                    <div className="title"><span className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></span>Precision</div>
+                                    <div className="title"><span className="icon"><img src={cloudinaryUrl("/assets/images/icons/icon-8.png")} alt="" /></span>Precision</div>
                                     <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     <div className="content">
                                         <h5>Financial</h5>
@@ -46,10 +47,10 @@ export default function Cases() {
                         <div className="col-lg-4 case-block-one">
                             <div className="inner-box">
                                 <div className="image">
-                                    <img className="lazy-image owl-lazy" src="/assets/images/gallery/gallery-3.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/gallery/gallery-3.jpg")} alt="" />
                                 </div>
                                 <div className="overlay">
-                                    <div className="title"><span className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></span>Precision</div>
+                                    <div className="title"><span className="icon"><img src={cloudinaryUrl("/assets/images/icons/icon-8.png")} alt="" /></span>Precision</div>
                                     <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     <div className="content">
                                         <h5>Financial</h5>
@@ -61,10 +62,10 @@ export default function Cases() {
                         <div className="col-lg-4 case-block-one">
                             <div className="inner-box">
                                 <div className="image">
-                                    <img className="lazy-image owl-lazy" src="/assets/images/gallery/gallery-4.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/gallery/gallery-4.jpg")} alt="" />
                                 </div>
                                 <div className="overlay">
-                                    <div className="title"><span className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></span>Precision</div>
+                                    <div className="title"><span className="icon"><img src={cloudinaryUrl("/assets/images/icons/icon-8.png")} alt="" /></span>Precision</div>
                                     <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     <div className="content">
                                         <h5>Financial</h5>
@@ -76,10 +77,10 @@ export default function Cases() {
                         <div className="col-lg-4 case-block-one">
                             <div className="inner-box">
                                 <div className="image">
-                                    <img className="lazy-image owl-lazy" src="/assets/images/gallery/gallery-5.jpg" alt="" />
+                                    <img className="lazy-image owl-lazy" src={cloudinaryUrl("/assets/images/gallery/gallery-5.jpg")} alt="" />
                                 </div>
                                 <div className="overlay">
-                                    <div className="title"><span className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></span>Precision</div>
+                                    <div className="title"><span className="icon"><img src={cloudinaryUrl("/assets/images/icons/icon-8.png")} alt="" /></span>Precision</div>
                                     <div className="link-btn"><Link href="#"><i className="flaticon-right-arrow" /></Link></div>
                                     <div className="content">
                                         <h5>Financial</h5>

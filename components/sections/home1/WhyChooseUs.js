@@ -1,4 +1,5 @@
 
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export default function WhyChooseUs() {
     return (
@@ -12,7 +13,7 @@ export default function WhyChooseUs() {
                         <div className="why-choose-one__left">
                             <div className="why-choose-one__img-box">
                                 <div className="why-choose-one__img">
-                                    <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
+                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540940/voldem_hcbgxk.png" alt="Voldem Sigorta Tokat"/>
                                 </div>
                             </div>
                         </div>

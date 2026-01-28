@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Faq() {
     const [isActive, setIsActive] = useState({
         status: false,
@@ -27,7 +28,7 @@ export default function Faq() {
                 headerStyle={1}
                 footerStyle={1}
                 breadcrumbTitle="Sıkça Sorulan Sorular"
-                breadcrumbImage="/anasayfa1.png"
+                breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540886/1045x820_pwgxg9.png"
             >
                 <div>
                     {/* FAQ Page Start */}
@@ -35,7 +36,7 @@ export default function Faq() {
                         <div className="container">
                             <div className="faq-page__text-box">
                                 <div className="faq-page__text-box-shape-1">
-                                    <img src="assets/images/shapes/faq-page-text-box-shape-1.png" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/shapes/faq-page-text-box-shape-1.png")} alt=""/>
                                 </div>
                                 <div className="section-title text-left">
                                     <div className="section-title__tagline-box">
@@ -60,7 +61,7 @@ export default function Faq() {
                                             </div>
                                             <div className="faq-page__bottom-left-img-box">
                                                 <div className="faq-page__bottom-left-img">
-                                                    <img src="/sigorta.jpg" alt="Voldem Sigorta Tokat"/>
+                                                    <img src={cloudinaryUrl("/sigorta.jpg")} alt="Voldem Sigorta Tokat"/>
                                                 </div>
                                                 <h3 className="faq-page__bottom-left-img-text">Voldem Sigorta Tokat
                                                     <br/> Güvenilir Sigorta Danışmanlığı</h3>
@@ -147,7 +148,7 @@ export default function Faq() {
                         <div className="container">
                             <div className="cta-one__inner">
                                 <div className="cta-one__bg"
-                                    style={{ backgroundImage: 'url(assets/images/shapes/cta-three-bg-shape-2.png)' }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/shapes/cta-three-bg-shape-2.png")})` }} >
                                 </div>
                                 <div className="cta-one__title-box">
                                     <h3>Hemen <span>Teklif</span> Alın</h3>

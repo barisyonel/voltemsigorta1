@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -59,7 +60,7 @@ export default function News() {
         <>
             <section className="news-section">
                 <div className="wrapper-box">
-                    <div className="left-column" style={{ backgroundImage: 'url(assets/images/background/bg-3.jpg)' }}>
+                    <div className="left-column" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/background/bg-3.jpg")})` }}>
                         <div className="outer-box">
                             <div className="sec-title light">
                                 <h2>Don’t miss anything <br /> keep update</h2>
@@ -109,7 +110,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>14</strong>February <br />2020</div>
-                                                    <div className="author"><div className="title">Brendan Duke </div><img src="/assets/images/resource/author-thumb-1.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Brendan Duke </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-1.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Business</div>
                                                 <h4><Link href="/blog-detay">How to Manage Business’s <br />Online Reputation</Link></h4>
@@ -123,7 +124,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>21</strong>January <br />2020</div>
-                                                    <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-2.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Raana irave </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-2.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Projects</div>
                                                 <h4><Link href="/blog-detay">Is Your Business Ready For <br />Integration?</Link></h4>
@@ -137,7 +138,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>08</strong>January <br />2020</div>
-                                                    <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-3.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Raana irave </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-3.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Marketing</div>
                                                 <h4><Link href="/blog-detay">That Should You Include In <br />Your Marketing Plan</Link></h4>
@@ -151,7 +152,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>14</strong>February <br />2020</div>
-                                                    <div className="author"><div className="title">Brendan Duke </div><img src="/assets/images/resource/author-thumb-1.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Brendan Duke </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-1.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Business</div>
                                                 <h4><Link href="/blog-detay">How to Manage Business’s <br />Online Reputation</Link></h4>
@@ -165,7 +166,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>21</strong>January <br />2020</div>
-                                                    <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-2.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Raana irave </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-2.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Projects</div>
                                                 <h4><Link href="/blog-detay">Is Your Business Ready For <br />Integration?</Link></h4>
@@ -179,7 +180,7 @@ export default function News() {
                                             <div className="inner-box">
                                                 <div className="row m-0 justify-content-between">
                                                     <div className="date"><strong>08</strong>January <br />2020</div>
-                                                    <div className="author"><div className="title">Raana irave </div><img src="/assets/images/resource/author-thumb-3.jpg" alt="" /></div>
+                                                    <div className="author"><div className="title">Raana irave </div><img src={cloudinaryUrl("/assets/images/resource/author-thumb-3.jpg")} alt="" /></div>
                                                 </div>
                                                 <div className="category">Marketing</div>
                                                 <h4><Link href="/blog-detay">That Should You Include In <br />Your Marketing Plan</Link></h4>

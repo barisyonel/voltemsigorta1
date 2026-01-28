@@ -1,28 +1,56 @@
-'use client'
-import { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
+import { cloudinaryUrl } from "@/lib/cloudinary"
+import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
+export const metadata = {
+    title: "İşletme Sigortası",
+    description: "Tokat işletme sigortası çözümleri. İş yerinizi yangın, hırsızlık, doğal afet ve sorumluluk risklerine karşı koruyun. İşletmenize özel poliçeler.",
+    keywords: [
+        "tokat işletme sigortası",
+        "işletme sigortası tokat",
+        "tokat işyeri sigortası",
+        "işyeri sigortası tokat",
+        "tokat yangın sigortası",
+        "Voldem Sigorta Tokat",
+    ],
+    openGraph: {
+        title: "İşletme Sigortası | Voldem Sigorta Tokat",
+        description: "Tokat işletme sigortası çözümleri. İş yerinizi güçlü koruma ile güvence altına alın.",
+        images: [
+            {
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608282/Gemini_Generated_Image_j9v2h4j9v2h4j9v2_tj33cq.png",
+                width: 1200,
+                height: 630,
+                alt: "İşletme Sigortası Tokat",
+            },
+        ],
+    },
+}
+
+const faqItems = [
+    {
+        question: "İş yeri sigortası neleri kapsar?",
+        answer: "Bina, demirbaş, stok, yangın ve hırsızlık gibi riskleri kapsar. İhtiyaca göre ek teminatlar eklenebilir."
+    },
+    {
+        question: "Primler nasıl belirlenir?",
+        answer: "İşletme türü, büyüklük ve teminat kapsamına göre belirlenir. Size özel seçenekler sunarız."
+    },
+    {
+        question: "İş durması teminatı var mı?",
+        answer: "Talebe göre iş durması teminatı eklenebilir. Detayları birlikte planlarız."
+    },
+    {
+        question: "Teklif nasıl alabilirim?",
+        answer: "İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz. WhatsApp hattımız aktiftir."
     }
+]
+
+export default function Home() {
     return (
         <>
-        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="İş Yeri Sigortası">
+        <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="İş Yeri Sigortası" breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608282/Gemini_Generated_Image_j9v2h4j9v2h4j9v2_tj33cq.png">
         {/* Insurance Details Start */}
         <section className="insurance-details">
             <div className="container">
@@ -32,9 +60,9 @@ export default function Home() {
                             <h3 className="insurance-details__title-1">İş Yeri Sigortasında
                                 <br/> Güçlü Koruma</h3>
                             <p className="insurance-details__text-1">İş yerinizi yangın, hırsızlık, doğal afet ve
-                                sorumluluk risklerine karşı koruyun. Tokat’ta işletmenize özel poliçeler sunuyoruz.</p>
+                                sorumluluk risklerine karşı koruyun. Tokat'ta işletmenize özel poliçeler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src="/assets/images/yangin.png" alt="İş Yeri Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="İş Yeri Sigortası"/>
                             </div>
                             <h3 className="insurance-details__title-2">İş Yeri Sigortası</h3>
                             <p className="insurance-details__text-2">İş yeri sigortası; bina, demirbaş ve stokları
@@ -66,57 +94,10 @@ export default function Home() {
                                 <div className="insurance-details__text-box">
                                     <h3>Neden Voldem Sigorta?</h3>
                                     <p>İşletmenizin ihtiyaçlarını analiz eder, riskleri minimize eden çözümler üretiriz.
-                                        Tokat’ta hızlı ve güvenilir hizmet sağlarız.</p>
+                                        Tokat'ta hızlı ve güvenilir hizmet sağlarız.</p>
                                 </div>
                             </div>
-                            <div className="insurance-details__faq">
-                                <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                    <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
-                                        <div className="accrodion-title">
-                                            <h4>İş yeri sigortası neleri kapsar?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Bina, demirbaş, stok, yangın ve hırsızlık gibi riskleri kapsar.
-                                                    İhtiyaca göre ek teminatlar eklenebilir.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
-                                        <div className="accrodion-title">
-                                            <h4>Primler nasıl belirlenir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>İşletme türü, büyüklük ve teminat kapsamına göre belirlenir. Size özel
-                                                    seçenekler sunarız.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
-                                        <div className="accrodion-title">
-                                            <h4>İş durması teminatı var mı?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Talebe göre iş durması teminatı eklenebilir. Detayları birlikte
-                                                    planlarız.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
-                                        <div className="accrodion-title">
-                                            <h4>Teklif nasıl alabilirim?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz.
-                                                    WhatsApp hattımız aktiftir.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <InsuranceFAQ items={faqItems} />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -149,7 +130,7 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: 'url(assets/images/backgrounds/insurance-details-need-help-bg.jpg)' }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
                                 </div>
                                 <h3 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

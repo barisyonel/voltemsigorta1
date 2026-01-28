@@ -48,14 +48,15 @@ const swiperOptions = {
 
 export default function Brand() {
     const partners = [
-        { src: "/assets/images/zurich-sigorta.png", alt: "Zurich Sigorta" },
-        { src: "/assets/images/unico_sigorta_logo.jpg", alt: "Unico Sigorta" },
-        { src: "/assets/images/ray.png", alt: "Ray Sigorta" },
-        { src: "/assets/images/ak-sigorta.png", alt: "Ak Sigorta" },
-        { src: "/assets/images/Axa.png", alt: "AXA Sigorta" },
-        { src: "/assets/images/hdi_logo.png", alt: "HDI Sigorta" },
-        { src: "/assets/images/t.jpg", alt: "Türkiye Sigorta" },
-        { src: "/assets/images/108.png", alt: "Sigorta Logosu" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540919/hdi_logo_j3gmjj.png", alt: "HDI Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540908/ak-sigorta_nshxel.png", alt: "Ak Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540909/Axa_tahn02.png", alt: "AXA Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540908/allianz_logo_rhlrmh.webp", alt: "Allianz Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540908/108_v2rgdb.png", alt: "Anadolu Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540927/t_kd2iji.jpg", alt: "Türkiye Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/unico_sigorta_logo_sibers.jpg", alt: "Unico Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540936/zurich-sigorta_a0fvlh.png", alt: "Zurich Sigorta" },
+        { src: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540926/ray_uq6bbi.png", alt: "Ray Sigorta" },
     ]
     return (
         <>

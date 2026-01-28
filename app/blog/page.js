@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
     title: "Tokat Sigorta Blogu",
@@ -11,7 +12,7 @@ export const metadata = {
         "Tokat sigorta acentesi",
         "Tokat trafik sigortası",
         "Tokat kasko",
-        "Tokat tamamlayıcı sağlık sigortası",
+        "Tokat TARSIM",
         "Tokat özel sağlık sigortası",
         "Tokat konut sigortası",
         "Tokat DASK",
@@ -32,32 +33,32 @@ export const metadata = {
 const posts = [
     {
         title: "Tokat Trafik Sigortası: Zorunlu Teminatlar ve Avantajlar",
-        image: "/anasayfa2.jpg",
+        image: cloudinaryUrl("/anasayfa2.jpg"),
         tags: ["Tokat Sigorta", "Trafik Sigortası"],
     },
     {
         title: "Tokat Kasko Rehberi: Kapsam ve Poliçe Seçimi",
-        image: "/anasayfa1.png",
+        image: cloudinaryUrl("/anasayfa1.png"),
         tags: ["Tokat Kasko", "Araç Sigortası"],
     },
     {
-        title: "Tamamlayıcı Sağlık Sigortası ile Güvende Kalın",
-        image: "/iletisim.png",
+        title: "TARSIM ile Güvende Kalın",
+        image: cloudinaryUrl("/iletisim.png"),
         tags: ["Sağlık Sigortası", "Tokat Sigorta"],
     },
     {
         title: "DASK (Zorunlu Deprem Sigortası) Hakkında Bilmeniz Gerekenler",
-        image: "/hakkımızda.png",
+        image: cloudinaryUrl("/hakkımızda.png"),
         tags: ["DASK", "Konut Sigortası"],
     },
     {
         title: "Konut Sigortası ile Evinizi Güvence Altına Alın",
-        image: "/gorsel.jpg",
+        image: cloudinaryUrl("/gorsel.jpg"),
         tags: ["Konut Sigortası", "Tokat En Uygun Sigorta"],
     },
     {
         title: "İşyeri Sigortası: İşinizi ve Gelirinizi Koruyun",
-        image: "/sigorta.jpg",
+        image: cloudinaryUrl("/sigorta.jpg"),
         tags: ["İşyeri Sigortası", "Tokat Sigorta"],
     },
 ]
@@ -69,7 +70,7 @@ export default function Home() {
                 headerStyle={1}
                 footerStyle={1}
                 breadcrumbTitle="Blog"
-                breadcrumbImage="/gorsel.jpg"
+                breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540886/1045x820_pwgxg9.png"
             >
                 <section className="blog-page">
                     <div className="container">
@@ -88,7 +89,7 @@ export default function Home() {
                                             </h3>
                                             <div className="blog-one__client-info">
                                                 <div className="blog-one__client-img">
-                                                    <img src="/assets/images/voldem.png" alt="Voldem Sigorta Tokat"/>
+                                                    <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat"/>
                                                 </div>
                                                 <div className="blog-one__client-content">
                                                     <h3>Voldem Sigorta Tokat</h3>
@@ -121,7 +122,7 @@ export default function Home() {
                             <h3>En Çok Sorulan Konular</h3>
                             <ul>
                                 <li>Trafik sigortası ile kasko arasındaki farklar ve doğru teminat seçimi</li>
-                                <li>Tamamlayıcı sağlık sigortası ve özel sağlık sigortası kapsamları</li>
+                                <li>TARSIM ve özel sağlık sigortası kapsamları</li>
                                 <li>Konut sigortası ve DASK arasındaki zorunlu/isteğe bağlı ayrımı</li>
                                 <li>İşyeri sigortasında stok, makine ve yangın teminatlarının önemi</li>
                             </ul>
@@ -167,7 +168,7 @@ export default function Home() {
                     <div className="container">
                         <div className="cta-one__inner">
                             <div className="cta-one__bg"
-                                style={{ backgroundImage: 'url(assets/images/shapes/cta-three-bg-shape-2.png)' }} >
+                                style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/shapes/cta-three-bg-shape-2.png")})` }} >
                             </div>
                             <div className="cta-one__title-box">
                                 <h3>Hemen En Uygun <span>Teklifi</span> Al!</h3>

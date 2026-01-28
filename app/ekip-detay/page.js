@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Home() {
 
     return (
@@ -12,17 +13,17 @@ export default function Home() {
                 <div className="team-details__top">
                     <div className="team-details__top-bg">
                         <div className="team-details__top-shape-1 float-bob">
-                            <img src="assets/images/shapes/team-details-top-shape-1.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/shapes/team-details-top-shape-1.png")} alt=""/>
                         </div>
                         <div className="team-details__top-shape-2 float-bob-y">
-                            <img src="assets/images/shapes/team-details-top-shape-2.png" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/shapes/team-details-top-shape-2.png")} alt=""/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-xl-7 col-lg-7">
                             <div className="team-details__top-img-box">
                                 <div className="team-details__top-img">
-                                    <img src="assets/images/team/team-details-top-img-1.jpg" alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/team/team-details-top-img-1.jpg")} alt=""/>
                                 </div>
                                 <span>SONCHOY</span>
                             </div>

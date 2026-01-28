@@ -1,6 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination,FreeMode } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation,FreeMode],
@@ -59,7 +60,7 @@ export default function ProjectSlider4() {
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-1.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -71,7 +72,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-2.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -83,7 +84,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-3.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -95,7 +96,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-1.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -107,7 +108,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-2.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -119,7 +120,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src="/assets/images/gallery/gallery-2-3.jpg" alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>

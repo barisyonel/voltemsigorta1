@@ -1,12 +1,13 @@
-import ClientSlider1 from "@/components/slider/ClientSlider1"
+import ClientSlider1 from "@/components/slider/ClientSlider"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 
 export default function Clients() {
     return (
         <>
             <section className="clients-section">
-                <div className="pattern" style={{ backgroundImage: 'url(assets/images/shape/pattern-1.png)' }} />
+                <div className="pattern" style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/shape/pattern-1.png")})` }} />
                 <div className="auto-container">
                     <div className="row">
                         <div className="col-lg-9">

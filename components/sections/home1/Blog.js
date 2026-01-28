@@ -28,7 +28,7 @@ export default function Blog() {
                         kapsamlı seçenekleri değerlendirir, teklifleri aynı dilde ve şeffaf şekilde karşılaştırırız.</p>
 
                     <h3 className="seo-article__subtitle">2) Sağlık Sigortasında İhtiyaç Analizi</h3>
-                    <p>Sağlık tarafında ise tokat sağlık sigortası, tokat tamamlayıcı sağlık sigortası ve tokat özel
+                    <p>Sağlık tarafında ise tokat sağlık sigortası, tokat TARSIM ve tokat özel
                         sağlık sigortası ayrımı kritiktir. Tamamlayıcı ürünler SGK ile entegre çalışırken özel sağlık
                         sigortası daha geniş bir hastane ağı ve limit sunabilir. Aile yapınız, mevcut sağlık geçmişiniz
                         ve yıllık bütçeniz göz önüne alınmadan yapılan seçimler uzun vadede memnuniyetsizlik yaratır.

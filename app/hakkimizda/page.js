@@ -1,5 +1,31 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
+
+export const metadata = {
+    title: "Hakkımızda",
+    description: "Voldem Sigorta Tokat hakkında. 2022'den beri Tokat ve çevre illerde sigorta aracılık ve danışmanlık hizmetleri sunuyoruz. Maksimum müşteri memnuniyeti ilkemizle hizmet veriyoruz.",
+    keywords: [
+        "voldem sigorta tokat",
+        "tokat sigorta acentesi",
+        "tokat sigorta firması",
+        "tokat sigorta danışmanlığı",
+        "Voldem Sigorta hakkında",
+        "tokat sigorta şirketi",
+    ],
+    openGraph: {
+        title: "Hakkımızda | Voldem Sigorta Tokat",
+        description: "Voldem Sigorta Tokat hakkında. 2022'den beri güvenilir sigorta hizmetleri.",
+        images: [
+            {
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/hakk%C4%B1m%C4%B1zda_kudnpv.png",
+                width: 1200,
+                height: 630,
+                alt: "Voldem Sigorta Tokat Hakkımızda",
+            },
+        ],
+    },
+}
 
 const partners = [
     "AXA Sigorta",
@@ -32,7 +58,7 @@ export default function About() {
                 headerStyle={1}
                 footerStyle={1}
                 breadcrumbTitle="Hakkımızda"
-                breadcrumbImage="/hakkımızda.png"
+                breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/hakk%C4%B1m%C4%B1zda_kudnpv.png"
             >
                 <section className="about-three about-six">
                     <div className="container">
@@ -41,7 +67,7 @@ export default function About() {
                                 <div className="about-three__left">
                                     <div className="about-three__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                                     <div className="about-three__img">
-                                        <img src="/sigorta.jpg" alt="Voldem Sigorta Tokat"/>
+                                        <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554506/sigorta_bl8jr0.jpg" alt="Voldem Sigorta Tokat"/>
                                     </div>
                                     </div>
                                 </div>

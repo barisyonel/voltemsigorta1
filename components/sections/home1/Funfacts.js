@@ -1,4 +1,5 @@
 import CounterUp from "@/components/elements/CounterUp"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Funfacts() {
     return (
         <>
@@ -6,25 +7,25 @@ export default function Funfacts() {
      {/* Counter One Start  */}
         <section className="counter-one">
             <div className="counter-one__shape-1 float-bob-x">
-                <img src="assets/images/shapes/counter-one-shape-1.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-1.png")} alt=""/>
             </div>
             <div className="counter-one__shape-2 float-bob-y">
-                <img src="assets/images/shapes/counter-one-shape-2.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-2.png")} alt=""/>
             </div>
             <div className="counter-one__shape-3 float-bob-x">
-                <img src="assets/images/shapes/counter-one-shape-3.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-3.png")} alt=""/>
             </div>
             <div className="counter-one__shape-4 float-bob-y">
-                <img src="assets/images/shapes/counter-one-shape-4.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-4.png")} alt=""/>
             </div>
             <div className="counter-one__shape-5 img-bounce">
-                <img src="assets/images/shapes/counter-one-shape-5.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-5.png")} alt=""/>
             </div>
             <div className="counter-one__shape-6 float-bob-y">
-                <img src="assets/images/shapes/counter-one-shape-6.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-6.png")} alt=""/>
             </div>
             <div className="counter-one__shape-7 float-bob-x">
-                <img src="assets/images/shapes/counter-one-shape-7.png" alt=""/>
+                <img src={cloudinaryUrl("assets/images/shapes/counter-one-shape-7.png")} alt=""/>
             </div>
             <div className="container">
                 <div className="counter-one__inner">

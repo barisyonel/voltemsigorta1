@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { cloudinaryUrl } from "@/lib/cloudinary"
  
 export default function Faq() {
     const [isActive, setIsActive] = useState({
@@ -29,11 +30,11 @@ export default function Faq() {
                             <div className="col-xl-6">
                                 <div className="faq-one__left">
                                     <div className="faq-one__shape-1 float-bob-x">
-                                        <img src="assets/images/shapes/faq-one-shape-1.png" alt=""/>
+                                        <img src={cloudinaryUrl("assets/images/shapes/faq-one-shape-1.png")} alt=""/>
                                     </div>
                                     <div className="faq-one__img-box">
                                     <div className="faq-one__img">
-                                        <img src="/assets/images/tarsim.png" alt="TARSİM Sigortası"/>
+                                        <img src={cloudinaryUrl("/assets/images/tarsim.png")} alt="TARSİM Sigortası"/>
                                     </div>
                                         <div className="faq-one__quick-box">
                                             <div className="faq-one__quick-icon">

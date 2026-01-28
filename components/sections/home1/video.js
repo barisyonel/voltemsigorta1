@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import ReactCurvedText from 'react-curved-text'
 import ModalVideo from 'react-modal-video'
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 
 export default function Video() {
@@ -11,22 +12,22 @@ export default function Video() {
             {/* Video One Start  */}
                 <section className="video-one">
                     <div className="video-one__bg"
-                        style={{ backgroundImage: 'url(/assets/images/voldem.png)' }} >
+                        style={{ backgroundImage: `url(${cloudinaryUrl("/assets/images/voldem.png")})` }} >
                     </div>
                     <div className="video-one__shape-1">
-                        <img src="assets/images/shapes/video-one__shape-1.png" alt=""/>
+                        <img src={cloudinaryUrl("assets/images/shapes/video-one__shape-1.png")} alt=""/>
                     </div>
                     <div className="video-one__shape-2">
-                        <img src="assets/images/shapes/video-one__shape-2.png" alt=""/>
+                        <img src={cloudinaryUrl("assets/images/shapes/video-one__shape-2.png")} alt=""/>
                     </div>
                     <div className="video-one__shape-3">
-                        <img src="assets/images/shapes/video-one__shape-3.png" alt=""/>
+                        <img src={cloudinaryUrl("assets/images/shapes/video-one__shape-3.png")} alt=""/>
                     </div>
                     <div className="video-one__shape-4">
-                        <img src="assets/images/shapes/video-one__shape-4.png" alt=""/>
+                        <img src={cloudinaryUrl("assets/images/shapes/video-one__shape-4.png")} alt=""/>
                     </div>
                     <div className="video-one__shape-5">
-                        <img src="assets/images/shapes/video-one__shape-5.png" alt=""/>
+                        <img src={cloudinaryUrl("assets/images/shapes/video-one__shape-5.png")} alt=""/>
                     </div>
                     <div className="container">
                         <div className="video-one__inner">

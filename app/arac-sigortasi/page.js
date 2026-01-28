@@ -1,32 +1,60 @@
-'use client'
-import { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
+import { cloudinaryUrl } from "@/lib/cloudinary"
+import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
+export const metadata = {
+    title: "Araç Sigortası",
+    description: "Tokat araç sigortası çözümleri. Trafik ve kasko sigortası ile aracınızı güvence altına alın. Hızlı teklif, uygun prim ve güçlü hasar desteği.",
+    keywords: [
+        "tokat araç sigortası",
+        "araç sigortası tokat",
+        "tokat trafik sigortası",
+        "tokat kasko",
+        "araç sigortası fiyatları tokat",
+        "Voldem Sigorta Tokat",
+    ],
+    openGraph: {
+        title: "Araç Sigortası | Voldem Sigorta Tokat",
+        description: "Tokat araç sigortası çözümleri. Trafik ve kasko ile tam güvence.",
+        images: [
+            {
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769607780/Gemini_Generated_Image_1vl8y01vl8y01vl8_vc8f3p.png",
+                width: 1200,
+                height: 630,
+                alt: "Araç Sigortası Tokat",
+            },
+        ],
+    },
+}
+
+const faqItems = [
+    {
+        question: "Trafik ve kasko arasındaki fark nedir?",
+        answer: "Trafik sigortası zorunludur ve karşı tarafın zararlarını karşılar. Kasko ise aracınızın kendi zararlarını güvence altına alır."
+    },
+    {
+        question: "Primler nasıl belirlenir?",
+        answer: "Araç bilgileri, kullanım şekli ve teminat tercihleri gibi kriterlere göre belirlenir. Size özel seçenekler sunarız."
+    },
+    {
+        question: "Kasko teminatları neleri kapsar?",
+        answer: "Çarpma, çalınma, yangın, doğal afet gibi riskler kapsam dahilindedir. Ek teminatlarla poliçenizi güçlendirebilirsiniz."
+    },
+    {
+        question: "Teklif nasıl alabilirim?",
+        answer: "İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz. WhatsApp hattımız aktif."
     }
+]
+
+export default function Home() {
     return (
         <>
         <Layout
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="Araç Sigortası"
-            breadcrumbImage="/assets/images/trafik.png"
+            breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769607780/Gemini_Generated_Image_1vl8y01vl8y01vl8_vc8f3p.png"
         >
         {/* Insurance Details Start */}
         <section className="insurance-details">
@@ -39,7 +67,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">Trafik ve kasko ihtiyaçlarınız için Tokat’ta
                                 hızlı, şeffaf ve bütçe dostu çözümler sunuyoruz. Hasar süreçlerinde de yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src="/assets/images/trafik.png" alt="Araç Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Araç Sigortası"/>
                             </div>
                             <h3 className="insurance-details__title-2">Araç Sigortası</h3>
                             <p className="insurance-details__text-2">Trafik sigortası yasal zorunluluğunuzu karşılarken,
@@ -75,54 +103,7 @@ export default function Home() {
                                         hızlı iletişim ve güvenilir hizmet sağlarız.</p>
                                 </div>
                             </div>
-                            <div className="insurance-details__faq">
-                                <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                    <div className={isActive.key == 1 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(1)}>
-                                        <div className="accrodion-title">
-                                            <h4>Trafik ve kasko arasındaki fark nedir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Trafik sigortası zorunludur ve karşı tarafın zararlarını karşılar.
-                                                    Kasko ise aracınızın kendi zararlarını güvence altına alır.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 2 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(2)}>
-                                        <div className="accrodion-title">
-                                            <h4>Primler nasıl belirlenir?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Araç bilgileri, kullanım şekli ve teminat tercihleri gibi kriterlere
-                                                    göre belirlenir. Size özel seçenekler sunarız.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 3 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(3)}>
-                                        <div className="accrodion-title">
-                                            <h4>Kasko teminatları neleri kapsar?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>Çarpma, çalınma, yangın, doğal afet gibi riskler kapsam dahilindedir.
-                                                    Ek teminatlarla poliçenizi güçlendirebilirsiniz.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                    <div className={isActive.key == 4 ? "accrodion active" : "accrodion"} onClick={() => handleToggle(4)}>
-                                        <div className="accrodion-title">
-                                            <h4>Teklif nasıl alabilirim?</h4>
-                                        </div>
-                                        <div className="accrodion-content">
-                                            <div className="inner">
-                                                <p>İletişim sayfamızdan bize ulaşarak hızlıca teklif alabilirsiniz.
-                                                    WhatsApp hattımız aktif.</p>
-                                            </div>{/*  /.inner  */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <InsuranceFAQ items={faqItems} />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -155,7 +136,7 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: 'url(assets/images/backgrounds/insurance-details-need-help-bg.jpg)' }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
                                 </div>
                                 <h3 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

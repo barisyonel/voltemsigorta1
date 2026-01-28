@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const swiperOptions = {
     modules: [Autoplay],
@@ -18,7 +19,7 @@ const swiperOptions = {
 export default function Banner() {
     const slides = [
         {
-            image: "/voldem.png",
+            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540891/voldem_npvikt.png",
         },
     ]
     return (

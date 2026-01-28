@@ -1,6 +1,7 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { cloudinaryUrl } from "@/lib/cloudinary"
 export default function Home() {
 
     return (
@@ -44,7 +45,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-1.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-1.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -72,7 +73,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-2.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-2.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -100,7 +101,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-3.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-3.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -129,7 +130,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-4.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-4.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -158,7 +159,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-5.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-5.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -187,7 +188,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-6.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-6.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -216,7 +217,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-7.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-7.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -244,7 +245,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-8.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-8.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
@@ -273,7 +274,7 @@ export default function Home() {
                                 <div className="product__all-single">
                                     <div className="product__all-img-box">
                                         <div className="product__all-img">
-                                            <img src="assets/images/shop/shop-product-1-9.jpg" alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/shop/shop-product-1-9.jpg")} alt=""/>
                                         </div>
                                         <div className="product__cart">
                                             <Link href="urun-detay">ADD TO CART</Link>
