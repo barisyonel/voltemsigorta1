@@ -11,6 +11,11 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
     // Remove any extra quotes if present
     imageUrl = imageUrl.replace(/^["']|["']$/g, '')
     
+    // If URL doesn't start with http, it might need encoding
+    if (!imageUrl.startsWith('http://') && !imageUrl.startsWith('https://')) {
+        imageUrl = encodeURI(imageUrl)
+    }
+    
     return (
         <>
             {/* Page Header Start */}
@@ -19,7 +24,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
                     <div
                         className="page-header__bg"
                         style={{
-                            backgroundImage: `url("${imageUrl}")`,
+                            backgroundImage: `url(${imageUrl})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center center',
                             backgroundRepeat: 'no-repeat',

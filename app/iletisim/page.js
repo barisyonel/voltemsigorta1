@@ -10,7 +10,7 @@ export default function Home() {
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="İletişim"
-            breadcrumbImage={cloudinaryUrl("/gorsel.jpg")}
+            breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/hakk%C4%B1m%C4%B1zda_kudnpv.png"
         >
         {/* Contact Page Start */}
         <section className="contact-page">
