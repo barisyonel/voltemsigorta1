@@ -2,7 +2,7 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Navigation, Pagination, Thumbs } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
@@ -13,6 +13,12 @@ import "swiper/css/thumbs"
 export default function Home() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null)
     const [activeIndex, setActiveIndex] = useState(0)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [quantity, setQuantity] = useState(1)
+    const [showSuccess, setShowSuccess] = useState(false)
+
+    const productName = "School Bag"
+    const productPrice = 19.99
 
     const productImages = [
         cloudinaryUrl("assets/images/shop/product-details-top-img-1.jpg"),
@@ -20,6 +26,8 @@ export default function Home() {
         cloudinaryUrl("assets/images/shop/shop-product-1-2.jpg"),
         cloudinaryUrl("assets/images/shop/shop-product-1-3.jpg"),
     ]
+
+    const totalPrice = (productPrice * quantity).toFixed(2)
 
     const handleShare = () => {
         if (navigator.share) {
@@ -36,14 +44,60 @@ export default function Home() {
     }
 
     const handleBuyNow = () => {
-        // Redirect to checkout or handle buy now action
-        window.location.href = '/checkout'
+        setIsModalOpen(true)
+        setQuantity(1)
+        setShowSuccess(false)
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false)
+        setShowSuccess(false)
+        setQuantity(1)
+    }
+
+    const handleQuantityChange = (e) => {
+        const value = parseInt(e.target.value) || 1
+        if (value >= 1 && value <= 10) {
+            setQuantity(value)
+        }
+    }
+
+    const handleQuantityDecrease = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1)
+        }
+    }
+
+    const handleQuantityIncrease = () => {
+        if (quantity < 10) {
+            setQuantity(quantity + 1)
+        }
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+        setShowSuccess(true)
+        setTimeout(() => {
+            handleCloseModal()
+        }, 2000)
     }
 
     const handleAddToCart = () => {
         // Handle add to cart action
         alert('Product added to cart!')
     }
+
+    // Prevent body scroll when modal is open
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'unset'
+        }
+        return () => {
+            document.body.style.overflow = 'unset'
+        }
+    }, [isModalOpen])
 
     return (
         <>
@@ -268,6 +322,99 @@ export default function Home() {
             </div>
         </section>
         {/* End Review Form */}
+
+        {/* Buy Now Modal */}
+        {isModalOpen && (
+            <div className="buy-now-modal-overlay" onClick={handleCloseModal}>
+                <div className="buy-now-modal" onClick={(e) => e.stopPropagation()}>
+                    <div className="buy-now-modal__header">
+                        <h3 className="buy-now-modal__title">Buy Now</h3>
+                        <button 
+                            type="button" 
+                            className="buy-now-modal__close"
+                            onClick={handleCloseModal}
+                            aria-label="Close"
+                        >
+                            <span>×</span>
+                        </button>
+                    </div>
+                    <div className="buy-now-modal__body">
+                        {showSuccess ? (
+                            <div className="buy-now-modal__success">
+                                <div className="buy-now-modal__success-icon">✓</div>
+                                <h4>Order Placed Successfully!</h4>
+                                <p>Thank you for your purchase. Your order has been received.</p>
+                            </div>
+                        ) : (
+                            <form className="buy-now-modal__form" onSubmit={handleFormSubmit}>
+                                <div className="buy-now-modal__form-group">
+                                    <label className="buy-now-modal__label">Product Name</label>
+                                    <input 
+                                        type="text" 
+                                        className="buy-now-modal__input" 
+                                        value={productName}
+                                        readOnly
+                                    />
+                                </div>
+                                <div className="buy-now-modal__form-group">
+                                    <label className="buy-now-modal__label">Quantity</label>
+                                    <div className="buy-now-modal__quantity-controls">
+                                        <button 
+                                            type="button" 
+                                            className="buy-now-modal__quantity-btn"
+                                            onClick={handleQuantityDecrease}
+                                            disabled={quantity <= 1}
+                                        >
+                                            <i className="fa fa-minus"></i>
+                                        </button>
+                                        <input 
+                                            type="number" 
+                                            className="buy-now-modal__quantity-input"
+                                            value={quantity}
+                                            onChange={handleQuantityChange}
+                                            min="1"
+                                            max="10"
+                                        />
+                                        <button 
+                                            type="button" 
+                                            className="buy-now-modal__quantity-btn"
+                                            onClick={handleQuantityIncrease}
+                                            disabled={quantity >= 10}
+                                        >
+                                            <i className="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="buy-now-modal__form-group">
+                                    <label className="buy-now-modal__label">Total Price</label>
+                                    <input 
+                                        type="text" 
+                                        className="buy-now-modal__input buy-now-modal__input--total"
+                                        value={`$${totalPrice}`}
+                                        readOnly
+                                    />
+                                </div>
+                                <div className="buy-now-modal__form-actions">
+                                    <button 
+                                        type="button" 
+                                        className="buy-now-modal__cancel-btn thm-btn"
+                                        onClick={handleCloseModal}
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button 
+                                        type="submit" 
+                                        className="buy-now-modal__submit-btn thm-btn"
+                                    >
+                                        Submit Order
+                                    </button>
+                                </div>
+                            </form>
+                        )}
+                    </div>
+                </div>
+            </div>
+        )}
 
             </Layout>
         </>
