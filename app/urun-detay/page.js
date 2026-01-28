@@ -1,9 +1,50 @@
 'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
+import { cloudinaryUrl } from "@/lib/cloudinary"
+import { useState } from "react"
+import { Navigation, Pagination, Thumbs } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/thumbs"
 
-    
+export default function Home() {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null)
+    const [activeIndex, setActiveIndex] = useState(0)
+
+    const productImages = [
+        cloudinaryUrl("assets/images/shop/product-details-top-img-1.jpg"),
+        cloudinaryUrl("assets/images/shop/shop-product-1-1.jpg"),
+        cloudinaryUrl("assets/images/shop/shop-product-1-2.jpg"),
+        cloudinaryUrl("assets/images/shop/shop-product-1-3.jpg"),
+    ]
+
+    const handleShare = () => {
+        if (navigator.share) {
+            navigator.share({
+                title: 'School Bag',
+                text: 'Check out this amazing product!',
+                url: window.location.href,
+            }).catch((err) => console.log('Error sharing', err))
+        } else {
+            // Fallback: Copy to clipboard
+            navigator.clipboard.writeText(window.location.href)
+            alert('Link copied to clipboard!')
+        }
+    }
+
+    const handleBuyNow = () => {
+        // Redirect to checkout or handle buy now action
+        window.location.href = '/checkout'
+    }
+
+    const handleAddToCart = () => {
+        // Handle add to cart action
+        alert('Product added to cart!')
+    }
+
     return (
         <>
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Product Details">     
@@ -14,12 +55,69 @@ export default function Home() {
                     <div className="row">
                         <div className="col-xl-6 col-lg-6">
                             <div className="product-details__top-left">
-                                <div className="product-details__top-img">
-                                    <img src="assets/images/shop/product-details-top-img-1.jpg" alt=""/>
-                                </div>
-                                <div className="product-details__search">
-                                    <Link href="assets/images/shop/product-details-top-img-1.jpg" className="img-popup"><span
-                                            className="icon-search"></span></Link>
+                                {/* Main Product Image Carousel */}
+                                <div className="product-details__carousel-wrapper">
+                                    <Swiper
+                                        modules={[Navigation, Pagination, Thumbs]}
+                                        spaceBetween={10}
+                                        slidesPerView={1}
+                                        navigation={{
+                                            nextEl: '.product-carousel-next',
+                                            prevEl: '.product-carousel-prev',
+                                        }}
+                                        pagination={{
+                                            clickable: true,
+                                            el: '.product-carousel-pagination',
+                                        }}
+                                        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                                        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                                        className="product-details__main-carousel"
+                                    >
+                                        {productImages.map((image, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className="product-details__top-img">
+                                                    <img src={image} alt={`Product image ${index + 1}`} />
+                                                </div>
+                                                <div className="product-details__search">
+                                                    <Link href={image} className="img-popup">
+                                                        <span className="icon-search"></span>
+                                                    </Link>
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
+                                    
+                                    {/* Navigation Buttons */}
+                                    <div className="product-carousel-nav">
+                                        <button type="button" className="product-carousel-prev">
+                                            <span>‹</span>
+                                        </button>
+                                        <button type="button" className="product-carousel-next">
+                                            <span>›</span>
+                                        </button>
+                                    </div>
+                                    
+                                    {/* Pagination */}
+                                    <div className="product-carousel-pagination"></div>
+
+                                    {/* Thumbnail Carousel */}
+                                    <Swiper
+                                        modules={[Thumbs]}
+                                        onSwiper={setThumbsSwiper}
+                                        spaceBetween={10}
+                                        slidesPerView={4}
+                                        freeMode={true}
+                                        watchSlidesProgress={true}
+                                        className="product-details__thumb-carousel"
+                                    >
+                                        {productImages.map((image, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className={`product-thumb ${activeIndex === index ? 'active' : ''}`}>
+                                                    <img src={image} alt={`Thumbnail ${index + 1}`} />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +135,7 @@ export default function Home() {
                                 <div className="product-details__doller">
                                     <h3>$19.99</h3>
                                 </div>
-                                <p className="product-details__text">In today’s online world, a brand’s success lies in
+                                <p className="product-details__text">In today's online world, a brand's success lies in
                                     combining
                                     <br/> technological planning and social strategies to draw
                                     <br/> customers in–and keep them coming back</p>
@@ -51,9 +149,27 @@ export default function Home() {
                                             <input type="number" id="4" value="4" />
                                             <button type="button" className="add"><i className="fa fa-plus"></i></button>
                                         </div>
-                                        <div className="product-details__quantity-btn-box">
-                                            <Link href="#" className="product-details__quantity-btn thm-btn">Add to Cart</Link>
-                                        </div>
+                                    </div>
+                                    {/* Action Buttons */}
+                                    <div className="product-details__action-buttons">
+                                        <button 
+                                            onClick={handleBuyNow}
+                                            className="product-details__buy-now-btn thm-btn"
+                                        >
+                                            Buy Now
+                                        </button>
+                                        <button 
+                                            onClick={handleAddToCart}
+                                            className="product-details__cart-btn thm-btn"
+                                        >
+                                            Add to Cart
+                                        </button>
+                                        <button 
+                                            onClick={handleShare}
+                                            className="product-details__share-btn thm-btn"
+                                        >
+                                            <span className="icon-share"></span> Share
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="product-details__category">
@@ -96,7 +212,7 @@ export default function Home() {
                     <h3 className="product-details__client-review-title">Client Reviews</h3>
                     <div className="product-details__client-review">
                         <div className="product-details__client-img">
-                            <img src="assets/images/shop/product-details-client-img.jpg" alt=""/>
+                            <img src={cloudinaryUrl("assets/images/shop/product-details-client-img.jpg")} alt=""/>
                         </div>
                         <div className="product-details__client-content">
                             <p><span>by David Parker / </span>March 28, 2022</p>
