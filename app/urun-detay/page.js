@@ -16,9 +16,11 @@ export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [quantity, setQuantity] = useState(1)
     const [showSuccess, setShowSuccess] = useState(false)
-
+    
+    // Product details
     const productName = "School Bag"
     const productPrice = 19.99
+    const totalPrice = (productPrice * quantity).toFixed(2)
 
     const productImages = [
         cloudinaryUrl("assets/images/shop/product-details-top-img-1.jpg"),
@@ -26,8 +28,6 @@ export default function Home() {
         cloudinaryUrl("assets/images/shop/shop-product-1-2.jpg"),
         cloudinaryUrl("assets/images/shop/shop-product-1-3.jpg"),
     ]
-
-    const totalPrice = (productPrice * quantity).toFixed(2)
 
     const handleShare = () => {
         if (navigator.share) {
@@ -45,8 +45,8 @@ export default function Home() {
 
     const handleBuyNow = () => {
         setIsModalOpen(true)
-        setQuantity(1)
         setShowSuccess(false)
+        setQuantity(1)
     }
 
     const handleCloseModal = () => {
@@ -76,15 +76,14 @@ export default function Home() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault()
+        // Simulate form submission
         setShowSuccess(true)
+        // Close modal after 2 seconds
         setTimeout(() => {
-            handleCloseModal()
+            setIsModalOpen(false)
+            setShowSuccess(false)
+            setQuantity(1)
         }, 2000)
-    }
-
-    const handleAddToCart = () => {
-        // Handle add to cart action
-        alert('Product added to cart!')
     }
 
     // Prevent body scroll when modal is open
@@ -98,6 +97,11 @@ export default function Home() {
             document.body.style.overflow = 'unset'
         }
     }, [isModalOpen])
+
+    const handleAddToCart = () => {
+        // Handle add to cart action
+        alert('Product added to cart!')
+    }
 
     return (
         <>
@@ -326,58 +330,47 @@ export default function Home() {
         {/* Buy Now Modal */}
         {isModalOpen && (
             <div className="buy-now-modal-overlay" onClick={handleCloseModal}>
-                <div className="buy-now-modal" onClick={(e) => e.stopPropagation()}>
-                    <div className="buy-now-modal__header">
-                        <h3 className="buy-now-modal__title">Buy Now</h3>
-                        <button 
-                            type="button" 
-                            className="buy-now-modal__close"
-                            onClick={handleCloseModal}
-                            aria-label="Close"
-                        >
-                            <span>×</span>
-                        </button>
-                    </div>
-                    <div className="buy-now-modal__body">
-                        {showSuccess ? (
-                            <div className="buy-now-modal__success">
-                                <div className="buy-now-modal__success-icon">✓</div>
-                                <h4>Order Placed Successfully!</h4>
-                                <p>Thank you for your purchase. Your order has been received.</p>
-                            </div>
-                        ) : (
-                            <form className="buy-now-modal__form" onSubmit={handleFormSubmit}>
-                                <div className="buy-now-modal__form-group">
-                                    <label className="buy-now-modal__label">Product Name</label>
-                                    <input 
-                                        type="text" 
-                                        className="buy-now-modal__input" 
+                <div className="buy-now-modal-content" onClick={(e) => e.stopPropagation()}>
+                    <button className="buy-now-modal-close" onClick={handleCloseModal}>
+                        <span>×</span>
+                    </button>
+                    {!showSuccess ? (
+                        <>
+                            <h3 className="buy-now-modal-title">Buy Now</h3>
+                            <form onSubmit={handleFormSubmit} className="buy-now-modal-form">
+                                <div className="buy-now-form-group">
+                                    <label htmlFor="product-name">Product Name</label>
+                                    <input
+                                        type="text"
+                                        id="product-name"
                                         value={productName}
                                         readOnly
+                                        className="buy-now-input-readonly"
                                     />
                                 </div>
-                                <div className="buy-now-modal__form-group">
-                                    <label className="buy-now-modal__label">Quantity</label>
-                                    <div className="buy-now-modal__quantity-controls">
-                                        <button 
-                                            type="button" 
-                                            className="buy-now-modal__quantity-btn"
+                                <div className="buy-now-form-group">
+                                    <label htmlFor="quantity">Quantity</label>
+                                    <div className="buy-now-quantity-box">
+                                        <button
+                                            type="button"
+                                            className="buy-now-quantity-btn"
                                             onClick={handleQuantityDecrease}
                                             disabled={quantity <= 1}
                                         >
                                             <i className="fa fa-minus"></i>
                                         </button>
-                                        <input 
-                                            type="number" 
-                                            className="buy-now-modal__quantity-input"
-                                            value={quantity}
-                                            onChange={handleQuantityChange}
+                                        <input
+                                            type="number"
+                                            id="quantity"
                                             min="1"
                                             max="10"
+                                            value={quantity}
+                                            onChange={handleQuantityChange}
+                                            className="buy-now-quantity-input"
                                         />
-                                        <button 
-                                            type="button" 
-                                            className="buy-now-modal__quantity-btn"
+                                        <button
+                                            type="button"
+                                            className="buy-now-quantity-btn"
                                             onClick={handleQuantityIncrease}
                                             disabled={quantity >= 10}
                                         >
@@ -385,33 +378,30 @@ export default function Home() {
                                         </button>
                                     </div>
                                 </div>
-                                <div className="buy-now-modal__form-group">
-                                    <label className="buy-now-modal__label">Total Price</label>
-                                    <input 
-                                        type="text" 
-                                        className="buy-now-modal__input buy-now-modal__input--total"
+                                <div className="buy-now-form-group">
+                                    <label htmlFor="total-price">Total Price</label>
+                                    <input
+                                        type="text"
+                                        id="total-price"
                                         value={`$${totalPrice}`}
                                         readOnly
+                                        className="buy-now-input-readonly buy-now-total-price"
                                     />
                                 </div>
-                                <div className="buy-now-modal__form-actions">
-                                    <button 
-                                        type="button" 
-                                        className="buy-now-modal__cancel-btn thm-btn"
-                                        onClick={handleCloseModal}
-                                    >
-                                        Cancel
-                                    </button>
-                                    <button 
-                                        type="submit" 
-                                        className="buy-now-modal__submit-btn thm-btn"
-                                    >
-                                        Submit Order
-                                    </button>
-                                </div>
+                                <button type="submit" className="thm-btn buy-now-submit-btn">
+                                    Submit
+                                </button>
                             </form>
-                        )}
-                    </div>
+                        </>
+                    ) : (
+                        <div className="buy-now-success-message">
+                            <div className="buy-now-success-icon">
+                                <i className="fa fa-check-circle"></i>
+                            </div>
+                            <h3>Order Placed Successfully!</h3>
+                            <p>Thank you for your purchase. Your order has been received.</p>
+                        </div>
+                    )}
                 </div>
             </div>
         )}
