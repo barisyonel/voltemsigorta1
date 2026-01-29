@@ -26,16 +26,24 @@ export default function About() {
                                 <div className="section-title__tagline-box">
                                     <p className="section-title__tagline">Sigortanın Adresi</p>
                                 </div>
-                                <h1 className="section-title__title">Sigortanızla
-                                    Hayatınızı Koruyun!</h1>
+                                <h2 className="section-title__title">Sigortanızla
+                                    Hayatınızı Koruyun!</h2>
                             </div>
                             <p className="about-one__text-1">Sigorta, belirli bir risk karşısında kişilerin veya
                                 kuruluşların maddi zararlarını korumak için yapılan sözleşmeye dayalı
-                                bir finansal üründür.</p>
+                                bir finansal üründür. Voldem Sigorta Tokat olarak, 2022'den beri Tokat ve çevre illerde 
+                                güvenilir sigorta hizmetleri sunuyoruz.</p>
                             <p className="about-one__text-1">Voldem Sigorta olarak hızlı, kolay ve güvenli hizmet
-                                sunmayı hedefliyoruz. <strong>Tokat DASK</strong>, <strong>Tokat araç kasko</strong> ve
-                                <strong> Tokat sağlık sigortası</strong> gibi ihtiyaçlarda, Tokat ve çevre illerde en
-                                doğru sigorta çözümlerini karşılaştırarak sizin için uygun seçeneği belirliyoruz.</p>
+                                sunmayı hedefliyoruz. <Link href="/dask-sigortasi"><strong>Tokat DASK</strong></Link>, 
+                                <Link href="/kasko-sigortasi"><strong>Tokat araç kasko</strong></Link> ve
+                                <Link href="/saglik-sigortasi"><strong>Tokat sağlık sigortası</strong></Link> gibi ihtiyaçlarda, 
+                                Tokat ve çevre illerde en doğru sigorta çözümlerini karşılaştırarak sizin için uygun seçeneği belirliyoruz. 
+                                <Link href="/arac-sigortasi">Trafik sigortası</Link>, <Link href="/konut-sigortasi">konut sigortası</Link>, 
+                                <Link href="/hayat-sigortasi">hayat sigortası</Link> ve <Link href="/isyeri-sigortasi">işletme sigortası</Link> 
+                                alanlarında geniş bir hizmet yelpazesi sunuyoruz.</p>
+                            <p className="about-one__text-1">Tokat sigorta fiyatları konusunda şeffaf bir yaklaşım benimsiyoruz. 
+                                Size en uygun <Link href="/sigorta">sigorta teklifi</Link> için detaylı bir ihtiyaç analizi yapıyor, 
+                                bütçenize uygun çözümler sunuyoruz. Hasar süreçlerinde de yanınızdayız ve hızlı çözümler üretiyoruz.</p>
                             <div className="about-one__text-box">
                                 <div className="about-one__text-box-icon">
                                     <span className="icon-file-1"></span>

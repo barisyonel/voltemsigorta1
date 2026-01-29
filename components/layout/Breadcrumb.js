@@ -64,8 +64,10 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
                                     left: 0,
                                     width: '100%',
                                     height: '100%',
-                                    objectFit: 'cover',
+                                    maxWidth: '100%',
+                                    objectFit: 'contain',
                                     objectPosition: 'center center',
+                                    display: 'block',
                                     zIndex: 1,
                                 }}
                                 onError={handleImageError}
@@ -76,52 +78,76 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
             </section>
             {/* Page Header End */}
             <style jsx>{`
-                /* Mobil optimizasyonları */
+                /* Mobil: görsel tam genişlikte, kesilmeden tam görünsün */
                 @media only screen and (max-width: 767px) {
                     .page-header {
-                        height: 280px !important;
-                        min-height: 280px !important;
-                        max-height: 280px !important;
+                        height: 320px !important;
+                        min-height: 320px !important;
+                        max-height: 320px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
+                        max-width: 100vw !important;
                     }
                     .page-header__layout {
-                        height: 280px !important;
-                        min-height: 280px !important;
-                        max-height: 280px !important;
+                        height: 320px !important;
+                        min-height: 320px !important;
+                        max-height: 320px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
+                        max-width: 100% !important;
                     }
                     .page-header__bg {
-                        height: 280px !important;
-                        min-height: 280px !important;
-                        max-height: 280px !important;
+                        height: 320px !important;
+                        min-height: 320px !important;
+                        max-height: 320px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        left: 0 !important;
+                        right: 0 !important;
                     }
                     .page-header__image {
-                        height: 280px !important;
-                        min-height: 280px !important;
-                        max-height: 280px !important;
-                        object-position: center center;
+                        width: 100% !important;
+                        height: 100% !important;
+                        min-height: 320px !important;
+                        max-width: 100% !important;
+                        object-fit: contain !important;
+                        object-position: center center !important;
+                        display: block !important;
                     }
                 }
                 
-                /* Tablet optimizasyonları */
+                /* Tablet: görsel tam genişlikte, kesilmeden */
                 @media only screen and (min-width: 768px) and (max-width: 991px) {
                     .page-header {
                         height: 400px !important;
                         min-height: 400px !important;
                         max-height: 400px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
+                        max-width: 100% !important;
                     }
                     .page-header__layout {
                         height: 400px !important;
                         min-height: 400px !important;
                         max-height: 400px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
                     }
                     .page-header__bg {
                         height: 400px !important;
                         min-height: 400px !important;
                         max-height: 400px !important;
+                        overflow: hidden !important;
+                        width: 100% !important;
                     }
                     .page-header__image {
-                        height: 400px !important;
-                        min-height: 400px !important;
-                        max-height: 400px !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        max-width: 100% !important;
+                        object-fit: contain !important;
+                        object-position: center center !important;
+                        display: block !important;
                     }
                 }
             `}</style>

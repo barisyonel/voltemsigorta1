@@ -62,20 +62,20 @@ export default function Home() {
                 <div className="row">
                     <div className="col-xl-8 col-lg-7">
                         <div className="insurance-details__left">
-                            <h3 className="insurance-details__title-1">DASK Sigortasında
-                                <br/> Zorunlu Güvence</h3>
+                            <h1 className="insurance-details__title-1">DASK Sigortasında
+                                <br/> Zorunlu Güvence</h1>
                             <p className="insurance-details__text-1">Zorunlu deprem sigortası (DASK) ile konutunuzu
                                 deprem risklerine karşı güvence altına alın. Tokat'ta hızlı ve uygun fiyatlı çözümler
                                 sunuyoruz.</p>
                             <div className="insurance-details__img-1">
                                 <img src={cloudinaryUrl("/assets/images/dask%20(1).png")} alt="DASK Sigortası"/>
                             </div>
-                            <h3 className="insurance-details__title-2">DASK Sigortası</h3>
+                            <h2 className="insurance-details__title-2">DASK Sigortası</h2>
                             <p className="insurance-details__text-2">DASK, deprem ve deprem kaynaklı yangın, infilak,
                                 yer kayması gibi risklere karşı zorunlu koruma sağlar. Poliçenizi hızlıca düzenleyelim.</p>
                             <div className="insurance-details__points-and-text-box">
                                 <div className="insurance-details__points-box">
-                                    <h3 className="insurance-details__points-title">Öne Çıkan Avantajlar</h3>
+                                    <h2 className="insurance-details__points-title">Öne Çıkan Avantajlar</h2>
                                     <ul className="insurance-details__points list-unstyled">
                                         <li>
                                             <div className="icon">
@@ -98,7 +98,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                                 <div className="insurance-details__text-box">
-                                    <h3>Neden Voldem Sigorta?</h3>
+                                    <h2>Neden Voldem Sigorta?</h2>
                                     <p>DASK sürecinizi hızlıca tamamlar, yenileme zamanlarını takip ederiz. Şeffaf ve
                                         güvenilir hizmet sunarız.</p>
                                 </div>
@@ -109,7 +109,7 @@ export default function Home() {
                     <div className="col-xl-4 col-lg-5">
                         <div className="insurance-details__right">
                             <div className="insurance-details__catagories">
-                                <h3 className="insurance-details__catagories-title">Kategoriler</h3>
+                                <h2 className="insurance-details__catagories-title">Kategoriler</h2>
                                 <ul className="insurance-details__catagories-list list-unstyled">
                                     <li>
                                         <Link href="hayat-sigortasi">Hayat Sigortası<span className="icon-next"></span></Link>
@@ -138,9 +138,9 @@ export default function Home() {
                                 <div className="insurance-details__need-help-bg"
                                     style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
                                 </div>
-                                <h3 className="insurance-details__need-help-title">Her Türlü
+                                <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta
-                                    <br/> İçin</h3>
+                                    <br/> İçin</h2>
                                 <div className="insurance-details__need-help-btn-box">
                                     <Link href="iletisim" className="insurance-details__need-help-btn thm-btn">TEKLİF AL</Link>
                                 </div>

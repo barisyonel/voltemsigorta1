@@ -1,15 +1,17 @@
 import Layout from "@/components/layout/Layout"
 import About from "@/components/sections/home1/About"
 import Banner from "@/components/sections/home1/Banner"
+import InsuranceTypes from "@/components/sections/home1/InsuranceTypes"
 import WhyChooseUs from "@/components/sections/home1/WhyChooseUs"
 import Service from "@/components/sections/home1/Service"
+import Testimonial from "@/components/sections/home1/Testimonial"
 import Blog from "@/components/sections/home1/Blog"
 import Brand from "@/components/sections/home1/Brand"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "Voldem Sigorta Tokat - Tokat Sigorta Çözümleri",
-    description: "Tokat'ta tüm sigorta ihtiyaçlarınız için tek adres. Trafik, kasko, konut, sağlık, hayat, DASK ve işletme sigortası. Hızlı teklif, uygun prim, güvenilir hizmet. Voldem Sigorta Tokat.",
+    title: "Voldem Sigorta Tokat - Tokat Sigorta Çözümleri | Trafik, Kasko, Konut, Sağlık Sigortası",
+    description: "Tokat'ta güvenilir sigorta çözümleri. Trafik sigortası, kasko, konut sigortası, DASK, sağlık sigortası, hayat sigortası ve işletme sigortası için Tokat'ın en uygun fiyatlı sigorta acentesi. Hızlı teklif, şeffaf fiyatlandırma, güvenilir hizmet. Voldem Sigorta Tokat ile sigortanızı hemen yaptırın. Tokat sigorta fiyatları ve teklifleri için bize ulaşın.",
     keywords: [
         "tokat sigorta",
         "tokat sigorta acentesi",
@@ -45,10 +47,12 @@ export default function Home() {
         <>
             <Layout headerStyle={1} footerStyle={1}>
                 <Banner />
+                <InsuranceTypes />
                 <Brand />
                 <About />
                 <Service />
                 <WhyChooseUs />
+                <Testimonial />
                 <Blog />
                 
             </Layout>

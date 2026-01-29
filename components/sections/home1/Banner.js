@@ -33,6 +33,16 @@ export default function Banner() {
                                 style={{ backgroundImage: "none" }}
                             >
                                 <div className="main-slider__layout">
+                                    <div className="main-slider__content">
+                                        <h1 className="main-slider__title">
+                                            Tokat'ta Güvenilir Sigorta Çözümleri
+                                        </h1>
+                                        <p className="main-slider__text">
+                                            Trafik, kasko, konut, sağlık, hayat, DASK ve işletme sigortası için 
+                                            Tokat'ın en güvenilir sigorta acentesi. Hızlı teklif, uygun prim, 
+                                            güvenilir hizmet. Voldem Sigorta Tokat ile hayatınızı güvence altına alın.
+                                        </p>
+                                    </div>
                                     <div
                                         className="main-slider__media"
                                         style={{ backgroundImage: `url(${slide.image})` }}

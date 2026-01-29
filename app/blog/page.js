@@ -61,6 +61,66 @@ const posts = [
         image: cloudinaryUrl("/sigorta.jpg"),
         tags: ["İşyeri Sigortası", "Tokat Sigorta"],
     },
+    {
+        title: "Hayat Sigortası: Geleceğinizi Güvence Altına Alın",
+        image: cloudinaryUrl("/assets/images/hayat.png"),
+        tags: ["Hayat Sigortası", "Tokat Sigorta"],
+    },
+    {
+        title: "Özel Sağlık Sigortası: En İyi Hastanelerde Tedavi",
+        image: cloudinaryUrl("/assets/images/ozel.png"),
+        tags: ["Sağlık Sigortası", "Tokat Özel Sağlık"],
+    },
+    {
+        title: "Seyahat Sağlık Sigortası: Yurtdışında Güvende Olun",
+        image: cloudinaryUrl("/assets/images/services/insurence-1-4.jpg"),
+        tags: ["Seyahat Sigortası", "Sağlık Sigortası"],
+    },
+    {
+        title: "Ferdi Kaza Sigortası: Günlük Hayatta Koruma",
+        image: cloudinaryUrl("/assets/images/hayat.png"),
+        tags: ["Ferdi Kaza", "Hayat Sigortası"],
+    },
+    {
+        title: "Yol Yardım Paketleri: Çekici ve Acil Destek Hizmetleri",
+        image: cloudinaryUrl("/anasayfa2.jpg"),
+        tags: ["Yol Yardım", "Araç Sigortası"],
+    },
+    {
+        title: "TARSIM Sigortası: Tarım Ürünlerinizi Koruyun",
+        image: cloudinaryUrl("/assets/images/tarsim.png"),
+        tags: ["TARSIM", "Tarım Sigortası"],
+    },
+    {
+        title: "Tekne ve Deniz Araçları Sigortası: Denizde Güvende Olun",
+        image: cloudinaryUrl("/anasayfa1.png"),
+        tags: ["Deniz Sigortası", "Tekne Sigortası"],
+    },
+    {
+        title: "Makine Montaj Sigortası: İş Makinelerinizi Koruyun",
+        image: cloudinaryUrl("/sigorta.jpg"),
+        tags: ["Makine Sigortası", "İşletme Sigortası"],
+    },
+    {
+        title: "IMM Sigortası: İş Makineleri ve Motorlu Araçlar",
+        image: cloudinaryUrl("/anasayfa2.jpg"),
+        tags: ["IMM Sigortası", "İş Makineleri"],
+    },
+    {
+        title: "Tokat'ta En Uygun Sigorta Nasıl Bulunur?",
+        image: cloudinaryUrl("/gorsel.jpg"),
+        tags: ["Tokat Sigorta", "Sigorta Rehberi"],
+    },
+    {
+        title: "Sigorta Primlerini Düşürmenin 10 Yolu",
+        image: cloudinaryUrl("/hakkımızda.png"),
+        tags: ["Sigorta İpuçları", "Prim Tasarrufu"],
+    },
+    {
+        title: "Hasar Bildirimi: Adım Adım Rehber",
+        image: cloudinaryUrl("/iletisim.png"),
+        tags: ["Hasar Süreci", "Sigorta Rehberi"],
+    },
 ]
 
 export default function Home() {

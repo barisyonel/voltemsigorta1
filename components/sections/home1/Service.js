@@ -146,8 +146,11 @@ export default function Service() {
                         <br/> hayatınızın yatırımıdır!</h2>
                     <p className="section-title__text">Voldem Sigorta olarak hızlı, kolay ve güvenli bir hizmet sunuyoruz.
                         Tokat ve çevre illerde ihtiyaçlarınıza uygun sigorta seçeneklerini karşılaştırıyoruz.
-                        Tokat DASK, Tokat araç kasko ve Tokat sağlık sigortası gibi kritik alanlarda net karşılaştırmalar
-                        sunarak doğru poliçeyi seçmenize yardımcı oluyoruz.</p>
+                        <Link href="/dask-sigortasi">Tokat DASK</Link>, <Link href="/kasko-sigortasi">Tokat araç kasko</Link> ve 
+                        <Link href="/saglik-sigortasi">Tokat sağlık sigortası</Link> gibi kritik alanlarda net karşılaştırmalar
+                        sunarak doğru poliçeyi seçmenize yardımcı oluyoruz. <Link href="/arac-sigortasi">Araç sigortası</Link>, 
+                        <Link href="/konut-sigortasi">konut sigortası</Link>, <Link href="/hayat-sigortasi">hayat sigortası</Link> ve 
+                        <Link href="/isyeri-sigortasi">işletme sigortası</Link> için de <Link href="/iletisim">hızlı teklif</Link> alabilirsiniz.</p>
                 </div>
                 <div className="services-one__bottom">
                     {!isMounted ? (
@@ -164,6 +167,7 @@ export default function Service() {
                                                 <img 
                                                     src={service.image} 
                                                     alt={service.title}
+                                                    suppressHydrationWarning
                                                 />
                                             </div>
                                             <div className="services-one__icon">
@@ -172,6 +176,9 @@ export default function Service() {
                                         </div>
                                         <div className="services-one__read-more">
                                             <Link href={service.href}>Detaylar<span className="icon-next"></span></Link>
+                                        </div>
+                                        <div className="services-one__btn-box">
+                                            <Link href="/iletisim" className="services-one__btn thm-btn">Teklif Al</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -191,6 +198,7 @@ export default function Service() {
                                                 <img 
                                                     src={service.image} 
                                                     alt={service.title}
+                                                    suppressHydrationWarning
                                                 />
                                             </div>
                                             <div className="services-one__icon">
@@ -199,6 +207,9 @@ export default function Service() {
                                         </div>
                                         <div className="services-one__read-more">
                                             <Link href={service.href}>Detaylar<span className="icon-next"></span></Link>
+                                        </div>
+                                        <div className="services-one__btn-box">
+                                            <Link href="/iletisim" className="services-one__btn thm-btn">Teklif Al</Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>

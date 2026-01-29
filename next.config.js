@@ -42,6 +42,8 @@ const nextConfig = {
       { source: "/family-insurance", destination: "/dask-sigortasi", permanent: true },
       { source: "/aile-sigortasi", destination: "/dask-sigortasi", permanent: true },
       { source: "/business-insurance", destination: "/isyeri-sigortasi", permanent: true },
+      { source: "/agricultural-insurance", destination: "/tarsim", permanent: true },
+      { source: "/tarim-sigortasi", destination: "/tarsim", permanent: true },
       { source: "/team", destination: "/ekibimiz", permanent: true },
       { source: "/team-details", destination: "/ekip-detay", permanent: true },
       { source: "/testimonial", destination: "/yorumlar", permanent: true },
