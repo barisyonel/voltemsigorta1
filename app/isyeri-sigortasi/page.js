@@ -26,6 +26,7 @@ export const metadata = {
             },
         ],
     },
+    alternates: { canonical: "/isyeri-sigortasi" },
 }
 
 const faqItems = [
@@ -62,7 +63,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">İş yerinizi yangın, hırsızlık, doğal afet ve
                                 sorumluluk risklerine karşı koruyun. Tokat'ta işletmenize özel poliçeler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="İş Yeri Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="İş Yeri Sigortası" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">İş Yeri Sigortası</h2>
                             <p className="insurance-details__text-2">İş yeri sigortası; bina, demirbaş ve stokları
@@ -130,7 +131,8 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                    suppressHydrationWarning >
                                 </div>
                                 <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

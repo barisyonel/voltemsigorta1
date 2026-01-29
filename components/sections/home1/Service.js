@@ -5,15 +5,25 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
+const IMG = {
+    saglik: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608114/Gemini_Generated_Image_jplo75jplo75jplo_oymqfx.png",
+    dask: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608268/Gemini_Generated_Image_u55xp0u55xp0u55x_ootnnu.png",
+    konut: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608268/Gemini_Generated_Image_u55xp0u55xp0u55x_ootnnu.png",
+    isyeri: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608282/Gemini_Generated_Image_j9v2h4j9v2h4j9v2_tj33cq.png",
+    hayat: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608021/Gemini_Generated_Image_7qwvqa7qwvqa7qwv_ulwkuz.png",
+}
+
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 3,
     spaceBetween: 30,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     loop: true,
+    grabCursor: true,
 
     // Navigation
     navigation: {
@@ -23,33 +33,34 @@ const swiperOptions = {
 
     // Pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.services-one__pagination',
         clickable: true,
+        dynamicBullets: true,
     },
     breakpoints: {
         320: {
             slidesPerView: 1,
-            // spaceBetween: 30,
+            spaceBetween: 20,
         },
         575: {
             slidesPerView: 1,
-            // spaceBetween: 30,
+            spaceBetween: 20,
         },
         767: {
-            slidesPerView: 2,
-            // spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         991: {
-            slidesPerView: 3,
-            // spaceBetween: 30,
+            slidesPerView: 2,
+            spaceBetween: 30,
         },
         1199: {
             slidesPerView: 3,
-            // spaceBetween: 30,
+            spaceBetween: 30,
         },
         1350: {
             slidesPerView: 3,
-            // spaceBetween: 30,
+            spaceBetween: 30,
         },
     }
 
@@ -79,50 +90,50 @@ export default function Service() {
         },
         {
             title: "TARSIM",
-            href: "sigorta",
+            href: "tarsim",
             image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/tarsim_qrmyqu.png",
             icon: "icon-protection",
         },
         {
             title: "Özel Sağlık",
             href: "saglik-sigortasi",
-            image: cloudinaryUrl("/assets/images/ozel.png"),
+            image: IMG.saglik,
             icon: "icon-healthcare",
         },
         {
             title: "Seyahat Sağlık",
             href: "saglik-sigortasi",
-            image: cloudinaryUrl("/assets/images/services/insurence-1-4.jpg"),
+            image: IMG.saglik,
             icon: "icon-healthcare",
         },
         {
             title: "DASK",
             href: "dask-sigortasi",
-            image: cloudinaryUrl("/assets/images/dask-1.png"),
+            image: IMG.dask,
             icon: "icon-home-security",
         },
         {
             title: "Konut Sigortası",
             href: "konut-sigortasi",
-            image: cloudinaryUrl("/assets/images/konut.png"),
+            image: IMG.konut,
             icon: "icon-home-security",
         },
         {
             title: "İşyeri Sigortası",
             href: "isyeri-sigortasi",
-            image: cloudinaryUrl("/assets/images/yangin.png"),
+            image: IMG.isyeri,
             icon: "icon-risk-management",
         },
         {
             title: "Ferdi Kaza",
             href: "hayat-sigortasi",
-            image: cloudinaryUrl("/assets/images/hayat.png"),
+            image: IMG.hayat,
             icon: "icon-investment",
         },
         {
             title: "TARSİM",
-            href: "sigorta",
-            image: cloudinaryUrl("/assets/images/tarsim.png"),
+            href: "tarsim",
+            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/tarsim_qrmyqu.png",
             icon: "icon-protection",
         },
     ]
@@ -185,36 +196,39 @@ export default function Service() {
                             ))}
                         </div>
                     ) : (
-                        <Swiper {...swiperOptions} className="services-one__carousel">
-                            {services.map((service) => (
-                                <SwiperSlide className="item" key={`${service.title}-${service.image}`}>
-                                    <div className="services-one__single">
-                                        <div className="services-one__title-box">
-                                            <h3 className="services-one__title"><Link href={service.href}>{service.title}</Link>
-                                            </h3>
-                                        </div>
-                                        <div className="services-one__img-box">
-                                            <div className="services-one__img">
-                                                <img 
-                                                    src={service.image} 
-                                                    alt={service.title}
-                                                    suppressHydrationWarning
-                                                />
+                        <>
+                            <Swiper {...swiperOptions} className="services-one__carousel">
+                                {services.map((service) => (
+                                    <SwiperSlide className="item" key={`${service.title}-${service.image}`}>
+                                        <div className="services-one__single">
+                                            <div className="services-one__title-box">
+                                                <h3 className="services-one__title"><Link href={service.href}>{service.title}</Link>
+                                                </h3>
                                             </div>
-                                            <div className="services-one__icon">
-                                                <span className={service.icon}></span>
+                                            <div className="services-one__img-box">
+                                                <div className="services-one__img">
+                                                    <img 
+                                                        src={service.image} 
+                                                        alt={service.title}
+                                                        suppressHydrationWarning
+                                                    />
+                                                </div>
+                                                <div className="services-one__icon">
+                                                    <span className={service.icon}></span>
+                                                </div>
+                                            </div>
+                                            <div className="services-one__read-more">
+                                                <Link href={service.href}>Detaylar<span className="icon-next"></span></Link>
+                                            </div>
+                                            <div className="services-one__btn-box">
+                                                <Link href="/iletisim" className="services-one__btn thm-btn">Teklif Al</Link>
                                             </div>
                                         </div>
-                                        <div className="services-one__read-more">
-                                            <Link href={service.href}>Detaylar<span className="icon-next"></span></Link>
-                                        </div>
-                                        <div className="services-one__btn-box">
-                                            <Link href="/iletisim" className="services-one__btn thm-btn">Teklif Al</Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                            <div className="swiper-pagination services-one__pagination"></div>
+                        </>
                     )}
                 </div>
             </div>

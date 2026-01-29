@@ -1,7 +1,10 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import Image from "next/image"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
+
+const HEADER_IMG_URL = "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png"
 
 const faqItems = [
     {
@@ -37,7 +40,7 @@ export default function TarsimPage() {
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="TARSIM Tarım Sigortası"
-            breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769606340/Gemini_Generated_Image_57buzw57buzw57bu_l21g3v.png"
+            breadcrumbImage={HEADER_IMG_URL}
         >
             <section className="insurance-details tarsim-page">
                 <div className="container">
@@ -77,6 +80,7 @@ export default function TarsimPage() {
                                     <div className="insurance-details__text-box">
                                         <h2>Neden Voldem Sigorta?</h2>
                                         <p>Tokat ve çevre illerde TARSIM konusunda deneyimli ekibimizle ürününüze ve ihtiyacınıza uygun, geniş kapsamlı poliçe seçeneklerini sunuyoruz. Teklif ve hasar süreçlerinde yanınızdayız.</p>
+                                        <Image src={HEADER_IMG_URL} alt="TARSIM Tarım Sigortası" width={640} height={360} className="insurance-details__why-voldem-img" style={{ display: "block", maxWidth: "320px", width: "100%", height: "auto", marginTop: "20px", borderRadius: "8px" }} />
                                     </div>
                                 </div>
 
@@ -115,7 +119,8 @@ export default function TarsimPage() {
                                 </div>
                                 <div className="insurance-details__need-help">
                                     <div className="insurance-details__need-help-bg"
-                                        style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}>
+                                        style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                        suppressHydrationWarning >
                                     </div>
                                     <h2 className="insurance-details__need-help-title">TARSIM
                                         <br /> Teklifi Alın</h2>

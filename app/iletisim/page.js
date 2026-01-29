@@ -25,6 +25,7 @@ export const metadata = {
             },
         ],
     },
+    alternates: { canonical: "/iletisim" },
 }
 
 export default function Home() {

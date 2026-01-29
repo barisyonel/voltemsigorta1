@@ -63,7 +63,7 @@ export default function Home() {
                                 çözümleriyle ihtiyaçlarınıza uygun kapsamlar sunar. Hızlı provizyon ve güçlü destekle
                                 yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Sağlık Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Sağlık Sigortası" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Sağlık Sigortası</h2>
                             <p className="insurance-details__text-2">Özel sağlık sigortası ve TARSIM ile muayene,
@@ -132,7 +132,8 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                    suppressHydrationWarning >
                                 </div>
                                 <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

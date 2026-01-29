@@ -16,6 +16,20 @@ export default function WhyChooseUs() {
                                     <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540940/voldem_hcbgxk.png" alt="Voldem Sigorta Tokat"/>
                                 </div>
                             </div>
+                            <div className="why-choose-one__content-article">
+                                <article className="why-choose-one__seo-content">
+                                    <h3 className="why-choose-one__article-title">Tokat'ta Güvenilir Sigorta Danışmanlığı</h3>
+                                    <p className="why-choose-one__article-text">
+                                        <strong>Voldem Sigorta Tokat</strong> olarak 2006'dan beri Tokat ve çevre illerde sigorta danışmanlığı hizmeti veriyoruz. 20 senedir insanlara güvenle sigorta hizmeti sunuyoruz. Müşterilerimize <strong>trafik sigortası</strong>, <strong>kasko sigortası</strong>, <strong>konut sigortası</strong>, <strong>DASK</strong>, <strong>sağlık sigortası</strong>, <strong>hayat sigortası</strong> ve <strong>işletme sigortası</strong> gibi tüm sigorta branşlarında hızlı teklif ve şeffaf fiyatlandırma sunuyoruz.
+                                    </p>
+                                    <p className="why-choose-one__article-text">
+                                        Tokat'ta sigorta acentesi arayışında olan müşterilerimiz için <strong>HDI Sigorta</strong>, <strong>AXA Sigorta</strong>, <strong>Allianz Sigorta</strong>, <strong>Zurich Sigorta</strong> ve daha birçok önde gelen sigorta şirketiyle çalışıyoruz. Bu sayede <strong>Tokat sigorta fiyatları</strong> konusunda geniş bir karşılaştırma imkânı sunarak size en uygun prim ve teminat seçeneklerini buluyoruz.
+                                    </p>
+                                    <p className="why-choose-one__article-text">
+                                        Tokat'ta <strong>en uygun sigorta</strong> arayışınızda yanınızdayız. Hasar süreçlerinde güçlü destek, poliçe yenileme zamanlarında hatırlatma ve 7/24 ulaşılabilir hizmet anlayışımızla müşteri memnuniyetini ön planda tutuyoruz. <strong>Tokat sigorta teklifi</strong> almak için bize ulaşın, size özel çözümler sunalım.
+                                    </p>
+                                </article>
+                            </div>
                         </div>
                     </div>
                     <div className="col-xl-6">
@@ -52,7 +66,7 @@ export default function WhyChooseUs() {
                                     </div>
                                     <div className="content">
                                         <h3>Güvenilir Hizmet</h3>
-                                        <p>2022'den beri Tokat'ta güvenilir sigorta hizmetleri sunuyoruz. Müşteri memnuniyeti önceliğimizdir.</p>
+                                        <p>2006'dan beri Tokat'ta güvenilir sigorta hizmetleri sunuyoruz. 20 senedir insanlara güvenle sigorta hizmeti veriyoruz. Müşteri memnuniyeti önceliğimizdir.</p>
                                     </div>
                                 </li>
                                 <li>

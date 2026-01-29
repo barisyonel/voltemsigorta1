@@ -5,6 +5,7 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { syne, dm_sans } from "@/lib/font"
 import { cloudinaryUrl } from "@/lib/cloudinary"
+import WebVitalsReporter from "@/components/WebVitalsReporter"
 export const metadata = {
     title: {
         default: "Voldem Sigorta Tokat",
@@ -61,7 +62,7 @@ export const metadata = {
         ],
     },
     twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: "Voldem Sigorta Tokat",
         description: "Tokat sigorta çözümleri: trafik, kasko, konut, sağlık ve daha fazlası.",
         images: [cloudinaryUrl("/logo.jpeg")],
@@ -181,7 +182,10 @@ export default function RootLayout({ children }) {
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
                 />
             </head>
-            <body>{children}</body>
+            <body>
+                <WebVitalsReporter />
+                {children}
+            </body>
         </html>
     )
 }

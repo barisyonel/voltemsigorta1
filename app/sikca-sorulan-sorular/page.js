@@ -53,12 +53,6 @@ export default function Faq() {
                                 <div className="row">
                                     <div className="col-xl-5 col-lg-5">
                                         <div className="faq-page__bottom-left">
-                                            <div className="faq-page__search">
-                                                <form action="#" className="faq-page__search-form">
-                                                    <input type="search" placeholder="Ara..." />
-                                                    <button type="submit"><i className="icon-search-1"></i></button>
-                                                </form>
-                                            </div>
                                             <div className="faq-page__bottom-left-img-box">
                                                 <div className="faq-page__bottom-left-img">
                                                     <img src={cloudinaryUrl("/sigorta.jpg")} alt="Voldem Sigorta Tokat"/>

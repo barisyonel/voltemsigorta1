@@ -4,13 +4,15 @@ import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 import { useEffect, useState } from "react"
 
+const FALLBACK_IMAGE_URL = "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png"
+
 export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
     const [imageSrc, setImageSrc] = useState(null)
     
     // Get the image URL
     const getImageUrl = () => {
         if (!breadcrumbImage) {
-            return "/1045x820.png" // Local fallback
+            return FALLBACK_IMAGE_URL
         }
         
         // If it's already a full URL (http/https), use it directly
@@ -33,14 +35,11 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
     }, [breadcrumbImage])
     
     const handleImageError = (e) => {
-        // Silently handle image errors with fallback - use warn instead of error since fallback exists
-        // Fallback to default image
-        if (imageSrc !== "/1045x820.png") {
-            setImageSrc("/1045x820.png")
+        if (imageSrc !== FALLBACK_IMAGE_URL) {
+            setImageSrc(FALLBACK_IMAGE_URL)
         } else {
-            // Use background-image as last resort
             e.target.style.display = 'none'
-            e.target.parentElement.style.backgroundImage = `url("/1045x820.png")`
+            e.target.parentElement.style.backgroundImage = `url("${FALLBACK_IMAGE_URL}")`
             e.target.parentElement.style.backgroundSize = 'cover'
             e.target.parentElement.style.backgroundPosition = 'center center'
             e.target.parentElement.style.backgroundRepeat = 'no-repeat'
@@ -56,20 +55,8 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage }) {
                         {imageSrc && (
                             <img 
                                 src={imageSrc} 
-                                alt="" 
+                                alt={breadcrumbTitle ? `${breadcrumbTitle} - Voldem Sigorta Tokat` : "Voldem Sigorta Tokat"} 
                                 className="page-header__image"
-                                style={{ 
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                    maxWidth: '100%',
-                                    objectFit: 'contain',
-                                    objectPosition: 'center center',
-                                    display: 'block',
-                                    zIndex: 1,
-                                }}
                                 onError={handleImageError}
                             />
                         )}

@@ -67,7 +67,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">Trafik ve kasko ihtiyaçlarınız için Tokat’ta
                                 hızlı, şeffaf ve bütçe dostu çözümler sunuyoruz. Hasar süreçlerinde de yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Araç Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Araç Sigortası" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Araç Sigortası</h2>
                             <p className="insurance-details__text-2">Trafik sigortası yasal zorunluluğunuzu karşılarken,
@@ -136,7 +136,8 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                    suppressHydrationWarning >
                                 </div>
                                 <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

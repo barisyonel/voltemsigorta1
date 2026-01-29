@@ -31,8 +31,8 @@ export default function About() {
                             </div>
                             <p className="about-one__text-1">Sigorta, belirli bir risk karşısında kişilerin veya
                                 kuruluşların maddi zararlarını korumak için yapılan sözleşmeye dayalı
-                                bir finansal üründür. Voldem Sigorta Tokat olarak, 2022'den beri Tokat ve çevre illerde 
-                                güvenilir sigorta hizmetleri sunuyoruz.</p>
+                                bir finansal üründür. Voldem Sigorta Tokat olarak, 2006'dan beri Tokat ve çevre illerde 
+                                güvenilir sigorta hizmetleri sunuyoruz. 20 senedir insanlara güvenle sigorta hizmeti veriyoruz.</p>
                             <p className="about-one__text-1">Voldem Sigorta olarak hızlı, kolay ve güvenli hizmet
                                 sunmayı hedefliyoruz. <Link href="/dask-sigortasi"><strong>Tokat DASK</strong></Link>, 
                                 <Link href="/kasko-sigortasi"><strong>Tokat araç kasko</strong></Link> ve

@@ -67,7 +67,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">Evinizi ve eşyalarınızı yangın, hırsızlık ve doğal
                                 afetlere karşı güvence altına alın. Tokat’ta hızlı teklif ve güvenilir destek sağlarız.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Konut Sigortası</h2>
                             <p className="insurance-details__text-2">Konut sigortası, evinizi ve eşyalarınızı geniş
@@ -135,7 +135,8 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                    suppressHydrationWarning >
                                 </div>
                                 <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

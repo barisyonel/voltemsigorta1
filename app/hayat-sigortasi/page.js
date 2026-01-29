@@ -68,7 +68,7 @@ export default function Home() {
                                 sevdiklerinizi ve geleceğinizi güvence altına alıyoruz. İhtiyacınıza uygun, şeffaf ve
                                 hızlı çözümler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası"/>
+                                <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Hayat Sigortası</h2>
                             <p className="insurance-details__text-2">Hayat sigortası, beklenmedik durumlarda ailenizin
@@ -137,7 +137,8 @@ export default function Home() {
                             </div>
                             <div className="insurance-details__need-help">
                                 <div className="insurance-details__need-help-bg"
-                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }} >
+                                    style={{ backgroundImage: `url(${cloudinaryUrl("assets/images/backgrounds/insurance-details-need-help-bg.jpg")})` }}
+                                    suppressHydrationWarning >
                                 </div>
                                 <h2 className="insurance-details__need-help-title">Her Türlü
                                     <br/> Sigorta

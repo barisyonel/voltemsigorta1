@@ -69,6 +69,12 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/tarsim`,
+      lastModified: recentUpdateDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 
   // İçerik sayfaları - orta-yüksek öncelik

@@ -86,7 +86,7 @@ export default function InsuranceTypes() {
                     </div>
                     <div className="row insurance-types__grid">
                         {insuranceTypes.map((insurance, index) => (
-                            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6" key={index}>
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6" key={index}>
                                 <Link href={insurance.href} className="insurance-types__card">
                                     <div className="insurance-types__icon">
                                         <span className={insurance.icon}></span>

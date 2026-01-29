@@ -17,7 +17,7 @@ export const metadata = {
         description: "Geniş kapsamlı TARSIM tarım sigortası. Bitkisel ürün, hayvancılık, sera ve daha fazlası. Tokat ve çevresinde TARSIM danışmanlığı.",
         images: [
             {
-                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769606340/Gemini_Generated_Image_57buzw57buzw57bu_l21g3v.png",
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png",
                 width: 1200,
                 height: 630,
                 alt: "TARSIM Tarım Sigortası Tokat",

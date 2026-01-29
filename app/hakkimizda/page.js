@@ -4,7 +4,7 @@ import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
     title: "Hakkımızda",
-    description: "Voldem Sigorta Tokat hakkında. 2022'den beri Tokat ve çevre illerde sigorta aracılık ve danışmanlık hizmetleri sunuyoruz. Maksimum müşteri memnuniyeti ilkemizle hizmet veriyoruz.",
+    description: "Voldem Sigorta Tokat hakkında. 2006'dan beri Tokat ve çevre illerde sigorta aracılık ve danışmanlık hizmetleri sunuyoruz. 20 senedir maksimum müşteri memnuniyeti ilkemizle hizmet veriyoruz.",
     keywords: [
         "voldem sigorta tokat",
         "tokat sigorta acentesi",
@@ -15,7 +15,7 @@ export const metadata = {
     ],
     openGraph: {
         title: "Hakkımızda | Voldem Sigorta Tokat",
-        description: "Voldem Sigorta Tokat hakkında. 2022'den beri güvenilir sigorta hizmetleri.",
+        description: "Voldem Sigorta Tokat hakkında. 2006'dan beri güvenilir sigorta hizmetleri. 20 senedir insanlara güvenle sigorta hizmeti veriyoruz.",
         images: [
             {
                 url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/hakk%C4%B1m%C4%B1zda_kudnpv.png",
@@ -25,6 +25,7 @@ export const metadata = {
             },
         ],
     },
+    alternates: { canonical: "/hakkimizda" },
 }
 
 const partners = [
@@ -83,10 +84,10 @@ export default function About() {
                                     </div>
                                     <p className="about-three__text">
                                         Voldem Sigorta aracılık hizmetleri; sigortacılık alanında kurumsal veya bireysel olarak
-                                        aracılık ve danışmanlık hizmetleri vermek üzere 2022 tarihinde kurulmuştur.
+                                        aracılık ve danışmanlık hizmetleri vermek üzere 2006 tarihinde kurulmuştur.
                                     </p>
                                     <p className="about-three__text">
-                                        Bu tarihten itibaren tüm branşlarda sigorta taleplerini karşılamak adına
+                                        2006'dan bu güne, 20 senedir insanlara güvenle sigorta hizmeti veriyoruz. Bu süre boyunca tüm branşlarda sigorta taleplerini karşılamak adına
                                         “Maksimum Müşteri Memnuniyeti” anlayışını benimseyip, sigortalılarımıza en iyi şekilde
                                         hizmet vermeyi kendimize ilke edindik. Tokat ve çevre illerde hızlı, güvenilir ve
                                         şeffaf bir hizmet sunuyoruz.

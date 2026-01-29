@@ -98,12 +98,9 @@ export default function Testimonial() {
                                             sayesinde süreci kolayca tamamladık.</p>
                                     </div>
                                     <div className="testimonial-one__client-info">
-                                        <div className="testimonial-one__client-img">
-                                            <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Kasko Sigortası" suppressHydrationWarning/>
-                                        </div>
-                                        <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ayşe K.</Link>
+                                        <h3 className="testimonial-one__client-name"><Link href="yorumlar">Uğur Çoban</Link>
                                         </h3>
-                                        <p className="testimonial-one__client-sub-title">Müşteri</p>
+                                        <p className="testimonial-one__client-sub-title">Karavan Firma Sahibi</p>
                                     </div>
                                 </div>
                             </div>
@@ -122,17 +119,13 @@ export default function Testimonial() {
                                         sayesinde süreci kolayca tamamladık.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Kasko Sigortası" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ayşe K.</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Uğur Çoban</Link>
                                     </h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
+                                    <p className="testimonial-one__client-sub-title">Karavan Firma Sahibi</p>
                                 </div>
                             </div>
                         </div>
                         </SwiperSlide>
-                        {/* Testimonial One Single Start */}
                         {/* Testimonial One Single Start */}
                         <SwiperSlide>
                         <div className="item">
@@ -145,17 +138,13 @@ export default function Testimonial() {
                                         boyunca hep ulaşılabilirlerdi.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Trafik Sigortası" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Mehmet T.</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ramazan Zincirci</Link>
                                     </h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
+                                    <p className="testimonial-one__client-sub-title">Buğra Otomotiv LPG Oto Bakım Servis Yetkilisi Sahibi</p>
                                 </div>
                             </div>
                         </div>
                         </SwiperSlide>
-                        {/* Testimonial One Single Start */}
                         {/* Testimonial One Single Start */}
                         <SwiperSlide>
                         <div className="item">
@@ -168,79 +157,8 @@ export default function Testimonial() {
                                         anlaşılır şekilde sundular.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Elif D.</Link></h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-                        {/* Testimonial One Single Start */}
-                        {/* Testimonial One Single Start */}
-                        <SwiperSlide>
-                        <div className="item">
-                            <div className="testimonial-one__single">
-                                <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
-                                </div>
-                                <div className="testimonial-one__text-box">
-                                    <p className="testimonial-one__text">Hasar sürecinde hızlı destek aldım, her şey
-                                        sorunsuz ilerledi.</p>
-                                </div>
-                                <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ahmet Y.</Link>
-                                    </h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-                        {/* Testimonial One Single Start */}
-                        {/* Testimonial One Single Start */}
-                        <SwiperSlide>
-                        <div className="item">
-                            <div className="testimonial-one__single">
-                                <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
-                                </div>
-                                <div className="testimonial-one__text-box">
-                                    <p className="testimonial-one__text">Açıklayıcı ve güven veren bir yaklaşım; tekrar
-                                        tercih ederim.</p>
-                                </div>
-                                <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/tarsim.png")} alt="TARSİM Sigortası" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Zeynep A.</Link>
-                                    </h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-                        {/* Testimonial One Single Start */}
-                        {/* Testimonial One Single Start */}
-                        <SwiperSlide>
-                        <div className="item">
-                            <div className="testimonial-one__single">
-                                <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
-                                </div>
-                                <div className="testimonial-one__text-box">
-                                    <p className="testimonial-one__text">Teklifler hızlı geldi, poliçem aynı gün
-                                        tamamlandı.</p>
-                                </div>
-                                <div className="testimonial-one__client-info">
-                                    <div className="testimonial-one__client-img">
-                                        <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat" suppressHydrationWarning/>
-                                    </div>
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Murat S.</Link></h3>
-                                    <p className="testimonial-one__client-sub-title">Müşteri</p>
+                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Özgür Reis</Link></h3>
+                                    <p className="testimonial-one__client-sub-title">Okul Servis Sigortası</p>
                                 </div>
                             </div>
                         </div>

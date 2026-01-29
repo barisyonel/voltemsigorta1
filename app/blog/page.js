@@ -28,6 +28,7 @@ export const metadata = {
         "Tokat Unico Sigorta",
         "Tokat Ray Sigorta",
     ],
+    alternates: { canonical: "/blog" },
 }
 
 const posts = [
@@ -148,9 +149,6 @@ export default function Home() {
                                                 <Link href="/blog">{post.title}</Link>
                                             </h3>
                                             <div className="blog-one__client-info">
-                                                <div className="blog-one__client-img">
-                                                    <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat"/>
-                                                </div>
                                                 <div className="blog-one__client-content">
                                                     <h3>Voldem Sigorta Tokat</h3>
                                                     <p>2026</p>

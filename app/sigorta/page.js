@@ -18,20 +18,21 @@ export const metadata = {
         description: "Tokat sigorta çözümleri: Hayat, Sağlık, İşletme, Araç, Konut ve DASK sigortası.",
         images: [
             {
-                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769606340/Gemini_Generated_Image_57buzw57buzw57bu_l21g3v.png",
+                url: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png",
                 width: 1200,
                 height: 630,
                 alt: "Sigorta Çözümleri Tokat",
             },
         ],
     },
+    alternates: { canonical: "/sigorta" },
 }
 
 export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sigorta" breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769606340/Gemini_Generated_Image_57buzw57buzw57bu_l21g3v.png">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Sigorta" breadcrumbImage="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png">
                 {/* Insurence Page Start */}
                 <section className="insurence-page">
                     <div className="container">
