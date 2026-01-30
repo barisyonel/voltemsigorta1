@@ -60,10 +60,10 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
                 <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
-                <div className="page-content-wrap">
+                <main id="main-content" className="page-content-wrap">
                     {(breadcrumbTitle || breadcrumbImage) && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbImage={breadcrumbImage} breadcrumbDescription={breadcrumbDescription} breadcrumbSeoTitle={breadcrumbSeoTitle} />}
                     {children}
-                </div>
+                </main>
 
                 <Footer1 />
             </div>

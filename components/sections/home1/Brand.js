@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link"
 import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -75,6 +76,9 @@ export default function Brand() {
                     </div>
                     <h2 className="section-title__title">Güçlü iş ortaklarımızla
                         <br/> birlikte güvence sağlıyoruz</h2>
+                    <p className="section-title__text" style={{ marginTop: "12px" }}>
+                        <Link href="/hakkimizda">Hakkımızda</Link> sayfamızdan bizi tanıyın veya <Link href="/iletisim">iletişim</Link> sayfasından ücretsiz sigorta teklifi alın.
+                    </p>
                 </div>
                 <Swiper {...swiperOptions} className="partner-slider">
                     {partners.map((partner, index) => (

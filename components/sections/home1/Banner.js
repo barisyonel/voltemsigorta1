@@ -35,7 +35,7 @@ export default function Banner() {
                                 <div className="main-slider__layout">
                                     <div className="main-slider__content">
                                         <h1 className="main-slider__title">
-                                            Tokat'ta Güvenilir Sigorta Çözümleri
+                                            Tokat Sigorta Acentesi – Uygun Trafik, Kasko ve Konut Sigortası
                                         </h1>
                                         <p className="main-slider__text">
                                             Trafik, kasko, konut, sağlık, hayat, DASK ve işletme sigortası için 

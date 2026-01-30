@@ -8,8 +8,8 @@ export default function Footer1() {
             <div className="site-footer__top">
                 <div className="container">
                     <div className="site-footer__top-inner">
-                        <div className="row">
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div className="row footer-modern__grid">
+                            <div className="col-xl-4 col-lg-6 col-md-6 footer-brand-col wow fadeInUp" data-wow-delay="100ms">
                                 <div className="footer-widget__column footer-widget__about footer-brand-card">
                                     <div className="footer-widget__logo">
                                         <Link href="/"><img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554223/logo_cg5jek.png"
@@ -35,7 +35,25 @@ export default function Footer1() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div className="col-xl-2 col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="200ms">
+                                <div className="footer-widget__column footer-widget__navigation">
+                                    <div className="footer-widget__title-box">
+                                        <h3 className="footer-widget__title">Yasal</h3>
+                                    </div>
+                                    <ul className="footer-widget__navigation-list list-unstyled">
+                                        <li>
+                                            <Link href="/kvkk">KVKK Aydınlatma</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/gizlilik">Gizlilik Politikası</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/cerez-politikasi">Çerez Politikası</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-xl-2 col-lg-2 col-md-4 wow fadeInUp" data-wow-delay="300ms">
                                 <div className="footer-widget__column footer-widget__navigation">
                                     <div className="footer-widget__title-box">
                                         <h3 className="footer-widget__title">Menü</h3>
@@ -59,7 +77,7 @@ export default function Footer1() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div className="footer-widget__column footer-widget__navigation">
                                     <div className="footer-widget__title-box">
                                         <h3 className="footer-widget__title">Sigortalar</h3>
@@ -85,24 +103,6 @@ export default function Footer1() {
                                         </li>
                                         <li>
                                             <Link href="/isyeri-sigortasi">İşletme Sigortası</Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                                <div className="footer-widget__column footer-widget__navigation">
-                                    <div className="footer-widget__title-box">
-                                        <h3 className="footer-widget__title">Yasal</h3>
-                                    </div>
-                                    <ul className="footer-widget__navigation-list list-unstyled">
-                                        <li>
-                                            <Link href="/kvkk">KVKK Aydınlatma</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/gizlilik">Gizlilik Politikası</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/cerez-politikasi">Çerez Politikası</Link>
                                         </li>
                                     </ul>
                                 </div>

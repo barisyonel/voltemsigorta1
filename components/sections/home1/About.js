@@ -73,7 +73,7 @@ export default function About() {
                             </ul>
                             <div className="about-one__btn-and-contact">
                                 <div className="about-one__btn-box">
-                                    <Link href="hakkimizda" className="about-one__btn thm-btn">Daha Fazlası</Link>
+                                    <Link href="/hakkimizda" className="about-one__btn thm-btn">Daha Fazlası</Link>
                                 </div>
                                 <div className="about-one__contact">
                                     <div className="icon">

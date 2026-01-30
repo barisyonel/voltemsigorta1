@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export default function WhyChooseUs() {
@@ -20,13 +20,13 @@ export default function WhyChooseUs() {
                                 <article className="why-choose-one__seo-content">
                                     <h3 className="why-choose-one__article-title">Tokat'ta Güvenilir Sigorta Danışmanlığı</h3>
                                     <p className="why-choose-one__article-text">
-                                        <strong>Voldem Sigorta Tokat</strong> olarak 2006'dan beri Tokat ve çevre illerde sigorta danışmanlığı hizmeti veriyoruz. 20 senedir insanlara güvenle sigorta hizmeti sunuyoruz. Müşterilerimize <strong>trafik sigortası</strong>, <strong>kasko sigortası</strong>, <strong>konut sigortası</strong>, <strong>DASK</strong>, <strong>sağlık sigortası</strong>, <strong>hayat sigortası</strong> ve <strong>işletme sigortası</strong> gibi tüm sigorta branşlarında hızlı teklif ve şeffaf fiyatlandırma sunuyoruz.
+                                        <Link href="/hakkimizda"><strong>Voldem Sigorta Tokat</strong></Link> olarak 2006&apos;dan beri Tokat ve çevre illerde sigorta danışmanlığı hizmeti veriyoruz. Müşterilerimize <Link href="/arac-sigortasi"><strong>trafik sigortası</strong></Link>, <Link href="/kasko-sigortasi"><strong>kasko sigortası</strong></Link>, <Link href="/konut-sigortasi"><strong>konut sigortası</strong></Link>, <Link href="/dask-sigortasi"><strong>DASK</strong></Link>, <Link href="/saglik-sigortasi"><strong>sağlık sigortası</strong></Link>, <Link href="/hayat-sigortasi"><strong>hayat sigortası</strong></Link> ve <Link href="/isyeri-sigortasi"><strong>işletme sigortası</strong></Link> gibi tüm sigorta branşlarında hızlı teklif ve şeffaf fiyatlandırma sunuyoruz.
                                     </p>
                                     <p className="why-choose-one__article-text">
                                         Tokat'ta sigorta acentesi arayışında olan müşterilerimiz için <strong>HDI Sigorta</strong>, <strong>AXA Sigorta</strong>, <strong>Allianz Sigorta</strong>, <strong>Zurich Sigorta</strong> ve daha birçok önde gelen sigorta şirketiyle çalışıyoruz. Bu sayede <strong>Tokat sigorta fiyatları</strong> konusunda geniş bir karşılaştırma imkânı sunarak size en uygun prim ve teminat seçeneklerini buluyoruz.
                                     </p>
                                     <p className="why-choose-one__article-text">
-                                        Tokat'ta <strong>en uygun sigorta</strong> arayışınızda yanınızdayız. Hasar süreçlerinde güçlü destek, poliçe yenileme zamanlarında hatırlatma ve 7/24 ulaşılabilir hizmet anlayışımızla müşteri memnuniyetini ön planda tutuyoruz. <strong>Tokat sigorta teklifi</strong> almak için bize ulaşın, size özel çözümler sunalım.
+                                        Tokat&apos;ta <strong>en uygun sigorta</strong> arayışınızda yanınızdayız. Hasar süreçlerinde güçlü destek, poliçe yenileme zamanlarında hatırlatma ve 7/24 ulaşılabilir hizmet anlayışımızla müşteri memnuniyetini ön planda tutuyoruz. <Link href="/iletisim"><strong>Tokat sigorta teklifi</strong></Link> almak için bize ulaşın, size özel çözümler sunalım.
                                     </p>
                                 </article>
                             </div>
