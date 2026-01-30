@@ -36,7 +36,7 @@ export default function Faq() {
                         <div className="container">
                             <div className="faq-page__text-box">
                                 <div className="faq-page__text-box-shape-1">
-                                    <img src={cloudinaryUrl("assets/images/shapes/faq-page-text-box-shape-1.png")} alt=""/>
+                                    <img src={cloudinaryUrl("assets/images/shapes/faq-page-text-box-shape-1.png")} alt="SSS dekoratif şekil"/>
                                 </div>
                                 <div className="section-title text-left">
                                     <div className="section-title__tagline-box">

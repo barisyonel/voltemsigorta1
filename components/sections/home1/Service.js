@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 const IMG = {
-    saglik: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608114/Gemini_Generated_Image_jplo75jplo75jplo_oymqfx.png",
-    dask: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608268/Gemini_Generated_Image_u55xp0u55xp0u55x_ootnnu.png",
-    konut: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608268/Gemini_Generated_Image_u55xp0u55xp0u55x_ootnnu.png",
+    saglik: "/assets/saglıksigortası.png",
+    dask: "/assets/afet%20sigortası.png",
+    konut: "/assets/konutsigortası.png",
     isyeri: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608282/Gemini_Generated_Image_j9v2h4j9v2h4j9v2_tj33cq.png",
     hayat: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769608021/Gemini_Generated_Image_7qwvqa7qwvqa7qwv_ulwkuz.png",
 }
@@ -85,13 +85,13 @@ export default function Service() {
         {
             title: "Kasko",
             href: "/kasko-sigortasi",
-            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554506/sigorta_bl8jr0.jpg",
+            image: "/assets/arackaskoo.png",
             icon: "icon-family-insurance",
         },
         {
             title: "TARSIM",
             href: "/tarsim",
-            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/tarsim_qrmyqu.png",
+            image: "/assets/tarımsigorta.jpg",
             icon: "icon-protection",
         },
         {
@@ -133,7 +133,7 @@ export default function Service() {
         {
             title: "TARSİM",
             href: "/tarsim",
-            image: "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540934/tarsim_qrmyqu.png",
+            image: "/assets/tarımsigorta.jpg",
             icon: "icon-protection",
         },
     ]
@@ -143,10 +143,10 @@ export default function Service() {
      {/* Services One Start  */}
         <section className="services-one">
             <div className="services-one__shape-1 float-bob-x">
-                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-1.png")} alt="" suppressHydrationWarning/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-1.png")} alt="Hizmetler dekoratif şekil" suppressHydrationWarning/>
             </div>
             <div className="services-one__shape-2 rotate-me">
-                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-2.png")} alt="" suppressHydrationWarning/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-2.png")} alt="Hizmetler dekoratif şekil" suppressHydrationWarning/>
             </div>
             <div className="container">
                 <div className="section-title text-left">
@@ -178,6 +178,7 @@ export default function Service() {
                                                 <img 
                                                     src={service.image} 
                                                     alt={service.title}
+                                                    loading="lazy"
                                                     suppressHydrationWarning
                                                 />
                                             </div>

@@ -15,7 +15,7 @@ export default function About() {
                             <div className="about-one__img-box  wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div className="about-one__img">
-                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540886/1045x820_pwgxg9.png" alt="Voldem Sigorta Tokat"/>
+                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540886/1045x820_pwgxg9.png" alt="Voldem Sigorta Tokat" loading="lazy"/>
                                 </div>
                             </div>
                         </div>

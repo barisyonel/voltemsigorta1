@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
                         <div className="why-choose-one__left">
                             <div className="why-choose-one__img-box">
                                 <div className="why-choose-one__img">
-                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540940/voldem_hcbgxk.png" alt="Voldem Sigorta Tokat"/>
+                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540940/voldem_hcbgxk.png" alt="Voldem Sigorta Tokat" loading="lazy"/>
                                 </div>
                             </div>
                             <div className="why-choose-one__content-article">

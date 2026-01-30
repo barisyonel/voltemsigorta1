@@ -21,7 +21,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-1.jpg")} alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-1.jpg")} alt="Ekip üyesi"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -47,7 +47,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-2.jpg")} alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-2.jpg")} alt="Ekip üyesi"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -73,7 +73,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-3.jpg")} alt=""/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-3.jpg")} alt="Ekip üyesi"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">

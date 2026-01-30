@@ -116,7 +116,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar, isMobileMenu }
                                         <span className="fa fa-chevron-down" />
                                     </div>
                                 </li>
-                                <li><Link href="/tarsim">TARSIM</Link></li>
+                                <li className="main-menu__item--tarsim"><Link href="/tarsim">TARSIM</Link></li>
                                 <li><Link href="iletisim">İletişim</Link></li>
                             </ul>
                         </div>

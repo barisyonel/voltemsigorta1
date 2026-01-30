@@ -55,7 +55,7 @@ export default function Menu() {
                         <li><Link href="/isyeri-sigortasi">İşletme Sigortası</Link></li>
                     </ul>
                 </li>
-                <li>
+                <li className="main-menu__item--tarsim">
                     <Link href="/tarsim">TARSIM</Link>
                 </li>
                 <li>

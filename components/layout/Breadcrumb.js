@@ -49,7 +49,7 @@ const DEFAULT_DESCRIPTIONS = {
     "404 Error": "Aradığınız sayfa bulunamadı.",
 }
 
-export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage, breadcrumbDescription, breadcrumbSeoTitle }) {
+export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage, breadcrumbDescription, breadcrumbSeoTitle, headerImageFullSize }) {
     const [imgError, setImgError] = useState(false)
     const imageSrc = useMemo(() => {
         if (!breadcrumbImage) return FALLBACK_IMAGE_URL
@@ -65,7 +65,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbImage, breadcrum
     const seoTitle = breadcrumbSeoTitle || SEO_TITLES[breadcrumbTitle] || breadcrumbTitle || "Voldem Sigorta Tokat"
     
     return (
-        <section className="page-header page-header--split">
+        <section className={`page-header page-header--split${headerImageFullSize ? " page-header--full-image" : ""}`}>
             <div className="page-header__layout">
                 <div className="page-header__content">
                     <h1 className="page-header__title">{seoTitle}</h1>

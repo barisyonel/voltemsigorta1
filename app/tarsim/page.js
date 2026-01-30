@@ -1,10 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import Image from "next/image"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 import InsuranceFAQ from "@/components/elements/InsuranceFAQ"
-
-const HEADER_IMG_URL = "https://res.cloudinary.com/dznv8z7wo/image/upload/v1769696797/Gemini_Generated_Image_mp0vump0vump0vum_1_hvczvn.png"
 
 const faqItems = [
     {
@@ -40,7 +37,8 @@ export default function TarsimPage() {
             headerStyle={1}
             footerStyle={1}
             breadcrumbTitle="TARSIM Tarım Sigortası"
-            breadcrumbImage={HEADER_IMG_URL}
+            breadcrumbImage="/assets/tokattarım.jpg"
+            breadcrumbImageFullSize
         >
             <section className="insurance-details tarsim-page">
                 <div className="container">
@@ -80,7 +78,7 @@ export default function TarsimPage() {
                                     <div className="insurance-details__text-box">
                                         <h2>Neden Voldem Sigorta?</h2>
                                         <p>Tokat ve çevre illerde TARSIM konusunda deneyimli ekibimizle ürününüze ve ihtiyacınıza uygun, geniş kapsamlı poliçe seçeneklerini sunuyoruz. Teklif ve hasar süreçlerinde yanınızdayız.</p>
-                                        <Image src={HEADER_IMG_URL} alt="TARSIM Tarım Sigortası" width={640} height={360} className="insurance-details__why-voldem-img" style={{ display: "block", maxWidth: "320px", width: "100%", height: "auto", marginTop: "20px", borderRadius: "8px" }} />
+                                        <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM Tarım Sigortası" className="insurance-details__why-voldem-img" style={{ display: "block", maxWidth: "100%", width: "320px", height: "auto", marginTop: "20px", borderRadius: "12px" }} />
                                     </div>
                                 </div>
 
@@ -88,6 +86,39 @@ export default function TarsimPage() {
                                 <p className="insurance-details__text-2">
                                     TARSIM; bitkisel ürün, sera, büyükbaş ve küçükbaş hayvan, kümes hayvanları, arıcılık ve su ürünleri sigortalarını tek çatı altında toplar. Her branşta doğal afet, yangın, hastalık gibi risklere karşı geniş kapsamlı teminat imkânı sunar.
                                 </p>
+
+                                <div className="tarsim-weather-risks" style={{ marginTop: "28px", padding: "24px", background: "linear-gradient(135deg, #f8faf5 0%, #f0f7ec 100%)", borderRadius: "16px", border: "1px solid rgba(22, 163, 74, 0.15)" }}>
+                                    <h3 className="insurance-details__title-2" style={{ fontSize: "22px", marginBottom: "20px", color: "#166534" }}>Dolu, Don ve Aşırı Yağmur – Tarımda En Sık Karşılaşılan Riskler</h3>
+                                    <p className="insurance-details__text-2" style={{ marginBottom: "16px" }}>
+                                        Çiftçi için yağmurun anlamı farklıdır; yağmur bereket demektir. Ancak aşırı yağış, don ve dolu hasat öncesi ürünü bir gecede sıfırlayabilir. TARSIM, bu doğal risklere karşı üreticiyi güvence altına alır.
+                                    </p>
+                                    <div className="row g-3" style={{ marginTop: "20px" }}>
+                                        <div className="col-md-4">
+                                            <div style={{ padding: "16px", background: "#fff", borderRadius: "12px", height: "100%", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+                                                <h4 style={{ fontSize: "18px", fontWeight: 700, color: "#166534", marginBottom: "8px" }}>Dolu Sigortası</h4>
+                                                <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4b5563", margin: 0 }}>
+                                                    Dolu, meyve bahçeleri ve tarla ürünlerinde dakikalar içinde büyük kayıplara yol açar. TARSIM dolu hasarlarını kapsar; hasar tespiti sonrası tazminat hızlıca ödenir.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <div style={{ padding: "16px", background: "#fff", borderRadius: "12px", height: "100%", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+                                                <h4 style={{ fontSize: "18px", fontWeight: 700, color: "#166534", marginBottom: "8px" }}>Don Riski Teminatı</h4>
+                                                <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4b5563", margin: 0 }}>
+                                                    İlkbahar geç donları ve sonbahar erken donları, özellikle meyve ve sebze üreticilerini zor durumda bırakır. Don teminatı ile ürününüz soğuk hava dalgalarına karşı korunur.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <div style={{ padding: "16px", background: "#fff", borderRadius: "12px", height: "100%", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+                                                <h4 style={{ fontSize: "18px", fontWeight: 700, color: "#166534", marginBottom: "8px" }}>Aşırı Yağış ve Su Baskını</h4>
+                                                <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4b5563", margin: 0 }}>
+                                                    Aşırı yağmur ve su baskını tarlada su birikmesine, kök çürümesine ve verim kaybına neden olur. TARSIM su baskını teminatı ile bu riskleri karşılar.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div className="row tarsim-coverage-grid">
                                     {coverageItems.map((item, i) => (
@@ -116,6 +147,9 @@ export default function TarsimPage() {
                                         <li className="active"><Link href="/tarsim">TARSIM (Tarım Sigortası)<span className="icon-next"></span></Link></li>
                                         <li><Link href="/isyeri-sigortasi">İşletme Sigortası<span className="icon-next"></span></Link></li>
                                     </ul>
+                                </div>
+                                <div className="insurance-details__tarsim-visual" style={{ marginBottom: "24px", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
+                                    <img src="/assets/tarım.jpg" alt="Tokat tarım sigortası" style={{ width: "100%", height: "auto", display: "block" }} />
                                 </div>
                                 <div className="insurance-details__need-help">
                                     <div className="insurance-details__need-help-bg"

@@ -9,7 +9,7 @@ import Sidebar from "./Sidebar"
 import Footer1 from './footer/Footer1'
 import Header1 from "./header/Header1"
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, breadcrumbImage, breadcrumbDescription, breadcrumbSeoTitle, children, wrapperCls }) {
+export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, breadcrumbImage, breadcrumbDescription, breadcrumbSeoTitle, breadcrumbImageFullSize, children, wrapperCls }) {
     const [scroll, setScroll] = useState(0)
     // Mobile Menu
     const [isMobileMenu, setMobileMenu] = useState(false)
@@ -61,7 +61,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
                 <main id="main-content" className="page-content-wrap">
-                    {(breadcrumbTitle || breadcrumbImage) && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbImage={breadcrumbImage} breadcrumbDescription={breadcrumbDescription} breadcrumbSeoTitle={breadcrumbSeoTitle} />}
+                    {(breadcrumbTitle || breadcrumbImage) && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbImage={breadcrumbImage} breadcrumbDescription={breadcrumbDescription} breadcrumbSeoTitle={breadcrumbSeoTitle} headerImageFullSize={breadcrumbImageFullSize} />}
                     {children}
                 </main>
 

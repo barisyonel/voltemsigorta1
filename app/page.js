@@ -3,16 +3,19 @@ import SeoIntro from "@/components/sections/home1/SeoIntro"
 import About from "@/components/sections/home1/About"
 import Banner from "@/components/sections/home1/Banner"
 import InsuranceTypes from "@/components/sections/home1/InsuranceTypes"
+import StatsSection from "@/components/sections/home1/StatsSection"
+import FeaturedServices from "@/components/sections/home1/FeaturedServices"
+import Brand from "@/components/sections/home1/Brand"
 import WhyChooseUs from "@/components/sections/home1/WhyChooseUs"
 import Service from "@/components/sections/home1/Service"
 import Testimonial from "@/components/sections/home1/Testimonial"
 import Blog from "@/components/sections/home1/Blog"
-import Brand from "@/components/sections/home1/Brand"
+import HomeCta from "@/components/sections/home1/HomeCta"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "Tokat Sigorta Acentesi | Uygun Trafik, Kasko, Konut ve Sağlık Sigortası Teklifi",
-    description: "Tokat'ta en uygun sigorta fiyatları. Trafik, kasko, DASK, konut, sağlık ve hayat sigortası teklifi için Voldem Sigorta Tokat. 20 yıllık deneyim, hızlı teklif, indirimli prim. Hemen ücretsiz karşılaştırmalı teklif alın.",
+    title: "Tokat Sigorta Acentesi | Trafik, Kasko, Konut Teklifi",
+    description: "Tokat'ta trafik, kasko, konut, sağlık sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, hızlı teklif. Ücretsiz karşılaştırma.",
     keywords: [
         "tokat sigorta",
         "tokat sigorta acentesi",
@@ -29,8 +32,8 @@ export const metadata = {
         "tokat sigorta teklifi",
     ],
     openGraph: {
-        title: "Tokat Sigorta Acentesi | Uygun Trafik, Kasko, Konut Sigortası",
-        description: "Tokat'ta en uygun sigorta fiyatları. Trafik, kasko, DASK, konut ve sağlık sigortası teklifi. Hızlı karşılaştırma, indirimli prim.",
+        title: "Tokat Sigorta Acentesi | Trafik, Kasko, Konut Teklifi",
+        description: "Tokat'ta trafik, kasko, konut, sağlık sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, hızlı teklif.",
         images: [
             {
                 url: cloudinaryUrl("/logo.jpeg"),
@@ -50,12 +53,15 @@ export default function Home() {
                 <Banner />
                 <SeoIntro />
                 <InsuranceTypes />
+                <StatsSection />
+                <FeaturedServices />
                 <Brand />
                 <About />
                 <Service />
                 <WhyChooseUs />
                 <Testimonial />
                 <Blog />
+                <HomeCta />
                 
             </Layout>
 

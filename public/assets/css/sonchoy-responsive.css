@@ -1033,8 +1033,8 @@
     .main-slider,
     .main-slider .item,
     .main-slider__layout {
-        height: 100vh;
-        min-height: 100vh;
+        height: auto;
+        min-height: auto;
     }
     .section-title__title br {
         display: none;
@@ -1132,6 +1132,16 @@
         display: flex !important;
         margin-top: 24px !important;
         margin-bottom: 10px !important;
+    }
+
+    /* Hizmetlerimiz kart görselleri - mobil uyum */
+    .services-one__img {
+        height: 180px;
+        min-height: 160px;
+    }
+    .services-one__img img {
+        object-fit: contain;
+        object-position: center;
     }
 
     .why-choose-one {
@@ -2302,8 +2312,15 @@
     }
     .page-header--split .page-header__media .page-header__image {
         min-height: 200px;
-        object-fit: cover;
-        transform: scale(1.2);
+        object-fit: contain;
+    }
+    .page-header--full-image .page-header__media {
+        min-height: auto;
+        max-height: none;
+    }
+    .page-header--full-image .page-header__media .page-header__image {
+        min-height: 0;
+        height: auto;
     }
 
     .about-three.about-six {
@@ -2512,7 +2529,7 @@
     .main-slider__content {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 80px 40px;
+        padding: 40px 40px;
         display: block;
     }
 
@@ -2529,11 +2546,11 @@
         color: #374151;
     }
 
-    .main-slider__media {
+    .main-slider__media-wrapper {
         flex: 0 0 50%;
         max-width: 50%;
         height: auto;
-        min-height: 500px;
+        min-height: 380px;
     }
 
 
@@ -2544,7 +2561,7 @@
         display: none;
     }
 
-    .main-slider__media {
+    .main-slider__media-wrapper {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -2552,7 +2569,7 @@
     .main-slider__content {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 100px 40px;
+        padding: 40px 40px;
     }
     
     .main-slider__content .main-slider__title {
@@ -2656,16 +2673,19 @@
         text-shadow: none;
     }
 
-    .main-slider__media {
+    .main-slider__media-wrapper {
         order: 1;
         flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
-        height: 50vh;
-        min-height: 50vh;
-        max-height: 50vh;
+        height: 220px;
+        min-height: 200px;
+        max-height: 280px;
+    }
+
+    .main-slider__media-wrapper .main-slider__media {
+        background-size: contain;
         background-position: center;
-        margin: 0;
         border-radius: 16px;
     }
 
@@ -2798,14 +2818,18 @@
         text-shadow: none;
     }
 
-    .main-slider__media {
+    .main-slider__media-wrapper {
         order: 1;
         flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
-        height: 50vh;
-        min-height: 50vh;
-        max-height: 50vh;
+        height: 220px;
+        min-height: 200px;
+        max-height: 280px;
+    }
+
+    .main-slider__media-wrapper .main-slider__media {
+        background-size: contain;
         background-position: center;
         border-radius: 14px;
     }
@@ -3265,7 +3289,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .page-content-wrap {
-        padding-top: 70px;
+        padding-top: 95px;
     }
     .main-header__top {
         display: none;
@@ -3403,8 +3427,15 @@
     }
     .page-header--split .page-header__media .page-header__image {
         min-height: 220px;
-        object-fit: cover;
-        transform: scale(1.2);
+        object-fit: contain;
+    }
+    .page-header--full-image .page-header__media {
+        min-height: auto;
+        max-height: none;
+    }
+    .page-header--full-image .page-header__media .page-header__image {
+        min-height: 0;
+        height: auto;
     }
 
 
@@ -3608,19 +3639,20 @@
         padding: 0 12px;
     }
 
-    .main-slider__media {
+    .main-slider__media-wrapper {
         order: 1;
         flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
-        height: 50vh;
-        min-height: 50vh;
-        max-height: 50vh;
-        aspect-ratio: auto;
-        background-size: cover;
+        height: 220px;
+        min-height: 200px;
+        max-height: 280px;
+    }
+
+    .main-slider__media-wrapper .main-slider__media {
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/voldemmobil_lfizpi.png") !important;
         border-radius: 14px;
     }
 

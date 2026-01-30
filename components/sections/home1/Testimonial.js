@@ -3,9 +3,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { cloudinaryUrl } from "@/lib/cloudinary"
-
-
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 3,
@@ -71,9 +68,6 @@ export default function Testimonial() {
 
      {/* Testimonial One Start  */}
         <section className="testimonial-one">
-            <div className="testimonial-one__shape-1 img-bounce">
-                <img src={cloudinaryUrl("assets/images/shapes/testimonial-one-shape-1.png")} alt="" suppressHydrationWarning/>
-            </div>
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
@@ -91,7 +85,7 @@ export default function Testimonial() {
                             <div className="item">
                                 <div className="testimonial-one__single">
                                     <div className="testimonial-one__quote">
-                                        <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
+                                        <i className="fas fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <div className="testimonial-one__text-box">
                                         <p className="testimonial-one__text">Hızlı teklif, net bilgi ve çözüm odaklı yaklaşım
@@ -112,7 +106,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
+                                    <i className="fas fa-quote-left" aria-hidden="true"></i>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Hızlı teklif, net bilgi ve çözüm odaklı yaklaşım
@@ -131,7 +125,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
+                                    <i className="fas fa-quote-left" aria-hidden="true"></i>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Doğru poliçeyi hızlıca bulmamı sağladılar, süreç
@@ -150,7 +144,7 @@ export default function Testimonial() {
                         <div className="item">
                             <div className="testimonial-one__single">
                                 <div className="testimonial-one__quote">
-                                    <img src={cloudinaryUrl("assets/images/icon/quote-icon-1.png")} alt="" suppressHydrationWarning/>
+                                    <i className="fas fa-quote-left" aria-hidden="true"></i>
                                 </div>
                                 <div className="testimonial-one__text-box">
                                     <p className="testimonial-one__text">Konut sigortası için en uygun teminatları
