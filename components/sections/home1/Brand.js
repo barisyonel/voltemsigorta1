@@ -2,6 +2,12 @@
 import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
+const CLOUDINARY_OPTS = "q_95,f_auto,w_280"
+
+const optimUrl = (url) => {
+    if (!url?.includes("res.cloudinary.com") || !url?.includes("/upload/")) return url
+    return url.replace("/upload/", `/upload/${CLOUDINARY_OPTS}/`)
+}
 
 const swiperOptions = {
     modules: [Autoplay],
@@ -74,7 +80,7 @@ export default function Brand() {
                     {partners.map((partner, index) => (
                         <SwiperSlide className="partner-slide" key={`${partner.src}-${index}`}>
                             <div className="partner-card">
-                                <img src={partner.src} alt={partner.alt}/>
+                                <img src={optimUrl(partner.src)} alt={partner.alt} loading="lazy" suppressHydrationWarning />
                             </div>
                         </SwiperSlide>
                     ))}

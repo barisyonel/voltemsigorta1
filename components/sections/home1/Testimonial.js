@@ -98,7 +98,7 @@ export default function Testimonial() {
                                             sayesinde süreci kolayca tamamladık.</p>
                                     </div>
                                     <div className="testimonial-one__client-info">
-                                        <h3 className="testimonial-one__client-name"><Link href="yorumlar">Uğur Çoban</Link>
+                                        <h3 className="testimonial-one__client-name"><Link href="/iletisim">Uğur Çoban</Link>
                                         </h3>
                                         <p className="testimonial-one__client-sub-title">Karavan Firma Sahibi</p>
                                     </div>
@@ -119,7 +119,7 @@ export default function Testimonial() {
                                         sayesinde süreci kolayca tamamladık.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Uğur Çoban</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="/iletisim">Uğur Çoban</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Karavan Firma Sahibi</p>
                                 </div>
@@ -138,7 +138,7 @@ export default function Testimonial() {
                                         boyunca hep ulaşılabilirlerdi.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Ramazan Zincirci</Link>
+                                    <h3 className="testimonial-one__client-name"><Link href="/iletisim">Ramazan Zincirci</Link>
                                     </h3>
                                     <p className="testimonial-one__client-sub-title">Buğra Otomotiv LPG Oto Bakım Servis Yetkilisi Sahibi</p>
                                 </div>
@@ -157,7 +157,7 @@ export default function Testimonial() {
                                         anlaşılır şekilde sundular.</p>
                                 </div>
                                 <div className="testimonial-one__client-info">
-                                    <h3 className="testimonial-one__client-name"><Link href="yorumlar">Özgür Reis</Link></h3>
+                                    <h3 className="testimonial-one__client-name"><Link href="/iletisim">Özgür Reis</Link></h3>
                                     <p className="testimonial-one__client-sub-title">Okul Servis Sigortası</p>
                                 </div>
                             </div>

@@ -1,14 +1,22 @@
 'use client'
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
-const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
+const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar, isMobileMenu }) => {
   const [isActive, setIsActive] = useState({
     status: false,
     key: "",
     subMenuKey: "",
   });
+
+  const pathname = usePathname()
+
+  useEffect(() => {
+    if (isMobileMenu) handleMobileMenu()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname])
 
   const handleToggle = (key, subMenuKey = "") => {
     if (isActive.key === key && isActive.subMenuKey === subMenuKey) {
@@ -25,16 +33,22 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
       });
     }
   };
+    const handleWrapperClick = (e) => {
+        if (!e.target.closest('.mobile-nav__content')) {
+            handleMobileMenu()
+        }
+    }
+
     return (
         <>
-            <div className="mobile-nav__wrapper">
-                <div className="mobile-nav__overlay mobile-nav__toggler" onClick={handleMobileMenu} ></div>
-                <div className="mobile-nav__content">
+            <div className="mobile-nav__wrapper" onClick={handleWrapperClick}>
+                <div className="mobile-nav__overlay mobile-nav__toggler"></div>
+                <div className="mobile-nav__content" onClick={(e) => e.stopPropagation()}>
                     <span className="mobile-nav__close mobile-nav__toggler" onClick={handleMobileMenu} ><i className="fa fa-times"></i></span>
 
                     <div className="logo-box">
-                        <a href="index" aria-label="logo image"><img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554223/logo_cg5jek.png" width="150"
-                                alt="Voldem Sigorta Tokat logo" /></a>
+                        <Link href="/" aria-label="logo image"><img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554223/logo_cg5jek.png" width="150"
+                                alt="Voldem Sigorta Tokat logo" /></Link>
                     </div>
 
                     <div className="mobile-nav__container">
@@ -119,7 +133,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     </ul>
                     <div className="mobile-nav__top">
                         <div className="mobile-nav__social">
-                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="https://www.instagram.com/voldemsigorta" target="_blank" rel="noopener noreferrer" className="fab fa-instagram" aria-label="Instagram"></a>
                         </div>
                     </div>
                     <div className="mobile-nav__footer">

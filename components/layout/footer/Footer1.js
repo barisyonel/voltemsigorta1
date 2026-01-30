@@ -31,7 +31,7 @@ export default function Footer1() {
                                         </Link>
                                     </div>
                                     <div className="footer-widget__social">
-                                        <Link href="#" aria-label="Instagram"><span className="icon-instagram-1"></span></Link>
+                                        <Link href="https://www.instagram.com/voldemsigorta" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span className="icon-instagram-1"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -45,16 +45,16 @@ export default function Footer1() {
                                             <Link href="/">Ana Sayfa</Link>
                                         </li>
                                         <li>
-                                            <Link href="hakkimizda">Hakkımızda</Link>
+                                            <Link href="/hakkimizda">Hakkımızda</Link>
                                         </li>
                                         <li>
-                                            <Link href="sigorta">Hizmetler</Link>
+                                            <Link href="/sigorta">Hizmetler</Link>
                                         </li>
                                         <li>
-                                            <Link href="iletisim">İletişim</Link>
+                                            <Link href="/iletisim">İletişim</Link>
                                         </li>
                                         <li>
-                                            <Link href="blog">Blog</Link>
+                                            <Link href="/blog">Blog</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -66,25 +66,25 @@ export default function Footer1() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="sigorta">Sigortalar</Link>
+                                            <Link href="/sigorta">Sigortalar</Link>
                                         </li>
                                         <li>
-                                            <Link href="hayat-sigortasi">Hayat Sigortası</Link>
+                                            <Link href="/hayat-sigortasi">Hayat Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="saglik-sigortasi">Sağlık Sigortası</Link>
+                                            <Link href="/saglik-sigortasi">Sağlık Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="arac-sigortasi">Araç Sigortası</Link>
+                                            <Link href="/arac-sigortasi">Araç Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="konut-sigortasi">Konut Sigortası</Link>
+                                            <Link href="/konut-sigortasi">Konut Sigortası</Link>
                                         </li>
                                         <li>
-                                                        <Link href="dask-sigortasi">DASK Sigortası</Link>
+                                                        <Link href="/dask-sigortasi">DASK Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="isyeri-sigortasi">İşletme Sigortası</Link>
+                                            <Link href="/isyeri-sigortasi">İşletme Sigortası</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,13 +96,13 @@ export default function Footer1() {
                                     </div>
                                     <ul className="footer-widget__navigation-list list-unstyled">
                                         <li>
-                                            <Link href="kvkk">KVKK Aydınlatma</Link>
+                                            <Link href="/kvkk">KVKK Aydınlatma</Link>
                                         </li>
                                         <li>
-                                            <Link href="gizlilik">Gizlilik Politikası</Link>
+                                            <Link href="/gizlilik">Gizlilik Politikası</Link>
                                         </li>
                                         <li>
-                                            <Link href="cerez-politikasi">Çerez Politikası</Link>
+                                            <Link href="/cerez-politikasi">Çerez Politikası</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -114,7 +114,7 @@ export default function Footer1() {
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">© 2024 Voldem Sigorta Tokat. Kurumsal Sigorta Danışmanlığı.</p>
+                        <p className="site-footer__bottom-text">© 2025 Voldem Sigorta Tokat. Kurumsal Sigorta Danışmanlığı.</p>
                         <p className="site-footer__bottom-text">
                             Media: <a href="https://bariscanyonel.com" target="_blank" rel="noopener noreferrer">Barış Can Yönel</a>
                         </p>

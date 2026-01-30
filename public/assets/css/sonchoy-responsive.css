@@ -917,7 +917,7 @@
     }
 
     .insurance-details {
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 
@@ -2222,52 +2222,70 @@
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .page-header {
+    .page-header:not(.page-header--split) {
         padding: 0;
         margin-top: 0;
-        height: 320px;
-        min-height: 320px;
-        max-height: 320px;
+        height: 280px;
+        min-height: 280px;
         overflow: hidden;
         width: 100%;
         max-width: 100vw;
     }
 
-    .page-header__layout {
-        height: 320px;
-        min-height: 320px;
-        max-height: 320px;
-        overflow: hidden;
+    .page-header:not(.page-header--split) .page-header__layout {
+        height: 280px;
+        min-height: 280px;
         width: 100%;
         max-width: 100%;
     }
 
-    .page-header__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    .page-header:not(.page-header--split) .page-header__bg {
         width: 100%;
         max-width: 100%;
-        height: 320px;
-        min-height: 320px;
-        max-height: 320px;
-        background-position: center center;
-        background-size: contain;
-        background-color: transparent;
-        overflow: hidden;
     }
     
-    .page-header__bg img,
-    .page-header__image {
+    .page-header:not(.page-header--split) .page-header__bg img,
+    .page-header:not(.page-header--split) .page-header__image {
         width: 100%;
         height: 100%;
-        min-height: 320px;
-        max-width: 100%;
         object-fit: contain;
         object-position: center center;
-        display: block;
+    }
+
+    /* Split header - mobil: görsel üstte, yazı altta */
+    .page-header--split .page-header__layout {
+        flex-direction: column;
+        min-height: auto;
+        gap: 16px;
+        padding: 0 16px;
+    }
+    .page-header--split .page-header__media {
+        order: 1;
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        min-height: 200px;
+        max-height: 240px;
+        border-radius: 14px;
+    }
+    .page-header--split .page-header__content {
+        order: 2;
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 32px 20px 24px;
+        border-radius: 16px;
+    }
+    .page-header--split .page-header__title {
+        font-size: 26px;
+    }
+    .page-header--split .page-header__desc {
+        font-size: 15px;
+    }
+    .page-header--split .page-header__media .page-header__image {
+        min-height: 200px;
+        object-fit: cover;
+        transform: scale(1.2);
     }
 
     .about-three.about-six {
@@ -2303,28 +2321,20 @@
         margin-left: 0;
     }
 
-    /* Desktop Page Header - Medium Screen */
-    .page-header {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+    /* Desktop Page Header - sabit yükseklik (sadece eski tek görsel header için) */
+    .page-header:not(.page-header--split) {
+        height: 450px !important;
+        min-height: 450px !important;
     }
 
-    .page-header__layout {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+    .page-header:not(.page-header--split) .page-header__layout {
+        height: 450px !important;
+        min-height: 450px !important;
     }
 
-    .page-header__bg {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
-    }
-
-    .page-header__bg img,
-    .page-header__image {
-        object-fit: cover !important;
+    .page-header:not(.page-header--split) .page-header__bg img,
+    .page-header:not(.page-header--split) .page-header__image {
+        object-fit: contain !important;
         object-position: center center !important;
     }
 
@@ -2597,6 +2607,8 @@
         display: flex;
         height: auto;
         min-height: auto;
+        gap: 16px;
+        padding: 0 16px;
     }
 
     .main-slider__content {
@@ -2608,6 +2620,7 @@
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(10px);
         display: block;
+        border-radius: 16px;
     }
 
     .main-slider__content .main-slider__title {
@@ -2635,7 +2648,7 @@
         max-height: 50vh;
         background-position: center;
         margin: 0;
-        border-radius: 0;
+        border-radius: 16px;
     }
 
     .main-slider__copy {
@@ -2711,6 +2724,10 @@
 
 
 @media only screen and (max-width: 767px) {
+    .main-slider__layout {
+        gap: 12px;
+        padding: 0 12px;
+    }
     .main-slider__img {
         display: none !important;
     }
@@ -2772,6 +2789,11 @@
         min-height: 50vh;
         max-height: 50vh;
         background-position: center;
+        border-radius: 14px;
+    }
+
+    .main-slider__content {
+        border-radius: 14px;
     }
 
     .main-slider__copy {
@@ -3224,6 +3246,9 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-content-wrap {
+        padding-top: 70px;
+    }
     .main-header__top {
         display: none;
     }
@@ -3311,38 +3336,57 @@
         transform: translateY(-50%);
     }
 
-    /* Tablet için page-header - görsel tam genişlikte, kesilmeden */
-    .page-header {
-        height: 400px !important;
-        min-height: 400px !important;
-        max-height: 400px !important;
-        width: 100% !important;
-        max-width: 100% !important;
+    /* Tablet için page-header - sabit yükseklik, taşma yok */
+    .page-header:not(.page-header--split) {
+        height: 360px !important;
+        min-height: 360px !important;
     }
 
-    .page-header__layout {
-        height: 400px !important;
-        min-height: 400px !important;
-        max-height: 400px !important;
-        width: 100% !important;
-    }
-
-    .page-header__bg {
-        height: 400px !important;
-        min-height: 400px !important;
-        max-height: 400px !important;
-        width: 100% !important;
-        max-width: 100% !important;
+    .page-header:not(.page-header--split) .page-header__layout {
+        height: 360px !important;
+        min-height: 360px !important;
     }
     
-    .page-header__bg img,
-    .page-header__image {
-        width: 100% !important;
-        height: 100% !important;
-        min-height: 400px !important;
-        max-width: 100% !important;
+    .page-header:not(.page-header--split) .page-header__bg img,
+    .page-header:not(.page-header--split) .page-header__image {
         object-fit: contain !important;
         object-position: center center !important;
+    }
+
+    /* Split header - tablet: görsel üstte, yazı altta */
+    .page-header--split .page-header__layout {
+        flex-direction: column;
+        min-height: auto;
+        gap: 16px;
+        padding: 0 16px;
+    }
+    .page-header--split .page-header__media {
+        order: 1;
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        min-height: 220px;
+        max-height: 260px;
+        border-radius: 16px;
+    }
+    .page-header--split .page-header__content {
+        order: 2;
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 40px 30px 30px;
+        border-radius: 16px;
+    }
+    .page-header--split .page-header__title {
+        font-size: 32px;
+    }
+    .page-header--split .page-header__desc {
+        font-size: 16px;
+    }
+    .page-header--split .page-header__media .page-header__image {
+        min-height: 220px;
+        object-fit: cover;
+        transform: scale(1.2);
     }
 
 
@@ -3430,9 +3474,18 @@
 
 
 @media (max-width: 767px) {
-    /* Mobilde scroll'da sticky header görünsün, hamburger sürekli erişilebilir olsun */
-    .stricky-header.stricky-fixed {
-        display: block !important;
+    .page-content-wrap {
+        padding-top: 72px;
+    }
+    /* Mobilde stricky-header kullanma - tek header, tek hamburger, sabit üstte */
+    .stricky-header {
+        display: none !important;
+    }
+    /* Ana header her zaman görünsün, sabit beyaz arka plan */
+    .main-header.fixed-navbar .main-menu__wrapper-inner {
+        background: #ffffff !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
     }
     .stricky-header.stricky-fixed .main-menu__wrapper-inner {
         padding: 0 16px;
@@ -3451,15 +3504,17 @@
     }
 
     .main-menu__wrapper-inner {
-        padding: 0;
+        padding: 0 16px;
         margin: 0;
-        height: auto;
-        min-height: 0;
+        min-height: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
     }
     .transparent-header .main-menu__wrapper-inner {
-        background: transparent;
-        border: 0;
-        box-shadow: none;
+        background: #ffffff !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
         width: 100%;
         max-width: none;
     }
@@ -3483,41 +3538,41 @@
         justify-content: flex-start;
         align-items: center;
     }
-    /* Mobil: sayfa üstteyken hamburger beyaz */
+    /* Mobil: hamburger sabit sol üstte, her zaman siyah */
     .main-menu .mobile-nav__toggler {
-        font-size: 30px;
+        font-size: 28px;
         width: 44px;
         height: 44px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        background: transparent;
-        color: var(--sonchoy-white) !important;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-        position: absolute;
-        left: 16px;
-        top: 16px;
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        background: #ffffff;
+        color: #111827 !important;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        position: relative;
+        left: 0;
+        top: 0;
+        text-shadow: none;
     }
     .main-menu .mobile-nav__toggler:hover {
-        color: var(--sonchoy-white) !important;
-        background: rgba(255, 255, 255, 0.15);
-        border-color: rgba(255, 255, 255, 0.6);
+        color: #111827 !important;
+        background: #ffffff;
+        border-color: rgba(0, 0, 0, 0.2);
     }
-    /* Mobil: sayfa aşağı inince (sticky header) hamburger mor, belirgin olsun */
+    /* Mobil: scroll'da da siyah kalsın */
     .stricky-header.stricky-fixed .main-menu .mobile-nav__toggler {
-        color: var(--sonchoy-base) !important;
-        background: rgba(98, 34, 204, 0.15);
-        border: 1px solid rgba(98, 34, 204, 0.25);
-        box-shadow: 0 2px 12px rgba(98, 34, 204, 0.2);
+        color: #111827 !important;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         text-shadow: none;
     }
     .stricky-header.stricky-fixed .main-menu .mobile-nav__toggler:hover {
-        color: var(--sonchoy-base) !important;
-        background: rgba(98, 34, 204, 0.25);
-        border-color: rgba(98, 34, 204, 0.4);
+        color: #111827 !important;
+        background: #ffffff;
+        border-color: rgba(0, 0, 0, 0.2);
     }
 
     .main-slider,
@@ -3531,6 +3586,8 @@
         display: flex;
         height: auto;
         min-height: auto;
+        gap: 12px;
+        padding: 0 12px;
     }
 
     .main-slider__media {
@@ -3546,6 +3603,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-image: url("https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540889/voldemmobil_lfizpi.png") !important;
+        border-radius: 14px;
     }
 
     .main-slider__content {
@@ -3559,6 +3617,7 @@
         display: block;
         position: relative;
         z-index: 1;
+        border-radius: 14px;
     }
 
     .main-slider__content .main-slider__title {
@@ -3590,7 +3649,7 @@
 
     .scroll-to-top {
         right: 18px;
-        bottom: 88px;
+        bottom: 82px;
     }
     .about-one {
         padding-top: 40px;

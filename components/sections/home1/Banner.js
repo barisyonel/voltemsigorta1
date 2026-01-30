@@ -1,7 +1,7 @@
 
 'use client'
-import Link from "next/link"
 import { Autoplay } from "swiper/modules"
+import QuickQuoteForm from "./QuickQuoteForm"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
@@ -42,6 +42,7 @@ export default function Banner() {
                                             Tokat'ın en güvenilir sigorta acentesi. Hızlı teklif, uygun prim, 
                                             güvenilir hizmet. Voldem Sigorta Tokat ile hayatınızı güvence altına alın.
                                         </p>
+                                        <QuickQuoteForm />
                                     </div>
                                     <div
                                         className="main-slider__media"
