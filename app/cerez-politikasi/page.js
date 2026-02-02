@@ -1,5 +1,11 @@
 import Layout from "@/components/layout/Layout"
 
+export const metadata = {
+    title: "Çerez Politikası | Voldem Sigorta Tokat",
+    description: "Tokatsigorta.com çerez politikası. Web sitemizde kullanılan çerezler ve gizlilik tercihleriniz.",
+    alternates: { canonical: "/cerez-politikasi" },
+}
+
 export default function CerezPolitikasiPage() {
     return (
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Çerez Politikası">

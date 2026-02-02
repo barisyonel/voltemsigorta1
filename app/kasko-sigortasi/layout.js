@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "Kasko Sigortası | Voldem Sigorta Tokat",
-    description: "Tokat kasko sigortası. Aracınızı çarpma, çalınma, doğal afet ve yangın gibi risklere karşı güvence altına alın. Hızlı teklif ve net teminatlar.",
+    title: "Tokat Kasko Sigortası | Uygun Kasko Fiyatı - Voldem Sigorta Tokat",
+    description: "Tokat kasko sigortası, Tokat araç kasko fiyatları. Çarpma, çalınma, yangın ve doğal afet teminatı. Karşılaştırmalı teklif, hızlı poliçe. Voldem Sigorta Tokat.",
     keywords: [
         "tokat kasko",
         "kasko sigortası tokat",

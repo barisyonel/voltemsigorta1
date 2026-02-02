@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Konut Sigortası | Voldem Sigorta Tokat",
+    title: "Tokat Konut Sigortası | Ev Sigortası - Voldem Sigorta Tokat",
     description: "Tokat konut sigortası. Evinizi ve eşyalarınızı yangın, hırsızlık ve doğal afetlere karşı güvence altına alın. Hızlı teklif ve güvenilir destek.",
     keywords: [
         "tokat konut sigortası",

@@ -3,7 +3,7 @@ import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "İletişim",
+    title: "Tokat Sigorta İletişim | Teklif Al - Voldem Sigorta Tokat",
     description: "Voldem Sigorta Tokat iletişim bilgileri. Tokat merkez ofisimizden bize ulaşın. Telefon, e-posta ve WhatsApp ile hızlı teklif alın. Gop Bulvarı No:192 Tüfekçiler İş Hanı Kat:3 D:25",
     keywords: [
         "tokat sigorta iletişim",

@@ -1,5 +1,11 @@
 import Layout from "@/components/layout/Layout"
 
+export const metadata = {
+    title: "Gizlilik Politikası | Voldem Sigorta Tokat",
+    description: "Voldem Sigorta Tokat gizlilik politikası. Kişisel verilerinizin korunması ve işlenmesi hakkında bilgiler.",
+    alternates: { canonical: "/gizlilik" },
+}
+
 export default function GizlilikPage() {
     return (
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Gizlilik Politikası">

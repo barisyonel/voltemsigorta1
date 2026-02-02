@@ -87,19 +87,25 @@ export default function Footer1() {
                                             <Link href="/sigorta">Sigortalar</Link>
                                         </li>
                                         <li>
+                                            <Link href="/arac-sigortasi">Tokat Araç Sigortası</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/kasko-sigortasi">Tokat Kasko</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/tarsim">Tokat TARSIM</Link>
+                                        </li>
+                                        <li>
                                             <Link href="/hayat-sigortasi">Hayat Sigortası</Link>
                                         </li>
                                         <li>
                                             <Link href="/saglik-sigortasi">Sağlık Sigortası</Link>
                                         </li>
                                         <li>
-                                            <Link href="/arac-sigortasi">Araç Sigortası</Link>
-                                        </li>
-                                        <li>
                                             <Link href="/konut-sigortasi">Konut Sigortası</Link>
                                         </li>
                                         <li>
-                                                        <Link href="/dask-sigortasi">DASK Sigortası</Link>
+                                            <Link href="/dask-sigortasi">DASK Sigortası</Link>
                                         </li>
                                         <li>
                                             <Link href="/isyeri-sigortasi">İşletme Sigortası</Link>

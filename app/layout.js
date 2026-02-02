@@ -121,7 +121,8 @@ export default function RootLayout({ children }) {
             "DASK Sigortası",
             "Sağlık Sigortası",
             "Hayat Sigortası",
-            "İşletme Sigortası"
+            "İşletme Sigortası",
+            "TARSIM Tarım Sigortası"
         ],
         "sameAs": [
             "https://wa.me/905433950213"

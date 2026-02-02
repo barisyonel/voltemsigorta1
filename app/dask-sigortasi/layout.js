@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "DASK Sigortası | Voldem Sigorta Tokat",
+    title: "Tokat DASK Sigortası | Deprem Sigortası - Voldem Sigorta Tokat",
     description: "Tokat DASK sigortası. Zorunlu deprem sigortası ile konutunuzu deprem risklerine karşı güvence altına alın. Hızlı ve uygun fiyatlı çözümler.",
     keywords: [
         "tokat DASK",

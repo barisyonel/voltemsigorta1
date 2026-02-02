@@ -1,7 +1,13 @@
-
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
+
+export const metadata = {
+    title: "Tokat Sigorta Ekibi | Danışmanlarımız - Voldem Sigorta Tokat",
+    description: "Tokat sigorta acentesi Voldem Sigorta ekibi. Uzman sigorta danışmanları ile trafik, kasko, konut ve TARSIM sigortası teklifi alın.",
+    alternates: { canonical: "/ekibimiz" },
+}
+
 export default function Home() {
 
     return (
@@ -25,17 +31,17 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="team-two__content">
-                                        <h3 className="team-two__title"><Link href="ekip-detay">Hayrullah Çitil</Link></h3>
+                                        <h3 className="team-two__title"><Link href="/ekip-detay">Hayrullah Çitil</Link></h3>
                                         <p className="team-two__sub-title">Kurucu Ortak</p>
                                         <div className="team-two__share-and-social">
                                             <div className="team-two__share">
-                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-two__social">
-                                                <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-vimeo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-facebook"></span></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -51,17 +57,17 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="team-two__content">
-                                        <h3 className="team-two__title"><Link href="ekip-detay">Nilay Çitil</Link></h3>
+                                        <h3 className="team-two__title"><Link href="/ekip-detay">Nilay Çitil</Link></h3>
                                         <p className="team-two__sub-title">Müşteri İlişkileri</p>
                                         <div className="team-two__share-and-social">
                                             <div className="team-two__share">
-                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-two__social">
-                                                <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-vimeo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-facebook"></span></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -77,17 +83,17 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="team-two__content">
-                                        <h3 className="team-two__title"><Link href="ekip-detay">Barış Can Yönel</Link></h3>
+                                        <h3 className="team-two__title"><Link href="/ekip-detay">Barış Can Yönel</Link></h3>
                                         <p className="team-two__sub-title">Kurumsal İletişim</p>
                                         <div className="team-two__share-and-social">
                                             <div className="team-two__share">
-                                                <Link href="ekip-detay"><span className="icon-share"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-share"></span></Link>
                                             </div>
                                             <div className="team-two__social">
-                                                <Link href="ekip-detay"><span className="icon-google-plus-logo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-vimeo"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-instagram-1"></span></Link>
-                                                <Link href="ekip-detay"><span className="icon-facebook"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-google-plus-logo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-vimeo"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-instagram-1"></span></Link>
+                                                <Link href="/ekip-detay"><span className="icon-facebook"></span></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -111,7 +117,7 @@ export default function Home() {
                                 <p>Tokat ve çevre illerde hızlı ve şeffaf sigorta teklifi</p>
                             </div>
                             <div className="cta-one__btn-box">
-                                <Link href="iletisim" className="cta-one__btn thm-btn">HEMEN ARA</Link>
+                                <Link href="/iletisim" className="cta-one__btn thm-btn">HEMEN ARA</Link>
                             </div>
                         </div>
                     </div>

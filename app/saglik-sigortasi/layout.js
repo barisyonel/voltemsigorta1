@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Sağlık Sigortası | Voldem Sigorta Tokat",
+    title: "Tokat Sağlık Sigortası | Özel Sağlık - Voldem Sigorta Tokat",
     description: "Tokat sağlık sigortası çözümleri. TARSIM ve özel sağlık sigortası ile muayene, tetkik ve tedavi masraflarınızı kontrol altına alın. Voldem Sigorta Tokat.",
     keywords: [
         "tokat sağlık sigortası",

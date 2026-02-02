@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Hayat Sigortası | Voldem Sigorta Tokat",
+    title: "Tokat Hayat Sigortası | Ferdi Kaza - Voldem Sigorta Tokat",
     description: "Tokat hayat sigortası çözümleri. Sevdiklerinizi ve geleceğinizi güvence altına alın. Esnek prim ve teminat seçenekleri ile Voldem Sigorta Tokat.",
     keywords: [
         "tokat hayat sigortası",

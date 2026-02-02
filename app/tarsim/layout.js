@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "TARSIM Tarım Sigortası | Voldem Sigorta Tokat",
+    title: "Tokat TARSIM | Tarım Sigortası - Voldem Sigorta Tokat",
     description: "Tokat TARSIM tarım sigortası. Bitkisel ürün, sera, hayvancılık, kümes hayvanları, arıcılık ve su ürünleri sigortası. Geniş kapsamlı TARSIM poliçeleri ile üreticiyi koruyoruz. Voldem Sigorta Tokat.",
     keywords: [
         "tokat TARSIM",
@@ -13,7 +13,7 @@ export const metadata = {
         "tokat sigorta acentesi",
     ],
     openGraph: {
-        title: "TARSIM Tarım Sigortası | Voldem Sigorta Tokat",
+        title: "Tokat TARSIM | Tarım Sigortası - Voldem Sigorta Tokat",
         description: "Geniş kapsamlı TARSIM tarım sigortası. Bitkisel ürün, hayvancılık, sera ve daha fazlası. Tokat ve çevresinde TARSIM danışmanlığı.",
         images: [
             {

@@ -113,24 +113,24 @@ export default function Home() {
                                 <h2 className="insurance-details__catagories-title">Kategoriler</h2>
                                 <ul className="insurance-details__catagories-list list-unstyled">
                                     <li className="active">
-                                        <Link href="hayat-sigortasi">Hayat Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/hayat-sigortasi">Hayat Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="saglik-sigortasi">Sağlık Sigortası<span
+                                        <Link href="/saglik-sigortasi">Sağlık Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="arac-sigortasi">Araç Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/arac-sigortasi">Araç Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="dask-sigortasi">DASK Sigortası<span
+                                        <Link href="/dask-sigortasi">DASK Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="isyeri-sigortasi">İş Yeri Sigortası<span
+                                        <Link href="/isyeri-sigortasi">İş Yeri Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                 </ul>
@@ -144,7 +144,7 @@ export default function Home() {
                                     <br/> Sigorta
                                     <br/> İçin</h2>
                                 <div className="insurance-details__need-help-btn-box">
-                                    <Link href="iletisim" className="insurance-details__need-help-btn thm-btn">TEKLİF AL</Link>
+                                    <Link href="/iletisim" className="insurance-details__need-help-btn thm-btn">TEKLİF AL</Link>
                                 </div>
                             </div>
                             <div className="insurance-details__contact">

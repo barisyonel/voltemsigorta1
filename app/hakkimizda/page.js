@@ -3,7 +3,7 @@ import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "Hakkımızda",
+    title: "Tokat Sigorta Acentesi | Hakkımızda - Voldem Sigorta Tokat",
     description: "Voldem Sigorta Tokat hakkında. 2006'dan beri Tokat ve çevre illerde sigorta aracılık ve danışmanlık hizmetleri sunuyoruz. 20 senedir maksimum müşteri memnuniyeti ilkemizle hizmet veriyoruz.",
     keywords: [
         "voldem sigorta tokat",
@@ -94,7 +94,7 @@ export default function About() {
                                     </p>
                                     <div className="about-three__btn-and-client">
                                         <div className="about-three__btn-box">
-                                            <Link href="iletisim" className="about-three__btn thm-btn">İletişime Geçin</Link>
+                                            <Link href="/iletisim" className="about-three__btn thm-btn">İletişime Geçin</Link>
                                         </div>
                                     </div>
                                 </div>

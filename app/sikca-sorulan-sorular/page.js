@@ -149,7 +149,7 @@ export default function Faq() {
                                     <p>Tokat ve çevre illerde hızlı ve şeffaf sigorta teklifi</p>
                                 </div>
                                 <div className="cta-one__btn-box">
-                                    <Link href="iletisim" className="cta-one__btn thm-btn">HEMEN ARA</Link>
+                                    <Link href="/iletisim" className="cta-one__btn thm-btn">HEMEN ARA</Link>
                                 </div>
                             </div>
                         </div>

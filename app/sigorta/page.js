@@ -3,8 +3,8 @@ import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "Sigorta Çözümleri",
-    description: "Tokat sigorta çözümleri: Hayat, Sağlık, İşletme, Araç, Konut ve DASK sigortası. Tüm sigorta ihtiyaçlarınız için tek adres. Hızlı teklif ve uygun prim seçenekleri.",
+    title: "Tokat Sigorta | Trafik, Kasko, TARSIM - Voldem Sigorta Tokat",
+    description: "Tokat sigorta: Tokat trafik sigortası, Tokat kasko, Tokat TARSIM, araç, konut, sağlık ve DASK. 15+ şirketten karşılaştırmalı teklif. Voldem Sigorta Tokat.",
     keywords: [
         "tokat sigorta",
         "tokat sigorta çözümleri",
@@ -41,7 +41,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="hayat-sigortasi">Hayat Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/hayat-sigortasi">Hayat Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -53,7 +53,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="hayat-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/hayat-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="saglik-sigortasi">Sağlık Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/saglik-sigortasi">Sağlık Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -74,7 +74,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="saglik-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/saglik-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="isyeri-sigortasi">İşletme Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/isyeri-sigortasi">İşletme Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -95,7 +95,49 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="isyeri-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/isyeri-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Services One Single End */}
+                            {/* Services One Single Start - Kasko */}
+                            <div className="col-xl-4 col-lg-4">
+                                <div className="services-one__single">
+                                    <div className="services-one__title-box">
+                                        <h3 className="services-one__title"><Link href="/kasko-sigortasi">Tokat Kasko</Link>
+                                        </h3>
+                                    </div>
+                                    <div className="services-one__img-box">
+                                        <div className="services-one__img">
+                                            <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Tokat Kasko Sigortası" suppressHydrationWarning/>
+                                        </div>
+                                        <div className="services-one__icon">
+                                            <span className="icon-car-1"></span>
+                                        </div>
+                                    </div>
+                                    <div className="services-one__read-more">
+                                        <Link href="/kasko-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Services One Single End */}
+                            {/* Services One Single Start - TARSIM */}
+                            <div className="col-xl-4 col-lg-4">
+                                <div className="services-one__single">
+                                    <div className="services-one__title-box">
+                                        <h3 className="services-one__title"><Link href="/tarsim">Tokat TARSIM</Link>
+                                        </h3>
+                                    </div>
+                                    <div className="services-one__img-box">
+                                        <div className="services-one__img">
+                                            <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM Tarım Sigortası" />
+                                        </div>
+                                        <div className="services-one__icon">
+                                            <span className="icon-protection"></span>
+                                        </div>
+                                    </div>
+                                    <div className="services-one__read-more">
+                                        <Link href="/tarsim">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +146,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="arac-sigortasi">Araç Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/arac-sigortasi">Araç Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -116,7 +158,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="arac-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/arac-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +167,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="konut-sigortasi">Konut Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/konut-sigortasi">Konut Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -137,7 +179,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="konut-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/konut-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +188,7 @@ export default function Home() {
                             <div className="col-xl-4 col-lg-4">
                                 <div className="services-one__single">
                                     <div className="services-one__title-box">
-                                        <h3 className="services-one__title"><Link href="dask-sigortasi">DASK Sigortası</Link>
+                                        <h3 className="services-one__title"><Link href="/dask-sigortasi">DASK Sigortası</Link>
                                         </h3>
                                     </div>
                                     <div className="services-one__img-box">
@@ -158,7 +200,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="services-one__read-more">
-                                        <Link href="dask-sigortasi">Detaylar<span className="icon-next"></span></Link>
+                                        <Link href="/dask-sigortasi">Detaylar<span className="icon-next"></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +224,7 @@ export default function Home() {
                                 <p>Hızlı dönüş, şeffaf süreç</p>
                             </div>
                             <div className="cta-one__btn-box">
-                                <Link href="iletisim" className="cta-one__btn thm-btn">ÜCRETSİZ TEKLİF AL</Link>
+                                <Link href="/iletisim" className="cta-one__btn thm-btn">ÜCRETSİZ TEKLİF AL</Link>
                             </div>
                         </div>
                     </div>

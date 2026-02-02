@@ -103,6 +103,12 @@ export default function Home() {
                                 </div>
                             </div>
                             <InsuranceFAQ items={faqItems} />
+                            <div className="insurance-details__seo-block" style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid rgba(0,0,0,0.06)" }}>
+                                <h2 className="insurance-details__title-2">Tokat Kasko ve Tokat Araç Kasko Fiyatları</h2>
+                                <p className="insurance-details__text-2">
+                                    Tokat kasko sigortası ve Tokat araç kasko teklifi almak için Voldem Sigorta Tokat ile iletişime geçin. Dar kapsamlı ve geniş kapsamlı kasko seçeneklerini karşılaştırarak bütçenize uygun poliçe sunuyoruz. Çarpma, çalınma, yangın ve doğal afet teminatları dahil. <Link href="/arac-sigortasi">Tokat trafik sigortası</Link> ile birlikte <Link href="/kasko-sigortasi">kasko</Link> paketini değerlendirin. <Link href="/iletisim">Tokat kasko teklifi</Link> için WhatsApp veya telefon ile ulaşın.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-5">
@@ -111,24 +117,24 @@ export default function Home() {
                                 <h2 className="insurance-details__catagories-title">Kategoriler</h2>
                                 <ul className="insurance-details__catagories-list list-unstyled">
                                     <li>
-                                        <Link href="hayat-sigortasi">Hayat Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/hayat-sigortasi">Hayat Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="saglik-sigortasi">Sağlık Sigortası<span
+                                        <Link href="/saglik-sigortasi">Sağlık Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="arac-sigortasi">Araç Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/arac-sigortasi">Araç Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
+                                        <Link href="/konut-sigortasi">Konut Sigortası<span className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="dask-sigortasi">DASK Sigortası<span
+                                        <Link href="/dask-sigortasi">DASK Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                     <li>
-                                        <Link href="isyeri-sigortasi">İş Yeri Sigortası<span
+                                        <Link href="/isyeri-sigortasi">İş Yeri Sigortası<span
                                                 className="icon-next"></span></Link>
                                     </li>
                                 </ul>
@@ -142,7 +148,7 @@ export default function Home() {
                                     <br/> Sigorta
                                     <br/> İçin</h2>
                                 <div className="insurance-details__need-help-btn-box">
-                                    <Link href="iletisim" className="insurance-details__need-help-btn thm-btn">TEKLİF AL</Link>
+                                    <Link href="/iletisim" className="insurance-details__need-help-btn thm-btn">TEKLİF AL</Link>
                                 </div>
                             </div>
                             <div className="insurance-details__contact">
