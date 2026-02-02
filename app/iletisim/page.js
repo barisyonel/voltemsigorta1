@@ -1,6 +1,5 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
     title: "Tokat Sigorta İletişim | Teklif Al - Voldem Sigorta Tokat",
@@ -42,7 +41,7 @@ export default function Home() {
         <section className="contact-page">
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-6 col-lg-6">
+                    <div className="col-xl-12 col-lg-12">
                         <div className="contact-page__left">
                             <h3 className="contact-page__title">Bize Ulaşın</h3>
                             <p className="contact-page__text">Tokat ve çevre illerde sigorta ihtiyaçlarınız için hızlı
@@ -73,14 +72,50 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6">
-                        <div className="contact-page__right">
-                            <div className="contact-page__img">
-                                <img src={cloudinaryUrl("/assets/images/voldem.png")} alt="Voldem Sigorta Tokat"/>
+                </div>
+                    <div className="contact-page__map-section" style={{ marginTop: "40px", marginBottom: "40px" }}>
+                        <h4 className="contact-page__contact-info-title" style={{ marginBottom: "16px" }}>Harita ve Ulaşım</h4>
+                        <div style={{ 
+                            borderRadius: "16px", 
+                            overflow: "hidden", 
+                            border: "1px solid rgba(107, 53, 214, 0.15)",
+                            boxShadow: "0 4px 20px rgba(0,0,0,0.08)"
+                        }}>
+                            <iframe
+                                src="https://www.google.com/maps?q=40.3168,36.5512&z=18&output=embed"
+                                width="100%"
+                                height="320"
+                                style={{ border: 0, display: "block" }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Voldem Sigorta Tokat - Konum"
+                            />
+                            <div style={{ 
+                                padding: "16px 20px", 
+                                background: "linear-gradient(135deg, #f8f7ff 0%, #f4f5fb 100%)",
+                                display: "flex",
+                                flexWrap: "wrap",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                                gap: "12px"
+                            }}>
+                                <p style={{ margin: 0, fontSize: "15px", color: "#4b5563" }}>
+                                    Gop Bulvarı No:192, Tüfekçiler İş Hanı Kat:3 D:25, Tokat
+                                </p>
+                                <a 
+                                    href="https://www.google.com/maps?q=40.3168,36.5512" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="thm-btn"
+                                    style={{ display: "inline-flex", alignItems: "center", gap: "8px", flexShrink: 0 }}
+                                >
+                                    <i className="fas fa-external-link-alt"></i>
+                                    Adrese Git
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div className="contact-page__bottom">
                     <div className="whatsapp-quote-section">
                         <div className="whatsapp-quote-box">
