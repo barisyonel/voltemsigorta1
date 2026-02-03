@@ -39,9 +39,12 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
         const handleScroll = () => {
             const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
+            setScroll((prevScroll) => {
+                if (scrollCheck !== prevScroll) {
+                    return scrollCheck
+                }
+                return prevScroll
+            })
         }
 
         document.addEventListener("scroll", handleScroll)
@@ -50,7 +53,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
         return () => {
             document.removeEventListener("scroll", handleScroll)
         }
-    }, [scroll])
+    }, []) // Empty dependency array - only run once on mount
     return (
         <>
             <DataBg />

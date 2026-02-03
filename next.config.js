@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  turbopack: {
-    root: __dirname,
-  },
-  
   // Image optimization
   images: {
     remotePatterns: [
@@ -55,10 +51,10 @@ const nextConfig = {
     ];
   },
   
-  // Experimental features
-  experimental: {
-    optimizeCss: true,
-  },
+  // Experimental features - optimizeCss disabled due to Turbopack compatibility issues
+  // experimental: {
+  //   optimizeCss: true,
+  // },
   
   async redirects() {
     return [

@@ -82,7 +82,7 @@ export default function Home() {
                             boxShadow: "0 4px 20px rgba(0,0,0,0.08)"
                         }}>
                             <iframe
-                                src="https://www.google.com/maps?q=40.3168,36.5512&z=18&output=embed"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.3157712657694!2d36.54875477568118!3d40.31314896193766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407db7f0236a2c07%3A0x56ebaef5bfcc7786!2sTokat%20Voldem%20Sigorta!5e0!3m2!1str!2sus!4v1770124972789!5m2!1str!2sus"
                                 width="100%"
                                 height="320"
                                 style={{ border: 0, display: "block" }}
@@ -104,7 +104,7 @@ export default function Home() {
                                     Gop Bulvarı No:192, Tüfekçiler İş Hanı Kat:3 D:25, Tokat
                                 </p>
                                 <a 
-                                    href="https://www.google.com/maps?q=40.3168,36.5512" 
+                                    href="https://www.google.com/maps/search/Tokat+Voldem+Sigorta" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="thm-btn"
