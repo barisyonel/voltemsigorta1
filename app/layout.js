@@ -6,6 +6,7 @@ import 'swiper/css/free-mode';
 import { syne, dm_sans } from "@/lib/font"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 import WebVitalsReporter from "@/components/WebVitalsReporter"
+import AsyncStylesheets from "@/components/AsyncStylesheets"
 export const metadata = {
     title: {
         default: "Voldem Sigorta Tokat",
@@ -168,12 +169,11 @@ export default function RootLayout({ children }) {
         <html lang="tr" className={`${dm_sans.variable} ${syne.variable}`}>
             <head>
                 <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
-                <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
-                <link rel="stylesheet" href="/assets/vendors/animate/custom-animate.css" />
                 <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
                 <link rel="stylesheet" href="/assets/vendors/sonchoy-icon/style.css" />
                 <link rel="stylesheet" href="/assets/css/sonchoy.css" />
                 <link rel="stylesheet" href="/assets/css/sonchoy-responsive.css" />
+                <AsyncStylesheets />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

@@ -58,6 +58,7 @@ export default function Banner() {
                                             height={slide.height}
                                             sizes="(max-width: 991px) 100vw, 50vw"
                                             priority={index === 0}
+                                            fetchPriority={index === 0 ? "high" : "auto"}
                                             style={{
                                                 width: "100%",
                                                 height: "auto",

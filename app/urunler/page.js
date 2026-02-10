@@ -1,7 +1,13 @@
-
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
+
+export const metadata = {
+    title: "Ürünler | Voldem Sigorta Tokat",
+    description: "Voldem Sigorta Tokat ürün ve hizmetleri. Sigorta ürünleri kataloğu.",
+    alternates: { canonical: "/urunler" },
+}
+
 export default function Home() {
 
     return (

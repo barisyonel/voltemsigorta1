@@ -54,7 +54,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                 <Link href="/"><img src={LOGO_URL} alt="Voldem Sigorta Tokat logo" /></Link>
                             </div>
                             <div className="main-menu__main-menu-box">
-                                <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
+                                <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu} aria-label="Menüyü aç"><i className="fa fa-bars" aria-hidden="true"></i></Link>
                                 <Menu />
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                     <Link href="/"><img src={LOGO_URL} alt="Voldem Sigorta Tokat logo" /></Link>
                                 </div>
                                 <div className="main-menu__main-menu-box">
-                                    <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu}><i className="fa fa-bars"></i></Link>
+                                    <Link href="#" className="mobile-nav__toggler" onClick={handleMobileMenu} aria-label="Menüyü aç"><i className="fa fa-bars" aria-hidden="true"></i></Link>
                                     <Menu />
                                 </div>
                             </div>

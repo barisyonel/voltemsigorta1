@@ -39,11 +39,14 @@ export default function QuickQuoteForm() {
     }
 
     return (
-        <form className="quick-quote-form" onSubmit={goToWhatsApp}>
+        <form className="quick-quote-form" onSubmit={goToWhatsApp} aria-label="Hızlı sigorta teklifi formu">
+            <label htmlFor="quick-quote-sigorta-turu" className="visually-hidden">Sigorta türü</label>
             <select
+                id="quick-quote-sigorta-turu"
                 className="quick-quote-form__select"
                 value={sigortaTuru}
                 onChange={(e) => setSigortaTuru(e.target.value)}
+                aria-label="Sigorta türü seçin"
             >
                 {SIGORTA_CESITLERI.map((opt) => (
                     <option key={opt.value || "default"} value={opt.value}>

@@ -1,7 +1,12 @@
-
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { cloudinaryUrl } from "@/lib/cloudinary"
+
+export const metadata = {
+    title: "Portföy Detay | Voldem Sigorta Tokat",
+    alternates: { canonical: "/portfoy-detay" },
+}
+
 export default function Home() {
 
     return (

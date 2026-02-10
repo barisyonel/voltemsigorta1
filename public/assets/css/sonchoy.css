@@ -5620,6 +5620,7 @@ ul {
   padding: 120px 0 90px;
   z-index: 1;
 }
+.services-one .section-title__text { color: #374151; }
 
 .services-one__shape-1 {
   position: absolute;
@@ -5773,8 +5774,8 @@ ul {
 .services-one__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center;
   transition: .5s ease;
   transform: scale(1.05);
 }
@@ -14527,7 +14528,6 @@ Project Style1
   min-height: 0;
   object-fit: contain;
   display: block;
-  vertical-align: middle;
 }
 
 .page-header__inner {
@@ -15520,7 +15520,7 @@ Project Style1
   width: auto !important;
   height: auto !important;
   min-width: auto !important;
-  max-width: auto !important;
+  max-width: none !important;
   background-color: transparent !important;
   z-index: 2 !important;
   pointer-events: none !important;
@@ -16537,6 +16537,7 @@ Project Style1
   border: 1px solid #eeede5;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
+  appearance: textfield;
   font-family: var(--sonchoy-font);
   padding-left: 30px;
   outline: none;
@@ -18307,7 +18308,7 @@ Project Style1
 
 /* Featured Services */
 .featured-services { padding: 100px 0; background: #f8f7fc; }
-.featured-services .section-title__text { max-width: 600px; margin: 12px auto 0; }
+.featured-services .section-title__text { max-width: 600px; margin: 12px auto 0; color: #374151; }
 .featured-services__card {
   display: flex;
   align-items: center;
@@ -18349,7 +18350,7 @@ Project Style1
 }
 .featured-services__desc {
   font-size: 14px;
-  color: #6b7280;
+  color: #4b5563;
   line-height: 1.6;
   margin: 0 0 12px;
 }
@@ -18547,6 +18548,7 @@ Project Style1
   margin: 0 0 16px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

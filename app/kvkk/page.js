@@ -1,5 +1,11 @@
 import Layout from "@/components/layout/Layout"
 
+export const metadata = {
+    title: "KVKK Aydınlatma Metni | Voldem Sigorta Tokat",
+    description: "Voldem Sigorta Tokat KVKK kişisel verilerin korunması aydınlatma metni. Kişisel verilerinizin işlenmesi ve haklarınız hakkında bilgi.",
+    alternates: { canonical: "/kvkk" },
+}
+
 export default function KvkkPage() {
     return (
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="KVKK Aydınlatma Metni">
