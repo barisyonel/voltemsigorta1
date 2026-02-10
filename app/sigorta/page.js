@@ -46,7 +46,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Tokat hayat sigortası ve ferdi kaza sigortası - Voldem Sigorta ailesine mali güvence" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-family-insurance"></span>
@@ -67,7 +67,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Sağlık Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Tokat özel sağlık sigortası - Voldem Sigorta tamamlayıcı ve seyahat sağlık sigortası teklifi" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-healthcare"></span>
@@ -88,7 +88,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="İşletme Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="Tokat işyeri sigortası - yangın, hırsızlık, iş kesintisi teminatı - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-risk-management"></span>
@@ -109,7 +109,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Tokat Kasko Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Tokat kasko sigortası - aracınızı çarpma, hırsızlık, doğal afet risklerine karşı koruma - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-car-1"></span>
@@ -130,7 +130,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM Tarım Sigortası" />
+                                            <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM tarım sigortası - dolu, don, kuraklık, ürün sigortası - Voldem Sigorta" />
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-protection"></span>
@@ -151,7 +151,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Araç Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Tokat trafik sigortası ve araç sigortası - zorunlu teminat, Voldem Sigorta hızlı teklif" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-car-1"></span>
@@ -172,7 +172,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Konut Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Tokat konut sigortası - yangın, hırsızlık, su baskını teminatı - Voldem Sigorta ev sigortası" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-home-security"></span>
@@ -193,7 +193,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/dask-1.png")} alt="DASK Sigortası" suppressHydrationWarning/>
+                                            <img src={cloudinaryUrl("/assets/images/dask-1.png")} alt="Tokat DASK deprem sigortası - zorunlu deprem teminatı - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-family-insurance"></span>

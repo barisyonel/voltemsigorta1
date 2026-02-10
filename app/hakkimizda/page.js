@@ -68,7 +68,7 @@ export default function About() {
                                 <div className="about-three__left">
                                     <div className="about-three__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                                     <div className="about-three__img">
-                                        <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554506/sigorta_bl8jr0.jpg" alt="Voldem Sigorta Tokat"/>
+                                        <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769554506/sigorta_bl8jr0.jpg" alt="Voldem Sigorta Tokat - Tokat sigorta acentesi ofis, 2006'dan beri kurumsal ve bireysel sigorta danışmanlığı"/>
                                     </div>
                                     </div>
                                 </div>
@@ -81,6 +81,7 @@ export default function About() {
                                         </div>
                                         <h2 className="section-title__title">Kurumsal ve bireysel
                                             <br/> sigorta danışmanlığı</h2>
+                                        <p style={{ fontSize: "0.9rem", marginTop: "0.5rem", opacity: 0.85 }}>Son güncelleme: 3 Şubat 2025</p>
                                     </div>
                                     <p className="about-three__text">
                                         Voldem Sigorta aracılık hizmetleri; sigortacılık alanında kurumsal veya bireysel olarak

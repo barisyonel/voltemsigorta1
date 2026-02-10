@@ -63,7 +63,7 @@ export default function Home() {
                                 çözümleriyle ihtiyaçlarınıza uygun kapsamlar sunar. Hızlı provizyon ve güçlü destekle
                                 yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Sağlık Sigortası" suppressHydrationWarning/>
+                                <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Tokat özel sağlık sigortası - tamamlayıcı sağlık, seyahat sağlık - Voldem Sigorta" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Sağlık Sigortası</h2>
                             <p className="insurance-details__text-2">Özel sağlık sigortası ve TARSIM ile muayene,

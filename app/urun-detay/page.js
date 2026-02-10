@@ -134,7 +134,7 @@ export default function Home() {
                                         {productImages.map((image, index) => (
                                             <SwiperSlide key={index}>
                                                 <div className="product-details__top-img">
-                                                    <img src={image} alt={`Product image ${index + 1}`} />
+                                                    <img src={image} alt={`${productName} ürün görseli ${index + 1} - Voldem Sigorta Tokat`} />
                                                 </div>
                                                 <div className="product-details__search">
                                                     <Link href={image} className="img-popup">
@@ -171,7 +171,7 @@ export default function Home() {
                                         {productImages.map((image, index) => (
                                             <SwiperSlide key={index}>
                                                 <div className={`product-thumb ${activeIndex === index ? 'active' : ''}`}>
-                                                    <img src={image} alt={`Thumbnail ${index + 1}`} />
+                                                    <img src={image} alt={`${productName} ürün küçük resim ${index + 1}`} />
                                                 </div>
                                             </SwiperSlide>
                                         ))}
@@ -270,7 +270,7 @@ export default function Home() {
                     <h3 className="product-details__client-review-title">Client Reviews</h3>
                     <div className="product-details__client-review">
                         <div className="product-details__client-img">
-                            <img src={cloudinaryUrl("assets/images/shop/product-details-client-img.jpg")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/shop/product-details-client-img.jpg")} alt="Voldem Sigorta Tokat müşteri memnuniyeti"/>
                         </div>
                         <div className="product-details__client-content">
                             <p><span>by David Parker / </span>March 28, 2022</p>

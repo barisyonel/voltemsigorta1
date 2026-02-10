@@ -61,7 +61,7 @@ export default function ContactSlider5() {
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="slide-item">
                     <div className="contact-info">
-                        <div className="logo"><img src={cloudinaryUrl("/assets/images/logo-v5.png")} alt="" /></div>
+                        <div className="logo"><img src={cloudinaryUrl("/assets/images/logo-v5.png")} alt="Voldem Sigorta Tokat logosu" /></div>
                         <h4>Head Office</h4>
                         <ul>
                             <li>33/2 Korur Ap. Beyoglu, 34420</li>
@@ -74,7 +74,7 @@ export default function ContactSlider5() {
                 </SwiperSlide>
                 <SwiperSlide className="slide-item">
                     <div className="contact-info">
-                        <div className="logo"><img src={cloudinaryUrl("/assets/images/logo-v5.png")} alt="" /></div>
+                        <div className="logo"><img src={cloudinaryUrl("/assets/images/logo-v5.png")} alt="Voldem Sigorta Tokat logosu" /></div>
                         <h4>Head Office</h4>
                         <ul>
                             <li>33/2 Korur Ap. Beyoglu, 34420</li>

@@ -61,8 +61,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -75,7 +75,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Boris Elbert</div>
                                 <div className="designation">Green Tech</div>
                             </div>
@@ -87,8 +87,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -101,7 +101,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Fleix Everard</div>
                                 <div className="designation">HR, Blue Soft Sol</div>
                             </div>
@@ -113,8 +113,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -127,7 +127,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Boris Elbert</div>
                                 <div className="designation">Green Tech</div>
                             </div>
@@ -139,8 +139,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -153,7 +153,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Fleix Everard</div>
                                 <div className="designation">HR, Blue Soft Sol</div>
                             </div>
@@ -165,8 +165,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-36.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-37.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -179,7 +179,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-5.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Boris Elbert</div>
                                 <div className="designation">Green Tech</div>
                             </div>
@@ -191,8 +191,8 @@ export default function TestimonialSlider() {
                         <div className="inner-box">
                             <div className="top-content">
                                 <div className="logo">
-                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="" /></div>
-                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="" /></div>
+                                    <div className="default"><img src={cloudinaryUrl("/assets/images/resource/client-38.png")} alt="Voldem Sigorta Tokat müşteri logolu referans" /></div>
+                                    <div className="hover"><img src={cloudinaryUrl("/assets/images/resource/client-39.png")} alt="Voldem Sigorta Tokat müşteri referans hover" /></div>
                                 </div>
                                 <div className="quote"><span className="flaticon-quote" /></div>
                                 <div className="text">“Envolve’s analysts have done an excellent job presenting the analysis &amp; insights. we are confident that they have helped move our business forward.”</div>
@@ -205,7 +205,7 @@ export default function TestimonialSlider() {
                                 </div>
                             </div>
                             <div className="author-box">
-                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="" /></div>
+                                <div className="image"><img src={cloudinaryUrl("/assets/images/resource/author-thumb-6.jpg")} alt="Voldem Sigorta Tokat müşteri yorumu - referans veren kişi" /></div>
                                 <div className="author-title">Fleix Everard</div>
                                 <div className="designation">HR, Blue Soft Sol</div>
                             </div>

@@ -59,23 +59,23 @@ export default function AwardSlider5() {
 
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="award-block-two">
-                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-4.png")} alt="" /></div>
+                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-4.png")} alt="Voldem Sigorta Tokat ödül veya sertifika" /></div>
                     <h4>Best consulting <br /> company</h4>
                 </SwiperSlide>
                 <SwiperSlide className="award-block-two">
-                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-5.png")} alt="" /></div>
+                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-5.png")} alt="Voldem Sigorta Tokat ödül veya sertifika" /></div>
                     <h4>Best outsourcing <br /> advisors</h4>
                 </SwiperSlide>
                 <SwiperSlide className="award-block-two">
-                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-6.png")} alt="" /></div>
+                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-6.png")} alt="Voldem Sigorta Tokat ödül veya sertifika" /></div>
                     <h4>Customer choice for <br /> support</h4>
                 </SwiperSlide>
                 <SwiperSlide className="award-block-two">
-                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-7.png")} alt="" /></div>
+                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-7.png")} alt="Voldem Sigorta Tokat ödül veya sertifika" /></div>
                     <h4>Best consulting <br /> company</h4>
                 </SwiperSlide>
                 <SwiperSlide className="award-block-two">
-                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-7.png")} alt="" /></div>
+                    <div className="image"><img src={cloudinaryUrl("/assets/images/resource/award-7.png")} alt="Voldem Sigorta Tokat ödül veya sertifika" /></div>
                     <h4>Best consulting <br /> company</h4>
                 </SwiperSlide>
             </Swiper>

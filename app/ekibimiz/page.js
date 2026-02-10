@@ -27,7 +27,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-1.jpg")} alt="Ekip üyesi"/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-1.jpg")} alt="Hayrullah Çitil - Voldem Sigorta Tokat kurucu ortak, sigorta danışmanı"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -53,7 +53,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-2.jpg")} alt="Ekip üyesi"/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-2.jpg")} alt="Nilay Çitil - Voldem Sigorta Tokat müşteri ilişkileri uzmanı"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">
@@ -79,7 +79,7 @@ export default function Home() {
                                 <div className="team-two__single">
                                     <div className="team-two__img-box">
                                         <div className="team-two__img">
-                                            <img src={cloudinaryUrl("assets/images/team/team-2-3.jpg")} alt="Ekip üyesi"/>
+                                            <img src={cloudinaryUrl("assets/images/team/team-2-3.jpg")} alt="Barış Can Yönel - Voldem Sigorta Tokat kurumsal iletişim"/>
                                         </div>
                                     </div>
                                     <div className="team-two__content">

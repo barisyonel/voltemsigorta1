@@ -68,7 +68,7 @@ export default function Home() {
                                 deprem risklerine karşı güvence altına alın. Tokat'ta hızlı ve uygun fiyatlı çözümler
                                 sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/dask%20(1).png")} alt="DASK Sigortası" suppressHydrationWarning/>
+                                <img src={cloudinaryUrl("/assets/images/dask%20(1).png")} alt="Tokat DASK zorunlu deprem sigortası - konut deprem teminatı - Voldem Sigorta" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">DASK Sigortası</h2>
                             <p className="insurance-details__text-2">DASK, deprem ve deprem kaynaklı yangın, infilak,

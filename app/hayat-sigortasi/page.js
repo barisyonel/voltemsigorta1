@@ -68,7 +68,7 @@ export default function Home() {
                                 sevdiklerinizi ve geleceğinizi güvence altına alıyoruz. İhtiyacınıza uygun, şeffaf ve
                                 hızlı çözümler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Hayat Sigortası" suppressHydrationWarning/>
+                                <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Tokat hayat sigortası ve ferdi kaza sigortası - aileye mali güvence - Voldem Sigorta" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Hayat Sigortası</h2>
                             <p className="insurance-details__text-2">Hayat sigortası, beklenmedik durumlarda ailenizin

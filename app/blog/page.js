@@ -12,6 +12,12 @@ export const metadata = {
     alternates: { canonical: "/blog" },
 }
 
+const formatDate = (dateStr) => {
+    const months = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+    const [y, m, d] = dateStr.split("-").map(Number)
+    return `${d} ${months[m - 1]} ${y}`
+}
+
 const POSTS = [
     {
         title: "Tokat Trafik Sigortası: Zorunlu Teminatlar ve Avantajlar",
@@ -19,6 +25,8 @@ const POSTS = [
         image: "/assets/arackaskoo.png",
         href: "/arac-sigortasi",
         tags: ["Trafik Sigortası", "Araç Sigortası"],
+        date: "2025-02-01",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "Tokat Kasko Rehberi: Kapsam ve Poliçe Seçimi",
@@ -26,6 +34,8 @@ const POSTS = [
         image: "/assets/arackaskoo.png",
         href: "/kasko-sigortasi",
         tags: ["Kasko", "Araç Sigortası"],
+        date: "2025-01-28",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "Sağlık Sigortalarında Sonbahar Kampanyası",
@@ -33,6 +43,8 @@ const POSTS = [
         image: "/assets/saglıksigortası.png",
         href: "/saglik-sigortasi",
         tags: ["Sağlık Sigortası", "Özel Sağlık"],
+        date: "2025-01-20",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "DASK (Zorunlu Deprem Sigortası) Hakkında Bilmeniz Gerekenler",
@@ -40,6 +52,8 @@ const POSTS = [
         image: "/assets/afet%20sigortası.png",
         href: "/dask-sigortasi",
         tags: ["DASK", "Deprem Sigortası"],
+        date: "2025-01-15",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "Konut Sigortası ile Evinizi Güvence Altına Alın",
@@ -47,6 +61,8 @@ const POSTS = [
         image: "/assets/konutsigortası.png",
         href: "/konut-sigortasi",
         tags: ["Konut Sigortası", "Ev Sigortası"],
+        date: "2025-01-10",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "İşyeri Sigortası: İşinizi ve Gelirinizi Koruyun",
@@ -54,6 +70,8 @@ const POSTS = [
         image: "/assets/hizmett.png",
         href: "/isyeri-sigortasi",
         tags: ["İşyeri Sigortası", "İşletme"],
+        date: "2025-01-05",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "Hayat Sigortası ve Ferdi Kaza: Geleceğinizi Koruyun",
@@ -61,6 +79,8 @@ const POSTS = [
         image: "/assets/saglıksigortası.png",
         href: "/hayat-sigortasi",
         tags: ["Hayat Sigortası", "Ferdi Kaza"],
+        date: "2024-12-28",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "TARSIM Tarım Sigortası: Ürünlerinizi Koruyun",
@@ -68,6 +88,8 @@ const POSTS = [
         image: "/assets/tarımsigorta.jpg",
         href: "/tarsim",
         tags: ["TARSIM", "Tarım Sigortası"],
+        date: "2024-12-20",
+        author: "Voldem Sigorta Uzmanı",
     },
     {
         title: "Tokat'ta En Uygun Sigorta Nasıl Bulunur?",
@@ -75,6 +97,8 @@ const POSTS = [
         image: "/assets/konutsigortası.png",
         href: "/iletisim",
         tags: ["Rehber", "Teklif"],
+        date: "2024-12-15",
+        author: "Voldem Sigorta Uzmanı",
     },
 ]
 
@@ -92,6 +116,9 @@ export default function BlogPage() {
                                 <p className="blog-hero__desc">
                                     Trafik, kasko, konut, sağlık ve işyeri sigortası hakkında güncel bilgiler, karşılaştırma ipuçları ve doğru poliçe seçimi rehberleri. Voldem Sigorta Tokat uzmanları tarafından hazırlanmıştır.
                                 </p>
+                                <p className="blog-hero__byline" style={{ marginTop: "0.75rem", fontSize: "0.9rem", opacity: 0.9 }}>
+                                    <strong>Yazar:</strong> Voldem Sigorta Uzmanı · 20 yıllık sektör deneyimi
+                                </p>
                                 <div className="blog-hero__links">
                                     <Link href="/arac-sigortasi">Araç Sigortası</Link>
                                     <Link href="/saglik-sigortasi">Sağlık</Link>
@@ -100,7 +127,7 @@ export default function BlogPage() {
                                 </div>
                             </div>
                             <div className="blog-hero__img">
-                                <img src="/assets/hizmett.png" alt="Tokat Sigorta Hizmetleri" />
+                                <img src="/assets/hizmett.png" alt="Tokat sigorta hizmetleri - trafik kasko konut sağlık TARSIM rehberleri - Voldem Sigorta blog" />
                             </div>
                         </div>
                     </div>
@@ -128,6 +155,9 @@ export default function BlogPage() {
                                             </div>
                                             <h3 className="blog-card__title">{post.title}</h3>
                                             <p className="blog-card__excerpt">{post.excerpt}</p>
+                                            <div className="blog-card__meta" style={{ marginTop: "0.5rem", fontSize: "0.85rem", color: "var(--thm-text)", opacity: 0.8 }}>
+                                                <span>{post.author}</span> · <time dateTime={post.date}>{formatDate(post.date)}</time>
+                                            </div>
                                             <span className="blog-card__read">Devamını Oku <i className="fas fa-arrow-right"></i></span>
                                         </div>
                                     </Link>
@@ -174,6 +204,10 @@ export default function BlogPage() {
                             <p><strong>Tokat&apos;ta sigorta primi neye göre belirlenir?</strong> Araç kullanım türü, bina yaşı, sağlık geçmişi, teminat limitleri ve muafiyetler fiyatı etkiler.</p>
                             <p><strong>En uygun poliçeyi nasıl seçebilirim?</strong> Teklifleri teminat ve hizmet kriterleriyle karşılaştırmak, uzun vadede daha avantajlı sonuç verir.</p>
                             <p><strong>Hasar anında destek alabilir miyim?</strong> Voldem Sigorta Tokat, hasar bildirimi ve süreç yönetiminde hızlı destek sunar.</p>
+
+                            <p style={{ marginTop: "2rem", fontSize: "0.9rem", opacity: 0.85 }}>
+                                <strong>Son güncelleme:</strong> 3 Şubat 2025 · Voldem Sigorta Tokat Uzmanları
+                            </p>
                         </div>
                     </div>
                 </section>

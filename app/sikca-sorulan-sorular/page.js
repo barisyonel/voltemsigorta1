@@ -36,7 +36,7 @@ export default function Faq() {
                         <div className="container">
                             <div className="faq-page__text-box">
                                 <div className="faq-page__text-box-shape-1">
-                                    <img src={cloudinaryUrl("assets/images/shapes/faq-page-text-box-shape-1.png")} alt="SSS dekoratif şekil"/>
+                                    <img src={cloudinaryUrl("assets/images/shapes/faq-page-text-box-shape-1.png")} alt="" role="presentation" aria-hidden="true"/>
                                 </div>
                                 <div className="section-title text-left">
                                     <div className="section-title__tagline-box">
@@ -47,6 +47,7 @@ export default function Faq() {
                                     <p className="faq-page__text">Tokat sigorta ihtiyaçlarınız için en çok merak edilen
                                         soruları tek sayfada topladık. Trafik sigortası, kasko, DASK, konut ve sağlık
                                         poliçelerinde doğru seçim yapmak için temel bilgileri burada bulabilirsiniz.</p>
+                                    <p style={{ fontSize: "0.9rem", marginTop: "0.5rem", opacity: 0.85 }}>Son güncelleme: 3 Şubat 2025 · Voldem Sigorta Tokat Uzmanları</p>
                                 </div>
                             </div>
                             <div className="faq-page__bottom">
@@ -55,7 +56,7 @@ export default function Faq() {
                                         <div className="faq-page__bottom-left">
                                             <div className="faq-page__bottom-left-img-box">
                                                 <div className="faq-page__bottom-left-img">
-                                                    <img src={cloudinaryUrl("/sigorta.jpg")} alt="Voldem Sigorta Tokat"/>
+                                                    <img src={cloudinaryUrl("/sigorta.jpg")} alt="Voldem Sigorta Tokat - Sıkça sorulan sorular, Tokat sigorta teklifi ve danışmanlık hizmeti"/>
                                                 </div>
                                                 <h3 className="faq-page__bottom-left-img-text">Voldem Sigorta Tokat
                                                     <br/> Güvenilir Sigorta Danışmanlığı</h3>

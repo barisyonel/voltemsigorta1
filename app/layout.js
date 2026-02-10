@@ -164,11 +164,9 @@ export default function RootLayout({ children }) {
         }
     }
 
-    const lcpImage = "/assets/saglıksigortası.png"
     return (
         <html lang="tr" className={`${dm_sans.variable} ${syne.variable}`}>
             <head>
-                <link rel="preload" href={lcpImage} as="image" />
                 <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
                 <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
                 <link rel="stylesheet" href="/assets/vendors/animate/custom-animate.css" />

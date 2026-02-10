@@ -62,34 +62,34 @@ export default function BrandSlider9() {
             <Swiper {...swiperOptions} className="thm-swiper__slider swiper-container">
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-1.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-2.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-3.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-4.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                         <SwiperSlide className="swiper-slide">
-                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt=""/>
+                            <img src={cloudinaryUrl("assets/images/brand/brand-1-5.png")} alt="Voldem Sigorta Tokat sigorta şirketi logosu"/>
                         </SwiperSlide>
                     </div>
                 </Swiper>

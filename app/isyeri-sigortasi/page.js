@@ -63,7 +63,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">İş yerinizi yangın, hırsızlık, doğal afet ve
                                 sorumluluk risklerine karşı koruyun. Tokat'ta işletmenize özel poliçeler sunuyoruz.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="İş Yeri Sigortası" suppressHydrationWarning/>
+                                <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="Tokat işyeri sigortası - yangın, hırsızlık, iş kesintisi teminatı - Voldem Sigorta" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">İş Yeri Sigortası</h2>
                             <p className="insurance-details__text-2">İş yeri sigortası; bina, demirbaş ve stokları

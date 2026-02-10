@@ -78,7 +78,7 @@ export default function TarsimPage() {
                                     <div className="insurance-details__text-box">
                                         <h2>Neden Voldem Sigorta?</h2>
                                         <p>Tokat ve çevre illerde TARSIM konusunda deneyimli ekibimizle ürününüze ve ihtiyacınıza uygun, geniş kapsamlı poliçe seçeneklerini sunuyoruz. Teklif ve hasar süreçlerinde yanınızdayız.</p>
-                                        <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM Tarım Sigortası" className="insurance-details__why-voldem-img" style={{ display: "block", maxWidth: "100%", width: "320px", height: "auto", marginTop: "20px", borderRadius: "12px" }} />
+                                        <img src="/assets/tarımsigorta.jpg" alt="Tokat TARSIM tarım sigortası - dolu, don, kuraklık, ürün sigortası teminatları - Voldem Sigorta" className="insurance-details__why-voldem-img" style={{ display: "block", maxWidth: "100%", width: "320px", height: "auto", marginTop: "20px", borderRadius: "12px" }} />
                                     </div>
                                 </div>
 
@@ -149,7 +149,7 @@ export default function TarsimPage() {
                                     </ul>
                                 </div>
                                 <div className="insurance-details__tarsim-visual" style={{ marginBottom: "24px", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
-                                    <img src="/assets/tarım.jpg" alt="Tokat tarım sigortası" style={{ width: "100%", height: "auto", display: "block" }} />
+                                    <img src="/assets/tarım.jpg" alt="Tokat tarım sigortası TARSIM - tarlada ürün koruma, dolu don risk teminatı - Voldem Sigorta" style={{ width: "100%", height: "auto", display: "block" }} />
                                 </div>
                                 <div className="insurance-details__need-help">
                                     <div className="insurance-details__need-help-bg"

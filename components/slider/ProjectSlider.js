@@ -60,7 +60,7 @@ export default function ProjectSlider4() {
             <Swiper {...swiperOptions} className="theme_carousel owl-theme">
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="Voldem Sigorta Tokat portföy - sigorta hizmeti" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -72,7 +72,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="Voldem Sigorta Tokat portföy görseli" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -84,7 +84,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="Voldem Sigorta Tokat portföy - sigorta danışmanlığı" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -96,7 +96,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-1.jpg")} alt="Voldem Sigorta Tokat portföy - sigorta hizmeti" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -108,7 +108,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-2.jpg")} alt="Voldem Sigorta Tokat portföy görseli" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>
@@ -120,7 +120,7 @@ export default function ProjectSlider4() {
                 </SwiperSlide>
                 <SwiperSlide className="project-block-two">
                     <div className="inner-box">
-                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="" /></div>
+                        <div className="image"><img src={cloudinaryUrl("/assets/images/gallery/gallery-2-3.jpg")} alt="Voldem Sigorta Tokat portföy - sigorta danışmanlığı" /></div>
                         <div className="content">
                             <div className="left-box">
                                 <div className="category">Marketing</div>

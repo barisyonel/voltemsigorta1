@@ -143,10 +143,10 @@ export default function Service() {
      {/* Services One Start  */}
         <section className="services-one">
             <div className="services-one__shape-1 float-bob-x">
-                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-1.png")} alt="Hizmetler dekoratif şekil" suppressHydrationWarning/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-1.png")} alt="" role="presentation" aria-hidden="true" suppressHydrationWarning/>
             </div>
             <div className="services-one__shape-2 rotate-me">
-                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-2.png")} alt="Hizmetler dekoratif şekil" suppressHydrationWarning/>
+                <img src={cloudinaryUrl("assets/images/shapes/services-one-shape-2.png")} alt="" role="presentation" aria-hidden="true" suppressHydrationWarning/>
             </div>
             <div className="container">
                 <div className="section-title text-left">
@@ -178,6 +178,8 @@ export default function Service() {
                                                 <img 
                                                     src={service.image} 
                                                     alt={service.title}
+                                                    width={400}
+                                                    height={300}
                                                     loading="lazy"
                                                     suppressHydrationWarning
                                                 />
@@ -211,6 +213,9 @@ export default function Service() {
                                                     <img 
                                                         src={service.image} 
                                                         alt={service.title}
+                                                        width={400}
+                                                        height={300}
+                                                        loading="lazy"
                                                         suppressHydrationWarning
                                                     />
                                                 </div>
