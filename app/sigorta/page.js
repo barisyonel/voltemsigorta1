@@ -46,7 +46,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/hayat.png")} alt="Tokat hayat sigortası ve ferdi kaza sigortası - Voldem Sigorta ailesine mali güvence" suppressHydrationWarning/>
+                                            <img src="/assets/saglıksigortası.png" alt="Tokat hayat sigortası ve ferdi kaza sigortası - Voldem Sigorta ailesine mali güvence" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-family-insurance"></span>
@@ -67,7 +67,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/ozel.png")} alt="Tokat özel sağlık sigortası - Voldem Sigorta tamamlayıcı ve seyahat sağlık sigortası teklifi" suppressHydrationWarning/>
+                                            <img src="/assets/saglıksigortası.png" alt="Tokat özel sağlık sigortası - Voldem Sigorta tamamlayıcı ve seyahat sağlık sigortası teklifi" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-healthcare"></span>
@@ -88,7 +88,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/yangin.png")} alt="Tokat işyeri sigortası - yangın, hırsızlık, iş kesintisi teminatı - Voldem Sigorta" suppressHydrationWarning/>
+                                            <img src="/assets/hizmett.png" alt="Tokat işyeri sigortası - yangın, hırsızlık, iş kesintisi teminatı - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-risk-management"></span>
@@ -109,7 +109,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/kasko.png")} alt="Tokat kasko sigortası - aracınızı çarpma, hırsızlık, doğal afet risklerine karşı koruma - Voldem Sigorta" suppressHydrationWarning/>
+                                            <img src="/assets/arackaskoo.png" alt="Tokat kasko sigortası - aracınızı çarpma, hırsızlık, doğal afet risklerine karşı koruma - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-car-1"></span>
@@ -151,7 +151,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Tokat trafik sigortası ve araç sigortası - zorunlu teminat, Voldem Sigorta hızlı teklif" suppressHydrationWarning/>
+                                            <img src="/assets/arackaskoo.png" alt="Tokat trafik sigortası ve araç sigortası - zorunlu teminat, Voldem Sigorta hızlı teklif" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-car-1"></span>
@@ -172,7 +172,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/konut.png")} alt="Tokat konut sigortası - yangın, hırsızlık, su baskını teminatı - Voldem Sigorta ev sigortası" suppressHydrationWarning/>
+                                            <img src="/assets/konutsigortası.png" alt="Tokat konut sigortası - yangın, hırsızlık, su baskını teminatı - Voldem Sigorta ev sigortası" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-home-security"></span>
@@ -193,7 +193,7 @@ export default function Home() {
                                     </div>
                                     <div className="services-one__img-box">
                                         <div className="services-one__img">
-                                            <img src={cloudinaryUrl("/assets/images/dask-1.png")} alt="Tokat DASK deprem sigortası - zorunlu deprem teminatı - Voldem Sigorta" suppressHydrationWarning/>
+                                            <img src="/assets/afet%20sigortası.png" alt="Tokat DASK deprem sigortası - zorunlu deprem teminatı - Voldem Sigorta" suppressHydrationWarning/>
                                         </div>
                                         <div className="services-one__icon">
                                             <span className="icon-family-insurance"></span>

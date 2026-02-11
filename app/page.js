@@ -14,13 +14,14 @@ import HomeCta from "@/components/sections/home1/HomeCta"
 import { cloudinaryUrl } from "@/lib/cloudinary"
 
 export const metadata = {
-    title: "Tokat Sigorta Acentesi | Trafik, Kasko, Konut Teklifi",
-    description: "Tokat'ta trafik, kasko, konut, sağlık, TARSIM tarım sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, açılışa özel indirimler, hızlı teklif. Ücretsiz karşılaştırma.",
+    title: "Tokat Trafik Sigortası | Kasko, Konut Teklifi - Voldem Sigorta",
+    description: "Tokat trafik sigortası, kasko ve konut sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, açılışa özel indirimler, hızlı teklif. Ücretsiz karşılaştırma.",
     keywords: [
+        "tokat trafik sigortası",
+        "trafiksigortası tokat",
         "tokat sigorta",
         "tokat sigorta acentesi",
         "tokat en uygun sigorta",
-        "tokat trafik sigortası",
         "tokat kasko",
         "tokat kasko sigortası",
         "tokat konut sigortası",
@@ -39,8 +40,8 @@ export const metadata = {
         "tokat sigorta indirim",
     ],
     openGraph: {
-        title: "Tokat Sigorta Acentesi | Trafik, Kasko, Konut, TARSIM Teklifi",
-        description: "Tokat'ta trafik, kasko, konut, sağlık, tarım sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, hızlı teklif.",
+        title: "Tokat Trafik Sigortası | Kasko, Konut Teklifi - Voldem Sigorta",
+        description: "Tokat trafik sigortası, kasko ve konut sigortası teklifi. Voldem Sigorta - 20 yıllık deneyim, hızlı teklif.",
         images: [
             {
                 url: cloudinaryUrl("/logo.jpeg"),

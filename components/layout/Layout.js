@@ -27,15 +27,15 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleSidebar = () => setSidebar(!isSidebar)
 
     useEffect(() => {
-        // Dynamic import for WOW.js to reduce initial bundle size
-        import('wowjs').then((WOW) => {
-            window.wow = new WOW.default.WOW({
-                live: false
-            })
-            window.wow.init()
-        }).catch((err) => {
-            console.warn('WOW.js failed to load:', err)
-        })
+        // WOW.js: requestIdleCallback ile ertelenmiş yükleme - layout thrashing azaltır
+        const loadWow = () => {
+            import('wowjs').then((WOW) => {
+                window.wow = new WOW.default.WOW({ live: false })
+                window.wow.init()
+            }).catch((err) => console.warn('WOW.js failed to load:', err))
+        }
+        const useIdle = typeof requestIdleCallback !== 'undefined'
+        const idleId = useIdle ? requestIdleCallback(() => loadWow(), { timeout: 2000 }) : setTimeout(loadWow, 500)
 
         const handleScroll = () => {
             const scrollCheck = window.scrollY > 100
@@ -49,9 +49,9 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
         document.addEventListener("scroll", handleScroll)
         
-        // Cleanup
         return () => {
             document.removeEventListener("scroll", handleScroll)
+            useIdle ? cancelIdleCallback(idleId) : clearTimeout(idleId)
         }
     }, []) // Empty dependency array - only run once on mount
     return (

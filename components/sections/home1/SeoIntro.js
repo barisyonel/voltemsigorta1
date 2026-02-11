@@ -7,11 +7,11 @@ import Link from "next/link"
 export default function SeoIntro() {
     return (
         <article className="seo-intro" aria-label="Tokat sigorta hizmeti tanıtımı">
-            <h2 className="seo-intro__title">Tokat&apos;ta Güvenilir Sigorta Çözümleri – Voldem Sigorta</h2>
+            <h2 className="seo-intro__title">Tokat Trafik Sigortası ve Güvenilir Sigorta Çözümleri</h2>
             <p>
-                Tokat sigorta ihtiyaçlarınız için tek adres: <Link href="/hakkimizda">Voldem Sigorta Tokat</Link>. 2006&apos;dan beri Tokat ve çevre illerde{" "}
+                Tokat trafik sigortası ve sigorta ihtiyaçlarınız için tek adres: <Link href="/hakkimizda">Voldem Sigorta Tokat</Link>. 2006&apos;dan beri Tokat ve çevre illerde{" "}
                 <Link href="/arac-sigortasi">trafik sigortası</Link>, <Link href="/kasko-sigortasi">kasko</Link>, <Link href="/konut-sigortasi">konut sigortası</Link>, <Link href="/dask-sigortasi">DASK</Link>, <Link href="/saglik-sigortasi">sağlık sigortası</Link>, hayat sigortası ve işletme sigortası{" "}
-                alanlarında hizmet veriyoruz. En uygun sigorta fiyatları için birden fazla sigorta şirketinden karşılaştırmalı
+                alanlarında hizmet veriyoruz. Tokat trafik sigortası fiyatları için birden fazla sigorta şirketinden karşılaştırmalı
                 teklif alıyor, size en iyi prim ve teminat seçeneğini sunuyoruz.
             </p>
             <p>

@@ -1,6 +1,25 @@
 'use client'
 import Link from "next/link"
-import { cloudinaryUrl } from "@/lib/cloudinary"
+import Image from "next/image"
+import { Autoplay, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css/pagination"
+
+const ABOUT_SLIDES = [
+    { image: "/assets/slider/slider5.jpg", width: 800, height: 1200, alt: "Tokat trafik sigortası ve kasko - Açılışa özel indirim, Voldem Sigorta araç sigortası teklifi", title: "Tokat Trafik Sigortası ve Kasko | Voldem Sigorta" },
+    { image: "/assets/slider/slider1.jpg", width: 800, height: 1200, alt: "Geleceğine yatırım yap - Tokat sigorta acentesi Voldem Sigorta, açılışa özel %10 indirim", title: "Geleceğine Yatırım Yap | Voldem Sigorta Tokat" },
+    { image: "/assets/arackasko.png", width: 800, height: 1200, alt: "Tokat kasko sigortası - 5 dakikada kaskonu yap, Kasko için fazla düşünme. Voldem Sigorta araç sigortası teklifi", title: "5 Dakikada Kasko | Kasko Sigortası - Voldem Sigorta Tokat" },
+]
+
+const aboutSwiperOptions = {
+    modules: [Autoplay, Pagination],
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: { delay: 4500, disableOnInteraction: false },
+    pagination: { clickable: true },
+}
 
 export default function About() {
     return (
@@ -15,7 +34,22 @@ export default function About() {
                             <div className="about-one__img-box  wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div className="about-one__img">
-                                    <img src="https://res.cloudinary.com/dznv8z7wo/image/upload/v1769540886/1045x820_pwgxg9.png" alt="Voldem Sigorta Tokat ana sayfa - Tokat sigorta acentesi hizmetleri" loading="lazy"/>
+                                    <Swiper {...aboutSwiperOptions} className="about-one__slider">
+                                        {ABOUT_SLIDES.map((slide) => (
+                                            <SwiperSlide key={slide.image} className="about-one__slider-slide">
+                                                <Image
+                                                    src={slide.image}
+                                                    alt={slide.alt}
+                                                    title={slide.title}
+                                                    width={slide.width}
+                                                    height={slide.height}
+                                                    sizes="(max-width: 991px) 100vw, 50vw"
+                                                    loading="lazy"
+                                                    className="about-one__slider-img"
+                                                />
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
                                 </div>
                             </div>
                         </div>

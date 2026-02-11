@@ -21,12 +21,10 @@ const swiperOptions = {
 }
 
 const SLIDES = [
+    { image: "/assets/slider/voldemm.jpeg", width: 1200, height: 800, alt: "Voldem Sigorta açılış kampanyası - Tüm sigorta branşlarında %10 indirim. Trafik, kasko, sağlık, konut, seyahat, TARSIM sigortası. Tokat sigorta acentesi.", title: "Voldem Sigorta Açılışa Özel %10 İndirim | Trafik, Kasko, Sağlık - Tokat" },
     { image: "/assets/saglıksigortası.png", width: 1200, height: 800, alt: "Tokat sağlık sigortası - Voldem Sigorta acentesi özel sağlık, tamamlayıcı sağlık sigortası teklifi", title: "Tokat Sağlık Sigortası | Voldem Sigorta" },
-    { image: "/assets/slider/voldemsigortaa.jpeg", width: 1200, height: 800, alt: "Voldem Sigorta Tokat açılış - 14 Şubat açılışa özel tüm sigorta branşlarında %10 indirim, trafik kasko konut sağlık TARSIM", title: "Voldem Sigorta Açılış %10 İndirim | Tokat Sigorta" },
-    { image: "/assets/slider/voldemm.jpeg", width: 1200, height: 800, alt: "Voldem Sigorta Tokat - Açılışa özel indirim, trafik kasko konut sağlık seyahat TARSIM sigortası teklifi", title: "Tokat Sigorta Teklifi | Voldem Sigorta Acentesi" },
-    { image: "/assets/slider/slider3..jpg", width: 800, height: 1200, alt: "Tokat TARSIM tarım sigortası - Dolu, don, su baskını, ürün sigortası. Yeni nesil tarımcılık, Voldem Sigorta", title: "Tokat TARSIM Tarım Sigortası | Voldem Sigorta" },
-    { image: "/assets/slider/slider5.jpg", width: 800, height: 1200, alt: "Tokat kasko sigortası - Açılışa özel %10 indirim, yol yardım, taksit, 7/24 destek. Voldem Sigorta araç sigortası", title: "Tokat Kasko ve Araç Sigortası | Voldem Sigorta" },
-    { image: "/assets/slider/slider1.jpg", width: 800, height: 1200, alt: "Geleceğine yatırım yap - Tokat sigorta acentesi Voldem Sigorta, açılışa özel %10 indirim", title: "Geleceğine Yatırım Yap | Voldem Sigorta Tokat" },
+    { image: "/assets/slider/voldemsigortaa.jpeg", width: 1200, height: 800, alt: "Tokat trafik sigortası - Voldem Sigorta açılış indirimleri, trafik kasko konut sağlık TARSIM sigortası teklifi", title: "Tokat Trafik Sigortası | Voldem Sigorta" },
+    { image: "/assets/slider/tarsimsigorta.png", width: 1200, height: 800, alt: "Voldem Sigorta ile TARSIM Sigortasında %30 İndirim - Tokat tarım sigortası teklifi", title: "TARSIM Sigortasında %30 İndirim | Voldem Sigorta Tokat" },
 ]
 
 export default function Banner() {
@@ -36,7 +34,7 @@ export default function Banner() {
                 <div className="main-slider__layout">
                     <div className="main-slider__content">
                         <h1 className="main-slider__title">
-                            Tokat Sigorta Acentesi – Uygun Trafik, Kasko ve Konut Sigortası
+                            Tokat Trafik Sigortası ve Kasko Teklifi
                         </h1>
                         <p className="main-slider__text">
                             Trafik, kasko, konut, sağlık, hayat, DASK ve işletme sigortası için
@@ -56,7 +54,7 @@ export default function Banner() {
                                             title={slide.title}
                                             width={slide.width}
                                             height={slide.height}
-                                            sizes="(max-width: 991px) 100vw, 50vw"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 55vw, 700px"
                                             priority={index === 0}
                                             fetchPriority={index === 0 ? "high" : "auto"}
                                             style={{

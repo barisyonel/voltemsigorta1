@@ -569,59 +569,6 @@ ul {
   color: var(--sonchoy-base);
 }
 
-.bootstrap-select .btn-light:not(:disabled):not(.disabled).active,
-.bootstrap-select .btn-light:not(:disabled):not(.disabled):active,
-.bootstrap-select .show>.btn-light.dropdown-toggle {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.bootstrap-select>.dropdown-toggle {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-.bootstrap-select .dropdown-toggle:focus,
-.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
-  outline: none !important;
-}
-
-.bootstrap-select .dropdown-menu {
-  border: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  z-index: 991;
-  border-radius: 0;
-}
-
-.bootstrap-select .dropdown-menu>li+li>a {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.bootstrap-select .dropdown-menu>li.selected>a {
-  background: var(--sonchoy-base);
-  color: var(--sonchoy-white);
-}
-
-.bootstrap-select .dropdown-menu>li>a {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 4px 12px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: var(--sonchoy-black);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.bootstrap-select .dropdown-menu>li>a:hover {
-  background: var(--sonchoy-base);
-  color: var(--sonchoy-white);
-  cursor: pointer;
-}
-
 .preloader {
   position: fixed;
   background-color: #222;
@@ -651,7 +598,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-image: url(https://res.cloudinary.com/dznv8z7wo/image/upload/assets/images/loader.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
@@ -3146,7 +3093,6 @@ ul {
   z-index: 10;
   height: auto;
   min-height: auto;
-  max-height: 85vh;
   margin-top: 0;
   padding-top: 0;
   top: 0;
@@ -3174,9 +3120,9 @@ ul {
 .main-slider__layout {
   position: relative;
   display: flex;
-  height: 100%;
-  min-height: 600px;
-  max-height: 95vh;
+  height: auto;
+  min-height: auto;
+  max-height: none;
   align-items: flex-start;
   gap: 20px;
   padding: 32px 24px 40px;
@@ -3198,11 +3144,17 @@ ul {
   width: 100%;
   height: auto;
 }
+.main-slider__media-wrapper .banner-media-carousel .swiper-slide {
+  height: auto;
+}
+.main-slider__media-wrapper .banner-media-carousel .swiper-wrapper {
+  align-items: flex-start;
+}
 
 .main-slider__media-wrapper .main-slider__media {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: 0;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -5094,6 +5046,29 @@ ul {
   transition-delay: 0.1s;
 }
 
+/* Sigortanın Adresi slider - eşit boyutlu görünüm */
+.about-one__slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.about-one__slider .about-one__slider-slide {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-one__slider-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  border-radius: inherit;
+}
+
 .about-one__img-2 {
   position: absolute;
   top: 164px;
@@ -5643,6 +5618,13 @@ ul {
 
 .services-one__shape-2 img {
   width: auto;
+}
+
+.services-one__shape-placeholder {
+  display: block;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
 .services-one__bottom {

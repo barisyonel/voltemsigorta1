@@ -20,6 +20,11 @@ const nextConfig = {
   // Remove powered-by header for security
   poweredByHeader: false,
 
+  // Paket import optimizasyonu - Swiper, wowjs tree-shaking (~13.8 KiB polyfill tasarrufu)
+  experimental: {
+    optimizePackageImports: ['swiper', 'wowjs'],
+  },
+
   // Güvenlik başlıkları — SSL, XSS, clickjacking koruması
   async headers() {
     return [

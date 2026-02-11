@@ -168,6 +168,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="tr" className={`${dm_sans.variable} ${syne.variable}`}>
             <head>
+                <link rel="preload" href="/assets/css/sonchoy.css" as="style" />
                 <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
                 <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
                 <link rel="stylesheet" href="/assets/vendors/sonchoy-icon/style.css" />

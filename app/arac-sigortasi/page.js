@@ -67,7 +67,7 @@ export default function Home() {
                             <p className="insurance-details__text-1">Trafik ve kasko ihtiyaçlarınız için Tokat’ta
                                 hızlı, şeffaf ve bütçe dostu çözümler sunuyoruz. Hasar süreçlerinde de yanınızdayız.</p>
                             <div className="insurance-details__img-1">
-                                <img src={cloudinaryUrl("/assets/images/trafik.png")} alt="Tokat araç sigortası ve trafik sigortası - zorunlu teminat, kasko - Voldem Sigorta" suppressHydrationWarning/>
+                                <img src="/assets/arackaskoo.png" alt="Tokat araç sigortası ve trafik sigortası - zorunlu teminat, kasko - Voldem Sigorta" suppressHydrationWarning/>
                             </div>
                             <h2 className="insurance-details__title-2">Araç Sigortası</h2>
                             <p className="insurance-details__text-2">Trafik sigortası yasal zorunluluğunuzu karşılarken,
