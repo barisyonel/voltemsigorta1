@@ -12,7 +12,7 @@ const swiperOptions = {
     loop: true,
     effect: "fade",
     fadeEffect: { crossFade: true },
-    autoHeight: true,
+    autoHeight: false,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -21,10 +21,11 @@ const swiperOptions = {
 }
 
 const SLIDES = [
-    { image: "/assets/slider/voldemm.jpeg", width: 1200, height: 800, alt: "Voldem Sigorta açılış kampanyası - Tüm sigorta branşlarında %10 indirim. Trafik, kasko, sağlık, konut, seyahat, TARSIM sigortası. Tokat sigorta acentesi.", title: "Voldem Sigorta Açılışa Özel %10 İndirim | Trafik, Kasko, Sağlık - Tokat" },
-    { image: "/assets/saglıksigortası.png", width: 1200, height: 800, alt: "Tokat sağlık sigortası - Voldem Sigorta acentesi özel sağlık, tamamlayıcı sağlık sigortası teklifi", title: "Tokat Sağlık Sigortası | Voldem Sigorta" },
-    { image: "/assets/slider/voldemsigortaa.jpeg", width: 1200, height: 800, alt: "Tokat trafik sigortası - Voldem Sigorta açılış indirimleri, trafik kasko konut sağlık TARSIM sigortası teklifi", title: "Tokat Trafik Sigortası | Voldem Sigorta" },
-    { image: "/assets/slider/tarsimsigorta.png", width: 1200, height: 800, alt: "Voldem Sigorta ile TARSIM Sigortasında %30 İndirim - Tokat tarım sigortası teklifi", title: "TARSIM Sigortasında %30 İndirim | Voldem Sigorta Tokat" },
+    { image: "/assets/slider/slider1.jpg", width: 1080, height: 1350, alt: "Araç Sigortası - Voldem Sigorta", title: "Araç Sigortası | Voldem Sigorta" },
+    { image: "/assets/arackasko.png", width: 1080, height: 1920, alt: "Araç Kasko - Voldem Sigorta", title: "Araç Kasko | Voldem Sigorta" },
+    { image: "/assets/slider/slider5.jpg", width: 1131, height: 1600, alt: "Yeni Nesil Tarımcılık - Voldem Sigorta", title: "Yeni Nesil Tarımcılık | Voldem Sigorta" },
+    { image: "/assets/hizmett.png", width: 1080, height: 1920, alt: "Hizmetlerimiz - Voldem Sigorta", title: "Hizmetlerimiz | Voldem Sigorta" },
+    { image: "/assets/tarımsigorta.jpg", width: 448, height: 557, alt: "Tarım Sigortası - Voldem Sigorta", title: "Tarım Sigortası | Voldem Sigorta" },
 ]
 
 export default function Banner() {
@@ -59,9 +60,9 @@ export default function Banner() {
                                             fetchPriority={index === 0 ? "high" : "auto"}
                                             style={{
                                                 width: "100%",
-                                                height: "auto",
+                                                height: "100%",
                                                 display: "block",
-                                                objectFit: "contain",
+                                                objectFit: "cover",
                                                 objectPosition: "center",
                                             }}
                                         />
